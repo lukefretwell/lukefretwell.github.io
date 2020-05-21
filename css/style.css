@@ -96,7 +96,8 @@
 
 body {
     color: #212121;
-    font-family: 'Public Sans Light', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
 }
 
 img {
@@ -111,7 +112,8 @@ h4,
 h5,
 h6,
 .navbar-brand {
-    font-family: 'Public Sans Extra Bold', sans-serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
     color: #212121;
     letter-spacing: -.02em;
     padding-top: .75rem;
