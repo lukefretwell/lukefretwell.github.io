@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'Public Sans Light';
+    src: url('fonts/publicsans-light.woff2') format('woff2'),
+        url('fonts/publicsans-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Light Italic';
+    src: url('fonts/publicsans-lightitalic.woff2') format('woff2'),
+        url('fonts/publicsans-lightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Black';
+    src: url('fonts/publicsans-black.woff2') format('woff2'),
+        url('fonts/PublicSans-black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Black Italic';
+    src: url('fonts/publicsans-blackitalic.woff2') format('woff2'),
+        url('fonts/publicsans-blackitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Bold';
+    src: url('fonts/publicsans-bold.woff2') format('woff2'),
+        url('fonts/publicsans-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Bold Italic';
+    src: url('fonts/publicsans-bolditalic.woff2') format('woff2'),
+        url('fonts/publicsans-bolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Extra Bold';
+    src: url('fonts/publicsans-extrabold.woff2') format('woff2'),
+        url('fonts/publicsans-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Extra Bold Italic';
+    src: url('fonts/publicsans-extrabolditalic.woff2') format('woff2'),
+        url('fonts/publicsans-extrabolditalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Extra Light';
+    src: url('fonts/publicsans-extralight.woff2') format('woff2'),
+        url('fonts/publicsans-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Extra Light Italic';
+    src: url('fonts/publicsans-extralightitalic.woff2') format('woff2'),
+        url('fonts/publicsans-extralightitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Italic';
+    src: url('fonts/publicsans-italic.woff2') format('woff2'),
+        url('fonts/publicsans-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans Medium';
+    src: url('fonts/publicsans-medium.woff2') format('woff2'),
+        url('fonts/publicsans-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    color: #212121;
+    font-family: 'Public Sans Light', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: 'Public Sans Extra Bold', sans-serif;
+    color: #212121;
+    letter-spacing: -.02em;
+    padding-top: .75rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    padding-bottom: .25rem;
+}
+
+/* Lead */
+
+.lead {
+    font-size: 1.5rem;
+}
+
+/* Links */
+
+a,
+a:visited,
+a:hover {
+    color: #a14b9e;
+}
+
+/* Links */
+
+main a,
+main a:visited {
+    text-decoration: underline;
+}
+
+main a:hover {
+    text-decoration: none;
+}
+
+main p,
+main li {
+    font-size: 1.2rem;
+}
+
+/* People */
+
+.people img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    max-width: 100px;
+}
+
+.bio img {
+    margin-top: 2rem;
+}
+
+.people-img img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.people-social a,
+.people-social a:visited,
+.people-social a:hover {
+    color: #212121;
+    font-size: 1.25rem;
+    margin-right: .75rem;
+}
+
+.post-bio {
+    border-top: 1px solid #f1f1f1;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/* Navbar */
+
+.navbar {
+    background: #944584;
+    border-radius: 0;
+}
+
+.navbar-header a,
+.navbar-header a:visited,
+.navbar-header a:hover {
+    color: #ffffff;
+}
+
+.navbar-brand {
+    color: #ffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar li.active a,
+.navbar li.active a:visited {
+    background: #a14b90;
+    border-radius: 5px;
+    color: #ffffff !important;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background: #a14b90;
+    border-bottom: 1px solid #f1f1f1;
+    border-radius: 0;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.jumbotron h1,
+.jumbotron a,
+.jumbotron a:active,
+.jumbotron a:visited {
+    color: #ffffff;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+}
+
+/* Containers */
+
+.section {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Buttons */
+
+.btn-primary,
+a.btn-primary,
+a.btn-primary:active,
+a.btn-primary:hover,
+a.btn-primary:visited,
+a.btn,
+a.btn:visited,
+a.btn:hover {
+    color: #fff !important;
+    background-color: #212121;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    text-decoration: none !important;
+    text-align: center;
+}
+
+a.btn-primary:hover {
+    background-color: #212121;
+    border: 1px solid #ffffff;
+}
+
+a.btn-outline-secondary,
+a.btn-outline-secondary:visited {
+    background: #fbfbfb !important;
+    border: 1px solid #fbfbfb !important;
+    color: #212121 !important;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+a.btn-outline-secondary:hover {
+    background: #212121 !important;
+    border: 1px solid #fbfbfb !important;
+    color: #ffffff !important;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+    background: #944584;
+    margin-top: 3rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+}
+
+.footer h2 {
+    font-size: 1.75rem;
+}
+
+.footer a,
+.footer a:visited,
+.footer,
+.footer h2 {
+    color: #ffffff;
+}
+
+.footer a,
+.footer a:visited {
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer .fa,
+.footer .fas,
+.footer .fab {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 1rem 0 0;
+}
+
+.footer p {
+    font-size: 100%;
+    margin: 0;
+    padding: .5em 0;
+}
