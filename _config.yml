@@ -26,6 +26,8 @@ url: "https://lukefretwell.com" # the base hostname & protocol for your site, e.
 twitter_username: lukefretwell
 github_username:  lukefretwell
 linkedin_link:  https://www.linkedin.com/in/lukefretwell
+instagram:  lukefretwell
+flickr_link:  https://www.flickr.com/photos/lukefretwell/
 
 # Build settings
 markdown: kramdown
