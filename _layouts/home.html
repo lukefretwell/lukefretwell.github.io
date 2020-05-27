@@ -1,5 +1,5 @@
 ---
-layout: connect
+layout: home
 ---
 {% include header.html %}
 {% include nav.html %}
@@ -18,12 +18,26 @@ layout: connect
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                {% include connect.html %}
+            <div class="col-md-8">
+                {{ content }}
+            </div>
+            <div class="col-md-4">
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Connect</h2>
+                {% include connect.html %}
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+
 </main>
+
 {% include anchor_links.html %}
 {% include analytics.html %}
 {% include footer.html %}

@@ -1,0 +1,66 @@
+                <div class="card-deck text-center">
+                    {% if site.email %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a></p>
+                            <h4 class="card-title"><a href="mailto:{{ site.email }}" class="stretched-link">Email</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.github_username %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a></p>
+                            <h4 class="card-title"><a href="https://github.com/{{ site.github_username }}" class="stretched-link">GitHub</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.twitter_username %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a></p>
+                            <h4 class="card-title"><a href="https://twitter.com/{{ site.twitter_username }}" class="stretched-link">Twitter</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.linkedin_link %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="{{ site.linkedin_link }}"><i class="fab fa-linkedin"></i></a></p>
+                            <h4 class="card-title"><a href="{{ site.linkedin_link }}" class="stretched-link">LinkedIn</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.facebook_link %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="{{ site.facebook_link }}"><i class="fab fa-facebook"></i></a></p>
+                            <h4 class="card-title"><a href="https://twitter.com/{{ site.facebook_link }}" class="stretched-link">Facebook</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.instagram_username %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="https://instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a></p>
+                            <h4 class="card-title"><a href="https://instagram.com/{{ site.instagram_username }}" class="stretched-link">Instagram</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.flickr_link %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="{{ site.flickr_link }}"><i class="fab fa-flickr"></i></a></p>
+                            <h4 class="card-title"><a href="{{ site.flickr_link }}" class="stretched-link">Flickr</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if site.rss_link %}
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="h1"><a href="{{ site.rss_link }}"><i class="fas fa-rss"></i></a></p>
+                            <h4 class="card-title"><a href="{{ site.rss_link }}" class="stretched-link">RSS</a></h4>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
