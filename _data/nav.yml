@@ -1,11 +1,18 @@
 docs_list_title: nav
 docs:
 
-- title: Bio
-  url: /bio/
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Blog
+  url: /blog/
 
 - title: Connect
   url: /connect/
 
 - title: Contact
   url: /contact/
+

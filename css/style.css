@@ -111,6 +111,12 @@ h3,
 h4,
 h5,
 h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 .navbar-brand {
     font-family: 'Muli', sans-serif;
     font-weight: 700;
@@ -152,6 +158,14 @@ main a:hover {
 main p,
 main li {
     font-size: 1.2rem;
+}
+
+/* Cards */
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem .5rem;
 }
 
 /* People */
@@ -288,6 +302,22 @@ a.btn-outline-secondary:hover {
     color: #ffffff !important;
     padding: 1rem;
     text-decoration: none;
+}
+
+/* Profile */
+
+.profile {
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.profile-social a, .profile-social a:active, .profile-social a:visited {
+    color: #212121;
+    margin-right: .5rem;
 }
 
 /* Footer */

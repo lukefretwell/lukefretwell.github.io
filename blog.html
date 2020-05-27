@@ -1,0 +1,12 @@
+---
+layout: default
+title: Blog
+author: Luke Fretwell
+---
+{% for post in site.posts %}
+<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+{% for author in site.authors %}
+<p><small class="text-muted">{{ author.name }} &middot; {{ post.date | date: "%B %-d, %Y" }}</small></p>
+{% endfor %}
+<p>{{ post.excerpt }}</p>
+{% endfor %}

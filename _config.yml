@@ -22,12 +22,19 @@ title: Luke Fretwell
 email: your-email@example.com
 description: Luke Fretwell is an entrepreneur and writer focused on civics and technology.
 baseurl: "" # the subpath of your site, e.g. /blog
+timezone: America/Los_Angeles
 url: "https://lukefretwell.com" # the base hostname & protocol for your site, e.g. http://example.com
+email: luke@lukefretwell.com
 twitter_username: lukefretwell
 github_username:  lukefretwell
-linkedin_link:  https://www.linkedin.com/in/lukefretwell
-instagram:  lukefretwell
-flickr_link:  https://www.flickr.com/photos/lukefretwell/
+linkedin_link: https://www.linkedin.com/in/lukefretwell
+facebook_link: 
+instagram_username: lukefretwell
+flickr_link: https://www.flickr.com/photos/lukefretwell/
+rss_link: https://lukefretwell.com/feed.xml
+
+google_analytics_id: 
+google_site_verification: 
 
 # Build settings
 markdown: kramdown
@@ -36,12 +43,26 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+kramdown:
+  auto_ids: true
+
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      
+collections:
+  authors:
+    output: true
+
+# Disqus
+disqus_shortname: lukefretwell
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,7 +72,9 @@ defaults:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - CNAME
+  - readme.md
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/

@@ -4,23 +4,30 @@
             <div class="row">
                 <div class="col-md-6">
                     <h2>Connect</h2>
-                    <p>{% if site.github_username %}
+                    <p>
+                        {% if site.email %}
+                        <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+                        {% endif %}
+                        {% if site.github_username %}
                         <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
                         {% endif %}
                         {% if site.twitter_username %}
                         <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
                         {% endif %}
-                        {% if site.rss %}
-                        <a href="{{ site.url }}/{{ site.rss }}"><i class="fas fa-rss"></i></a>
-                        {% endif %}
                         {% if site.linkedin_link %}
                         <a href="{{ site.linkedin_link }}"><i class="fab fa-linkedin"></i></a>
                         {% endif %}
+                        {% if site.facebook_link %}
+                        <a href="{{ site.facebook_link }}"><i class="fab fa-facebook"></i></a>
+                        {% endif %}
                         {% if site.instagram %}
-                        <a href="https://instagram.com/{{ site.instagram }}"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a>
                         {% endif %}
                         {% if site.flickr_link %}
                         <a href="{{ site.flickr_link }}"><i class="fab fa-flickr"></i></a>
+                        {% endif %}
+                        {% if site.rss_link %}
+                        <a href="{{ site.rss_link }}"><i class="fas fa-rss"></i></a>
                         {% endif %}
                     </p>
                 </div>
@@ -30,9 +37,6 @@
         </div>
     </div>
 </footer>
-{% if jekyll.environment == 'production' %}
-{% include analytics.html %}
-{% endif %}
 </body>
 
 </html>

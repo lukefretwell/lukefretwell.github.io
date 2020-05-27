@@ -1,0 +1,39 @@
+---
+layout: default
+---
+{% for author in site.authors %}
+<p class="text-muted">{{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
+{{ content | markdownify }}
+<div class="profile">
+    <h2 class="h4">About {{ author.name }}</h2>
+    {{ author.content | markdownify }}
+    <p class="profile-social">
+        {% if author.email %}
+        <a href="mailto:{{ author.email }}"><i class="fas fa-envelope"></i></a>
+        {% endif %}
+        {% if author.website %}
+        <a href="{{ author.website }}"><i class="fas fa-laptop"></i></a>
+        {% endif %}
+        {% if author.github_username %}
+        <a href="https://github.com/{{ author.github_username }}"><i class="fab fa-github"></i></a>
+        {% endif %}
+        {% if author.twitter_username %}
+        <a href="https://twitter.com/{{ author.twitter_username }}"><i class="fab fa-twitter"></i></a>
+        {% endif %}
+        {% if author.linkedin_link %}
+        <a href="{{ author.linkedin_link }}"><i class="fab fa-linkedin"></i></a>
+        {% endif %}
+        {% if author.instagram_username %}
+        <a href="https://instagram.com/{{ author.instagram_username }}"><i class="fab fa-instagram"></i></a>
+        {% endif %}
+        {% if author.flickr_link %}
+        <a href="{{ author.flickr_link }}"><i class="fab fa-flickr"></i></a>
+        {% endif %}
+        {% if author.rss_link %}
+        <a href="{{ author.rss_link }}"><i class="fas fa-rss"></i></a>
+        {% endif %}
+    </p>
+</div>
+{% endfor %}
+
+{% include comments.html %}
