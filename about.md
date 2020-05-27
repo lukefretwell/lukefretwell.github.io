@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+permalink: /about/
 ---
 
 Luke Fretwell is an entrepreneur and writer focused on civics and technology.
