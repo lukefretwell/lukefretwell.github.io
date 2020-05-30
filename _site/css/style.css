@@ -1,3 +1,10 @@
+/* Colors
+
+#a14b90
+#4974a5
+
+ */
+
 @font-face {
     font-family: 'Public Sans Light';
     src: url('fonts/publicsans-light.woff2') format('woff2'),
@@ -95,9 +102,8 @@
 }
 
 body {
-    color: #212121;
-    font-family: 'Muli', sans-serif;
-    font-weight: 400;
+    color: #000000;
+    font-family: 'Public Sans Light', sans-serif;
 }
 
 img {
@@ -117,10 +123,15 @@ h6,
 .h4,
 .h5,
 .h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
 .navbar-brand {
-    font-family: 'Muli', sans-serif;
-    font-weight: 700;
-    color: #212121;
+    font-family: 'Public Sans Extra Bold', sans-serif;
+    color: #000000;
     letter-spacing: -.02em;
     padding-top: .75rem;
 }
@@ -134,7 +145,26 @@ h2 {
 
 .lead {
     font-size: 1.5rem;
+    font-weight: 400;
 }
+
+section {
+    border-bottom: 1px solid #f1f1f1;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.navbar,
+.jumbotron,
+.footer {
+    background: #000000;
+    background: #944584;
+    background: #a14b90;
+    background: rgb(161, 75, 144);
+    background: linear-gradient(135deg, rgba(161, 75, 144, 1) 15%, rgba(73, 116, 165, 1) 85%);
+}
+
 
 /* Links */
 
@@ -160,12 +190,26 @@ main li {
     font-size: 1.2rem;
 }
 
+.post-main p,
+.post-main li {
+    font-size: 1.4rem;
+
+}
+
 /* Cards */
 
 .card-deck {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 2rem .5rem;
+    grid-gap: 1rem .25rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.books img {
+    border: 1px solid #f1f1f1;
+    margin-bottom: .75rem;
+    max-width: 125px;
 }
 
 /* People */
@@ -188,7 +232,7 @@ main li {
 .people-social a,
 .people-social a:visited,
 .people-social a:hover {
-    color: #212121;
+    color: #000000;
     font-size: 1.25rem;
     margin-right: .75rem;
 }
@@ -202,10 +246,16 @@ main li {
     padding-bottom: 1rem;
 }
 
+/* Post */
+
+.feat-img {
+    margin-bottom: 2rem;
+    margin-top: .75rem;
+}
+
 /* Navbar */
 
 .navbar {
-    background: #944584;
     border-radius: 0;
 }
 
@@ -230,10 +280,15 @@ main li {
     color: #ffffff !important;
 }
 
+/* Post */
+
+.post {
+    padding-top: 2rem;
+}
+
 /* Jumbotron */
 
 .jumbotron {
-    background: #a14b90;
     border-bottom: 1px solid #f1f1f1;
     border-radius: 0;
     color: #ffffff;
@@ -249,8 +304,9 @@ main li {
     color: #ffffff;
 }
 
-.jumbotron h1 {
-    font-size: 3rem;
+.jumbotron-home {
+    height: 100vh;
+    padding-top: 5rem;
 }
 
 /* Containers */
@@ -263,48 +319,55 @@ main li {
 
 /* Buttons */
 
+a.btn,
+a.btn:visited,
+a.btn:hover {}
+
 .btn-primary,
 a.btn-primary,
 a.btn-primary:active,
 a.btn-primary:hover,
-a.btn-primary:visited,
-a.btn,
-a.btn:visited,
-a.btn:hover {
-    color: #fff !important;
-    background-color: #212121;
-    border: 1px solid #212121;
+a.btn-primary:visited {
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid #000000;
     border-radius: 5px;
     margin-bottom: 10px;
     margin-top: 0px;
     padding: 10px;
-    text-decoration: none !important;
+    text-decoration: none;
     text-align: center;
 }
 
 a.btn-primary:hover {
-    background-color: #212121;
+    background-color: #000000;
     border: 1px solid #ffffff;
 }
 
 a.btn-outline-secondary,
 a.btn-outline-secondary:visited {
-    background: #fbfbfb !important;
-    border: 1px solid #fbfbfb !important;
-    color: #212121 !important;
-    padding: 1rem;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.125);
+    color: #000000;
+    padding: .5rem 1rem;
     text-decoration: none;
 }
 
 a.btn-outline-secondary:hover {
-    background: #212121 !important;
-    border: 1px solid #fbfbfb !important;
-    color: #ffffff !important;
-    padding: 1rem;
+    background: #a14b90;
+    color: #ffffff;
+    border: 1px solid #a14b90;
+    padding: .5rem 1rem;
     text-decoration: none;
 }
 
 /* Profile */
+
+img.avatar {
+    border-radius: 50%;
+    max-width: 50px;
+    margin-right: .5rem;
+}
 
 .profile {
     border-top: 1px solid #f1f1f1;
@@ -315,15 +378,26 @@ a.btn-outline-secondary:hover {
     padding-bottom: 1rem;
 }
 
-.profile-social a, .profile-social a:active, .profile-social a:visited {
-    color: #212121;
+.profile p,
+.profile li {
+    font-size: 1.1rem;
+}
+
+.profile-social {
+    padding-bottom: .25rem;
+    padding-top: .5rem;
+}
+
+.profile-social a,
+.profile-social a:active,
+.profile-social a:visited {
+    color: #000000;
     margin-right: .5rem;
 }
 
 /* Footer */
 
 .footer {
-    background: #944584;
     margin-top: 3rem;
     padding-bottom: 2.5rem;
     padding-top: 2rem;

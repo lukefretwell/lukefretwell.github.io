@@ -1,14 +1,20 @@
 docs_list_title: nav
 docs:
 
-- title: Home
-  url: /
-
 - title: About
   url: /about/
 
+- title: Work
+  url: /work/
+
 - title: Blog
   url: /blog/
+
+- title: Books
+  url: /books/
+
+- title: Podcasts
+  url: /podcasts/
 
 - title: Connect
   url: /connect/

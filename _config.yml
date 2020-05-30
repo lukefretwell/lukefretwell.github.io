@@ -32,6 +32,7 @@ facebook_link:
 instagram_username: lukefretwell
 flickr_link: https://www.flickr.com/photos/lukefretwell/
 rss_link: https://lukefretwell.com/feed.xml
+avatar: img/avatar.jpg
 
 google_analytics_id: 
 google_site_verification: 
@@ -63,6 +64,9 @@ collections:
 
 # Disqus
 disqus_shortname: lukefretwell
+
+# set timezone
+timezone: America/Los_Angeles
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -3,6 +3,7 @@ short_name: lukefrewell
 name: Luke Fretwell
 email: luke@lukefretwell.com
 website: https://lukefretwell.com
+avatar: luke-fretwell.jpg
 twitter_username: lukefretwell
 linkedin_link: https://www.linkedin.com/in/lukefretwell
 instagram_username: lukefretwell

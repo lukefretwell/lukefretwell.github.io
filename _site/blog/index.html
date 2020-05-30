@@ -45,7 +45,8 @@
     <link href="http://localhost:4000/css/style.css" rel="stylesheet">
     </script>
     <!-- Fonts -->
-     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -64,7 +65,7 @@
         textColor: '#fff'
     })
     </script>
-<nav class="navbar navbar-dark navbar-expand-lg">
+<nav class="navbar navbar-dark">
     <div class="container">
         <a class="navbar-brand" href="http://localhost:4000/">Luke Fretwell</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,11 +74,15 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-md-auto">
                 
-                <li class="nav-item "><a href="/" class="nav-link">Home</a></li>
-                
                 <li class="nav-item "><a href="/about/" class="nav-link">About</a></li>
                 
+                <li class="nav-item "><a href="/work/" class="nav-link">Work</a></li>
+                
                 <li class="nav-item active"><a href="/blog/" class="nav-link">Blog</a></li>
+                
+                <li class="nav-item "><a href="/books/" class="nav-link">Books</a></li>
+                
+                <li class="nav-item "><a href="/podcasts/" class="nav-link">Podcasts</a></li>
                 
                 <li class="nav-item "><a href="/connect/" class="nav-link">Connect</a></li>
                 
@@ -92,7 +97,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Blog</h1>
+                    <h1 class="display-4">Blog</h1>
                     
                 </div>
             </div>
@@ -100,16 +105,32 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                
-<h2><a href="/jekyll/update/2020/05/19/welcome-to-jekyll.html">Hello world</a></h2>
-
-<p><small class="text-muted">Luke Fretwell &middot; May 19, 2020</small></p>
-
-<p>Hello.</p>
-
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-12">
+                <div class="card-deck">
+    
+    <div class="card">
+        <div class="card-body">
+            
+            <a href="/jekyll/update/2020/05/19/hello.html"><img class="card-img-top" src="http://localhost:4000/img/posts/ggb.png" alt="Hello world"></a>
+            
+            <h3><a href="/jekyll/update/2020/05/19/hello.html">Hello world</a></h3>
+            <p><small class="text-muted">May, 19 2020</small></p>
+            <p class="card-text">Hello.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            
+            <a href="/jekyll/update/2020/05/19/hello-again.html"><img class="card-img-top" src="http://localhost:4000/img/posts/ca-poppy.png" alt="Hello again"></a>
+            
+            <h3><a href="/jekyll/update/2020/05/19/hello-again.html">Hello again</a></h3>
+            <p><small class="text-muted">May, 19 2020</small></p>
+            <p class="card-text">Hello.</p>
+        </div>
+    </div>
+    
+</div>
             </div>
         </div>
     </div>

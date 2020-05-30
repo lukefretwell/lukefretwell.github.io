@@ -1,0 +1,20 @@
+docs_list_title: podcasts
+docs:
+
+- title: The Rich Roll Podcast
+  url: https://www.richroll.com/category/podcast/
+  img: rich-roll.jpg
+
+- title: The Daily Stoic
+  url: https://dailystoic.com/podcast/
+  img: daily-stoic.jpg
+
+- title: 99% Invisible
+  url: https://99percentinvisible.org/
+  img: 99-percent-invisible.jpg
+
+- title: How I Built This
+  url: https://www.npr.org/podcasts/510313/how-i-built-this
+  img: how-i-built-this.jpg
+
+

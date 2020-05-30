@@ -1,0 +1,285 @@
+docs_list_title: books
+docs:
+
+- title: "Sapiens: A Brief History of Humankind"
+  author: Yuval Noah Harari
+  url: https://www.amazon.com/Voluntary-Simplicity-Toward-Outwardly-Inwardly/dp/0061779261/ref=sr_1_1?dchild=1&keywords=Duane+Elgin&qid=1590729782&sr=8-1
+  img: sapiens.jpg
+
+- title: "Voluntary Simplicity: Toward a Way of Life That Is Outwardly Simple, Inwardly Rich"
+  author: Duane Elgin
+  url: https://www.amazon.com/Voluntary-Simplicity-Toward-Outwardly-Inwardly/dp/0061779261/ref=sr_1_1?dchild=1&keywords=Duane+Elgin&qid=1590729782&sr=8-1
+  img: voluntary-simplicity.jpg
+
+- title: "Small Is Beautiful: Economics as if People Mattered"
+  author: E. F. Schumacher
+  url: https://www.amazon.com/Small-Beautiful-Economics-Mattered-Perennial/dp/0061997765/ref=sr_1_1?dchild=1&keywords=Small+Is+Beautiful&qid=1590732646&sr=8-1
+  img: small-is-beautiful.jpg
+
+- title: "Stillness Is the Key"
+  author: Ryan Holiday
+  url: https://www.amazon.com/Stillness-Key-Ryan-Holiday-ebook/dp/B07MJ3TDCZ/ref=sr_1_1?crid=190HV2O3Q7QKR&dchild=1&keywords=stillness+is+the+key+ryan+holiday&qid=1590785157&sprefix=stillne%2Caps%2C226&sr=8-1
+  img: stillnessisthekey.jpg
+
+- title: "The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph"
+  author: Ryan Holiday
+  url: hhttps://www.amazon.com/gp/product/B00G3L1B8K/ref=dbs_a_def_rwt_bibl_vppi_i1
+  img: obstacleistheway.jpg
+
+- title: "The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to Change Your Life and Achieve Real Happiness"
+  author: Ichiro Kishimi and Fumitake Koga
+  url: https://www.amazon.com/Courage-Be-Disliked-Phenomenon-Happiness-ebook/dp/B078MDSV8T/ref=sr_1_1?dchild=1&keywords=The+Courage+to+Be+Disliked%3A+The+Japanese+Phenomenon+That+Shows+You+How+to+Change+Your+Life+and+Achieve+Real+Happiness&qid=1590790141&s=digital-text&sr=1-1
+  img: couragetobedisliked.jpg
+
+- title: "Tao Te Ching"
+  author: Lao Tzu
+  url: https://www.amazon.com/Tao-Te-Ching-Lao-Tzu/dp/1690029994/ref=sr_1_1?dchild=1&keywords=Tao+Te+Ching&qid=1590784740&sr=8-1
+  img: tao-te-ching.jpg
+
+- title: "Peace Is Every Breath: A Practice for Our Busy Lives"
+  author: Thich Nhat Hanh
+  url: https://www.amazon.com/Peace-Every-Breath-Practice-Lives-ebook/dp/B004HD61H2/ref=sr_1_1?dchild=1&keywords=Peace+Is+Every+Step&qid=1590790478&s=digital-text&sr=1-1
+  img: peaceiseverybreath.jpg
+
+- title: "The Heart of the Buddha's Teaching: Transforming Suffering into Peace, Joy, and Liberation"
+  author: Thich Nhat Hanh
+  url: https://www.amazon.com/Heart-Buddhas-Teaching-Transforming-Liberation-ebook/dp/B011G3HD6I/ref=sr_1_1?dchild=1&keywords=The+Heart+of+the+Buddha%27s+Teaching&qid=1590792295&s=digital-text&sr=1-1
+  img: heartofthebuddhasteaching.jpg
+
+- title: "The Art of Happiness"
+  author: His Holiness the Dalai Lama
+  url: https://www.amazon.com/Art-Happiness-10th-Anniversary-Handbook-ebook/dp/B002UK6NO0/ref=sr_1_1?dchild=1&keywords=The+Art+of+Happiness&qid=1590792364&s=digital-text&sr=1-1
+  img: artofhappiness.jpg
+
+- title: "The Places That Scare You: A Guide to Fearlessness in Difficult Times"
+  author: Pema Chödrön
+  url: https://www.amazon.com/Pema-Chodron-Fearlessness-Difficult-Paperback/dp/B01FOD4X1Y/ref=sr_1_3?dchild=1&keywords=The+Places+That+Scare+You&qid=1590731370&sr=8-3
+  img: places-that-scare-you.jpg
+  genre: Life
+
+- title: "Comfortable with Uncertainty: 108 Teachings on Cultivating Fearlessness and Compassion"
+  author: Pema Chödrön
+  url: https://www.amazon.com/Comfortable-Uncertainty-Cultivating-Fearlessness-Compassion/dp/1611805953/ref=sr_1_1?dchild=1&keywords=Comfortable+with+Uncertainty%3A+108+Teachings+on+Cultivating+Fearlessness+and+Compassion&qid=1590731619&sr=8-1
+  img: comfortable-with-uncertainty.jpg
+  genre: Life
+
+- title: "Thinking, Fast and Slow"
+  author: Daniel Kahneman
+  url: https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman-ebook/dp/B00555X8OA/ref=sr_1_1?dchild=1&keywords=Thinking%2C+Fast+and+Slow&qid=1590794609&s=digital-text&sr=1-1
+  img: thinkingfastandalow.jpg
+
+- title: "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing"
+  author: Marie Kondo
+  url: https://www.amazon.com/Life-Changing-Magic-Tidying-Decluttering-Organizing-ebook/dp/B00KK0PICK/ref=sr_1_1?dchild=1&keywords=The+Life-Changing+Magic+of+Tidying+Up&qid=1590794647&s=digital-text&sr=1-1
+  img: tidy-up.jpg
+
+- title: "The Effective Executive: The Definitive Guide to Getting the Right Things Done"
+  author: Peter F. Drucker
+  url: https://www.amazon.com/Effective-Executive-Definitive-Harperbusiness-Essentials-ebook/dp/B01F1WZGNC/ref=sr_1_1?dchild=1&keywords=The+Effective+Executive&qid=1590794663&s=digital-text&sr=1-1
+  img: effectiveexecutive.jpg
+
+- title: "The Open Organization: Igniting Passion and Performance"
+  author: Jim Whitehurst
+  url: https://www.amazon.com/Open-Organization-Igniting-Passion-Performance-ebook/dp/B00O92Q6CQ/ref=sr_1_1?dchild=1&keywords=open+organization&qid=1590789823&s=digital-text&sr=1-1
+  img: open-org.jpg
+
+- title: "Deep Work: Rules for Focused Success in a Distracted World"
+  author: Cal Newport
+  url: https://www.amazon.com/Deep-Work-Focused-Success-Distracted-ebook/dp/B00X47ZVXM/ref=sr_1_1?dchild=1&keywords=Deep+Work&qid=1590794688&s=digital-text&sr=1-1
+  img: deepwork.jpg
+
+- title: "Influence: The Psychology of Persuasion"
+  author: Robert B. Cialdini
+  url: https://www.amazon.com/Influence-Psychology-Persuasion-Business-Essentials-ebook/dp/B002BD2UUC/ref=sr_1_1?dchild=1&keywords=Influence&qid=1590794700&s=digital-text&sr=1-1
+  img: influence.jpg
+
+- title: "Crucial Conversations Tools for Talking When Stakes Are High"
+  author: Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler
+  url: https://www.amazon.com/Crucial-Conversations-Talking-Stakes-Second-ebook/dp/B005K0AYH4/ref=sr_1_1?dchild=1&keywords=Crucial+Conversations&qid=1590792433&s=digital-text&sr=1-1
+  img: crucialconversations.jpg
+
+- title: "Never Split the Difference: Negotiating As If Your Life Depended On It"
+  author: Chris Voss
+  url: https://www.amazon.com/Never-Split-Difference-Negotiating-Depended-ebook/dp/B014DUR7L2/ref=sr_1_1?dchild=1&keywords=Never+Split+the+Difference%3A+Negotiating+As+If+Your+Life+Depended+On+It&qid=1590794227&s=digital-text&sr=1-1
+  img: neversplitthedifference.jpg
+
+- title: "Art of War"
+  author:  Sun Tzu
+  url: https://www.amazon.com/Art-War-Sun-Tzu/dp/1599869772/ref=sr_1_1?dchild=1&keywords=Art+of+War&qid=1590784999&sr=8-1
+  img: art-of-war.jpg
+
+- title: "The 48 Laws of Power"
+  author: Ryan Holiday
+  url: https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=sr_1_14?crid=190HV2O3Q7QKR&dchild=1&keywords=stillness+is+the+key+ryan+holiday&qid=1590785337&sprefix=stillne%2Caps%2C226&sr=8-14
+  img: power.jpg
+
+- title: "On Death and Dying: What the Dying Have to Teach Doctors, Nurses, Clergy and Their Own Families"
+  author: Elisabeth Kubler-Ross
+  url: https://www.amazon.com/Death-Dying-Elisabeth-K%C3%BCbler-Ross-ebook/dp/B0053GIJFO/ref=sr_1_1?dchild=1&keywords=Death+and+Dying&qid=1590794841&s=digital-text&sr=1-1
+  img: ondeathanddying.jpg
+
+- title: "How We Die: Reflections on Life's Final Chapter"
+  author: Sherwin B. Nuland
+  url: https://www.amazon.com/How-We-Die-Reflections-Chapter-ebook/dp/B00LBAD1BI/ref=sr_1_1?dchild=1&keywords=How+We+Die&qid=1590794879&s=digital-text&sr=1-1
+  img: howwedie.jpg
+
+- title: "The Tibetan Book of Living and Dying"
+  author: Sogyal Rinpoche
+  url: https://www.amazon.com/Tibetan-Book-Living-Dying-International-ebook/dp/B000FC147G/ref=sr_1_1?dchild=1&keywords=The+Tibetan+Book+of+Living+and+Dying&qid=1590794909&s=digital-text&sr=1-1
+  img: tibetanbookoflivinganddying.jpg
+
+- title: "Silent Spring"
+  author: Rachel Carson
+  url: https://www.amazon.com/Silent-Spring-Rachel-Carson-ebook/dp/B004H1UELS/ref=sr_1_1?dchild=1&keywords=Silent+Spring&qid=1590794940&s=digital-text&sr=1-1
+  img: silentspring.jpg
+
+- title: "Natural Capitalism"
+  author: Amory B. Lovins, L. Hunter Lovins, Paul Hawken
+  url: https://www.amazon.com/Natural-Capitalism-L-Hunter-Lovins-ebook/dp/B001IMYGR2/ref=sr_1_1?dchild=1&keywords=Natural+Capitalism&qid=1590794967&s=digital-text&sr=1-1
+  img: naturalcapitalism.jpg
+
+- title: "Cradle to Cradle: Remaking the Way We Make Things"
+  author: William McDonough, Michael Braungart
+  url: https://www.amazon.com/Cradle-Remaking-Way-Make-Things-ebook/dp/B0012KS568/ref=sr_1_1?dchild=1&keywords=Cradle+to+Cradle&qid=1590795037&s=digital-text&sr=1-1
+  img: cradletocradle.jpg
+
+- title: "Flow: The Psychology of Optimal Experience"
+  author: Mihaly Csikszentmihalyi
+  url: https://www.amazon.com/Flow-Psychology-Experience-Perennial-Classics-ebook/dp/B000W94FE6/ref=sr_1_1?dchild=1&keywords=Flow%3A+The+Psychology+of+Optimal+Experience&qid=1590795195&s=digital-text&sr=1-1
+  img: flow.jpg
+
+- title: "The Design of Everyday Things"
+  author: Donald A. Norman
+  url: https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/ref=sr_1_1?dchild=1&keywords=The+Design+of+Everyday+Things&qid=1590795110&s=digital-text&sr=1-1
+  img: designofeverydaythings.jpg
+
+- title: "Visual Intelligence: Sharpen Your Perception, Change Your Life"
+  author: Amy E. Herman
+  url: https://www.amazon.com/Visual-Intelligence-Sharpen-Perception-Change-ebook/dp/B00QPHSA04/ref=sr_1_1?dchild=1&keywords=Visual+Intelligence&qid=1590795241&s=digital-text&sr=1-1
+  img: visualintelligence.jpg
+
+- title: "Whole: Rethinking the Science of Nutrition"
+  author: T. Colin Campbell
+  url: https://www.amazon.com/Whole-Rethinking-Nutrition-Colin-Campbell/dp/1939529840/ref=sr_1_2?dchild=1&keywords=Whole%3A+Rethinking+the+Science+of+Nutrition&qid=1590735391&sr=8-2
+  img: whole.jpg
+
+- title: "How Not to Die: Discover the Foods Scientifically Proven to Prevent and Reverse Disease"
+  author: Michael Greger MD and Gene Stone
+  url: https://www.amazon.com/How-Not-Die-Discover-Scientifically-ebook/dp/B00Y7USB14/ref=sr_1_1?dchild=1&keywords=How+Not+to+Die&qid=1590795298&s=digital-text&sr=1-1
+  img: hownottodie.jpg
+
+- title: "Why We Sleep: Unlocking the Power of Sleep and Dreams"
+  author: Matthew Walker
+  url: https://www.amazon.com/Why-We-Sleep-Unlocking-Dreams-ebook/dp/B06ZZ1YGJ5/ref=sr_1_1?dchild=1&keywords=Why+We+Sleep&qid=1590795272&s=digital-text&sr=1-1
+  img: whywesleep.jpg
+
+- title: "Rest: Why You Get More Done When You Work Less"
+  author: Alex Soojung-Kim Pang
+  url: https://www.amazon.com/Rest-More-Done-When-Work/dp/1541617169/ref=sr_1_1?dchild=1&keywords=Rest%3A+Why+You+Get+More+Done+When+You+Work+Less&qid=1590736044&sr=8-1
+  img: rest.jpg
+
+- title: "Autobiography of Malcolm X"
+  author: Alex Haley and Attallah Shabazz Malcolm X
+  url: https://www.amazon.com/Autobiography-Malcolm-X-MALCOLM-ebook/dp/B013ZNNX5C/ref=sr_1_1?dchild=1&keywords=Autobiography+of+Malcolm+X&qid=1590795338&s=digital-text&sr=1-1
+  img: autobiographyofmalcolmx.jpg
+
+- title: "Autobiography of a Tibetan Monk"
+  author: Palden Gyatso
+  url: https://www.amazon.com/Autobiography-Tibetan-Monk-Palden-Gyatso-ebook/dp/B019M8KEQA/ref=sr_1_1?dchild=1&keywords=Autobiography+of+a+Tibetan+Monk&qid=1590795449&s=digital-text&sr=1-1
+  img: autobiographyofatibetanmonk.jpg
+
+- title: "My Land and My People: The Original Autobiography of His Holiness the Dalai Lama of Tibet"
+  author: His Holiness the Dalai Lama
+  url: https://www.amazon.com/My-Land-People-Original-Autobiography-ebook/dp/B001N2ZX2Y/ref=sr_1_1?dchild=1&keywords=My+Land+and+My+People&qid=1590795484&s=digital-text&sr=1-1
+  img: mylandmypeople.jpg
+
+- title: "An Autobiography or The Story of My Experiments with Truth"
+  author: M. K. Gandhi
+  url: https://www.amazon.com/Autobiography-Story-My-Experiments-Truth-ebook/dp/B074T6P9YK/ref=sr_1_1?dchild=1&keywords=An+Autobiography+or+The+Story+of+My+Experiments+with&qid=1590795526&s=digital-text&sr=1-1
+  img: anautobiography.jpg
+
+- title: "Long Walk to Freedom: The Autobiography of Nelson Mandela"
+  author: Nelson Mandela
+  url: https://www.amazon.com/Long-Walk-Freedom-Autobiography-Mandela-ebook/dp/B0015T6G2G/ref=sr_1_1?dchild=1&keywords=Long+Walk+to+Freedom&qid=1590795587&s=digital-text&sr=1-1
+  img: longwalktofreedom.jpg
+
+- title: "My Cross to Bear"
+  author: Gregg Allman
+  url: https://www.amazon.com/My-Cross-Bear-Gregg-Allman-ebook/dp/B005O078LK/ref=sr_1_1?crid=ZSAL8CZ2L071&dchild=1&keywords=my+cross+to+bear&qid=1590796354&s=digital-text&sprefix=my+cross+to+%2Cdigital-text%2C271&sr=1-1
+  img: mycrosstobear.jpg
+
+
+- title: "Is That It?"
+  author: Bob Geldof
+  url: https://www.amazon.com/That-Bob-Geldof/dp/1555841155/ref=sr_1_1?dchild=1&keywords=Is+That+It+geldoff&qid=1590795392&s=digital-text&sr=1-1
+  img: isthatit.jpg
+
+- title: "A Heartbreaking Work Of Staggering Genius: A Memoir Based on a True Story"
+  author: Dave Eggers
+  url: https://www.amazon.com/Heartbreaking-Work-Staggering-Genius-Memoir-ebook/dp/B00B91FU6S/ref=sr_1_1?dchild=1&keywords=A+Heartbreaking+Work+Of+Staggering+Genius&qid=1590795631&s=digital-text&sr=1-1
+  img: heartbreakingworkofstaggeringgenius.jpg
+
+- title: "Ishmael: A Novel"
+  author: Daniel Quinn
+  url: https://www.amazon.com/Ishmael-Novel-Book-1-ebook/dp/B000SEFH6A/ref=sr_1_1?dchild=1&keywords=Ishmael&qid=1590795662&s=digital-text&sr=1-1
+  img: ishmael.jpg
+
+- title: "Song of Solomon"
+  author: Toni Morrison
+  url: https://www.amazon.com/Song-Solomon-Vintage-International-Morrison-ebook/dp/B000RMT40I/ref=sr_1_1?dchild=1&keywords=Song+of+Solomon&qid=1590795710&s=digital-text&sr=1-1
+  img: songofsolomon.jpg
+
+- title: "The Alchemist"
+  author: Paulo Coelho
+  url: https://www.amazon.com/Alchemist-Paulo-Coelho-ebook/dp/B00U6SFUSS/ref=sr_1_1?dchild=1&keywords=The+Alchemist&qid=1590795737&s=digital-text&sr=1-1
+  img: thealchemist.jpg
+
+- title: "Siddartha"
+  author: Hermann Hesse
+  url: https://www.amazon.com/Siddhartha-Hermann-Hesse-ebook/dp/B07H985NSK/ref=sr_1_2?dchild=1&keywords=Siddartha&qid=1590795761&s=digital-text&sr=1-2
+  img: siddhartha.jpg
+
+- title: "God of Small Things"
+  author: Arundhati Roy
+  url: https://www.amazon.com/God-Small-Things-Novel-ebook/dp/B001NBEWN6/ref=sr_1_1?dchild=1&keywords=God+of+Small+Things&qid=1590795791&s=digital-text&sr=1-1
+  img: godofsmallthings.jpg
+
+- title: "Things Fall Apart"
+  author: Chinua Achebe
+  url: https://www.amazon.com/Things-Fall-Apart-African-Trilogy-ebook/dp/B004478AS4/ref=sr_1_1?dchild=1&keywords=Things+Fall+Apart&qid=1590795845&s=digital-text&sr=1-1
+  img: thingsfallapart.jpg
+
+- title: "I Know Why the Caged Bird Sings"
+  author: Maya Angelou
+  url: https://www.amazon.com/Know-Why-Caged-Bird-Sings-ebook/dp/B0026LTNFO/ref=sr_1_1?dchild=1&keywords=I+Know+Why+the+Caged+Bird+Sings&qid=1590795895&s=digital-text&sr=1-1
+  img: iknowwhythecagedbirdsings.jpg
+
+- title: "Color Purple"
+  author: Alice Walker
+  url: https://www.amazon.com/Color-Purple-Alice-Walker-ebook/dp/B005NY4QGM/ref=sr_1_1?dchild=1&keywords=Color+Purple&qid=1590795929&s=digital-text&sr=1-1
+  img: thecolorpurple.jpg
+
+- title: "To Kill a Mockingbird"
+  author: Harper Lee
+  url: https://www.amazon.com/Kill-Mockingbird-Harperperennial-Modern-Classics-ebook/dp/B00K0OI42W/ref=sr_1_1?dchild=1&keywords=To+Kill+a+Mockingbird&qid=1590795962&s=digital-text&sr=1-1
+  img: tokillamockingbird.jpg
+
+- title: "As I Lay Dying"
+  author: William Faulkner
+  url: https://www.amazon.com/As-Lay-Dying-Vintage-International-ebook/dp/B004JHYRMW/ref=sr_1_1?dchild=1&keywords=asi+lay+dying&qid=1590796003&s=digital-text&sr=1-1
+  img: asilaydying.jpg
+
+- title: "The Sound and the Fury"
+  author: William Faulkner
+  url: https://www.amazon.com/Sound-Fury-Vintage-International-ebook/dp/B004JHYRT0/ref=sr_1_1?dchild=1&keywords=The+Sound+and+the+Fury&qid=1590796051&s=digital-text&sr=1-1
+  img: soundandthefury.jpg
+
+- title: "What Is the What"
+  author: Dave Eggers
+  url: https://www.amazon.com/What-Dave-Eggers-ebook/dp/B000YT1RPE/ref=sr_1_1?dchild=1&keywords=What+Is+the+What&qid=1590796090&s=digital-text&sr=1-1
+  img: whatisthewhat.jpg
+
+- title: "The Circle"
+  author: Dave Eggers
+  url: https://www.amazon.com/Circle-Dave-Eggers-ebook/dp/B00EGMQIJ0/ref=sr_1_1?dchild=1&keywords=The+Circle&qid=1590796113&s=digital-text&sr=1-1
+  img: thecircle.jpg
