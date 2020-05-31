@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Namaste.
+title: Hello.
 description:
 lead:
 ---

@@ -158,6 +158,21 @@ docs:
   url: https://www.amazon.com/Visual-Intelligence-Sharpen-Perception-Change-ebook/dp/B00QPHSA04/ref=sr_1_1?dchild=1&keywords=Visual+Intelligence&qid=1590795241&s=digital-text&sr=1-1
   img: visualintelligence.jpg
 
+- title: "Good Services: How to Design Services that Work"
+  author: Louise Downe
+  url: https://www.amazon.com/Good-Services-Decoding-Mystery-Service/dp/9063695438/ref=sr_1_1?crid=2A7RT6AZVGB3D&dchild=1&keywords=good+services&qid=1590937487&sprefix=good+servi%2Caps%2C225&sr=8-1
+  img: good-services.jpg
+
+- title: "This Is Service Design Doing: Applying Service Design Thinking in the Real World"
+  author: Marc Stickdorn, Markus Edgar Hormess
+  url: https://www.amazon.com/This-Service-Design-Doing-Applying/dp/1491927186/ref=sr_1_5?dchild=1&keywords=service+design&qid=1590943324&sr=8-5
+  img: thisisservicedesigndoing.jpg
+
+- title: "This Is Service Design Methods: A Companion to This Is Service Design Doing"
+  author: Marc Stickdorn, Markus Edgar Hormess
+  url: https://www.amazon.com/This-Service-Design-Methods-Companion/dp/1492039594/ref=sr_1_7?dchild=1&keywords=service+design&qid=1590943324&sr=8-7
+  img: thisisservicedesignmethods.jpg
+
 - title: "Whole: Rethinking the Science of Nutrition"
   author: T. Colin Campbell
   url: https://www.amazon.com/Whole-Rethinking-Nutrition-Colin-Campbell/dp/1939529840/ref=sr_1_2?dchild=1&keywords=Whole%3A+Rethinking+the+Science+of+Nutrition&qid=1590735391&sr=8-2
@@ -208,6 +223,15 @@ docs:
   url: https://www.amazon.com/My-Cross-Bear-Gregg-Allman-ebook/dp/B005O078LK/ref=sr_1_1?crid=ZSAL8CZ2L071&dchild=1&keywords=my+cross+to+bear&qid=1590796354&s=digital-text&sprefix=my+cross+to+%2Cdigital-text%2C271&sr=1-1
   img: mycrosstobear.jpg
 
+- title: "Steve Jobs"
+  author: Walter Isaacson
+  url: https://www.amazon.com/Steve-Jobs-Walter-Isaacson-audiobook/dp/B07ZMKXMTG/ref=sr_1_1?dchild=1&keywords=jobs+book&qid=1590937348&sr=8-1
+  img: steve-jobs.jpg
+
+- title: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future"
+  author: Ashlee Vance
+  url: https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future/dp/006230125X/ref=sr_1_1?crid=1407MZJ26HVNT&dchild=1&keywords=elon+musk+book&qid=1590937433&sprefix=elon+mus%2Caps%2C227&sr=8-1
+  img: elon-musk.jpg
 
 - title: "Is That It?"
   author: Bob Geldof
