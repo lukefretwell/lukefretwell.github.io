@@ -23,13 +23,13 @@ docs:
 
 - title: "The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph"
   author: Ryan Holiday
-  url: hhttps://www.amazon.com/gp/product/B00G3L1B8K/ref=dbs_a_def_rwt_bibl_vppi_i1
+  url: https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358/ref=sr_1_1?crid=2N2F0HX202DW8&dchild=1&keywords=obstacle+is+the+way+book&qid=1590951618&sprefix=obstac%2Caps%2C349&sr=8-1
   img: obstacleistheway.jpg
 
-- title: "The Courage to Be Disliked: The Japanese Phenomenon That Shows You How to Change Your Life and Achieve Real Happiness"
-  author: Ichiro Kishimi and Fumitake Koga
-  url: https://www.amazon.com/Courage-Be-Disliked-Phenomenon-Happiness-ebook/dp/B078MDSV8T/ref=sr_1_1?dchild=1&keywords=The+Courage+to+Be+Disliked%3A+The+Japanese+Phenomenon+That+Shows+You+How+to+Change+Your+Life+and+Achieve+Real+Happiness&qid=1590790141&s=digital-text&sr=1-1
-  img: couragetobedisliked.jpg
+- title: "The Stoic Challenge: A Philosopher's Guide to Becoming Tougher, Calmer, and More Resilient"
+  author: William B. Irvine
+  url: https://www.amazon.com/Stoic-Challenge-Philosophers-Becoming-Resilient/dp/0393652491/ref=sr_1_1?crid=A6J31N2BX60Z&dchild=1&keywords=the+stoic+challenge+by+william+b.+irvine&qid=1590951436&sprefix=the+stoic+%2Caps%2C215&sr=8-1
+  img: stoic-challenge.jpg
 
 - title: "Tao Te Ching"
   author: Lao Tzu
@@ -128,6 +128,11 @@ docs:
   url: https://www.amazon.com/Tibetan-Book-Living-Dying-International-ebook/dp/B000FC147G/ref=sr_1_1?dchild=1&keywords=The+Tibetan+Book+of+Living+and+Dying&qid=1590794909&s=digital-text&sr=1-1
   img: tibetanbookoflivinganddying.jpg
 
+- title: "No Logo"
+  author: Naomi Klein
+  url: https://www.amazon.com/No-Logo-Anniversary-Introduction-Author/dp/0312429274/ref=sr_1_1?dchild=1&keywords=no+logo&qid=1592237034&s=books&sr=1-1
+  img: no-logo.jpg
+
 - title: "Silent Spring"
   author: Rachel Carson
   url: https://www.amazon.com/Silent-Spring-Rachel-Carson-ebook/dp/B004H1UELS/ref=sr_1_1?dchild=1&keywords=Silent+Spring&qid=1590794940&s=digital-text&sr=1-1
@@ -173,6 +178,21 @@ docs:
   url: https://www.amazon.com/This-Service-Design-Methods-Companion/dp/1492039594/ref=sr_1_7?dchild=1&keywords=service+design&qid=1590943324&sr=8-7
   img: thisisservicedesignmethods.jpg
 
+- title: "Into the Wild"
+  author: Jon Krakauer
+  url: https://www.amazon.com/Into-Wild-Jon-Krakauer/dp/0385486804/ref=sr_1_5?dchild=1&keywords=krakauer&qid=1590949294&sr=8-5
+  img: into-the-wild.jpg
+
+- title: "Into Thin Air"
+  author: Jon Krakauer
+  url: https://www.amazon.com/Into-Thin-Air-Personal-Disaster/dp/0385494785/ref=sr_1_6?dchild=1&keywords=krakauer&qid=1590949294&sr=8-6
+  img: into-thin-air.jpg
+
+- title: "A Walk in the Woods: Rediscovering America on the Appalachian Trail"
+  author: Bill Bryson
+  url: https://www.amazon.com/Walk-Woods-Rediscovering-America-Appalachian/dp/0307279464/ref=pd_sbs_14_14?_encoding=UTF8&pd_rd_i=0307279464&pd_rd_r=b5793cf5-d6e8-4275-8ec2-77fd54cbe63c&pd_rd_w=DuIMI&pd_rd_wg=Z43Se&pf_rd_p=12b8d3e2-e203-4b23-a8bc-68a7d2806477&pf_rd_r=F2YF5E14YWC1Z6PWCZ4H&psc=1&refRID=F2YF5E14YWC1Z6PWCZ4H
+  img: a-walk-in-the-woods.jpg
+
 - title: "Whole: Rethinking the Science of Nutrition"
   author: T. Colin Campbell
   url: https://www.amazon.com/Whole-Rethinking-Nutrition-Colin-Campbell/dp/1939529840/ref=sr_1_2?dchild=1&keywords=Whole%3A+Rethinking+the+Science+of+Nutrition&qid=1590735391&sr=8-2
@@ -192,6 +212,21 @@ docs:
   author: Alex Soojung-Kim Pang
   url: https://www.amazon.com/Rest-More-Done-When-Work/dp/1541617169/ref=sr_1_1?dchild=1&keywords=Rest%3A+Why+You+Get+More+Done+When+You+Work+Less&qid=1590736044&sr=8-1
   img: rest.jpg
+
+- title: "Between the World and Me"
+  author: Ta-Nehisi Coates
+  url: https://www.amazon.com/Between-World-Me-Ta-Nehisi-Coates/dp/0812993543/ref=pd_sbs_14_22?_encoding=UTF8&pd_rd_i=0812993543&pd_rd_r=7734c0d6-485f-493f-8cdd-586048c77adf&pd_rd_w=1Hct3&pd_rd_wg=tD88x&pf_rd_p=12b8d3e2-e203-4b23-a8bc-68a7d2806477&pf_rd_r=3R0WH9FNSYWSX4NXXN4R&psc=1&refRID=3R0WH9FNSYWSX4NXXN4R
+  img: between-the-world-and-me.jpg
+
+- title: "Black Like Me"
+  author: John Howard Griffin
+  url: https://www.amazon.com/Black-Like-John-Howard-Griffin/dp/0451234219/ref=sr_1_1?dchild=1&keywords=black+like+me&qid=1590951748&sr=8-1
+  img: black-like-me.jpg
+
+- title: "How to Be Black"
+  author: Baratunde Thurston
+  url: https://www.amazon.com/How-Be-Black-Baratunde-Thurston-ebook/dp/B005GFPZZO/ref=sr_1_1?dchild=1&keywords=how+to+be+black&qid=1590950670&s=books&sr=1-1
+  img: how-to-be-black.jpg
 
 - title: "Autobiography of Malcolm X"
   author: Alex Haley and Attallah Shabazz Malcolm X
@@ -298,6 +333,16 @@ docs:
   url: https://www.amazon.com/Sound-Fury-Vintage-International-ebook/dp/B004JHYRT0/ref=sr_1_1?dchild=1&keywords=The+Sound+and+the+Fury&qid=1590796051&s=digital-text&sr=1-1
   img: soundandthefury.jpg
 
+- title: "The Catcher in the Rye"
+  author: J. D. Salinger
+  url: https://www.amazon.com/Catcher-Rye-J-D-Salinger/dp/0316769177/ref=pd_sbs_14_43?_encoding=UTF8&pd_rd_i=0316769177&pd_rd_r=b5793cf5-d6e8-4275-8ec2-77fd54cbe63c&pd_rd_w=DuIMI&pd_rd_wg=Z43Se&pf_rd_p=12b8d3e2-e203-4b23-a8bc-68a7d2806477&pf_rd_r=F2YF5E14YWC1Z6PWCZ4H&psc=1&refRID=F2YF5E14YWC1Z6PWCZ4H
+  img: catcher-in-the-rye.jpg
+
+- title: "Of Mice and Men"
+  author: John Steinbeck
+  url: https://www.amazon.com/Mice-Men-John-Steinbeck/dp/0140177396/ref=pd_sbs_14_4/137-4329920-7662445?_encoding=UTF8&pd_rd_i=0140177396&pd_rd_r=ff3a6dfd-c781-487e-a7cb-c168169ce0c0&pd_rd_w=b8CBP&pd_rd_wg=yWnIS&pf_rd_p=12b8d3e2-e203-4b23-a8bc-68a7d2806477&pf_rd_r=BQ60ZWZ21P6GM0JB4C24&psc=1&refRID=BQ60ZWZ21P6GM0JB4C24
+  img: of-mice-and-men.jpg
+
 - title: "What Is the What"
   author: Dave Eggers
   url: https://www.amazon.com/What-Dave-Eggers-ebook/dp/B000YT1RPE/ref=sr_1_1?dchild=1&keywords=What+Is+the+What&qid=1590796090&s=digital-text&sr=1-1
@@ -307,3 +352,19 @@ docs:
   author: Dave Eggers
   url: https://www.amazon.com/Circle-Dave-Eggers-ebook/dp/B00EGMQIJ0/ref=sr_1_1?dchild=1&keywords=The+Circle&qid=1590796113&s=digital-text&sr=1-1
   img: thecircle.jpg
+
+- title: "Life of Pi"
+  author: Yann Martel
+  url: https://www.amazon.com/Life-Pi-Yann-Martel/dp/0156027321/ref=pd_sbs_14_44?_encoding=UTF8&pd_rd_i=0156027321&pd_rd_r=b5793cf5-d6e8-4275-8ec2-77fd54cbe63c&pd_rd_w=DuIMI&pd_rd_wg=Z43Se&pf_rd_p=12b8d3e2-e203-4b23-a8bc-68a7d2806477&pf_rd_r=F2YF5E14YWC1Z6PWCZ4H&psc=1&refRID=F2YF5E14YWC1Z6PWCZ4H
+  img: life-of-pi.jpg
+
+- title: "The Road"
+  author: Cormac McCarthy
+  url: https://www.amazon.com/Road-Cormac-McCarthy/dp/0307387895/ref=pd_sbs_14_42?_encoding=UTF8&pd_rd_i=0307387895&pd_rd_r=b5793cf5-d6e8-4275-8ec2-77fd54cbe63c&pd_rd_w=DuIMI&pd_rd_wg=Z43Se&pf_rd_p=12b8d3e2-e203-4b23-a8bc-68a7d2806477&pf_rd_r=F2YF5E14YWC1Z6PWCZ4H&psc=1&refRID=F2YF5E14YWC1Z6PWCZ4H
+  img: the-road.jpg
+
+- title: "A Time to Kill"
+  author: John Grisham
+  url: https://www.amazon.com/Time-Kill-Novel-Jake-Brigance-ebook/dp/B003B02O0A/ref=sr_1_1?crid=3FWQRXBX9YJZR&dchild=1&keywords=a+time+to+kill+john+grisham&qid=1590951197&s=digital-text&sprefix=a+time%2Cdigital-text%2C235&sr=1-1
+  img: a-time-to-kill.jpg
+
