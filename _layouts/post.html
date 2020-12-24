@@ -4,20 +4,6 @@ layout: post
 {% include header.html %}
 {% include nav.html %}
 <main>
-    <!--
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="display-4">{{ page.title }}</h1>
-                    {% if page.description %}
-                    <p class="lead">{{ page.description }}</p>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-    </div>
--->
     <div class="container post">
         <div class="row">
             <div class="col-md-2">
@@ -28,7 +14,7 @@ layout: post
                 <p class="lead">{{ page.excerpt }}</p>
                 {% endif %}
                 {% for author in site.authors %}
-                <p class="text-muted"><a href="{{ author.url }}"><img src="{{ site.url }}/img/people/{{ author.avatar }}" alt="{{ author.name }}" title="{{ author.name }}" class="avatar"></a> {{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
+                <p class="text-muted"><a href="{{ author.url }}"><img src="{{ site.baseurl }}/img/people/{{ author.avatar }}" alt="{{ author.name }}" title="{{ author.name }}" class="avatar"></a> {{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
             </div>
             <div class="col-md-2">
             </div>
@@ -48,34 +34,34 @@ layout: post
                     {{ content | markdownify }}
                 </div>
                 <div class="profile">
-                    <h2 class="h4">About {{ author.name }}</h2>
+                    <h2>About {{ author.name }}</h2>
+                    {{ author.content | markdownify }}
                     <p class="profile-social">
                         {% if author.email %}
-                        <a href="mailto:{{ author.email }}"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:{{ author.email }}"><i class="fas fa-envelope fa-lg"></i></a>
                         {% endif %}
                         {% if author.website %}
-                        <a href="{{ author.website }}"><i class="fas fa-laptop"></i></a>
+                        <a href="{{ author.website }}"><i class="fas fa-laptop fa-lg"></i></a>
                         {% endif %}
                         {% if author.github_username %}
-                        <a href="https://github.com/{{ author.github_username }}"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/{{ author.github_username }}"><i class="fab fa-github fa-lg"></i></a>
                         {% endif %}
                         {% if author.twitter_username %}
-                        <a href="https://twitter.com/{{ author.twitter_username }}"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/{{ author.twitter_username }}"><i class="fab fa-twitter fa-lg"></i></a>
                         {% endif %}
                         {% if author.linkedin_link %}
-                        <a href="{{ author.linkedin_link }}"><i class="fab fa-linkedin"></i></a>
+                        <a href="{{ author.linkedin_link }}"><i class="fab fa-linkedin fa-lg"></i></a>
                         {% endif %}
                         {% if author.instagram_username %}
-                        <a href="https://instagram.com/{{ author.instagram_username }}"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/{{ author.instagram_username }}"><i class="fab fa-instagram fa-lg"></i></a>
                         {% endif %}
                         {% if author.flickr_link %}
-                        <a href="{{ author.flickr_link }}"><i class="fab fa-flickr"></i></a>
+                        <a href="{{ author.flickr_link }}"><i class="fab fa-flickr fa-lg"></i></a>
                         {% endif %}
                         {% if author.rss_link %}
-                        <a href="{{ author.rss_link }}"><i class="fas fa-rss"></i></a>
+                        <a href="{{ author.rss_link }}"><i class="fas fa-rss fa-lg"></i></a>
                         {% endif %}
                     </p>
-                    {{ author.content | markdownify }}
                 </div>
                 {% endfor %}
                 {% include comments.html %}
@@ -93,7 +79,7 @@ layout: post
                     <div class="card">
                         <div class="card-body">
                             {% if post.feat-img %}
-                            <a href="{{ post.url }}"><img class="card-img-top" src="{{ site.url }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}"></a>
+                            <a href="{{ post.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}"></a>
                             {% endif %}
                             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                             <p><small class="text-muted">{{ post.date | date: "%B, %-d %Y"}}</small></p>

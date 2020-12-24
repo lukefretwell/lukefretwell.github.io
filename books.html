@@ -9,7 +9,7 @@ permalink: /books/
     {% for item in site.data.books.docs %}
     <div class="card">
         <div class="card-body">
-            <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.url }}/img/books/{{ item.img }}" alt="{{ item.title }}"></a>
+            <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/books/{{ item.img }}" alt="{{ item.title }}"></a>
             <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
             <p><small class="text-muted">{{ item.author }}</small></p>
             <p class="card-text">{{ item.excerpt }}</p>

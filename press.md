@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: press
 title: Press
 permalink: /press/
 ---

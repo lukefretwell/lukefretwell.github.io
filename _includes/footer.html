@@ -3,13 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Connect</h2>
                     <p>
                         {% if site.email %}
                         <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
-                        {% endif %}
-                        {% if site.github_username %}
-                        <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
                         {% endif %}
                         {% if site.twitter_username %}
                         <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
@@ -20,7 +16,10 @@
                         {% if site.facebook_link %}
                         <a href="{{ site.facebook_link }}"><i class="fab fa-facebook"></i></a>
                         {% endif %}
-                        {% if site.instagram %}
+                        {% if site.github_username %}
+                        <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
+                        {% endif %}
+                        {% if site.instagram_username %}
                         <a href="https://instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a>
                         {% endif %}
                         {% if site.flickr_link %}

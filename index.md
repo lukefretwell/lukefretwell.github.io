@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Hello.
+title: Welcome.
 description:
 lead:
 ---

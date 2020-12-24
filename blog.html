@@ -9,7 +9,7 @@ permalink: /blog/
     <div class="card">
         <div class="card-body">
             {% if post.feat-img %}
-            <a href="{{ post.url }}"><img class="card-img-top" src="{{ site.url }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}"></a>
+            <a href="{{ post.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}"></a>
             {% endif %}
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p><small class="text-muted">{{ post.date | date: "%B, %-d %Y"}}</small></p>

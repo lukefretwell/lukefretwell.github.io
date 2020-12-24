@@ -10,30 +10,30 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="{{ page.description }}">
     <meta name="author" content="{{ site.name }}">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.url }}/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.url }}/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="{{ site.url }}/img/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/img/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ site.url }}/img/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Social media post -->
-    <meta property="og:image" content="{{ site.url }}/img/avatar.png">
+    <meta property="og:image" content="{{ site.baseurl }}/img/avatar.png">
     <meta property="og:image:height" content="630">
     <meta property="og:image:width" content="630">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
     <title>{{ page.title }} - {{ site.title }}</title>
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -42,10 +42,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
-    <link href="{{site.url}}/css/style.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
     </script>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;700;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -56,11 +57,3 @@
 </head>
 
 <body>
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-    <script>
-    addBackToTop({
-        diameter: 56,
-        backgroundColor: '#944584',
-        textColor: '#fff'
-    })
-    </script>
