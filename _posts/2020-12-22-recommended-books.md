@@ -7,7 +7,7 @@ date:   2020-12-21 21:11:27 -0700
 categories: books
 comments: true
 feat-img: books.png
-feat-img-alt: California poppy
+feat-img-alt: Books
 
 ---
 

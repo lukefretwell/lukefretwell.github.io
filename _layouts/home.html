@@ -43,22 +43,26 @@ layout: home
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                    <h2>Press</h2>
-                    <ul>
-                    {% for item in site.data.press.docs limit:5  %}
-                        <li><a href="{{ item.url }}">{{ item.title }}</a>, <em>{{ item.source }}</em></li>
+                <h2>Press</h2>
+                <ul>
+                    {% for item in site.data.press.docs limit:5 %}
+                    <li><a href="{{ item.url }}">{{ item.title }}</a>, <em>{{ item.source }}</em></li>
                     {% endfor %}
-                    </ul>
-                    <p><a href="/press/" class="btn btn-primary">Press</a></p>
+                </ul>
             </div>
         </div>
-    </div> 
+        <div class="row">
+            <div class="col-md-12">
+                <p><a href="/press/" class="btn btn-primary">Press</a></p>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2>Blog</h2>
+                <h2>Posts</h2>
                 <div class="card-deck">
-                    {% for post in site.posts limit:2 %}
+                    {% for post in site.posts limit:3 %}
                     <div class="card">
                         <div class="card-body">
                             {% if post.feat-img %}
@@ -71,10 +75,14 @@ layout: home
                     </div>
                     {% endfor %}
                 </div>
-                <p><a href="/blog/" class="btn btn-primary">Blog</a></p>
             </div>
         </div>
-    </div>   
+        <div class="row">
+            <div class="col-md-12">
+                <p><a href="/posts/" class="btn btn-primary">Posts</a></p>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -87,7 +95,6 @@ layout: home
             </div>
         </div>
     </div>
-
     <!--
     <div class="container">
         <h2>Work</h2>

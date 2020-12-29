@@ -7,8 +7,11 @@ docs:
 - title: Press
   url: /press/
 
-- title: Blog
-  url: /blog/
+- title: Presentations
+  url: /presentations/
+
+- title: Posts
+  url: /posts/
 
 - title: Connect
   url: /connect/

@@ -52,12 +52,15 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: blog/:title
+      permalink: post/:title
 
 collections:
   authors:
     output: true
-
+  pages:
+    output: true
+    permalink: :title
+    
 # Disqus
 disqus_shortname: lukefretwell
 

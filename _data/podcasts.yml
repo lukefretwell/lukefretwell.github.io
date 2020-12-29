@@ -1,13 +1,13 @@
 docs_list_title: podcasts
 docs:
 
+- title: The Government We Need
+  url: https://www.thegovweneed.com
+  img: thegovweneed.png
+
 - title: The Rich Roll Podcast
   url: https://www.richroll.com/category/podcast/
   img: rich-roll.jpg
-
-- title: The Daily Stoic
-  url: https://dailystoic.com/podcast/
-  img: daily-stoic.jpg
 
 - title: 99% Invisible
   url: https://99percentinvisible.org/

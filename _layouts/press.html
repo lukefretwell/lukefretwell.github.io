@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: wrapper
 ---
 <ul>
-    {% for item in site.data.press.docs limit:5 %}
+    {% for item in site.data.press.docs %}
     <li><a href="{{ item.url }}">{{ item.title }}</a>, <em>{{ item.source }}</em>, {{ item.date }}</li>
     {% endfor %}
 </ul>
