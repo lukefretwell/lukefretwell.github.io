@@ -1,6 +1,7 @@
 ---
 short_name: lukefrewell
 name: Luke Fretwell
+firstname: Luke
 email: luke@lukefretwell.com
 website: https://lukefretwell.com
 avatar: luke-fretwell.jpg

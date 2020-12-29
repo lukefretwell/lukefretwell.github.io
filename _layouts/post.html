@@ -14,7 +14,7 @@ layout: post
                 <p class="lead">{{ page.excerpt }}</p>
                 {% endif %}
                 {% for author in site.authors %}
-                <p class="text-muted"><a href="{{ author.url }}"><img src="{{ site.baseurl }}/img/people/{{ author.avatar }}" alt="{{ author.name }}" title="{{ author.name }}" class="avatar"></a> {{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
+                <p class="text-muted"><img src="{{ site.baseurl }}/img/people/{{ author.avatar }}" alt="{{ author.name }}" title="{{ author.name }}" class="avatar"> {{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
             </div>
             <div class="col-md-2">
             </div>
@@ -36,30 +36,31 @@ layout: post
                 <div class="profile">
                     <h2>About {{ author.name }}</h2>
                     {{ author.content | markdownify }}
+                    <h3>Connect with {{ author.firstname }}</h3>
                     <p class="profile-social">
                         {% if author.email %}
-                        <a href="mailto:{{ author.email }}"><i class="fas fa-envelope fa-lg"></i></a>
+                        <a href="mailto:{{ author.email }}"><i class="fas fa-envelope fa-2x"></i></a>
                         {% endif %}
                         {% if author.website %}
-                        <a href="{{ author.website }}"><i class="fas fa-laptop fa-lg"></i></a>
+                        <a href="{{ author.website }}"><i class="fas fa-laptop fa-2x"></i></a>
                         {% endif %}
                         {% if author.github_username %}
-                        <a href="https://github.com/{{ author.github_username }}"><i class="fab fa-github fa-lg"></i></a>
+                        <a href="https://github.com/{{ author.github_username }}"><i class="fab fa-github fa-2x"></i></a>
                         {% endif %}
                         {% if author.twitter_username %}
-                        <a href="https://twitter.com/{{ author.twitter_username }}"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://twitter.com/{{ author.twitter_username }}"><i class="fab fa-twitter fa-2x"></i></a>
                         {% endif %}
                         {% if author.linkedin_link %}
-                        <a href="{{ author.linkedin_link }}"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="{{ author.linkedin_link }}"><i class="fab fa-linkedin fa-2x"></i></a>
                         {% endif %}
                         {% if author.instagram_username %}
-                        <a href="https://instagram.com/{{ author.instagram_username }}"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://instagram.com/{{ author.instagram_username }}"><i class="fab fa-instagram fa-2x"></i></a>
                         {% endif %}
                         {% if author.flickr_link %}
-                        <a href="{{ author.flickr_link }}"><i class="fab fa-flickr fa-lg"></i></a>
+                        <a href="{{ author.flickr_link }}"><i class="fab fa-flickr fa-2x"></i></a>
                         {% endif %}
                         {% if author.rss_link %}
-                        <a href="{{ author.rss_link }}"><i class="fas fa-rss fa-lg"></i></a>
+                        <a href="{{ author.rss_link }}"><i class="fas fa-rss fa-2x"></i></a>
                         {% endif %}
                     </p>
                 </div>

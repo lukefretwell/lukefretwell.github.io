@@ -16,7 +16,7 @@ layout: home
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container section">
         <div class="row">
             <div class="col-md-12">
                 <h2>About</h2>
@@ -26,11 +26,11 @@ layout: home
             <div class="col-md-3">
                 {% for item in site.data.profile.docs %}
                 {% if item.img %}
-                <a href="{{ item.url }}"><img src="{{ site.baseurl }}/img/people/{{ item.img }}" alt="{{ item.title }}"></a>
+                <a href="{{ item.url }}"><img src="{{ site.baseurl }}/img/people/{{ item.img }}" alt="{{ item.title }}" class="profile-home"></a>
                 {% endif %}
             </div>
             <div class="col-md-9">
-                <p>{{ item.description }}</p>
+                <p>{{ item.description | markdownify }}</p>
             </div>
         </div>
         <div class="row">
@@ -40,7 +40,7 @@ layout: home
         </div>
         {% endfor %}
     </div>
-    <div class="container">
+    <div class="container section">
         <div class="row">
             <div class="col-md-12">
                 <h2>Press</h2>
@@ -57,7 +57,7 @@ layout: home
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container section">
         <div class="row">
             <div class="col-md-12">
                 <h2>Posts</h2>
