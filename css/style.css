@@ -236,6 +236,9 @@ img.profile-home {
     padding-top: 2rem;
 }
 
+.footer p {
+    font-size: 1rem;
+}
 .footer a,
 .footer a:visited,
 .footer {
