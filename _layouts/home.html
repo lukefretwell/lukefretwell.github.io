@@ -7,7 +7,7 @@ layout: home
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-sm-12">
                     <h1 class="display-4">{{ page.title }}</h1>
                     {% if page.excerpt %}
                     <p class="lead">{{ page.excerpt }}</p>
@@ -18,23 +18,23 @@ layout: home
     </div>
     <div class="container section">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <h2>About</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-sm-3">
                 {% for item in site.data.profile.docs %}
                 {% if item.img %}
                 <a href="{{ item.url }}"><img src="{{ site.baseurl }}/img/people/{{ item.img }}" alt="{{ item.title }}" class="profile-home"></a>
                 {% endif %}
             </div>
-            <div class="col-md-9">
+            <div class="col-sm-9">
                 <p>{{ item.description | markdownify }}</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <p><a href="{{ item.url }}" class="btn btn-primary">About {{ item.firstname }}</a></p>
             </div>
         </div>
@@ -42,7 +42,7 @@ layout: home
     </div>
     <div class="container section">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <h2>Press</h2>
                 <ul>
                     {% for item in site.data.press.docs limit:5 %}
@@ -52,14 +52,14 @@ layout: home
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <p><a href="/press/" class="btn btn-primary">Press</a></p>
             </div>
         </div>
     </div>
     <div class="container section">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <h2>Posts</h2>
                 <div class="card-deck">
                     {% for post in site.posts limit:3 %}
@@ -78,19 +78,19 @@ layout: home
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <p><a href="/posts/" class="btn btn-primary">Posts</a></p>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <h2>Connect</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 {% include connect.html %}
             </div>
         </div>
@@ -113,7 +113,7 @@ layout: home
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <section>
                     <h2>Books</h2>
                     <p>Recommended reading.</p>
@@ -136,7 +136,7 @@ layout: home
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-sm-12">
                 <h2>Podcasts</h2>
                 <p>Recommended listening.</p>
                 <div class="card-deck books">

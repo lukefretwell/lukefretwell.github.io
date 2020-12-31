@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-md-auto">
+            <div class="navbar-nav ml-sm-auto">
                 {% for item in site.data.nav.docs %}
                 <a class="nav-item nav-link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
                 {% endfor %}
