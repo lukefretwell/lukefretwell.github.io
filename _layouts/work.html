@@ -1,0 +1,38 @@
+---
+layout: work
+---
+{% include header.html %}
+{% include nav.html %}
+<main>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="display-4">{{ page.title }}</h1>
+                    {% if page.excerpt %}
+                    <p class="lead">{{ page.excerpt }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card-deck books">
+                    {% for item in site.data.work.docs %}
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }}"></a>
+                            <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% include anchor_links.html %}
+{% include analytics.html %}
+{% include footer.html %}

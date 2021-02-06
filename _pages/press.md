@@ -1,7 +1,8 @@
 ---
 layout: press
 title: Press
-description: Luke Fretwell press.
+description: Luke writings, news mentions.
+excerpt: Luke writings, news mentions.
 permalink: /press/
 ---
 

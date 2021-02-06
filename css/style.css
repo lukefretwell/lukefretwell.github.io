@@ -39,12 +39,15 @@ h2 {
     font-size: 2.5rem;
 }
 
-.navbar-brand {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    color: #000000;
-    letter-spacing: -.02em;
-    font-weight: 300;
+em {
+    font-family: 'Lora', serif;
+}
+
+p.lead {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-style: italic;
+
 }
 
 /* Section */
@@ -95,6 +98,14 @@ main li {
 }
 
 /* Navbar */
+
+.navbar-brand {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    color: #000000;
+    letter-spacing: -.02em;
+    font-weight: 300;
+}
 
 .navbar {
     border-radius: 0;
@@ -239,6 +250,7 @@ img.profile-home {
 .footer p {
     font-size: 1rem;
 }
+
 .footer a,
 .footer a:visited,
 .footer {
