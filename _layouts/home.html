@@ -57,6 +57,20 @@ layout: home
             </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Work</h2>
+        <div class="card-deck books">
+            {% for item in site.data.work.docs %}
+            <div class="card">
+                <div class="card-body">
+                    <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }}"></a>
+                    <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <p><a href="/work/" class="btn btn btn-primary">Work</a></p>
+    </div>
     <div class="container section">
         <div class="row">
             <div class="col-sm-12">
@@ -83,80 +97,5 @@ layout: home
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Connect</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                {% include connect.html %}
-            </div>
-        </div>
-    </div>
-    <!--
-    <div class="container">
-        <h2>Work</h2>
-        <div class="card-deck books">
-            {% for item in site.data.work.docs %}
-            <div class="card">
-                <div class="card-body">
-                    <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }}"></a>
-                    <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <p><a href="/work/" class="btn btn-outline-secondary">Work</a></p>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <section>
-                    <h2>Books</h2>
-                    <p>Recommended reading.</p>
-                    <div class="card-deck books">
-                        {% for item in site.data.books.docs limit:4 %}
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/books/{{ item.img }}" alt="{{ item.title }}"></a>
-                                <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
-                                <p><small class="text-muted">{{ item.author }}</small></p>
-                                <p class="card-text">{{ item.excerpt }}</p>
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <p><a href="/books/" class="btn btn-outline-secondary">Books</a></p>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Podcasts</h2>
-                <p>Recommended listening.</p>
-                <div class="card-deck books">
-                    {% for item in site.data.podcasts.docs limit:4 %}
-                    <div class="card">
-                        <div class="card-body">
-                            <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/podcasts/{{ item.img }}" alt="{{ item.title }}"></a>
-                            <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
-                            <p><small class="text-muted">{{ item.author }}</small></p>
-                            <p class="card-text">{{ item.excerpt }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                <p><a href="/podcasts/" class="btn btn-outline-secondary">Podcasts</a></p>
-            </div>
-        </div>
-    </div>
-</main>
--->
-    {% include anchor_links.html %}
     {% include analytics.html %}
     {% include footer.html %}
