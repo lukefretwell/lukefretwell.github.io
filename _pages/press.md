@@ -1,8 +1,8 @@
 ---
 layout: press
 title: Press
-description: Luke writings, news mentions.
-excerpt: Luke writings, news mentions.
+description: Writings and news mentions.
+excerpt: Writings and news mentions.
 permalink: /press/
 ---
 

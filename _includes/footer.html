@@ -5,28 +5,28 @@
                 <div class="col-sm-12">
                     <p>
                         {% if site.email %}
-                        <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+                        <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
                         {% endif %}
                         {% if site.twitter_username %}
-                        <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
                         {% endif %}
                         {% if site.linkedin_link %}
-                        <a href="{{ site.linkedin_link }}"><i class="fab fa-linkedin"></i></a>
+                        <a href="{{ site.linkedin_link }}" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
                         {% endif %}
                         {% if site.facebook_link %}
-                        <a href="{{ site.facebook_link }}"><i class="fab fa-facebook"></i></a>
+                        <a href="{{ site.facebook_link }}" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
                         {% endif %}
                         {% if site.github_username %}
-                        <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
                         {% endif %}
                         {% if site.instagram_username %}
-                        <a href="https://instagram.com/{{ site.instagram_username }}"><i class="fab fa-instagram"></i></a>
+                        <a href="https://instagram.com/{{ site.instagram_username }}" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
                         {% endif %}
                         {% if site.flickr_link %}
-                        <a href="{{ site.flickr_link }}"><i class="fab fa-flickr"></i></a>
+                        <a href="{{ site.flickr_link }}" aria-label="Flickr"><i class="fab fa-flickr fa-lg"></i></a>
                         {% endif %}
                         {% if site.rss_link %}
-                        <a href="{{ site.rss_link }}"><i class="fas fa-rss"></i></a>
+                        <a href="{{ site.rss_link }}" aria-label="RSS"><i class="fas fa-rss fa-lg"></i></a>
                         {% endif %}
                     </p>
                 </div>

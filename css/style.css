@@ -28,8 +28,8 @@ h6,
 .display-5,
 .display-6 {
     font-family: 'Public Sans', sans-serif;
-    font-weight: 700;
     color: #000000;
+    font-weight: 700;
     letter-spacing: -.03em;
     padding-top: 1.5rem;
     padding-bottom: .5rem;
@@ -45,9 +45,8 @@ em {
 
 p.lead {
     font-family: 'Lora', serif;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-style: italic;
-
 }
 
 /* Section */
@@ -84,6 +83,7 @@ main a:hover {
 main p,
 main li {
     font-size: 1.2rem;
+    font-family: 'Lora', serif;
 }
 
 .post-main p,
@@ -101,10 +101,9 @@ main li {
 
 .navbar-brand {
     font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
     color: #000000;
-    letter-spacing: -.02em;
-    font-weight: 300;
+    font-weight: 700;
+    letter-spacing: -.03em;
 }
 
 .navbar {
@@ -192,6 +191,8 @@ a.btn-primary:visited {
     padding: .75rem;
     text-decoration: none;
     text-align: center;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
 }
 
 a.btn-primary:hover {
@@ -224,6 +225,7 @@ img.profile-home {
 .profile p,
 .profile li {
     font-size: 1.1rem;
+    font-style: italic;
 }
 
 .profile-social {
@@ -270,6 +272,5 @@ img.profile-home {
 .footer .fas,
 .footer .fab {
     color: #000000;
-    font-size: 1.5rem;
     margin: 0 1rem 0 0;
 }

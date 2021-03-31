@@ -9,8 +9,8 @@ layout: home
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="display-4">{{ page.title }}</h1>
-                    {% if page.excerpt %}
-                    <p class="lead">{{ page.excerpt }}</p>
+                    {% if page.lead %}
+                    <p class="lead">{{ page.lead }}</p>
                     {% endif %}
                 </div>
             </div>
@@ -26,7 +26,7 @@ layout: home
             <div class="col-sm-3">
                 {% for item in site.data.profile.docs %}
                 {% if item.img %}
-                <a href="{{ item.url }}"><img src="{{ site.baseurl }}/img/people/{{ item.img }}" alt="{{ item.title }}" class="profile-home"></a>
+                <a href="{{ item.url }}"><img src="{{ site.baseurl }}/img/people/{{ item.img }}" alt="{{ item.name }}" class="profile-home"></a>
                 {% endif %}
             </div>
             <div class="col-sm-9">
@@ -63,8 +63,10 @@ layout: home
             {% for item in site.data.work.docs %}
             <div class="card">
                 <div class="card-body">
-                    <a href="{{ item.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }}"></a>
-                    <h5 class="h5"><a href="{{ item.url }}">{{ item.title }}</a></h5>
+                    <a href="{{ item.url }}" class="stretched-link">
+                        <img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }} logo">
+                        <h3 class="h5">{{ item.title }}</h3>
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -80,9 +82,11 @@ layout: home
                     <div class="card">
                         <div class="card-body">
                             {% if post.feat-img %}
-                            <a href="{{ post.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}"></a>
-                            {% endif %}
-                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <a href="{{ post.url }}">
+                                <img class="card-img-top" src="{{ site.baseurl }}/img/posts/{{ post.feat-img }}" alt="">
+                                {% endif %}
+                                <h3>{{ post.title }}</h3>
+                            </a>
                             <p><small class="text-muted">{{ post.date | date: "%B, %-d %Y"}}</small></p>
                             <p class="card-text">{{ post.excerpt }}</p>
                         </div>

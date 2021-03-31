@@ -2,10 +2,9 @@
 layout: default
 title: About
 description: Luke Fretwell is an entrepreneur and writer focused on civics and technology
+excerpt: Luke Fretwell is an entrepreneur and writer focused on civics and technology
 permalink: /about/
 ---
-
-Luke Fretwell is an entrepreneur and writer focused on civics and technology.
 
 ## Work
 

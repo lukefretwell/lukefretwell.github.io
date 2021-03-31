@@ -14,7 +14,7 @@ layout: post
                 <p class="lead">{{ page.excerpt }}</p>
                 {% endif %}
                 {% for author in site.authors %}
-                <p class="text-muted"><img src="{{ site.baseurl }}/img/people/{{ author.avatar }}" alt="{{ author.name }}" title="{{ author.name }}" class="avatar"> {{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
+                <p class="text-muted"><img src="{{ site.baseurl }}/img/people/{{ author.avatar }}" alt="Photo of {{ author.name }}" title="{{ author.name }}" class="avatar"> {{ author.name }} &middot; {{ page.date | date: "%B %-d, %Y" }}</p>
             </div>
             <div class="col-sm-2">
             </div>
@@ -38,29 +38,29 @@ layout: post
                     {{ author.content | markdownify }}
                     <h3>Connect with {{ author.firstname }}</h3>
                     <p class="profile-social">
-                        {% if author.email %}
-                        <a href="mailto:{{ author.email }}"><i class="fas fa-envelope fa-2x"></i></a>
+                        {% if site.email %}
+                        <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
                         {% endif %}
-                        {% if author.website %}
-                        <a href="{{ author.website }}"><i class="fas fa-laptop fa-2x"></i></a>
+                        {% if site.twitter_username %}
+                        <a href="https://twitter.com/{{ site.twitter_username }}" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
                         {% endif %}
-                        {% if author.github_username %}
-                        <a href="https://github.com/{{ author.github_username }}"><i class="fab fa-github fa-2x"></i></a>
+                        {% if site.linkedin_link %}
+                        <a href="{{ site.linkedin_link }}" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
                         {% endif %}
-                        {% if author.twitter_username %}
-                        <a href="https://twitter.com/{{ author.twitter_username }}"><i class="fab fa-twitter fa-2x"></i></a>
+                        {% if site.facebook_link %}
+                        <a href="{{ site.facebook_link }}" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
                         {% endif %}
-                        {% if author.linkedin_link %}
-                        <a href="{{ author.linkedin_link }}"><i class="fab fa-linkedin fa-2x"></i></a>
+                        {% if site.github_username %}
+                        <a href="https://github.com/{{ site.github_username }}" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
                         {% endif %}
-                        {% if author.instagram_username %}
-                        <a href="https://instagram.com/{{ author.instagram_username }}"><i class="fab fa-instagram fa-2x"></i></a>
+                        {% if site.instagram_username %}
+                        <a href="https://instagram.com/{{ site.instagram_username }}" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
                         {% endif %}
-                        {% if author.flickr_link %}
-                        <a href="{{ author.flickr_link }}"><i class="fab fa-flickr fa-2x"></i></a>
+                        {% if site.flickr_link %}
+                        <a href="{{ site.flickr_link }}" aria-label="Flickr"><i class="fab fa-flickr fa-lg"></i></a>
                         {% endif %}
-                        {% if author.rss_link %}
-                        <a href="{{ author.rss_link }}"><i class="fas fa-rss fa-2x"></i></a>
+                        {% if site.rss_link %}
+                        <a href="{{ site.rss_link }}" aria-label="RSS"><i class="fas fa-rss fa-lg"></i></a>
                         {% endif %}
                     </p>
                 </div>
@@ -80,9 +80,11 @@ layout: post
                     <div class="card">
                         <div class="card-body">
                             {% if post.feat-img %}
-                            <a href="{{ post.url }}"><img class="card-img-top" src="{{ site.baseurl }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}"></a>
-                            {% endif %}
-                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <a href="{{ post.url }}">
+                                <img class="card-img-top" src="{{ site.baseurl }}/img/posts/{{ post.feat-img }}" alt="{{ post.title }}">
+                                {% endif %}
+                                <h3>{{ post.title }}</h3>
+                            </a>
                             <p><small class="text-muted">{{ post.date | date: "%B, %-d %Y"}}</small></p>
                             <p class="card-text">{{ post.excerpt }}</p>
                         </div>

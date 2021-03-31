@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Contact
-description: Contact Luke.
+description: Contact me.
+excerpt: Contact me.
 permalink: /contact/
 ---
 
