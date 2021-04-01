@@ -11,4 +11,4 @@ feat-img-alt: Books
 
 ---
 
-Here's a list of [books](/books) I recommend.
+Here's a list of [books](/books) I recommend. Updated occasionally.

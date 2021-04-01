@@ -11,4 +11,4 @@ feat-img-alt: Podcasts
 
 ---
 
-Here's a list of [podcasts](/podcasts) I recommend.
+Here's a list of [podcasts](/podcasts) I recommend. Updated occasionally.
