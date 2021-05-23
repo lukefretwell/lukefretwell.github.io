@@ -65,6 +65,20 @@ layout: post
                     </p>
                 </div>
                 {% endfor %}
+                {% if page.categories %}
+                <h2>Categories</h2>
+                {% if post %}
+                {% assign categories = post.categories %}
+                {% else %}
+                {% assign categories = page.categories %}
+                {% endif %}
+                <ul>
+                    {% for category in categories %}
+                    <li>
+                        <a href="{{site.baseurl}}/category/{{category|slugify}}">{{ category | capitalize }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
                 {% include comments.html %}
             </div>
             <div class="col-sm-2">

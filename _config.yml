@@ -53,14 +53,31 @@ defaults:
     values:
       layout: "post"
       permalink: post/:title
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+  - scope:
+      path: ""
+      type: work
+    values:
+      layout: "works"
 
 collections:
   authors:
     output: true
+    permalink: author/:title
   pages:
     output: true
     permalink: :title
-    
+  category:
+    output: true
+    permalink: category/:title
+  work:
+    output: true
+    permalink: work/:title
+
 # Disqus
 disqus_shortname: lukefretwell
 

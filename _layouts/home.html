@@ -8,7 +8,7 @@ layout: home
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1 class="display-4">{{ page.title }}</h1>
+                    <h1 class="display-3">{{ page.title }}</h1>
                     {% if page.lead %}
                     <p class="lead">{{ page.lead }}</p>
                     {% endif %}
@@ -16,21 +16,18 @@ layout: home
             </div>
         </div>
     </div>
-    <div class="container section">
+    {% for item in site.data.profile.docs %}
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <h2>About</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
-                {% for item in site.data.profile.docs %}
-                {% if item.img %}
-                <a href="{{ item.url }}"><img src="{{ site.baseurl }}/img/people/{{ item.img }}" alt="{{ item.name }}" class="profile-home"></a>
-                {% endif %}
-            </div>
-            <div class="col-sm-9">
+            <div class="col-sm-8">
                 <p>{{ item.description | markdownify }}</p>
+            </div>
+            <div class="col-sm-4">
             </div>
         </div>
         <div class="row">
@@ -38,9 +35,9 @@ layout: home
                 <p><a href="{{ item.url }}" class="btn btn-primary">About {{ item.firstname }}</a></p>
             </div>
         </div>
-        {% endfor %}
     </div>
-    <div class="container section">
+    {% endfor %}
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <h2>Press</h2>
@@ -49,31 +46,35 @@ layout: home
                     <li><a href="{{ item.url }}">{{ item.title }}</a>, <em>{{ item.source }}</em></li>
                     {% endfor %}
                 </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
                 <p><a href="/press/" class="btn btn-primary">Press</a></p>
             </div>
         </div>
     </div>
     <div class="container">
-        <h2>Work</h2>
-        <div class="card-deck books">
-            {% for item in site.data.work.docs %}
-            <div class="card">
-                <div class="card-body">
-                    <a href="{{ item.url }}" class="stretched-link">
-                        <img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }} logo">
-                        <h3 class="h5">{{ item.title }}</h3>
-                    </a>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Work</h2>
+                <div class="card-deck books">
+                    {% for item in site.work %}
+                    <div class="card">
+                        <div class="card-body">
+                            <a href="{{ item.url }}" class="stretched-link">
+                                <img class="card-img-top" src="{{ site.baseurl }}/img/work/{{ item.img }}" alt="{{ item.title }} logo">
+                                <h3 class="h5">{{ item.title }}</h3>
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
-            {% endfor %}
         </div>
-        <p><a href="/work/" class="btn btn btn-primary">Work</a></p>
+        <div class="row">
+            <div class="col-sm-12">
+                <p><a href="/work/" class="btn btn btn-primary">Work</a></p>
+            </div>
+        </div>
     </div>
-    <div class="container section">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <h2>Posts</h2>
