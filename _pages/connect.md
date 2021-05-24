@@ -1,7 +1,7 @@
 ---
 layout: connect
 title: Connect
-description: Connect with me.
-excerpt: Connect with me.
+description: Connect with Luke.
+excerpt: Connect with Luke.
 permalink: /connect/
 ---

@@ -2,6 +2,7 @@
 layout: default
 title: Colophon
 description: Giving thanks.
+excerpt: Giving thanks.
 permalink: /colophon/
 ---
 
