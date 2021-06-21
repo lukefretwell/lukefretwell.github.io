@@ -7,7 +7,7 @@ img: civicdmv.png
 categories: [civics]
 ---
 
-CivicDMV was a community project working to re-imagine the Department of Motor Vehicles.
+CivicDMV was a community project working to re-imagine the Department of Motor Vehicles. The community effort helped inspire new thinking at California's Department of Motor Vehicles which led to a new approach to its digital strategy and implementation.
 
 ## Press
 

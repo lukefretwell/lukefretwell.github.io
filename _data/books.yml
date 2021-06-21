@@ -128,6 +128,11 @@ docs:
   url: https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197/ref=sr_1_14?crid=190HV2O3Q7QKR&dchild=1&keywords=stillness+is+the+key+ryan+holiday&qid=1590785337&sprefix=stillne%2Caps%2C226&sr=8-14
   img: power.jpg
 
+- title: "The Big Payback: The History of the Business of Hip-Hop"
+  author: Dan Charnas
+  url: https://www.amazon.com/Big-Payback-History-Business-Hip-Hop/dp/0451234782/ref=pd_sbs_5/131-8512298-6777961?pd_rd_w=tkaBa&pf_rd_p=a5925d26-9630-40f3-a011-d858608ac88b&pf_rd_r=JP4P9BCDTT3E0310WBA3&pd_rd_r=be729d89-f9bc-4165-80df-bcdee94ce898&pd_rd_wg=342vQ&pd_rd_i=0451234782&psc=1
+  img: the-big-payback.jpg
+
 - title: "On Death and Dying: What the Dying Have to Teach Doctors, Nurses, Clergy and Their Own Families"
   author: Elisabeth Kubler-Ross
   url: https://www.amazon.com/Death-Dying-Elisabeth-K%C3%BCbler-Ross-ebook/dp/B0053GIJFO/ref=sr_1_1?dchild=1&keywords=Death+and+Dying&qid=1590794841&s=digital-text&sr=1-1
@@ -397,6 +402,26 @@ docs:
   author: Dave Eggers
   url: https://www.amazon.com/Circle-Dave-Eggers-ebook/dp/B00EGMQIJ0/ref=sr_1_1?dchild=1&keywords=The+Circle&qid=1590796113&s=digital-text&sr=1-1
   img: thecircle.jpg
+
+- title: "Thank You for Smoking"
+  author: Christopher Buckley 
+  url: https://www.amazon.com/Thank-You-Smoking-Christopher-Buckley/dp/0812976525/ref=sr_1_2?dchild=1&keywords=thank+you+for+smoking&qid=1624234680&sr=8-2
+  img: thank-you-for-smoking.jpg
+
+- title: "Little Green Men"
+  author: Christopher Buckley 
+  url: https://www.amazon.com/Little-Green-Men-Christopher-Buckley/dp/0060955570/ref=pd_bxgy_img_3/135-0253594-4871615?_encoding=UTF8&pd_rd_i=0060955570&pd_rd_r=260fabd3-932d-47f8-9337-502c7e9aad2e&pd_rd_w=VnZEc&pd_rd_wg=UW55b&pf_rd_p=fd3ebcd0-c1a2-44cf-aba2-bbf4810b3732&pf_rd_r=XRM6AWCNBE21CMG1GPNJ&psc=1&refRID=XRM6AWCNBE21CMG1GPNJ
+  img: little-green-men.jpg
+
+- title: "Fever Pitch"
+  author: Nick Hornby 
+  url: https://www.amazon.com/Fever-Pitch-Nick-Hornby/dp/1573226882/ref=sr_1_9?dchild=1&keywords=nick+hornby&qid=1624234830&s=books&sr=1-9
+  img: fever-pitch.jpg
+
+- title: "High Fidelity"
+  author: Nick Hornby 
+  url: https://www.amazon.com/High-Fidelity-Nick-Hornby/dp/1573225517/ref=pd_sbs_1/135-0253594-4871615?pd_rd_w=SH4S6&pf_rd_p=a5925d26-9630-40f3-a011-d858608ac88b&pf_rd_r=ARMNAZRNMRAJAR54CQV1&pd_rd_r=2d20be51-9ab8-462c-aa0c-617fc7a27b3d&pd_rd_wg=T6vEM&pd_rd_i=1573225517&psc=1
+  img: high-fidelity.jpg
 
 - title: "Life of Pi"
   author: Yann Martel

@@ -9,7 +9,8 @@ categories: [civics]
 
 In 2014, I started Agile Government Leadership as an open community to bring together government and industry leaders to support, learn and collaborate around issues such as agile project management, open source and human-centered design.
 
-AGL formed into an offical nonprofit organization in 2018.
+In 2018, AGL formed into an official nonprofit organization and re-branded as [Technologists for the Public Good](https://www.publicgood.tech/) in 2021.
+
 
 ## Press
 
