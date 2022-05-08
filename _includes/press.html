@@ -1,0 +1,24 @@
+{% if include.limit %}
+        {% assign limitVar = include.limit | plus: 0 %}
+    {% endif %}
+    {% for item in site.data.press.docs limit:limitVar %}
+<div class="card p-3">
+    <div class="row">
+        <div class="col-3 col-md-2 col-lg-2">
+            {% if item.img %}
+            <img src="{{ site.baseurl }}/img/press/{{item.img }}" alt="{{ item.source }} logo" class="sm rounded mb-2 line">
+            {% endif %}
+        </div>
+        <div class="col-9 col-md-10 col-lg-10">
+            <h3>
+                <a href="{{ site.baseurl }}{{ item.url }}">
+                    {{ item.title }}
+                </a>
+            </h3>
+            <p>
+                <em>{{ item.source }}</em>
+            </p>
+        </div>
+    </div>
+</div>
+{% endfor %}

@@ -1,0 +1,94 @@
+---
+layout: home
+---
+{% include header.html %}
+{% include nav.html %}
+<main>
+    {% include jumbotron.html %}
+    {% if page.about-title %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.about-title }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% if page.about-img %}
+            <div class="col-sm-4">
+                <img src="{{ site.baseurl }}/img/{{ page.about-img }}" alt="{{ page.about-img-alt }}" class="mb-4 lg rounded-circle d-lg-none">
+                <img src="{{ site.baseurl }}/img/{{ page.about-img }}" alt="{{ page.about-img-alt }}" class="mb-4 xl rounded-circle d-none d-lg-block">
+            </div>
+            {% endif %}
+            <div class="col-sm-8">
+                <p class="lead">{{ page.about-description }}</p>
+                <p>
+                    <a href="{{ page.about-link }}" class="btn btn-primary btn-lg btn-lg">{{ page.about-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.press-title %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.press-title }}</h2>
+                {% include press.html limit=3 %}
+                <p>
+                    <a href="{{ page.press-link }}" class="btn btn-primary btn-lg">{{ page.press-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if site.work.size > 0 %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.work-title }}</h2>
+                {% include works.html limit=6 %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    <a href="{{ page.work-link }}" class="btn btn-primary btn-lg">{{ page.work-title }}</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.cv-title %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.cv-title }}</h2>
+                {% if page.cv-icon-link %}
+                <a href="{{ page.cv-link }}" class="dark">
+                    <i class="far fa-file-alt fa-6x mb-3"></i>
+                </a>
+                <p>
+                    <a href="{{ page.cv-link }}">
+                        {{ page.cv-icon-link-text }}
+                    </a>
+                </p>
+                {% endif %}
+                {% if page.cv-link %}
+                <p>
+                    <a href="{{ page.cv-link }}" class="btn btn-primary btn-lg">{{ page.cv-title }}</a>
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>{{ page.connect-title }}</h2>
+                {% include connect.html %}
+            </div>
+        </div>
+    </div>
+</main>
+{% include footer.html %}

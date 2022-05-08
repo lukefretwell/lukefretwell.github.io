@@ -1,0 +1,41 @@
+{% if page.layout == "home" %}
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% if page.title %}
+                <h1 class="display-3">{{ page.title }}</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% elsif page.layout == "work" %}
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                {% if page.title %}
+                <h1 class="display-3">{{ page.title }}</h1>
+                {% endif %}
+                {% if page.description %}
+                <p class="lead">{{ page.description }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% else %}
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4">{{ page.title }}</h1>
+                {% if page.description %}
+                <!--<p class="lead">{{ page.description }}</p>-->
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

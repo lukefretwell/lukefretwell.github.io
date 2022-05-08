@@ -1,0 +1,82 @@
+# General
+title: Luke Fretwell
+description: "Democracy and open, accessible technology."
+avatar: profile.png
+
+# Social media
+email: mailto:luke@lukefretwell.com
+calendar: 
+linkedin: https://www.linkedin.com/in/lukefretwell
+twitter: https://twitter.com/lukefretwell
+medium: 
+figma: 
+github: 
+facebook: 
+instagram: 
+rss:  
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+kramdown:
+  auto_ids: true
+
+# Date/time
+date: "%B %-d, %Y"
+timezone: America/Los_Angeles
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "work"
+  - scope:
+      path: ""
+      type: "category"
+    values:
+      layout: "category"
+
+collections:
+  pages:
+    output: true
+    permalink: :title
+  posts:
+    output: true
+    permalink: /posts/:title
+  work:
+    output: true
+    permalink: /work/:title
+  categories:
+    output: true
+    permalink: categories/:title
+
+# Exclude
+exclude:
+  - CNAME
+  - readme.md
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
