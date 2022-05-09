@@ -24,6 +24,6 @@ A civic hacker at heart, projects he’s built include GovPress, a government Wo
 
 Outside of civic technology, he led a re-brand and product design for Inspire.com; was a designer, marketing and product manager for Technical Communities; managed the executive management newsletter and press-related functions for the American Society of Association Executives.
 
-In a voluntary capacity, he has served as a mentor to youths with Fairfax County (VA) Befriend-A-Child program; as a family host for a Bosnian refugee family with the International Rescue Committee; and as a hospice care volunteer.
+In a volunteer capacity, he has served as a mentor to youths with Fairfax County (VA) Befriend-A-Child program; as a family host for a Bosnian refugee family with the International Rescue Committee; and as a hospice care volunteer.
 
 He graduated from George Mason University with degrees in Government & Politics and International Studies. He was editor-in-chief of the GMU university newspaper, The Broadside, where he led the paper to its first national Associated Collegiate Press honors.
