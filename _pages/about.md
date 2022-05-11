@@ -4,26 +4,26 @@ description: About Luke Fretwell.
 permalink: /about/
 ---
 
-Luke Fretwell is an advocate for and practitioner of open, accessible technologies that drive democracy to be more collaborative and inclusive.
+Luke Fretwell is a champion of open, accessible technologies that drive collaborative and inclusive democracies.
 
-He is co-founder and CEO of the digital government platform, ProudCity. Recognized by Government Technology as a GovTech 100 company, ProudCity serves municipalities throughout the United States.
+He is co-founder and CEO of [ProudCity](https://proudcity.com/), a platform empowering communities across the nation to deliver digital services. _Government Technology_ recognized ProudCity as one of the nation’s leading civic technology companies on its GovTech 100 list for the past six years.
 
-He has written for general and government-specific technology publications, including TechCrunch, Government Technology, FCW, FedScoop and StateScoop, among others. He has been cited as a reference in a number of media outlets, including The Washington Post.
+Luke worked as a journalist for many years, writing _TechCrunch_, _Government Technology_, _FCW_, _FedScoop_ and _StateScoop_. A known expert in the field, he has been cited as a reference by media outlets, including _The Washington Post_.
 
-He has served in strategic roles for government-focused technology companies. He helped stand up the editorial and digital operations for FedScoop and StateScoop and led product marketing for the open data platform company NuCivic (acquired in 2014). 
+Luke helped stand up the editorial and digital operations for FedScoop and StateScoop and led product marketing for the open data platform company NuCivic (acquired in 2014).
 
-In 2009, he started GovFresh, where he writes about the intersection of civics and technology. He is the host of The Government We Need, a GovFresh podcast exploring the government of the future and how it can best serve everyone.
+In 2009, he started [GovFresh](https://govfresh.com/), where he writes about the intersection of civics and technology. He is the host of [The Government We Need](https://thegovweneed.com/), a GovFresh podcast exploring the government of the future and how it can best serve everyone.
 
-In 2014, he started Agile Government Leadership as a community project that brought awareness to how government can leverage open and agile methodologies for better digital service delivery. AGL is now Technologists for the Public Good.
+In 2014, he founded Agile Government Leadership (AGL) as a community project that brought awareness to open and agile methodologies for better digital service delivery by government. AGL is now [Technologists for the Public Good](https://www.publicgood.tech/).
 
-In 2019, he served as product designer for California’s Alpha team, a short-term innovation project by the State of California to re-imagine CA.gov. He also worked with the state on Code California, aimed at helping to create open source software awareness inside government.
+In 2019, Luke served as product designer for Alpha team, a short-term innovation project by the State of California to re-imagine CA.gov. He also worked with the state on Code California, aimed at helping to create open source software awareness inside government.
 
-He is a maintainer of Proudly Serving, an open community book project focused on local government in the digital age.
+A civic hacker at heart, he’s built many projects, including: [GovPress](https://govpress.org), a government WordPress theme; [CityCamp](http://citycamp.com), an internationally-adopted civic unconference focused on technology; and CivicDMV, a project to re-imagine the DMV in the context of digital.
 
-A civic hacker at heart, projects he’s built include GovPress, a government WordPress theme; CityCamp, an internationally-adopted civic unconference focused on technology and cities; and CivicDMV, a project to re-imagine DMV in the context of digital.
+His current projects include [Proudly Serving](https://proudlyservingbook.com/), an open playbook to help local government agencies build people-centered digital services. Luke is a maintainer of the project and has shared his expertise as a content contributor.
 
-Outside of civic technology, he led a re-brand and product design for Inspire.com; was a designer, marketing and product manager for Technical Communities; managed the executive management newsletter and press-related functions for the American Society of Association Executives.
+Outside of civic tech, Luke has led the rebrand and product design for [Inspire.com](inspire.com); was a designer, marketing and product manager for Technical Communities; and managed the executive management newsletter and press-related functions for the American Society of Association Executives.
 
-In a volunteer capacity, he has served as a mentor to youths with Fairfax County (VA) Befriend-A-Child program; as a family host for a Bosnian refugee family with the International Rescue Committee; and as a hospice care volunteer.
+His volunteer service included mentoring youth through the Befriend-A-Child program; hosting a Bosnian refugee family through the International Rescue Committee; and providing hospice care support through Pathways Home Health and Hospice.
 
-He graduated from George Mason University with degrees in Government & Politics and International Studies. He was editor-in-chief of the GMU university newspaper, The Broadside, where he led the paper to its first national Associated Collegiate Press honors.
+Luke graduated from George Mason University (GMU) with degrees in Government & Politics and International Studies. He was editor-in-chief of the GMU newspaper, _The Broadside_, where he led staff to win the university’s first national Associated Collegiate Press honors.
