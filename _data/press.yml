@@ -1,6 +1,11 @@
 docs_list_title: press
 docs:
 
+- title: "The Case for Simplified, Text-Based Government Websites"
+  url: https://www.govtech.com/opinion/the-case-for-simplified-text-based-government-websites
+  source: Government Technology
+  img: government-technology.png
+
 - title: "What we learned about accessibility by scanning more than 2 million federal .gov web pages"
   url: https://fcw.com/articles/2021/07/22/fed-website-accessibility.aspx
   source: FCW
