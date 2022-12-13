@@ -14,13 +14,13 @@ Luke worked as a journalist for many years and has written for _TechCrunch_, _Go
 
 Luke has helped a number of early-stage government-focused companies gain momentum, including FedScoop and StateScoop, where he stood up editorial and digital operations, and the open data platform company NuCivic (acquired in 2014), where he led product marketing.
 
-In 2014, he founded Agile Government Leadership as a community project that brought awareness to open and agile methodologies for better digital service delivery by government. AGL is now Technologists for the Public Good.
+In 2014, he founded [Agile Government Leadership](/work/agl) as a community project that brought awareness to open and agile methodologies for better digital service delivery by government. AGL is now Technologists for the Public Good.
 
-In 2019, Luke served as product designer for the Alpha team, a short-term innovation project by the State of California to re-imagine CA.gov. He also worked with the state on Code California, aimed at helping to create open source software awareness inside government.
+In 2019, Luke served as product designer for California's [Alpha](/work/alphacagov) team, a short-term innovation project by the State of California to re-imagine CA.gov. He also worked with the state on [Code California](/work/code-california), aimed at helping to create open source software awareness inside government.
 
-A civic hacker at heart, he’s built many projects, including: [GovPress](https://govpress.org), a government WordPress theme; CityCamp, an internationally-adopted civic unconference focused on technology; and CivicDMV, a project to re-imagine the DMV in the context of digital.
+A civic hacker at heart, he’s built many projects, including: [GovPress](/work/govpress), a government WordPress theme; [CityCamp](/work/citycamp), an internationally-adopted civic unconference focused on technology; and CivicDMV, a project to re-imagine the DMV in the context of digital.
 
-He current project is [Proudly Serving](https://proudlyservingbook.com/), an open playbook to help local government agencies build people-centered digital services.
+He current project is [Proudly Serving](/work/proudly-serving), an open playbook to help local government agencies build people-centered digital services.
 
 Outside of civic technology, Luke has led the rebrand and product design for Inspire.com; was a designer, marketing and product manager for Technical Communities; and managed the executive management newsletter and press-related functions for the American Society of Association Executives.
 
