@@ -7,18 +7,25 @@ layout: work
     {% include jumbotron.html %}
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-8 post">
+                {{ content | markdownify }}
+            </div>
+            <div class="col-md-4">
                 {% if page.img %}
-                <img src="{{ site.baseurl }}/img/work/{{ page.img }}" alt="{{ page.img-alt }} logo" class="lg mb-4 rounded">
+                    <img src="{{ site.baseurl }}/img/work/{{ page.img }}" alt="{{ page.img-alt }} logo" class="lg rounded">
                 {% endif %}
             </div>
-            <div class="col-md-9 post2">
-                {{ content | markdownify }}
-                {% if page.website %}
-                <p>
-                    <a href="{{ page.website }}" class="btn btn-primary btn-lg btn-lg">Visit the {{ page.title }} website</a>
-                </p>
-                {% endif %}
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Work</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {% include works.html %}
             </div>
         </div>
     </div>

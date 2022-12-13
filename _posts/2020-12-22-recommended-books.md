@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Recommended reading"
 description: Books I recommend.
 author: Luke Fretwell

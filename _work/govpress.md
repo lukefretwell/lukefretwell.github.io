@@ -1,8 +1,7 @@
 ---
 title: GovPress
-website: https://wordpress.org/themes/govpress/
 description: A WordPress theme for government.
 img: govpress.png
 ---
 
-GovPress is a WordPress theme for government. Co-maintained with [Devin Price](https://wptheming.com/).
+I built a WordPress theme for government -- [GovPress](https://wordpress.org/themes/govpress/) (now inactive) -- that has thousands of downloads and active installations (including non-government).

@@ -1,9 +1,8 @@
 ---
 title: GovFresh
-website: https://govfresh.com
-description: GovFresh features the innovators and ideas changing the way government works.
+description: Featuring the innovators and ideas changing the way government works.
 img: govfresh.png
-categories: [civics]
+featured: yes
 ---
 
-GovFresh is an independent civic technology focused media platform that features the innovators and ideas changing the way government works.
+I am the maintainer of [GovFresh](https://govfresh.com), an independent civic technology media project that features the innovators and ideas changing the way government works.

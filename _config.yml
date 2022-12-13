@@ -1,19 +1,23 @@
 # General
 title: Luke Fretwell
-description: "Democracy and open, accessible technology."
+description: ""
 avatar: profile.png
+url: https://lukefretwell.com
 
-# Social media
+# Social
+
 email: mailto:luke@lukefretwell.com
-calendar: 
-linkedin: https://www.linkedin.com/in/lukefretwell
 twitter: https://twitter.com/lukefretwell
-medium: 
-figma: 
+linkedin: https://www.linkedin.com/in/lukefretwell
 github: https://github.com/lukefretwell
-facebook: 
-instagram: 
-rss:  
+
+
+social:
+  name: Luke Fretwell
+  links:
+    - https://twitter.com/lukefretwell
+    - https://www.linkedin.com/in/lukefretwell
+    - https://github.com/lukefretwell
 
 # Build settings
 markdown: kramdown
@@ -40,7 +44,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "default"
   - scope:
       path: ""
       type: "work"

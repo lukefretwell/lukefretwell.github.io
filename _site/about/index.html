@@ -57,15 +57,10 @@
     
     <!-- CSS -->
     <!-- Bootstrap core CSS -->
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-    crossorigin="anonymous"
->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <!-- Custom CSS -->
 <link href="/css/style.css" rel="stylesheet">
-
+<link href="/css/responsive.css" rel="stylesheet">
     <!-- Fonts -->
     <!-- Font Awesome -->
 <link href="/assets/font-awesome/css/all.css" rel="stylesheet">
@@ -79,95 +74,84 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="/">Luke Fretwell</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-sm-auto">
+<nav class="navbar sticky-top navbar-expand-xxl navbar-light bg-light">
+    <a class="navbar-brand" href="/">Luke Fretwell</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            
                 
+                    <a class="nav-item nav-link active" href="/about/">About</a>
                 
-                <a class="nav-item nav-link active" href="/about/">About</a>
+            
                 
+                    <a class="nav-item nav-link " href="/work/">Work</a>
                 
+            
                 
-                <a class="nav-item nav-link " href="/work/">Work</a>
+                    <a class="nav-item nav-link " href="/press/">Press</a>
                 
+            
                 
+                    <a class="nav-item nav-link " href="/writing/">Writing</a>
                 
-                <a class="nav-item nav-link " href="/press/">Press</a>
+            
                 
+                    <a class="nav-item nav-link " href="/posts/">Posts</a>
                 
+            
                 
-                <a class="nav-item nav-link " href="/writing/">Writing</a>
+                    <a class="nav-item nav-link " href="/connect/">Connect</a>
                 
-                
-                
-                <a class="nav-item nav-link " href="/posts/">Posts</a>
-                
-                
-                
-                <a class="nav-item nav-link " href="/connect/">Connect</a>
-                
-                
-            </div>
-        </div>
+            
+        </ul>
     </div>
 </nav>
-
 <main>
     
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="display-4">About</h1>
-                
-                <!--<p class="lead">About Luke Fretwell.</p>-->
-                
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="display-4">About</h1>
+                    <p class="lead">About Luke Fretwell.</p>
+                    
+                    <div class="col-md-5"></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
 
     <div class="container">
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8 post">
+                
                 <p>Luke Fretwell is a champion of open, accessible technologies that drive collaborative and inclusive democracies.</p>
 
-<p>He is co-founder and CEO of <a href="https://proudcity.com/">ProudCity</a>, a platform empowering communities across the nation to deliver digital services. <em>Government Technology</em> recognized ProudCity as one of the nation’s leading civic technology companies on its GovTech 100 list for the past six years.</p>
+<p>He is the co-founder and CEO of <a href="https://proudcity.com/">ProudCity</a>, a platform empowering local governments across the nation to deliver better digital services. <em>Government Technology</em> recognizes ProudCity as one of the nation’s leading civic technology companies on its GovTech 100 list for the past six years.</p>
 
-<p>Luke worked as a journalist for many years, writing <em>TechCrunch</em>, <em>Government Technology</em>, <em>FCW</em>, <em>FedScoop</em> and <em>StateScoop</em>. A known expert in the field, he has been cited as a reference by media outlets, including <em>The Washington Post</em>.</p>
+<p>In 2009, he started <a href="https://govfresh.com/">GovFresh</a>, where he writes about the intersection of democracy and technology. He is the host of <a href="https://podcast.govfresh.com/">The GovFresh Podcast</a>, where he explores the government of the future and how it can best serve everyone.</p>
 
-<p>Luke helped stand up the editorial and digital operations for FedScoop and StateScoop and led product marketing for the open data platform company NuCivic (acquired in 2014).</p>
+<p>Luke worked as a journalist for many years and has written for <em>TechCrunch</em>, <em>Government Technology</em>, <em>FCW</em>, <em>FedScoop</em>, <em>StateScoop</em>. A known government technology expert, he has been cited as a reference by media outlets, including <em>The Washington Post</em>.</p>
 
-<p>In 2009, he started <a href="https://govfresh.com/">GovFresh</a>, where he writes about the intersection of civics and technology. He is the host of <a href="https://thegovweneed.com/">The Government We Need</a>, a GovFresh podcast exploring the government of the future and how it can best serve everyone.</p>
+<p>Luke has helped a number of early-stage government-focused companies gain momentum, including FedScoop and StateScoop, where he stood up editorial and digital operations, and the open data platform company NuCivic (acquired in 2014), where he led product marketing.</p>
 
-<p>In 2014, he founded Agile Government Leadership (AGL) as a community project that brought awareness to open and agile methodologies for better digital service delivery by government. AGL is now <a href="https://www.publicgood.tech/">Technologists for the Public Good</a>.</p>
+<p>In 2014, he founded Agile Government Leadership as a community project that brought awareness to open and agile methodologies for better digital service delivery by government. AGL is now Technologists for the Public Good.</p>
 
-<p>In 2019, Luke served as product designer for Alpha team, a short-term innovation project by the State of California to re-imagine CA.gov. He also worked with the state on Code California, aimed at helping to create open source software awareness inside government.</p>
+<p>In 2019, Luke served as product designer for the Alpha team, a short-term innovation project by the State of California to re-imagine CA.gov. He also worked with the state on Code California, aimed at helping to create open source software awareness inside government.</p>
 
-<p>A civic hacker at heart, he’s built many projects, including: <a href="https://govpress.org">GovPress</a>, a government WordPress theme; <a href="http://citycamp.com">CityCamp</a>, an internationally-adopted civic unconference focused on technology; and CivicDMV, a project to re-imagine the DMV in the context of digital.</p>
+<p>A civic hacker at heart, he’s built many projects, including: <a href="https://govpress.org">GovPress</a>, a government WordPress theme; CityCamp, an internationally-adopted civic unconference focused on technology; and CivicDMV, a project to re-imagine the DMV in the context of digital.</p>
 
-<p>His current projects include <a href="https://proudlyservingbook.com/">Proudly Serving</a>, an open playbook to help local government agencies build people-centered digital services. Luke is a maintainer of the project and has shared his expertise as a content contributor.</p>
+<p>He current project is <a href="https://proudlyservingbook.com/">Proudly Serving</a>, an open playbook to help local government agencies build people-centered digital services.</p>
 
-<p>Outside of civic tech, Luke has led the rebrand and product design for <a href="inspire.com">Inspire.com</a>; was a designer, marketing and product manager for Technical Communities; and managed the executive management newsletter and press-related functions for the American Society of Association Executives.</p>
+<p>Outside of civic technology, Luke has led the rebrand and product design for Inspire.com; was a designer, marketing and product manager for Technical Communities; and managed the executive management newsletter and press-related functions for the American Society of Association Executives.</p>
 
-<p>His volunteer service included mentoring youth through the Befriend-A-Child program; hosting a Bosnian refugee family through the International Rescue Committee; and providing hospice care support through Pathways Home Health and Hospice.</p>
+<p>His past volunteer service includes mentoring youth with Fairfax County’s (Virginia) Befriend-A-Child program; hosting a Bosnian refugee family with the International Rescue Committee; and providing hospice care support with Pathways Home Health and Hospice.</p>
 
-<p>Luke graduated from George Mason University (GMU) with degrees in Government &amp; Politics and International Studies. He was editor-in-chief of the GMU newspaper, <em>The Broadside</em>, where he led staff to win the university’s first national Associated Collegiate Press honors.</p>
+<p>Luke graduated from George Mason University with degrees in Government &amp; Politics and International Studies. He was editor-in-chief of the GMU newspaper, <em>The Broadside</em>, where he led staff to win the university’s first national Associated Collegiate Press honors.</p>
 
             </div>
             <div class="col-lg-2"></div>
@@ -178,79 +162,38 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <ul class="list-unstyled">
-                        
-                        
-                        <li>
-                            <a href="/about/">About</a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/work/">Work</a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/press/">Press</a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/writing/">Writing</a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/posts/">Posts</a>
-                        </li>
-                        
-                        
-                        
-                        <li>
-                            <a href="/connect/">Connect</a>
-                        </li>
-                        
-                        
-                    </ul>
-                </div>
-                <div class="col-6">
-                    <p>
-                        
-                        <a href="mailto:luke@lukefretwell.com" aria-label="Email">
-                            <i class="fas fa-at fa-2x ml-3 mr-3 mb-4 d-block d-md-inline"></i>
-                        </a>
-                        
-                        
-                        
-                        <a href="https://www.linkedin.com/in/lukefretwell" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin fa-2x ml-3 mr-3 mb-4 d-block d-md-inline"></i>
-                        </a>
-                        
-                        
-                        <a href="https://twitter.com/lukefretwell" aria-label="Twitter">
-                            <i class="fab fa-twitter fa-2x ml-3 mr-3 mb-4 d-block d-md-inline"></i>
-                        </a>
-                        
-                        
-                        
-                        
-                        <a href="https://github.com/lukefretwell" aria-label="GitHub">
-                            <i class="fab fa-github fa-2x ml-3 mr-3 mb-4 d-block d-md-inline"></i>
-                        </a>
-                        
-                        
-                        
-                        
-                    </p>
+                <div class="col-12 text-center">
+                    
+    <a href="mailto:luke@lukefretwell.com" aria-label="Email">
+        <i class="fas fa-envelope fa-lg"></i>
+    </a>
+
+
+
+    <a href="https://www.linkedin.com/in/lukefretwell" aria-label="LinkedIn">
+        <i class="fab fa-linkedin fa-lg"></i>
+    </a>
+
+
+    <a href="https://twitter.com/lukefretwell" aria-label="Twitter">
+        <i class="fab fa-twitter fa-lg"></i>
+    </a>
+
+
+
+
+    <a href="https://github.com/lukefretwell" aria-label="GitHub">
+        <i class="fab fa-github fa-lg"></i>
+    </a>
+
+
+
+
+                    <p><a href="/">Luke Fretwell</a></p>
                 </div>
             </div>
         </div>
+     </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -272,4 +215,3 @@
 
 </body>
 </html>
-
