@@ -20,7 +20,7 @@ In 2019, Luke served as product designer for California's [Alpha](/work/alphacag
 
 A civic hacker at heart, he’s built many projects, including: [GovPress](/work/govpress), a government WordPress theme; [CityCamp](/work/citycamp), an internationally-adopted civic unconference focused on technology; and CivicDMV, a project to re-imagine the DMV in the context of digital.
 
-He current project is [Proudly Serving](/work/proudly-serving), an open playbook to help local government agencies build people-centered digital services.
+His current project is [Proudly Serving](/work/proudly-serving), an open playbook to help local government agencies build people-centered digital services.
 
 Outside of civic technology, Luke has led the rebrand and product design for Inspire.com; was a designer, marketing and product manager for Technical Communities; and managed the executive management newsletter and press-related functions for the American Society of Association Executives.
 
