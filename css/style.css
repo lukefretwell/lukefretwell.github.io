@@ -12,24 +12,24 @@
 
 @font-face {
     font-family: "Public Sans Regular";
-    src: url("/assets/fonts/public-sans/PublicSans-Regular\ 2.woff2") format("woff2");
+    src: url("/assets/fonts/public-sans/PublicSans-Regular2.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Public Sans Light";
-    src: url("/assets/fonts/public-sans/PublicSans-Light\ 2.woff2") format("woff2");
+    src: url("/assets/fonts/public-sans/PublicSans-Light2.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Public Sans Thin";
-    src: url("/assets/fonts/public-sans/PublicSans-Thin\ 2.woff2") format("woff2");
+    src: url("/assets/fonts/public-sans/PublicSans-Thin2.woff2") format("woff2");
 }
 
 /* Root */
 
 :root {
     --color-1: #0050d8;
-    --color-2: #1b1b1b;
+    --color-2: #000000;
     --color-3: #c9c9c9;
     --color-4: #ffffff;
     --color-5: #0050d8;
