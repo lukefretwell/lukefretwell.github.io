@@ -2,7 +2,7 @@
 title: Agile Government Leadership
 description: Building government transformation community.
 img: agl.png
-featured: yes
+featured: 
 ---
 
 In 2014, I started Agile Government Leadership as an open community of practice to bring together government and industry leaders to support, learn and collaborate around issues such as agile project management, open source and human-centered design.

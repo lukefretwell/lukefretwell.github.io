@@ -5,12 +5,10 @@ avatar: profile.png
 url: https://lukefretwell.com
 
 # Social
-
 email: mailto:luke@lukefretwell.com
 twitter: https://twitter.com/lukefretwell
 linkedin: https://www.linkedin.com/in/lukefretwell
 github: https://github.com/lukefretwell
-
 
 social:
   name: Luke Fretwell
@@ -19,21 +17,25 @@ social:
     - https://www.linkedin.com/in/lukefretwell
     - https://github.com/lukefretwell
 
-# Build settings
-markdown: kramdown
+# Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-assets
 
+# Markdown settings
+markdown: kramdown
 kramdown:
-  auto_ids: true
+  input: GFM
+  hard_wrap: false
 
 # Date/time
 date: "%B %-d, %Y"
 timezone: America/Los_Angeles
 
+# Defaults
 defaults:
   - scope:
       path: ""
@@ -56,10 +58,11 @@ defaults:
     values:
       layout: "category"
 
+# Collections
 collections:
   pages:
     output: true
-    permalink: :title
+    permalink: /:title
   posts:
     output: true
     permalink: /posts/:title
@@ -68,19 +71,19 @@ collections:
     permalink: /work/:title
   categories:
     output: true
-    permalink: categories/:title
+    permalink: /categories/:title
 
 # Exclude
 exclude:
-  - CNAME
-  - readme.md
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _site
+  - .sass-cache
+  - .DS_Store
+  - .gitignore
+  - .jekyll-metadata
+  - .env
+  - config.local.yml
+  - config.production.yml

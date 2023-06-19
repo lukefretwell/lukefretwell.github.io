@@ -7,14 +7,14 @@ docs:
 - title: Work
   url: /work/
 
+- title: Writing
+  url: /writing/
+  
 - title: Press
   url: /press/
 
-- title: Writing
-  url: /writing/
-
-- title: Posts
-  url: /posts/
+#- title: Posts
+#  url: /posts/
 
 - title: Connect
   url: /connect/

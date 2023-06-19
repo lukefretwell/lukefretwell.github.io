@@ -8,7 +8,7 @@ Luke Fretwell is a champion of open, accessible technologies that drive collabor
 
 He is the co-founder and CEO of [ProudCity](https://proudcity.com/), a platform empowering local governments across the nation to deliver better digital services. _Government Technology_ recognizes ProudCity as one of the nation’s leading civic technology companies on its GovTech 100 list for the past six years.
 
-In 2009, he started [GovFresh](https://govfresh.com/), where he writes about the intersection of democracy and technology. He is the host of [The GovFresh Podcast](https://podcast.govfresh.com/), where he explores the government of the future and how it can best serve everyone.
+In 2009, he started [GovFresh](https://govfresh.com/), where he writes about the intersection of democracy and technology.
 
 Luke worked as a journalist for many years and has written for _TechCrunch_, _Government Technology_, _FCW_, _FedScoop_, _StateScoop_. A known government technology expert, he has been cited as a reference by media outlets, including _The Washington Post_.
 

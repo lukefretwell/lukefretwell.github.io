@@ -1,42 +1,43 @@
 /* Fonts */
 
 @font-face {
-    font-family: "Public Sans Extra Bold";
-    src: url("/assets/fonts/public-sans/PublicSans-ExtraBold.woff2") format("woff2");
-}
-
-@font-face {
     font-family: "Public Sans Bold";
     src: url("/assets/fonts/public-sans/PublicSans-Bold.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Public Sans Regular";
-    src: url("/assets/fonts/public-sans/PublicSans-Regular\ 2.woff2") format("woff2");
+    src: url("/assets/fonts/public-sans/PublicSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Public Sans Light";
-    src: url("/assets/fonts/public-sans/PublicSans-Light\ 2.woff2") format("woff2");
+    font-family: "Roboto Mono Regular";
+    src: url("/assets/fonts/roboto-mono/RobotoMono-Regular.ttf") format("ttf");
 }
 
 @font-face {
-    font-family: "Public Sans Thin";
-    src: url("/assets/fonts/public-sans/PublicSans-Thin\ 2.woff2") format("woff2");
+    font-family: "Roboto Mono Semibold";
+    src: url("/assets/fonts/roboto-mono/RobotoMono-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto Mono Bold";
+    src: url("/assets/fonts/roboto-mono/RobotoMono-Bold.ttf") format("ttf");
 }
 
 /* Root */
 
 :root {
-    --color-1: #0050d8;
-    --color-2: #1b1b1b;
-    --color-3: #c9c9c9;
-    --color-4: #ffffff;
-    --color-5: #0050d8;
+    --color-1: #1b1b1b;
+    --color-2: #ffffff;
+    --color-3: #0050d8;
+    --color-4: #5942d2;
+    --color-5: #ccc;
+    --color-6: #c5ee93;
+    --color-7: #98d035;
     --font-1: 'Public Sans Bold', sans-serif;
     --font-2: 'Public Sans Regular', sans-serif;
-    --font-3: 'Public Sans Thin', sans-serif;
-    --font-4: 'Public Sans Extra Bold', sans-serif;
+    --font-3: "Roboto Mono Regular", monospace;
     --size-1: 0;
     --size-2: 0.0625rem;
     --size-3: .5rem;
@@ -54,7 +55,7 @@ main a, main a:visited {
     text-decoration: underline;
 }
 
-main a:hover, .btn-primary, a.btn-primary, a.btn-primary:active, a.btn-primary:visited, a.btn-outline-primary {
+main a:hover, .card a, .card a:visited {
     text-decoration: none;
 }
 
@@ -63,75 +64,149 @@ main a:hover, .btn-primary, a.btn-primary, a.btn-primary:active, a.btn-primary:v
 /* Primary */
 
 a, a:hover {
-    color: var(--color-1);
+    color: var(--color-3);
 }
 
 /* Secondary */
 
 a:visited {
-    color: var(--color-5);
+    color: var(--color-4);
 }
 
 /* Tertiary */
 
-.connect a, .connect a:visited {
-    color: var(--color-2);
+.card a, .card a:visited, .connect a, .connect a:visited, .connect a:hover, .connect a[href^="mailto"], .connect a[href^="mailto"]:visited, .connect a[href^="mailto"]:hover, .connect-footer a, .connect-footer a:visited, .connect-footer a:hover, .connect-footer a[href^="mailto"], .connect-footer a[href^="mailto"]:visited, .connect-footer a[href^="mailto"]:hover {
+    color: var(--color-1);
 }
 
 /* Light */
 
-.jumbotron h1, .jumbotron .lead, a.btn-primary:hover, a.btn-outline-primary {
-    color: var(--color-4);
+.jumbotron, .footer, .bg-light {
+    background: var(--color-2);
+    background-color: var(--color-2) !important;
 }
 
-.footer, .bg-light, .btn-primary, a.btn-primary, a.btn-primary:visited, a.btn-outline-primary:hover {
-    background: var(--color-4);
-    background-color: var(--color-4) !important;
+/* Jumbotron */
+
+.jumbotron {
+    margin: var(--size-1);
+    padding: var(--size-7) var(--size-1);
+}
+
+/* Buttons */
+
+.btn-primary, a.btn-primary, a.btn-primary:visited, a.btn-primary:active, .btn-primary:active {
+    background: var(--color-2);
+    color: var(--color-1);
+    font-family: var(--font-3);
+    text-decoration: none;
+}
+
+a.btn-primary, a.btn-primary:visited {
+    border: var(--size-2) solid var(--color-1);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
+}
+
+.btn-primary:hover, a.btn-primary:hover {
+    background: var(--color-2);
+    color: var(--color-1);
+    border: var(--size-2) solid var(--color-3);
+    box-shadow: 5px 5px 0 0 rgba(0, 80, 216, 1);
+    transform: translateY(2px);
+}
+
+.btn-primary:active, a.btn-primary:active {
+    background: var(--color-2);
+    color: var(--color-1);
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
+    transform: translateY(5px);
+}
+
+/* Back to top */
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    font-family: var(--font-3);
+    bottom: var(--size-7);
+    right: var(--size-8);
+    background-color: var(--color-2);
+    color: var(--color-1);
+    border-radius: var(--size-2);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    padding: var(--size-3) var(--size-4);
+    border: var(--size-2) solid var(--color-1);
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
+}
+
+#backToTopBtn:hover {
+    background-color: var(--color-2);
 }
 
 /* Dark */
 
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .navbar, .navbar-toggler, a.navbar-brand, .navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item, .navbar-light .navbar-nav .nav-link, footer, footer a, footer a:visited, a.btn-primary, a.btn-primary:visited, a.btn-outline-primary:hover {
-    color: var(--color-2);
-}
-
-.jumbotron, a.btn-primary:hover {
-    background: var(--color-2);
+.jumbotron h1, .jumbotron .lead, body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .navbar, .navbar-toggler, a.navbar-brand, .navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item, .navbar-light .navbar-nav .nav-link, footer, footer a, footer a:visited {
+    color: var(--color-1);
 }
 
 /* Fonts ------- */
 
-/* Light */
+/* Headings */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, display-4, .display-5, .display-6 {
+    letter-spacing: -.04em;
+}
+
+/* Lead */
 
 .lead {
     font-family: var(--font-3);
 }
 
+.post p, .post li {
+    font-family: var(--font-2);
+}
+
+/* Mono */
+.card-text, .navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item, .navbar-light .navbar-nav .nav-link {
+    font-family: var(--font-3);
+}
+
 /* Regular */
 
-body, .text-muted, .card-text, .navbar li a, .navbar li.active a, .navbar li.active a:visited, a.nav-link, a.nav-item, .navbar-light .navbar-nav .nav-link {
+body, .text-muted {
     font-family: var(--font-2);
 }
 
 /* Bold */
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .navbar, .navbar-toggler, .btn-primary, a.btn-primary, a.btn-primary:active, a.btn-primary:visited {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .navbar, .navbar-toggler {
     font-family: var(--font-1);
 }
 
 /* Extra bold */
 
-a.navbar-brand {
-    font-family: var(--font-4);
+a.navbar-brand, .navbar-brand {
+    background-color: var(--color-6);
+    color: var(--color-1) !important;
+    font-family: var(--font-2);
+    letter-spacing: -.02em;
+    padding: var(--size-3) var(--size-4);
+}
+
+a.navbar-brand:hover, .navbar-brand:hover {
+    background-color: var(--color-7) !important;
+    color: var(--color-1) !important;
 }
 
 /* Sizes */
 
 .jumbotron-home {
-    height: 100vh;
+    height: 80vh;
 }
 
-.post {
+*/ .post {
     margin-bottom: var(--size-5);
     margin-top: var(--size-5);
 }
@@ -159,7 +234,7 @@ a.navbar-brand {
 }
 
 .card-deck {
-    margin-top: var(--size-5);
+    margin-top: var(--size-1);
 }
 
 .card {
@@ -170,6 +245,13 @@ footer i {
     margin-top: var(--size-6);
     margin-left: var(--size-3);
     margin-right: var(--size-3);
+}
+
+/* Selection */
+
+::selection {
+    background-color: var(--color-6);
+    /* Change the background color */
 }
 
 /* Images */
@@ -202,33 +284,29 @@ img.line {
 /* Borders */
 
 img.line {
-    border: var(--size-2) solid var(--color-3);
+    border: var(--size-2) solid var(--color-5);
 }
 
+/*
 nav {
-    border-bottom: var(--size-2) solid var(--color-2);
+    border-bottom: var(--size-2) solid var(--color-1);
 }
-
-footer {
-    border-top: var(--size-2) solid var(--color-2);
-}
-
-a.btn-primary, a.btn-primary:active, a.btn-primary:visited, a.btn-primary:hover {
-    border: var(--size-2) solid var(--color-2);
-}
-
-a.btn-outline-primary, a.btn-outline-primary:hover {
-    border: var(--size-2) solid var(--color-4);
-}
+*/
 
 /* Nav */
 
 .navbar-light .navbar-toggler {
-    border-color: var(--color-4);
+    border-color: var(--color-2);
 }
 
 .navbar .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Connect */
+
+.connect-footer a, .connect-footer a:visited, .connect-footer a:hover, .connect-footer a[href^="mailto"], .connect-footer a[href^="mailto"]:visited, .connect-footer a[href^="mailto"]:hover {
+    margin-right: var(--size-3);
 }
 
 /* Footer */
@@ -238,6 +316,7 @@ footer {
 }
 
 footer p {
+    font-family: var(--font-3);
     margin: var(--size-1);
     padding: var(--size-4) var(--size-1);
 }

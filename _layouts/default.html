@@ -10,9 +10,9 @@ layout: default
             <div class="col-lg-2"></div>
             <div class="col-lg-8 post">
                 {% if page.author %}
-                    <p>
-                        By {{ page.author }} &middot; {{ page.date | date: "%B, %-d %Y"}}
-                    </p>
+                <p>
+                    By {{ page.author }} &middot; {{ page.date | date: "%B, %-d %Y"}}
+                </p>
                 {% endif %}
                 {{ content | markdownify }}
             </div>
