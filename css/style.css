@@ -33,8 +33,9 @@
     --color-3: #0050d8;
     --color-4: #5942d2;
     --color-5: #ccc;
-    --color-6: #c5ee93;
-    --color-7: #98d035;
+    --color-6: #e4deff;
+    --color-7: #cfc4fd;
+    --color-8: #3d2c9d;
     --font-1: 'Public Sans Bold', sans-serif;
     --font-2: 'Public Sans Regular', sans-serif;
     --font-3: "Roboto Mono Regular", monospace;
@@ -103,15 +104,15 @@ a:visited {
 }
 
 a.btn-primary, a.btn-primary:visited {
-    border: var(--size-2) solid var(--color-1);
-    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
+    border: var(--size-2) solid var(--color-4);
+    box-shadow: 5px 5px 0 0 rgba(89, 66, 210, 1);
 }
 
 .btn-primary:hover, a.btn-primary:hover {
     background: var(--color-2);
     color: var(--color-1);
-    border: var(--size-2) solid var(--color-3);
-    box-shadow: 5px 5px 0 0 rgba(0, 80, 216, 1);
+    border: var(--size-2) solid var(--color-4);
+    box-shadow: 5px 5px 0 0 rgba(61, 44, 157, 1);
     transform: translateY(2px);
 }
 
