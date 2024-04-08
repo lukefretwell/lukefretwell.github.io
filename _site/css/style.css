@@ -136,7 +136,6 @@ a.btn-primary, a.btn-primary:visited {
     border-radius: var(--size-2);
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
-    padding: var(--size-3) var(--size-4);
     border: var(--size-2) solid var(--color-1);
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
 }
@@ -287,12 +286,6 @@ img.line {
 img.line {
     border: var(--size-2) solid var(--color-5);
 }
-
-/*
-nav {
-    border-bottom: var(--size-2) solid var(--color-1);
-}
-*/
 
 /* Nav */
 
