@@ -91,6 +91,7 @@ a:visited {
 
 .btn-primary, a.btn-primary, a.btn-primary:visited, a.btn-primary:active, .btn-primary:active {
     background: var(--color-2);
+    border-radius: var(--size-1);
     color: var(--color-1);
     font-family: var(--font-3);
     text-decoration: none;
