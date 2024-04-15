@@ -1,25 +1,21 @@
-<div class="card-deck">
-    {% if page.title == "Welcome." %}
+<div class="card-group">
+  {% if page.title == "Welcome." %}
     {% assign works = site.work | where: "featured", true %}
-    {% else %}
+  {% else %}
     {% assign works = site.work %}
-    {% endif %}
-    {% for page in works limit: include.limit %}
+  {% endif %}
+  {% for page in works limit: include.limit %}
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
-        <div class="card">
-            <div class="card-body">
-                {% if page.img %}
-                <img src="{{ site.baseurl }}/img/work/{{ page.img }}" alt="{{ page.img-alt }}"
-                    class="sm rounded mb-3 ml-3 float-right">
-                {% endif %}
-                <h3>
-                    <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
-                        {{ page.title }}
-                    </a>
-                </h3>
-                <p class="card-text">{{ page.description }}</p>
-            </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="h4">
+            <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
+              {{ page.title }}
+            </a>
+          </h2>
+          <p class="card-text">{{ page.description }}</p>
         </div>
+      </div>
     </div>
-    {% endfor %}
+  {% endfor %}
 </div>

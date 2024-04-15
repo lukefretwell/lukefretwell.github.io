@@ -28,7 +28,7 @@
 /* Root */
 
 :root {
-    --color-1: #1b1b1b;
+    --color-1: #000000;
     --color-2: #ffffff;
     --color-3: #0050d8;
     --color-4: #5942d2;
@@ -82,16 +82,9 @@ a:visited {
 
 /* Light */
 
-.jumbotron, .footer, .bg-light {
+.footer, .bg-light {
     background: var(--color-2);
     background-color: var(--color-2) !important;
-}
-
-/* Jumbotron */
-
-.jumbotron {
-    margin: var(--size-1);
-    padding: var(--size-7) var(--size-1);
 }
 
 /* Buttons */
@@ -104,16 +97,16 @@ a:visited {
 }
 
 a.btn-primary, a.btn-primary:visited {
-    border: var(--size-2) solid var(--color-4);
-    box-shadow: 5px 5px 0 0 rgba(89, 66, 210, 1);
+    border: var(--size-2) solid var(--color-1);
+    box-shadow: 5px 5px 0 0 rgba(27, 27, 27, 1);
 }
 
 .btn-primary:hover, a.btn-primary:hover {
     background: var(--color-2);
     color: var(--color-1);
-    border: var(--size-2) solid var(--color-4);
-    box-shadow: 5px 5px 0 0 rgba(61, 44, 157, 1);
-    transform: translateY(2px);
+    border: var(--size-2) solid var(--color-1);
+    box-shadow: 5px 5px 0 0 rgba(27, 27, 27, 1);
+    transform: translateY(1px);
 }
 
 .btn-primary:active, a.btn-primary:active {
@@ -155,7 +148,7 @@ a.btn-primary, a.btn-primary:visited {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, display-4, .display-5, .display-6 {
-    letter-spacing: -.04em;
+    letter-spacing: -.03em;
 }
 
 /* Lead */
@@ -188,32 +181,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
 /* Extra bold */
 
 a.navbar-brand, .navbar-brand {
-    background-color: var(--color-6);
     color: var(--color-1) !important;
-    font-family: var(--font-2);
+    font-family: var(--font-1);
     letter-spacing: -.02em;
     padding: var(--size-3) var(--size-4);
-}
-
-a.navbar-brand:hover, .navbar-brand:hover {
-    background-color: var(--color-7) !important;
-    color: var(--color-1) !important;
 }
 
 /* Sizes */
 
 .jumbotron-home {
-    height: 80vh;
+    height: 70vh;
 }
 
 */ .post {
     margin-bottom: var(--size-5);
     margin-top: var(--size-5);
-}
-
-.post p, .post li {
-    font-size: var(--size-5);
-    line-height: var(--size-6);
 }
 
 .post p, .post ul, .post h2 {
@@ -222,10 +204,6 @@ a.navbar-brand:hover, .navbar-brand:hover {
 
 .post h2 {
     margin-top: var(--size-6);
-}
-
-.lead {
-    font-size: var(--size-6);
 }
 
 .card-deck .col, .card-deck .col-1, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-auto, .card-deck .col-lg, .card-deck .col-lg-1, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-auto, .card-deck .col-md, .card-deck .col-md-1, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-auto, .card-deck .col-sm, .card-deck .col-sm-1, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-auto, .card-deck .col-xl, .card-deck .col-xl-1, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-auto {
@@ -238,7 +216,8 @@ a.navbar-brand:hover, .navbar-brand:hover {
 }
 
 .card {
-    margin-bottom: var(--size-5) !important;
+    width: 100%;
+    margin-bottom: var(--size-3) !important;
 }
 
 footer i {
@@ -313,4 +292,8 @@ footer p {
     font-family: var(--font-3);
     margin: var(--size-1);
     padding: var(--size-4) var(--size-1);
+}
+
+footer a, footer a:visited, footer a:hover, footer a[href^="mailto"], footer a[href^="mailto"]:visited, footer a[href^="mailto"]:hover {
+    text-decoration: none;
 }

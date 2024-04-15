@@ -6,47 +6,6 @@ layout: home
 {% include nav.html %}
 
 <main>
-    {% include jumbotron.html %}
-    <!--
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-            </div>
-            <div class="col-6">
-                {% if page.press-title %}
-                <h2>{{ page.press-title }}</h2>
-                {% assign items = site.data.press.docs %}
-                {% for item in items limit:1 %}
-                <div class="card-deck">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
-                        <div class="card">
-                            <div class="card-body">
-                                {% if item.img %}
-                                <img src="{{ site.baseurl }}/img/press/{{ item.img }}" alt="{{ item.source }} logo"
-                                    class="sm rounded line float-right ml-3">
-                                {% endif %}
-                                <h3 class="card-title h5">
-                                    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-                                </h3>
-                                <p class="card-text">
-                                    {{ item.source }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-                {% endif %}
-                {% if page.press-link %}
-                <a class="btn btn-primary btn-md mt-3" href="{{ site.baseurl }}{{ page.press-link }}" role="button">{{
-                    page.press-title }}</a>
-                {% endif %}
-            </div>
-            <div class="col-3">
-            </div>
-        </div>
-    </div>
-    -->
+  {% include jumbotron.html %}
 </main>
-
 {% include footer.html %}

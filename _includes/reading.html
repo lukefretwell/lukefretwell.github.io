@@ -1,13 +1,19 @@
 {% if include.limit %}
   {% assign limitVar = include.limit | plus: 0 %}
 {% endif %}
-<ul class="list-unstyled">
+<div class="card-group">
   {% for item in site.data.reading.docs limit: limitVar %}
-    <li class="mb-3">
-      <a href="{{ site.baseurl }}{{ item.url }}" class="stretched-link">
-        {{ item.title }}
-      </a>
-      <span class="text-muted d-block">{{ item.author }}</span>
-    </li>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
+      <div class="card mx-1">
+        <div class="card-body">
+          <h2 class="h5">
+            <a href="{{ site.baseurl }}{{ item.url }}" class="stretched-link">
+              {{ item.title }}
+            </a>
+          </h2>
+          <p class="card-text">{{ item.author }}</p>
+        </div>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>

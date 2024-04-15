@@ -1,21 +1,16 @@
 # General
 title: Luke Fretwell
-description: ""
-avatar: profile.png
+description: "Entrepreneur, writer, civic hacker focused on the intersection of democracy and technology."
+avatar: avatar.png
 url: https://lukefretwell.com
 
 # Social
 email: mailto:luke@lukefretwell.com
-twitter: 
+calendar: https://lukefretwell.com/calendar
+twitter: https://twitter.com/lukefretwell
 linkedin: https://www.linkedin.com/in/lukefretwell
 github: https://github.com/lukefretwell
-
-social:
-  name: Luke Fretwell
-  links:
-    - https://twitter.com/lukefretwell
-    - https://www.linkedin.com/in/lukefretwell
-    - https://github.com/lukefretwell
+rss: https://lukefretwell.com/feed.xml
 
 # Plugins
 plugins:
@@ -52,11 +47,6 @@ defaults:
       type: "work"
     values:
       layout: "work"
-  - scope:
-      path: ""
-      type: "category"
-    values:
-      layout: "category"
 
 # Collections
 collections:
@@ -69,9 +59,6 @@ collections:
   work:
     output: true
     permalink: /work/:title
-  categories:
-    output: true
-    permalink: /categories/:title
 
 # Exclude
 exclude:
