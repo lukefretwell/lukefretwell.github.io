@@ -8,10 +8,42 @@ layout: work
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
-      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 post">
-        {{ content | markdownify }}
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <div class="post">
+          {{ content | markdownify }}
+        </div>
+        {% assign file_categories = page.categories %}
+        <h2>Press</h2>
+        <div class="card-group mb-3">
+          {% for doc in site.data.press.docs %}
+            {% assign doc_categories = doc.categories %}
+            {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
+            {% if common_categories.size > 0 %}
+              {% assign has_matching_category = true %}
+              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="h4">
+                      <a href="{{ doc.url }}">{{ doc.title }}</a>
+                    </h3>
+                    <p class="card-text">
+                      {{ doc.source }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% if page.website %}
+          <h2>Visit</h2>
+          <a
+            href="{{ page.website }}"
+            class="btn btn-primary"
+            role="button">Visit {{ page.title }}</a>
+        {% endif %}
+        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
     </div>
   </div>
 </main>

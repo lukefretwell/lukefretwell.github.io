@@ -43,10 +43,11 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: ""
+      path: "_work"
       type: "work"
     values:
       layout: "work"
+      folder: "work"
 
 # Collections
 collections:
