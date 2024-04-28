@@ -14,7 +14,7 @@ layout: work
         </div>
         {% assign file_categories = page.categories %}
         <h2>Press</h2>
-        <div class="card-group mb-3">
+        <div class="card-group mt-3 mb-4">
           {% for doc in site.data.press.docs %}
             {% assign doc_categories = doc.categories %}
             {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
@@ -23,10 +23,13 @@ layout: work
               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-body">
-                    <h3 class="h4">
-                      <a href="{{ doc.url }}">{{ doc.title }}</a>
+                    <h3 class="h5">
+                      <a
+                        href="{{ doc.url }}"
+                        target="_blank"
+                        class="stretched-link">{{ doc.title }}</a>
                     </h3>
-                    <p class="card-text">
+                    <p class="card-text small">
                       {{ doc.source }}
                     </p>
                   </div>
@@ -39,11 +42,11 @@ layout: work
           <h2>Visit</h2>
           <a
             href="{{ page.website }}"
-            class="btn btn-primary"
-            role="button">Visit {{ page.title }}</a>
+            class="btn btn-primary my-3"
+            role="button">Website</a>
         {% endif %}
-        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
       </div>
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
     </div>
   </div>
 </main>

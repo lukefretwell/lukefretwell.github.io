@@ -1,7 +1,7 @@
 ---
 layout: press
 title: Press
-description: Commentary, news mentions.
+description: Commentary and news mentions.
 permalink: /press/
 ---
 

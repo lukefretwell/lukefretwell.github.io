@@ -1,9 +1,9 @@
 ---
 title: GovFresh
-description: Featuring the innovators and ideas changing the way government works.
+description: Design. Technology. Democracy.
 website: https://govfresh.com
 categories:
   - GovFresh
 ---
 
-I am the maintainer of [GovFresh](https://govfresh.com), an independent civic technology media project that features the innovators and ideas changing the way government works.
+Maintainer of [GovFresh](https://govfresh.com), a media project focused on the intersection of design, technology and democracy.

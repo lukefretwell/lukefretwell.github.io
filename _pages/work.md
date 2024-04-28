@@ -1,6 +1,6 @@
 ---
 layout: works
 title: Work
-description: What I'm doing or have done.
+description: Doing and done.
 permalink: /work/
 ---

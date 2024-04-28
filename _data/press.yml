@@ -6,24 +6,34 @@ docs:
   source: StateScoop
   categories:
     - ScanGov
+    - Civic Hacking Agency
 
 - title: "On some basic metadata practices, US government gets an ‘F,’ per new online tracker"
   url: https://fedscoop.com/on-some-basic-metadata-practices-us-government-gets-an-f-per-new-online-tracker/
   source: FedScoop
   categories:
     - ScanGov
+    - Civic Hacking Agency
 
 - title: "State governments average ‘F’ grade on website-metadata tracker"
   url: https://statescoop.com/state-government-websites-metadata-accessibility/
   source: StateScoop
   categories:
     - ScanGov
+    - Civic Hacking Agency
 
 - title: "2024.01.31 edition"
   url: https://www.data-is-plural.com/archive/2024-01-31-edition/
   source: Data Is Plural
   categories:
     - ScanGov
+    - Civic Hacking Agency
+
+- title: "A Young Civic Hacker Could Be the Next Generation of Gov Tech"
+  url: https://www.govtech.com/civic/a-young-civic-hacker-could-be-the-next-generation-of-gov-tech
+  source: Govering
+  categories:
+    - Civic Hacking Agency
 
 - title: "The Case for Simplified, Text-Based Government Websites"
   url: https://www.govtech.com/opinion/the-case-for-simplified-text-based-government-websites

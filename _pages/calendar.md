@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Calendar
-description: Schedule a meeting with me.
+description: Schedule a meeting.
 permalink: /calendar/
 ---
 

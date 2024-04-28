@@ -1,9 +1,9 @@
 ---
 title: Alpha.CA.gov
-description: A new approach to California digital services.
+description: Re-imagining California government digital services.
 website: https://alpha.ca.gov 
 categories:
   - Alpha.CA.gov
 ---
 
-In 2019, I served as product designer supporting the Alpha.CA.gov project, a 90-day experiment by the State of California to re-imagine CA.gov with and for the people of California. Also mentored the team on open culture (working publicly, using appropriate tools) and helped craft and deliver the project narrative.
+Served as product designer on the State of California [Alpha.CA.gov](https://alpha.ca.gov/) project, a three-month experiment by the state to re-imagine CA.gov with and for the people of California. Mentored team on open culture and helped craft and deliver the project narrative.
