@@ -13,13 +13,25 @@ layout: work
           {{ content | markdownify }}
         </div>
         {% assign file_categories = page.categories %}
-        <h2>Press</h2>
+        {% assign has_matching_category = false %}
+        {% for doc in site.data.press.docs %}
+          {% assign doc_categories = doc.categories %}
+          {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
+          {% if common_categories.size > 0 %}
+            {% assign has_matching_category = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% if has_matching_category %}
+          <h2>Press</h2>
+        {% endif %}
+
         <div class="card-group mt-3 mb-4">
           {% for doc in site.data.press.docs %}
             {% assign doc_categories = doc.categories %}
             {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
             {% if common_categories.size > 0 %}
-              {% assign has_matching_category = true %}
               <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
                 <div class="card">
                   <div class="card-body">
@@ -29,9 +41,7 @@ layout: work
                         target="_blank"
                         class="stretched-link">{{ doc.title }}</a>
                     </h3>
-                    <p class="card-text small">
-                      {{ doc.source }}
-                    </p>
+                    <p class="card-text small">{{ doc.source }}</p>
                   </div>
                 </div>
               </div>
