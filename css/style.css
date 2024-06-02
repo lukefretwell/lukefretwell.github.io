@@ -200,7 +200,7 @@ a.navbar-brand, .navbar-brand {
 }
 
 .post p, .post ul, .post h2 {
-    margin-bottom: var(--size-6);
+    margin-bottom: var(--size-5);
 }
 
 .post h2 {

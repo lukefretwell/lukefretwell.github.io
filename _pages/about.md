@@ -1,6 +1,10 @@
 ---
+layout: about
 title: About
-description: "Entrepreneur, writer, civic hacker focused on the intersection of design, technolgoy and democracy."
+description: "Entrepreneur, writer, civic hacker focused on the intersection of design, technology and democracy."
+img: luke-fretwell.jpg
+img-alt: Luke Fretwell
+img-download: luke-fretwell-high-res.jpg
 permalink: /about/
 ---
 
