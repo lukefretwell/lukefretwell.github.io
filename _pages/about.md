@@ -8,7 +8,7 @@ img-download: luke-fretwell-high-res.jpg
 permalink: /about/
 ---
 
-Luke Fretwell is a champion of open, accessible technologies that drives inclusive and collaborative democracy.
+Luke Fretwell is a champion of open, accessible technologies that drive inclusive and collaborative democracy.
 
 He is the co-founder and CEO of [ProudCity](https://proudcity.com/), a platform empowering local governments across the nation to deliver better digital services. In its esteemed GovTech 100 list, _Government Technology_ annually recognizes ProudCity as one of the nation’s leading civic technology companies.
 
