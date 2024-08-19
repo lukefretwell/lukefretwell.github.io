@@ -2,6 +2,7 @@
 title: ScanGov
 description: Government digital service monitor.
 website: https://scangov.org
+featured: true
 categories:
   - ScanGov
 ---

@@ -2,6 +2,7 @@
 title: GovFresh
 description: Design. Technology. Democracy.
 website: https://govfresh.com
+featured: true
 categories:
   - GovFresh
 ---

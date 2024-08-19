@@ -2,6 +2,7 @@
 title: ProudCity
 description: Platform for local government digital services.
 website: https://proudcity.com
+featured: true
 categories:
   - ProudCity
 ---

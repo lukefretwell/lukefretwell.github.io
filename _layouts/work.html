@@ -22,18 +22,16 @@ layout: work
             {% break %}
           {% endif %}
         {% endfor %}
-
         {% if has_matching_category %}
-          <h2>Press</h2>
+          <h2 class="mt-5 pt-5 border-top">Press</h2>
         {% endif %}
-
         <div class="card-group mt-3 mb-4">
           {% for doc in site.data.press.docs %}
             {% assign doc_categories = doc.categories %}
             {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
             {% if common_categories.size > 0 %}
-              <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
-                <div class="card">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
+                <div class="card m-1">
                   <div class="card-body">
                     <h3 class="h5">
                       <a
@@ -49,7 +47,7 @@ layout: work
           {% endfor %}
         </div>
         {% if page.website %}
-          <h2>Visit</h2>
+          <h2 class="mt-5 pt-5 border-top">Visit</h2>
           <a
             href="{{ page.website }}"
             class="btn btn-primary my-3"

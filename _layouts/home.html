@@ -7,5 +7,61 @@ layout: home
 
 <main>
   {% include jumbotron.html %}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border-top pt-5">
+        {% if page.button-press %}
+          <h2 class="mb-3">{{ page.button-press }}</h2>
+        {% endif %}
+        {% include press.html limit=4 %}
+        {% if page.button-press %}
+          <a
+            class="btn btn-primary btn-sm mt-3"
+            href="{{ page.button-link-press }}"
+            role="button">{{ page.button-press }}</a>
+        {% endif %}
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border-top pt-5">
+        {% if page.button-works %}
+          <h2 class="mb-3">{{ page.button-works }}</h2>
+        {% endif %}
+        {% include works.html limit=4 %}
+        {% if page.button-works %}
+          <a
+            class="btn btn-primary btn-sm mt-3"
+            href="{{ page.button-link-works }}"
+            role="button">{{ page.button-works }}</a>
+        {% endif %}
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border-top pt-5">
+        {% if page.button-connect %}
+          <h2 class="mb-3">{{ page.button-connect }}</h2>
+        {% endif %}
+        {% include connect.html limit=4 %}
+        {% if page.button-connect %}
+          <a
+            class="btn btn-primary btn-sm mt-3"
+            href="{{ page.button-link-connect }}"
+            role="button">{{ page.button-connect }}</a>
+        {% endif %}
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+    </div>
+  </div>
 </main>
+
+
 {% include footer.html %}

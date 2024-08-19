@@ -2,6 +2,7 @@
 title: Proudly Serving
 description: A playbook helping local governments build people-centered digital public services.
 website: https://proudlyservingbook.com
+featured: true
 categories:
   - Proudly Serving
 ---
