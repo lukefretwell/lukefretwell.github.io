@@ -221,6 +221,11 @@ a.navbar-brand, .navbar-brand {
     margin-bottom: var(--size-3) !important;
 }
 
+.card:hover {
+    border: 1px solid var(--color-1);
+    transform: translateY(1px);
+}
+
 footer i {
     margin-top: var(--size-6);
     margin-left: var(--size-3);
