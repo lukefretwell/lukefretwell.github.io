@@ -7,7 +7,45 @@ layout: home
 
 <main>
   {% include jumbotron.html %}
-  <div class="container">
+  {% for post in site.posts limit: limitVar %}
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border-top pt-5">
+          {% if page.button-posts %}
+            <h2 class="mb-3">{{ page.button-posts }}</h2>
+          {% endif %}
+          {% if post.img-feat %}
+            <figure>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="">
+                <img
+                  src="{{ site.baseurl }}/assets/img/posts/{{ page.folder }}/{{ post.img-feat }}"
+                  alt="{{ page.img-alt }}"
+                  class="mb-3 drop-shadow">
+              </a>
+            </figure>
+          {% endif %}
+          <h3>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="primary">
+              {{ post.title }}
+            </a>
+          </h3>
+          <p>{{ post.description }}</p>
+          <p class="text-muted">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </p>
+          {% if page.button-posts %}
+            <a
+              class="btn btn-primary btn-sm mt-3"
+              href="{{ page.button-link-posts }}"
+              role="button">{{ page.button-posts }}</a>
+          {% endif %}
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="container mt-5">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
       <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 border-top pt-5">

@@ -1,6 +1,6 @@
 ---
 layout: posts
 title: Posts
-description: Latest news.
+description: Posts from Luke Fretwell.
 permalink: /posts/
 ---

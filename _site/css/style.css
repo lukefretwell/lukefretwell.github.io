@@ -56,7 +56,7 @@ main a, main a:visited {
     text-decoration: underline;
 }
 
-main a:hover, .card a, .card a:visited {
+main a:hover, .card a, .card a:visited, .primary {
     text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ a:visited {
 
 /* Tertiary */
 
-.card a, .card a:visited, .connect a, .connect a:visited, .connect a:hover, .connect a[href^="mailto"], .connect a[href^="mailto"]:visited, .connect a[href^="mailto"]:hover, .connect-footer a, .connect-footer a:visited, .connect-footer a:hover, .connect-footer a[href^="mailto"], .connect-footer a[href^="mailto"]:visited, .connect-footer a[href^="mailto"]:hover {
+.primary, .card a, .card a:visited, .connect a, .connect a:visited, .connect a:hover, .connect a[href^="mailto"], .connect a[href^="mailto"]:visited, .connect a[href^="mailto"]:hover, .connect-footer a, .connect-footer a:visited, .connect-footer a:hover, .connect-footer a[href^="mailto"], .connect-footer a[href^="mailto"]:visited, .connect-footer a[href^="mailto"]:hover {
     color: var(--color-1);
 }
 
@@ -240,6 +240,10 @@ footer i {
 }
 
 /* Images */
+
+.drop-shadow {
+    filter: drop-shadow(-5px 5px 0 var(--color-1));
+}
 
 img {
     height: auto;
