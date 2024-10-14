@@ -52,7 +52,7 @@ docs:
 
 - title: "A Young Civic Hacker Could Be the Next Generation of Gov Tech"
   url: https://www.govtech.com/civic/a-young-civic-hacker-could-be-the-next-generation-of-gov-tech
-  source: Govering
+  source: Governing
   categories:
     - Civic Hacking Agency
 
@@ -63,8 +63,8 @@ docs:
     - 
 
 - title: "What we learned about accessibility by scanning more than 2 million federal .gov web pages"
-  url: https://fcw.com/articles/2021/07/22/fed-website-accessibility.aspx
-  source: FCW
+  url: https://www.nextgov.com/digital-government/2021/07/what-we-learned-about-accessibility-by-scanning-more-than-2-million-federal-gov-web-pages/259227/
+  source: NextGov/FCW
   categories:
     - 
 
@@ -81,8 +81,8 @@ docs:
     - 
 
 - title: "The need for accessibility compliance as code"
-  url: https://gcn.com/articles/2021/02/04/accessibility-compliance-as-code.aspx
-  source: GCN
+  url: https://www.route-fifty.com/digital-government/2021/02/the-need-for-accessibility-compliance-as-code/315514/
+  source: Route Fifty
   categories:
     - 
 
@@ -93,7 +93,7 @@ docs:
     - 
 
 - title: "State Website Redesign Could Influence Other Departments, Processes"
-  url: https://www.techwire.net/news/state-website-redesign-could-influence-other-departments-processes.html
+  url: https://insider.govtech.com/california/news/state-website-redesign-could-influence-other-departments-processes.html
   source: TechWire
   categories:
     - Alpha.CA.gov
@@ -105,43 +105,43 @@ docs:
     - Alpha.CA.gov
 
 - title: "Shrinking Government Too Much Risks Smaller Talent Pool"
-  url: https://www.techwire.net/news/commentary-shrinking-government-too-much-risks-smaller-talent-pool.html
+  url: https://insider.govtech.com/california/news/commentary-shrinking-government-too-much-risks-smaller-talent-pool.html
   source: TechWire
   categories:
     - 
 
 - title: "Engagement Is Unlocking DMV's Web Services"
-  url: https://www.techwire.net/news/commentary-engagement-is-unlocking-dmvs-web-services.html
+  url: https://insider.govtech.com/california/news/commentary-engagement-is-unlocking-dmvs-web-services.html
   source: TechWire
   categories:
     - 
 
 - title: "In a Disaster, Don't Forget About Digital First Responders"
-  url: https://www.techwire.net/news/in-a-disaster-dont-forget-about-digital-first-responders.html
+  url: https://insider.govtech.com/california/news/in-a-disaster-dont-forget-about-digital-first-responders.html
   source: TechWire
   categories:
     - 
 
 - title: "DMV Revamp Effort Becoming a Vehicle for Civic Tech Collaboration"
-  url: https://www.techwire.net/news/dmv-revamp-effort-becoming-a-vehicle-for-civic-tech-collaboration.html
+  url: https://insider.govtech.com/california/news/dmv-revamp-effort-becoming-a-vehicle-for-civic-tech-collaboration.html
   source: TechWire
   categories:
     - 
 
 - title: "Partnering, Planning, Tech Among Ways Government Can Survive Major Disaster"
-  url: https://www.techwire.net/news/partnering-planning-tech-among-ways-government-can-survive-major-disaster.html
+  url: https://insider.govtech.com/california/news/partnering-planning-tech-among-ways-government-can-survive-major-disaster.html
   source: TechWire
   categories:
     - 
 
 - title: "Grassroots Effort Works to Re-Imagine Solutions for DMV"
-  url: https://www.techwire.net/news/commentary-grassroots-effort-works-for-re-imagine-solutions-for-dmv.html
+  url: https://insider.govtech.com/california/news/commentary-grassroots-effort-works-for-re-imagine-solutions-for-dmv.html
   source: TechWire
   categories:
     - 
 
 - title: "ProudCity Debuts Disaster Recovery Web Package for Government"
-  url: https://www.techwire.net/news/proudcity-debuts-online.html
+  url: https://www.govtech.com/biz/proudcity-aims-to-build-more-disaster-recovery-websites.html
   source: TechWire
   categories:
     - ProudCity
@@ -152,14 +152,14 @@ docs:
   categories:
     - ProudCity
 
-- title: "High Aspirations and Expectations for 'Golden State Dot-Gov' "
-  url: https://www.techwire.net/news/commentary-high-aspirations-expectations-for-golden-state-dot-gov.html
+- title: "High Aspirations and Expectations for 'Golden State Dot-Gov'"
+  url: https://insider.govtech.com/california/news/commentary-high-aspirations-expectations-for-golden-state-dot-gov.html
   source: TechWire
   categories:
     - 
 
 - title: "Some Constructive Ideas About Re-Imagining the DMV"
-  url: https://www.techwire.net/news/honing-a-prototype-for-dmv-website-ux.html
+  url: https://insider.govtech.com/california/news/honing-a-prototype-for-dmv-website-ux.html
   source: TechWire
   categories:
     - 
@@ -171,7 +171,7 @@ docs:
     - ProudCity
 
 - title: "Solutions for DMV Woes Can Be Found Online and Offline"
-  url: https://www.techwire.net/news/commentary-solutions-for-dmv-woes-can-be-found-online-and-offline.html
+  url: https://insider.govtech.com/california/news/commentary-solutions-for-dmv-woes-can-be-found-online-and-offline.html
   source: TechWire
   categories:
     - 
@@ -183,7 +183,7 @@ docs:
     - ProudCity
 
 - title: "IT Firm Filling Web Needs After Paradise Wildfire"
-  url: https://www.techwire.net/news/it-firm-filling-web-needs-after-paradise-wildfire.html
+  url: https://insider.govtech.com/california/news/it-firm-filling-web-needs-after-paradise-wildfire.html
   source: TechWire
   categories:
     - 
@@ -201,8 +201,8 @@ docs:
     - 
 
 - title: "How to be smart about open source"
-  url: https://gcn.com/articles/2017/06/30/5-strategies-open-source.aspx
-  source: GCN
+  url: https://www.route-fifty.com/digital-government/2017/06/how-to-be-smart-about-open-source/304867/
+  source: Route Fifty
   categories:
     - 
 
@@ -211,12 +211,6 @@ docs:
   source: Government Technology
   categories:
     - ProudCity
-
-- title: "With open data, the plan is as important as the portal"
-  url: https://gcn.com/articles/2017/12/15/open-data-plans-portals.aspx
-  source: GCN
-  categories:
-    - 
 
 - title: "Oracle's Federal IT Modernization Comments Draw Fire from Tech Industry"
   url: https://www.govtech.com/Oracles-Federal-IT-Modernization-Comments-Draw-Fire-from-Tech-Industry.html
@@ -267,8 +261,8 @@ docs:
     - ProudCity
 
 - title: "Startup offers city websites as a service"
-  url: https://gcn.com/articles/2016/01/22/proudcity-website-service.aspx
-  source: GCN
+  url: https://www.route-fifty.com/infrastructure/2016/01/startup-offers-city-websites-as-a-service/299312/
+  source: Route Fifty
   categories:
     - ProudCity
 
@@ -279,14 +273,14 @@ docs:
     - 
 
 - title: "Now you can help fix USASpending.gov"
-  url: https://gcn.com/articles/2015/04/09/usaspending-comments.aspx
-  source: GCN
+  url: https://www.route-fifty.com/digital-government/2015/04/now-you-can-help-fix-usaspendinggov/286734/
+  source: Route Fifty
   categories:
     - 
 
 - title: "Is government ready for agile?"
-  url: https://fcw.com/articles/2015/02/13/agile-handbook.aspx
-  source: FCW
+  url: https://www.nextgov.com/acquisition/2015/02/is-government-ready-for-agile/206884/
+  source: NextGov/FCW
   categories:
     - Agile Government Leadership
 
@@ -297,8 +291,8 @@ docs:
     - CityCamp
 
 - title: "Picking up the open-gov torch"
-  url: https://fcw.com/articles/2014/10/27/picking-up-the-open-gov-torch.aspx
-  source: FCW
+  url: https://www.nextgov.com/people/2014/10/picking-up-the-open-gov-torch/254824/
+  source: NextGov/FCW
   categories:
     - 
 
@@ -308,21 +302,15 @@ docs:
   categories:
     - 
 
-- title: "Interior gets green light for Drupal consolidation initiative"
-  url: https://fcw.com/articles/2014/07/17/interior-drupal-initiative.aspx
-  source: FCW
-  categories:
-    - 
-
 - title: "GitHub: A Swiss Army knife for open government"
-  url: https://fcw.com/articles/2014/07/07/github-swiss-army-knife.aspx
-  source: FCW
+  url: https://www.nextgov.com/digital-government/2014/07/github-a-swiss-army-knife-for-open-government/255435/
+  source: NextGov/FCW
   categories:
     - 
 
 - title: "A brief history of open data"
-  url: https://fcw.com/articles/2014/06/09/exec-tech-brief-history-of-open-data.aspx
-  source: FCW
+  url: https://www.nextgov.com/digital-government/2014/06/a-brief-history-of-open-data/255265/
+  source: NextGov/FCW
   categories:
     - 
 
