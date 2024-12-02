@@ -4,9 +4,9 @@
   {% endif %}
   {% for item in site.data.press.docs limit: limitVar %}
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
-      <div class="card m-1">
+      <div class="card border shadow m-2 my-2">
         <div class="card-body">
-          <h2 class="h5">
+          <h2 class="h4">
             <a
               href="{{ item.url }}"
               class="stretched-link"
@@ -15,7 +15,7 @@
             </a>
           </h2>
           <p class="card-text small">
-            {{ item.source }}
+            <small>{{ item.source }}</small>
           </p>
         </div>
       </div>

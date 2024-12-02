@@ -2,12 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
-      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 pt-5 pb-3">
+      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 mt-2 pt-5 pb-3">
         <h1 class="display-3 mb-3">{{ page.title }}</h1>
         <p class="lead py-3">{{ page.description }}</p>
         {% if page.button %}
           <a
-            class="btn btn-primary btn-lg mt-3"
+            class="btn btn-primary btn-lg border shadow"
             href="{{ page.button-link }}"
             role="button">{{
 page.button }}</a>
@@ -44,7 +44,7 @@ page.button }}</a>
             <img
               src="{{ site.baseurl }}/assets/img/posts/{{ page.img-feat }}"
               alt="{{ page.img-alt }}"
-              class="mb-3 drop-shadow">
+              class="mb-3 shadow">
             {% if page.img-caption %}
               <figcaption>
                 <p class="small text-body-secondary">
@@ -91,7 +91,7 @@ page.button }}</a>
         <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
           {% if page.button %}
             <a
-              class="btn btn-primary btn-lg mt-3"
+              class="btn btn-primary btn-lg border shadow"
               href="{{ page.button-link }}"
               role="button">{{
 page.button }}</a>

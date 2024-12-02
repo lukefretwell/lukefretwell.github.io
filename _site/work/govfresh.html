@@ -77,10 +77,10 @@
 <meta name="theme-color" content="#ffffff">
   
     <!-- Created date -->
-    <meta property="article:published_time" content="2024-10-04 17:01:44 -0700" />
-    <meta name="dc.date" content="2024-10-04 17:01:44 -0700">
-    <meta name="dc.date.created" content="2024-10-04 17:01:44 -0700">  
-    <meta name="dcterms.created" content="2024-10-04 17:01:44 -0700">
+    <meta property="article:published_time" content="2024-12-02 13:27:20 -0800" />
+    <meta name="dc.date" content="2024-12-02 13:27:20 -0800">
+    <meta name="dc.date.created" content="2024-12-02 13:27:20 -0800">  
+    <meta name="dcterms.created" content="2024-12-02 13:27:20 -0800">
     
     
     
@@ -116,7 +116,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow">
   <a class="navbar-brand" href="/">Luke Fretwell</a>
   <button
     class="navbar-toggler"
@@ -133,49 +133,57 @@
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/about/">About</a>
+            <small>
+              <a class="nav-link " href="/about/">About</a>
+            </small>
           </li>
         
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/work/">Work</a>
+            <small>
+              <a class="nav-link " href="/work/">Work</a>
+            </small>
           </li>
         
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/press/">Press</a>
+            <small>
+              <a class="nav-link " href="/press/">Press</a>
+            </small>
           </li>
         
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/writing/">Writing</a>
+            <small>
+              <a class="nav-link " href="/writing/">Writing</a>
+            </small>
           </li>
         
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/reading/">Reading</a>
+            <small>
+              <a class="nav-link " href="/reading/">Reading</a>
+            </small>
           </li>
         
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/posts/">Posts</a>
+            <small>
+              <a class="nav-link " href="/cv/">CV</a>
+            </small>
           </li>
         
       
         
           <li class="nav-item">
-            <a class="nav-link " href="/cv/">CV</a>
-          </li>
-        
-      
-        
-          <li class="nav-item">
-            <a class="nav-link " href="/connect/">Connect</a>
+            <small>
+              <a class="nav-link " href="/connect/">Connect</a>
+            </small>
           </li>
         
       
@@ -223,14 +231,6 @@
         </div>
         
         
-        
-          
-          
-          
-        
-          
-          
-          
         
           
           
@@ -659,20 +659,12 @@
             
             
           
-            
-            
-            
-          
-            
-            
-            
-          
         </div>
         
           <h2 class="mt-5 pt-5 border-top">Visit</h2>
           <a
             href="https://govfresh.com"
-            class="btn btn-primary my-3"
+            class="btn btn-primary my-3 shadow border"
             role="button">Website</a>
         
       </div>
@@ -733,8 +725,10 @@
     </a>
   
 </div>
-          <p>
-            <a href="/">Luke Fretwell</a>
+          <p class="small">
+            <small>
+              <a href="/">Luke Fretwell</a>
+            </small>
           </p>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
@@ -742,7 +736,10 @@
     </div>
   </div>
 </footer>
-<button id="backToTopBtn" onclick="scrollToTop()">
+<button
+  id="backToTopBtn"
+  onclick="scrollToTop()"
+  class="btn btn-primary border shadow">
   <i class="fas fa-chevron-up"></i>
 </button>
 <!-- Include jQuery library -->

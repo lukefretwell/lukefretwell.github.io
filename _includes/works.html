@@ -5,15 +5,17 @@
     {% assign works = site.work %}
   {% endif %}
   {% for page in works limit: include.limit %}
-    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex align-items-stretch">
-      <div class="card">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <div class="card shadow mx-2 my-2">
         <div class="card-body">
           <h2 class="h4">
             <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
               {{ page.title }}
             </a>
           </h2>
-          <p class="card-text">{{ page.description }}</p>
+          <p class="card-text">
+            <small>{{ page.description }}</small>
+          </p>
         </div>
       </div>
     </div>

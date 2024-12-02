@@ -25,6 +25,11 @@
     src: url("/assets/fonts/roboto-mono/RobotoMono-Bold.ttf") format("ttf");
 }
 
+@font-face {
+    font-family: "Pt Serif Regular";
+    src: url("/assets/fonts/pt-serif/PtSerif-Regular.ttf") format("truetype");
+}
+
 /* Root */
 
 :root {
@@ -48,6 +53,16 @@
     --size-7: 4.675rem;
     --size-8: 8rem;
     --size-9: 15rem;
+    --bs-body-font-size: 1.3rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.6;
+    --bs-body-color: #212121;
+    --bs-box-shadow: 0 0.3rem .3rem rgba(0, 0, 0, 0.10);
+    --bs-border-color: #e6e6e6;
+    --bs-border-radius: .65rem;
+    --bs-font-serif: "PT Serif", Times, Baskerville, "Times New Roman", "Baskerville Serif", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-sans-serif: "Public Sans Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: "Roboto Mono Regular", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* Links */
@@ -91,30 +106,27 @@ a:visited {
 
 .btn-primary, a.btn-primary, a.btn-primary:visited, a.btn-primary:active, .btn-primary:active {
     background: var(--color-2);
-    border-radius: var(--size-1);
     color: var(--color-1);
     font-family: var(--font-3);
     text-decoration: none;
 }
 
 a.btn-primary, a.btn-primary:visited {
-    border: var(--size-2) solid var(--color-1);
-    box-shadow: 5px 5px 0 0 rgba(27, 27, 27, 1);
+    /*   box-shadow: 5px 5px 0 0 rgba(27, 27, 27, 1);*/
 }
 
 .btn-primary:hover, a.btn-primary:hover {
-    background: var(--color-2);
-    color: var(--color-1);
+    background: var(--color-1) !important;
+    color: var(--color-2) !important;
     border: var(--size-2) solid var(--color-1);
-    box-shadow: 5px 5px 0 0 rgba(27, 27, 27, 1);
     transform: translateY(1px);
 }
 
 .btn-primary:active, a.btn-primary:active {
-    background: var(--color-2);
-    color: var(--color-1);
-    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 1);
-    transform: translateY(5px);
+    background: var(--color-1) !important;
+    color: var(--color-2) !important;
+    /*   box-shadow: 5px 5px 0 0 rgba(27, 27, 27, 1);*/
+    transform: translateY(2px);
 }
 
 /* Back to top */
@@ -127,15 +139,17 @@ a.btn-primary, a.btn-primary:visited {
     right: var(--size-8);
     background-color: var(--color-2);
     color: var(--color-1);
-    border-radius: var(--size-2);
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
-    border: var(--size-2) solid var(--color-1);
-    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 1);
 }
 
 #backToTopBtn:hover {
     background-color: var(--color-2);
+    transform: translateY(1px);
+}
+
+#backToTopBtn:action {
+    transform: translateY(2px);
 }
 
 /* Dark */
@@ -149,7 +163,7 @@ a.btn-primary, a.btn-primary:visited {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, display-4, .display-5, .display-6 {
-    letter-spacing: -.03em;
+    letter-spacing: -.02em;
 }
 
 /* Lead */
@@ -207,9 +221,13 @@ a.navbar-brand, .navbar-brand {
     margin-top: var(--size-6);
 }
 
-.card-deck .col, .card-deck .col-1, .card-deck .col-10, .card-deck .col-11, .card-deck .col-12, .card-deck .col-2, .card-deck .col-3, .card-deck .col-4, .card-deck .col-5, .card-deck .col-6, .card-deck .col-7, .card-deck .col-8, .card-deck .col-9, .card-deck .col-auto, .card-deck .col-lg, .card-deck .col-lg-1, .card-deck .col-lg-10, .card-deck .col-lg-11, .card-deck .col-lg-12, .card-deck .col-lg-2, .card-deck .col-lg-3, .card-deck .col-lg-4, .card-deck .col-lg-5, .card-deck .col-lg-6, .card-deck .col-lg-7, .card-deck .col-lg-8, .card-deck .col-lg-9, .card-deck .col-lg-auto, .card-deck .col-md, .card-deck .col-md-1, .card-deck .col-md-10, .card-deck .col-md-11, .card-deck .col-md-12, .card-deck .col-md-2, .card-deck .col-md-3, .card-deck .col-md-4, .card-deck .col-md-5, .card-deck .col-md-6, .card-deck .col-md-7, .card-deck .col-md-8, .card-deck .col-md-9, .card-deck .col-md-auto, .card-deck .col-sm, .card-deck .col-sm-1, .card-deck .col-sm-10, .card-deck .col-sm-11, .card-deck .col-sm-12, .card-deck .col-sm-2, .card-deck .col-sm-3, .card-deck .col-sm-4, .card-deck .col-sm-5, .card-deck .col-sm-6, .card-deck .col-sm-7, .card-deck .col-sm-8, .card-deck .col-sm-9, .card-deck .col-sm-auto, .card-deck .col-xl, .card-deck .col-xl-1, .card-deck .col-xl-10, .card-deck .col-xl-11, .card-deck .col-xl-12, .card-deck .col-xl-2, .card-deck .col-xl-3, .card-deck .col-xl-4, .card-deck .col-xl-5, .card-deck .col-xl-6, .card-deck .col-xl-7, .card-deck .col-xl-8, .card-deck .col-xl-9, .card-deck .col-xl-auto {
-    padding-left: var(--size-1) !important;
-    padding-right: var(--size-1) !important;
+.post p, .post ul {
+    font-family: var(--bs-font-serif) !important;
+    margin-bottom: 1.5rem;
+}
+
+.post li {
+    font-family: var(--bs-font-serif) !important;
 }
 
 .card-deck {
@@ -218,11 +236,12 @@ a.navbar-brand, .navbar-brand {
 
 .card {
     width: 100%;
+    padding: var(--size-4);
     margin-bottom: var(--size-3) !important;
 }
 
-.card:hover {
-    border: 1px solid var(--color-1);
+.card:hover, .btn-primary:hover {
+    border: var(--size-2) solid #c9c9c9 !important;
     transform: translateY(1px);
 }
 
