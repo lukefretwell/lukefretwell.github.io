@@ -2,6 +2,8 @@
 layout: default
 title: Calendar
 description: Schedule a meeting.
+img-og: calendar-og.png
+img-alt: ""
 permalink: /calendar/
 ---
 

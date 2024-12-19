@@ -2,6 +2,8 @@
 layout: default
 title: Writing
 description: Reporting and commentary.
+img-og: writing-og.png
+img-alt: ""
 permalink: /writing/
 ---
 

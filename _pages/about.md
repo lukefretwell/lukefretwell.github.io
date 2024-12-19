@@ -5,14 +5,16 @@ description: "Entrepreneur, writer, civic hacker focused on the intersection of 
 img: luke-fretwell.jpg
 img-alt: Luke Fretwell
 img-download: luke-fretwell-high-res.jpg
+img-og: about-og.png
+img-alt: ""
 permalink: /about/
 ---
 
 Luke Fretwell is a champion of open, accessible technologies that drive inclusive and collaborative democracy.
 
-He is the co-founder of [ProudCity](https://proudcity.com/), a platform that empowers U.S. municipalities to deliver better digital services. In its esteemed GovTech 100 list, _Government Technology_ annually recognizes ProudCity as one of the nation’s leading government technology companies.
+Luke maintains [GovFresh](https://govfresh.com/), a media and innovation lab focused on the intersection of design, technology and democracy.
 
-Luke maintains [GovFresh](https://govfresh.com/), a media and labs project focused on the intersection of design, technology and democracy.
+He is the co-founder of [ProudCity](https://proudcity.com/), a platform that empowers U.S. municipalities to deliver better digital services. In its esteemed GovTech 100 list, _Government Technology_ annually recognizes ProudCity as one of the nation’s leading government technology companies.
 
 Luke has helped a number of early-stage government-focused companies gain momentum, including FedScoop and StateScoop, where he stood up editorial and digital operations, and the open data platform company NuCivic (acquired in 2014), where he led product marketing.
 

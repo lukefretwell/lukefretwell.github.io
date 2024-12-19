@@ -41,6 +41,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      img-path: "pages"
   - scope:
       path: ""
       type: "posts"
