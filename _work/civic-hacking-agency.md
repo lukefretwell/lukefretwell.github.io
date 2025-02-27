@@ -6,4 +6,4 @@ categories:
   - Civic Hacking Agency
 ---
 
-Started and co-maintain (with son Elias) [Civic Hacking Agnecy](https://civichackingagency.org), a new effort to inspire technologists to design, code and learn a new way to experience civics.
+Started and co-maintain (with son Elias) [Civic Hacking Agency](https://civichackingagency.org), a new effort to inspire technologists to design, code and learn a new way to experience civics.
