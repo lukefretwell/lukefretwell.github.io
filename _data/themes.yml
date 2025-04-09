@@ -1,7 +1,7 @@
 docs_list_title: themes
 docs:
 
-  - title: Digital services and transformation
+  - title: Digital services/transformation
     icon: fa-code
 
   - title: Civic/government technology
@@ -16,11 +16,17 @@ docs:
   - title: Agile methodologies
     icon: fa-timeline
 
+  - title: Software evaluation
+    icon: fa-cloud
+
   - title: Web standards
     icon: fa-window-maximize
 
   - title: Accessibility
     icon: fa-universal-access
+
+  - title: Procurement
+    icon: fa-credit-card
 
   - title: Security
     icon: fa-lock
