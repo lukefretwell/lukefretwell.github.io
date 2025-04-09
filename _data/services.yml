@@ -4,19 +4,36 @@ docs:
   - title: Advice
     description: Strategic, tactical
     icon: fa-brain
-    url: "#advisory"
+    url: "#advice"
+    tags: 
+      - Board advisory
+      - Startup guidance
+      - Business strategy
+      - Executive mentorship
+      - One-on-one and team coaching
 
   - title: Product
     description: Plan, deliver
     icon: fa-rocket
-    url: "#project-and-strategy"
+    url: "#product"
+    tags: 
+      - Strategy
+      - Design
+      - Development
 
   - title: Brand
     description: Image, identity
     icon: fa-wand-magic-sparkles
     url: "#brand"
+    tags: 
+      - Naming
+      - Positioning
+      - Visual identity
 
   - title: Narrative
     description: Comms, content
     icon: fa-comment
-    url: "#narrative-and-communications"
+    url: "#narrative"
+    tags: 
+      - Content strategy and implementation
+      - Media positioning and coaching

@@ -38,7 +38,7 @@
     --color-3: #0050d8;
     --color-4: #5942d2;
     --color-5: #ccc;
-    --color-6: #face00;
+    --color-6: #ede3ff;
     --color-7: #cfc4fd;
     --color-8: #3d2c9d;
     --font-1: 'Public Sans Bold', sans-serif;
@@ -60,7 +60,7 @@
     --bs-box-shadow: 0 0.3rem .3rem rgba(0, 0, 0, 0.10);
     --bs-border-color: #e6e6e6;
     --bs-border-radius: .65rem;
-    --bs-font-serif: "PT Serif", Times, Baskerville, "Times New Roman", "Baskerville Serif", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-serif: "Pt Serif Regular", Times, Baskerville, "Times New Roman", "Baskerville Serif", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-sans-serif: "Public Sans Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: "Roboto Mono Regular", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -258,9 +258,10 @@ blockquote p {
 }
 
 .card-quote {
-    width: 100%;
+    font-family: var(--bs-font-serif) !important;
     padding: var(--size-4);
     margin-bottom: var(--size-3) !important;
+    width: 100%;
 }
 
 footer i {
@@ -343,4 +344,14 @@ footer p {
 
 footer a, footer a:visited, footer a:hover, footer a[href^="mailto"], footer a[href^="mailto"]:visited, footer a[href^="mailto"]:hover {
     text-decoration: none;
+}
+
+/* Subscribe */
+
+.subscribe {
+    opacity: 0;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
 }

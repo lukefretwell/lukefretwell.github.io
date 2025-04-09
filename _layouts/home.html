@@ -37,7 +37,7 @@ layout: home
           {% if page.layout == "home" and item.feature == true %}
             <div class="card-quote">
               <div class="card-body px-4">
-                <p class="mb-2 fs-4">
+                <p class="mb-2 fs-5">
                   &ldquo;{{ item.quote }}&rdquo;
                 </p>
                 <footer class="small text-secondary">
@@ -68,7 +68,7 @@ layout: home
           {% endif %}
           {% if post.img-og %}
             <figure>
-              <a href="{{ site.baseurl }}{{ post.url }}" class="">
+              <a href="{{ site.baseurl }}{{ post.url }}">
                 <img
                   src="{{ site.baseurl }}/assets/img/posts/{{ page.folder }}/{{ post.img-og }}"
                   alt="{{ page.img-alt }}"

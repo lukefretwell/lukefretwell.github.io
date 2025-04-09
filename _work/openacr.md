@@ -2,7 +2,7 @@
 title: OpenACR
 description: Digital native accessibility conformance report.
 website: https://acreditor.section508.gov/
-featured: true
+featured: 
 categories:
   - OpenACR
 press:

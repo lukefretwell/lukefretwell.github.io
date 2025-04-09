@@ -1,4 +1,20 @@
 <footer>
+  <a
+    href="{{ site.baseurl}}/contact"
+    id="subscribe-button"
+    aria-label="Contact"
+    class="subscribe btn btn-primary border shadow">
+    Contact
+  </a>
+  <script>
+    const feedbackButton = document.getElementById("subscribe-button");
+    window.addEventListener('scroll', () => {
+      if (document.documentElement.scrollTop > window.innerHeight * .4) 
+    feedbackButton.style.opacity = '1';
+      else
+    feedbackButton.style.opacity = '0';
+    });
+  </script>
   <div class="border-top mt-5 pt-3 text-end">
     <div class="container">
       <div class="row">
