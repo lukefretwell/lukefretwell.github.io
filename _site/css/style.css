@@ -38,7 +38,7 @@
     --color-3: #0050d8;
     --color-4: #5942d2;
     --color-5: #ccc;
-    --color-6: #e4deff;
+    --color-6: #face00;
     --color-7: #cfc4fd;
     --color-8: #3d2c9d;
     --font-1: 'Public Sans Bold', sans-serif;
@@ -187,6 +187,11 @@ body, .text-muted {
     font-family: var(--font-2);
 }
 
+.text-secondary {
+    color: var(--color-1) !important;
+    font-family: var(--font-3);
+}
+
 /* Bold */
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .navbar, .navbar-toggler {
@@ -230,6 +235,13 @@ a.navbar-brand, .navbar-brand {
     font-family: var(--bs-font-serif) !important;
 }
 
+blockquote p {
+    margin-bottom: var(--size-5);
+    margin-top: var(--size-5);
+}
+
+/* Cards */
+
 .card-deck {
     margin-top: var(--size-1);
 }
@@ -243,6 +255,12 @@ a.navbar-brand, .navbar-brand {
 .card:hover, .btn-primary:hover {
     border: var(--size-2) solid #c9c9c9 !important;
     transform: translateY(1px);
+}
+
+.card-quote {
+    width: 100%;
+    padding: var(--size-4);
+    margin-bottom: var(--size-3) !important;
 }
 
 footer i {

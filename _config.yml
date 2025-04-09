@@ -1,6 +1,6 @@
 # General
 title: Luke Fretwell
-description: "Entrepreneur, writer, civic hacker focused on the intersection of design, technology and democracy."
+description: "Entrepreneur, writer, civic hacker"
 avatar: avatar.png
 url: https://lukefretwell.com
 
@@ -9,9 +9,9 @@ email: mailto:luke@lukefretwell.com
 calendar: https://lukefretwell.com/calendar
 twitter: 
 linkedin: https://www.linkedin.com/in/lukefretwell
-mastodon: https://mastodon.social/@lukefretwell
-bluesky: https://lukefretwell.bsky.social
-instagram: https://instagram.com/lukefretwell
+#mastodon: https://mastodon.social/@lukefretwell
+#bluesky: https://lukefretwell.bsky.social
+instagram: 
 github: https://github.com/lukefretwell
 rss: https://lukefretwell.com/feed.xml
 

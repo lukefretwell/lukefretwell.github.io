@@ -1,0 +1,19 @@
+{% if page.press %}
+  {% for press in page.press %}
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
+      <div class="card border shadow m-2 my-2">
+        <div class="card-body">
+          <h2 class="h4">
+            <a
+              href="{{ press.link }}"
+              class="stretched-link"
+              target="_blank">{{ press.title }}</a>
+          </h2>
+          <p class="card-text small">
+            <small>{{ press.source }}</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}

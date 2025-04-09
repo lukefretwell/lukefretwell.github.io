@@ -1,6 +1,12 @@
 docs_list_title: press
 docs:
 
+- title: "Houston-area cities and counties want you to go to their websites. How useful are they?"
+  url: https://houstonlanding.org/houston-area-cities-and-counties-want-you-to-go-to-their-websites-how-useful-are-they/
+  source: Houston Landing
+  categories:
+    - ScanGov
+    
 - title: "Government websites are failing at the basics: How to fix them"
   url: https://podcasts.apple.com/ca/podcast/government-websites-are-failing-at-the-basics-how-to/id1547149248?i=1000656553713
   source: The Future in Context
@@ -84,7 +90,7 @@ docs:
   url: https://www.route-fifty.com/digital-government/2021/02/the-need-for-accessibility-compliance-as-code/315514/
   source: Route Fifty
   categories:
-    - 
+    - OpenACR
 
 - title: "Expectation versus Reality of Five Years in Gov Tech"
   url: https://www.govtech.com/biz/Expectation-versus-Reality-of-Five-Years-in-Gov-Tech.html

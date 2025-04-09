@@ -4,7 +4,4 @@ title: Connect
 description: Connect with me.
 img-og: connect-og.png
 img-alt: ""
-permalink: /connect/
-redirect_from:
-  - /contact/
 ---

@@ -2,7 +2,6 @@
 layout: default
 title: Colophon
 description: Giving thanks.
-permalink: /colophon/
 ---
 
 * CMS: [Jekyll](https://jekyllrb.com/)

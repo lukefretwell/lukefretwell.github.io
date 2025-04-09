@@ -1,0 +1,24 @@
+docs_list_title: quotes
+docs:
+
+- quote: "I’ve had the opportunity to work with Luke since my time in local government, and he’s been a consistent force for innovation in the GovTech space. Luke brings a rare blend of design thinking, technical insight, and civic purpose to everything he does. He’s never been content with the status quo. Whether through ProudCity, GovFresh, or community-driven initiatives like Agile Government Leadership, Luke has helped shape a more open, accessible, and experience-focused approach to government technology. His work always reflects a strong point of view: that public services should be intuitive, inclusive, and built with care."
+  name: Dustin Haisler
+  role: President, e.Republic
+  feature: true
+  services: true
+
+- quote: "Few people have the depth of expertise, vision, and leadership that Luke brings to the table. As a proven builder and founder, his experience has not only shaped govtech/civictech but also set new standards for innovation. His insights are sought after by leaders and organizations. A true industry voice, Luke continues to inspire, lead, and drive meaningful impact."
+  name: Joe Morris
+  role: Chief Innovation Officer, e.Republic
+  services: true
+  
+- quote: "Luke has a way of quickly simplifying the complex. His ideas give you a fast way to not only get started, but also capture feedback so you can pivot. Any time with Luke is time well spent."
+  name: Brian Whittaker
+  role: Former Chief Innovation Officer, Founder of Humans of Public Service
+  services: true
+  
+- quote: "Working with Luke changed the way I think about public service and the impact we can each have in the world. He helped shape the brand identity for my company, Department of Civic Things, including designing a logo that makes me smile every time I see it. He’s been a trusted advisor—helping me think clearly about my services, mentoring me through pivotal moments, and collaborating on projects with impact. What makes him stand out is how direct and thoughtful he is. He pushes you to do your best work and then rolls up his sleeves to help make it real."
+  name: Rebecca Woodbury
+  role: Founder, Department of Civic Things
+  services: true
+  page: Department of Civic Things

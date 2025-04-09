@@ -6,4 +6,4 @@ categories:
   - GovPress
 ---
 
-Developed [GovPress](https://wordpress.org/themes/govpress/) (now inactive), a WordPress theme for government that has thousands of active installations (including non-government).
+I developed [GovPress](https://wordpress.org/themes/govpress/) (now inactive), a WordPress theme for government. At its peak, GovPress had thousands of active installations (including non-government) and is still in use.

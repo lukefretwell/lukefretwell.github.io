@@ -2,22 +2,19 @@ docs_list_title: nav
 docs:
 
 - title: About
-  url: /about/
+  url: /about
 
 - title: Work
-  url: /work/
+  url: /work
+
+- title: Services
+  url: /services
 
 - title: Press
-  url: /press/
+  url: /press
 
-- title: Writing
-  url: /writing/
-  
-- title: Reading
-  url: /reading/
+- title: What they say
+  url: /what-they-say
 
-- title: CV
-  url: /cv/
-
-- title: Connect
-  url: /connect/
+- title: Contact
+  url: /contact

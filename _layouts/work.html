@@ -7,54 +7,26 @@ layout: work
   {% include jumbotron.html %}
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
-      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
         <div class="post">
           {{ content | markdownify }}
-        </div>
-        {% assign file_categories = page.categories %}
-        {% assign has_matching_category = false %}
-        {% for doc in site.data.press.docs %}
-          {% assign doc_categories = doc.categories %}
-          {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
-          {% if common_categories.size > 0 %}
-            {% assign has_matching_category = true %}
-            {% break %}
+          {% if page.website %}
+            <a
+              href="{{ page.website }}"
+              class="btn btn-primary my-3 shadow border"
+              role="button">{{ page.title }} website</a>
           {% endif %}
-        {% endfor %}
-        {% if has_matching_category %}
-          <h2 class="mt-5 pt-5 border-top">Press</h2>
-        {% endif %}
-        <div class="card-group mt-3 mb-4">
-          {% for doc in site.data.press.docs %}
-            {% assign doc_categories = doc.categories %}
-            {% assign common_categories = file_categories | where_exp: 'category', 'doc_categories contains category' %}
-            {% if common_categories.size > 0 %}
-              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
-                <div class="card m-1">
-                  <div class="card-body">
-                    <h3 class="h5">
-                      <a
-                        href="{{ doc.url }}"
-                        target="_blank"
-                        class="stretched-link">{{ doc.title }}</a>
-                    </h3>
-                    <p class="card-text small">{{ doc.source }}</p>
-                  </div>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
         </div>
-        {% if page.website %}
-          <h2 class="mt-5 pt-5 border-top">Visit</h2>
-          <a
-            href="{{ page.website }}"
-            class="btn btn-primary my-3 shadow border"
-            role="button">Website</a>
+        {% if page.press %}
+          <h2 class="mt-5 pt-5 border-top">Press</h2>
+          <p>{{ page.title }} in the news.</p>
+          <div class="card-group mt-3 mb-4">
+            {% include press-work.html %}
+          </div>
         {% endif %}
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     </div>
   </div>
 </main>

@@ -4,7 +4,6 @@ title: Calendar
 description: Schedule a meeting.
 img-og: calendar-og.png
 img-alt: ""
-permalink: /calendar/
 ---
 
 <!-- Calendly inline widget begin -->

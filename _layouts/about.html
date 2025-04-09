@@ -8,8 +8,8 @@ layout: about
   <div class="container">
     {% if page.img %}
       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
-        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
           <div class="mb-5">
             <img
               src="{{ baseurl }}/assets/img/{{ page.img }}"
@@ -27,15 +27,17 @@ layout: about
             {% endif %}
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
       </div>
     {% endif %}
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
-      <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 post">
-        {{ content }}
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="post">
+          {{ content }}
+        </div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-2 col-xl-2"></div>
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     </div>
   </div>
 </main>

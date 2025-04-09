@@ -1,0 +1,26 @@
+docs_list_title: themes
+docs:
+
+  - title: Digital services and transformation
+    icon: fa-code
+
+  - title: Civic/government technology
+    icon: fa-landmark
+
+  - title: Open culture/data/source
+    icon: fa-door-open
+
+  - title: Ecosystem development
+    icon: fa-seedling
+
+  - title: Agile methodologies
+    icon: fa-timeline
+
+  - title: Web standards
+    icon: fa-window-maximize
+
+  - title: Accessibility
+    icon: fa-universal-access
+
+  - title: Security
+    icon: fa-lock

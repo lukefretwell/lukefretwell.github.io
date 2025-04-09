@@ -1,0 +1,141 @@
+{% include header.html %}
+{% include nav.html %}
+<main>
+  {% include jumbotron.html %}
+  <div class="container">
+    <div class="card-group">
+      {% for item in site.data.services.docs %}
+        <div class="col-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 d-flex align-items-stretch">
+          <div class="card mx-2 my-2 shadow border">
+            <div class="card-body">
+              <i class="fa-solid {{ item.icon }} fa-xl"></i>
+              <h2 class="h3 mt-2">
+                <a href="{{ item.url }}" class="stretched-link">
+                  {{ item.title }}
+                </a>
+              </h2>
+              <p class="card-text">
+                <small>{{ item.description }}</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="container border-top mt-4 pt-4">
+    <div class="row">
+      <div class="col-12">
+        <h2>Themes</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for item in site.data.themes.docs %}
+        <div class="col-12 col-sm-12 col-md-4 col-lg-6 col-xl-6 d-flex align-items-stretch">
+          <div class="card mx-2 my-2 shadow border p-2">
+            <div class="card-body">
+              <p class="text-secondary small m-0 p-0">
+                <small>
+                  <i class="fa-solid {{ item.icon }}"></i>
+                  {{ item.title }}
+                </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="container border-top mt-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="post">
+          {{ content }}
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+    </div>
+  </div>
+  <div class="container border-top mt-4">
+    <div class="row post">
+      <h2>What they say</h2>
+      {% for item in site.data.quotes-short.docs %}
+        {% if item.services == true %}
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card-quote">
+              <div class="card-body px-4">
+                <p class="mb-2">
+                  &ldquo;{{ item.quote }}&rdquo;
+                </p>
+                <footer class="small text-secondary">
+                  <small>
+                    {{ item.name }}<br>{{ item.role }}</small>
+                </footer>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <a href="{{ site.baseurl }}/what-they-say" class="btn btn-primary border shadow mb-4">What they say</a>
+  </div>
+  <div class="container border-top mt-4 py-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="">
+          <h2>Featured work</h2>
+          <div class="card-group mb-4">
+            {% for page in site.work %}
+              {% if page.featured == true %}
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
+                  <div class="card border shadow m-2 my-2">
+                    <div class="card-body">
+                      <h2 class="h4">
+                        <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
+                          {{ page.title }}
+                        </a>
+                      </h2>
+                      <p class="card-text">
+                        <small>{{ page.description }}</small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <a href="{{ site.baseurl }}/work" class="btn btn-primary border shadow">Work</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+    </div>
+  </div>
+  <div class="container border-top">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="post">
+          <h2>About</h2>
+          <p class="lead">Luke Fretwell is an entrepreneur, writer and civic hacker.</p>
+          <a href="{{ site.baseurl }}/about" class="btn btn-primary border shadow">About</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+    </div>
+  </div>
+  <div class="container border-top mt-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="post">
+          <h2>Contact</h2>
+          <a href="{{ site.baseurl }}/contact" class="btn btn-primary border shadow">Contact</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+    </div>
+  </div>
+</main>
+{% include footer.html %}

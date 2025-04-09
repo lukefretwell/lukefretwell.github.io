@@ -1,18 +1,17 @@
 ---
 layout: about
 title: About
-description: "Entrepreneur, writer, civic hacker focused on the intersection of design, technology and democracy."
+description: "Entrepreneur, writer, civic hacker"
 img: luke-fretwell.jpg
 img-alt: Luke Fretwell
 img-download: luke-fretwell-high-res.jpg
 img-og: about-og.png
 img-alt: ""
-permalink: /about/
 ---
 
-Luke Fretwell is a champion of open, accessible technologies that drive inclusive and collaborative democracy.
+Luke Fretwell is an entrepreneur, writer and civic hacker.
 
-Luke is the founder and maintainer of [GovFresh](https://govfresh.com/), a media and innovation lab focused on the intersection of design, technology and democracy.
+He is the founder and maintainer of [GovFresh](https://govfresh.com/), a media and innovation lab focused on the intersection of design, technology and democracy.
 
 He is the co-founder of [ProudCity](https://proudcity.com/), a platform that empowers U.S. municipalities to deliver better digital services. In its esteemed GovTech 100 list, _Government Technology_ annually recognizes ProudCity as one of the nation’s leading government technology companies.
 
