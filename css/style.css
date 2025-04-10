@@ -60,7 +60,7 @@
     --bs-box-shadow: 0 0.3rem .3rem rgba(0, 0, 0, 0.10);
     --bs-border-color: #e6e6e6;
     --bs-border-radius: .65rem;
-    --bs-font-serif: "Pt Serif Regular", Times, Baskerville, "Times New Roman", "Baskerville Serif", system-ui, -apple-system;
+    --bs-font-serif: "Pt Serif Regular", Times, Baskerville, "Times New Roman", "Baskerville Serif";
     --bs-font-sans-serif: "Public Sans Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: "Roboto Mono Regular", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -227,13 +227,10 @@ a.navbar-brand, .navbar-brand {
 }
 
 .post p, .post ul {
-    font-family: var(--bs-font-serif) !important;
     margin-bottom: 1.5rem;
 }
 
-.post li {
-    font-family: var(--bs-font-serif) !important;
-}
+.post li {}
 
 blockquote p {
     margin-bottom: var(--size-5);
@@ -258,7 +255,6 @@ blockquote p {
 }
 
 .card-quote {
-    font-family: var(--bs-font-serif) !important;
     padding: var(--size-4);
     margin-bottom: var(--size-3) !important;
     width: 100%;
