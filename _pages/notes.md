@@ -1,5 +1,5 @@
 ---
-layout: posts
-title: Posts
+layout: notes
+title: Notes
 description: Posts from Luke Fretwell.
 ---

@@ -7,8 +7,8 @@ button-link: about
 button-services: Services
 text-services: Helping people and teams thrive in open culture and digital transformation.
 button-link-services: services
-button-posts: Posts
-button-link-posts: posts
+button-posts: Notes
+button-link-posts: notes
 button-press: Press
 button-link-press: press
 button-quotes: What they say

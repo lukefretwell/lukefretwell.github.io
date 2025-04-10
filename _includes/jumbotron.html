@@ -15,7 +15,7 @@
       <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
     </div>
   </div>
-{% elsif page.layout == "post" %}
+{% elsif page.layout == "note" %}
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
@@ -23,27 +23,27 @@
         {% if page.folder %}
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="{{ site.baseurl }}/{{ page.folder }}" class="link-dark">{{ page.label }}</a>
+              <li class="breadcrumb-item small">
+                <a href="{{ site.baseurl }}/{{ page.folder }}" class="nav-link">{{ page.label }}</a>
               </li>
             </ol>
           </nav>
         {% endif %}
-        <h1 class="display-5 mb-3">{{ page.title }}</h1>
+        <h1 class="display-6 mb-3">{{ page.title }}</h1>
         {% if page.description %}
           <p class="lead py-3">{{ page.description }}</p>
         {% endif %}
         {% if page.author %}
-          <p class="pb-3">
+          <p class="pb-2 text-secondary small">
             By {{ page.author }} &middot; {{ page.date | date: "%B %-d, %Y" }}
           </p>
         {% endif %}
-        {% if page.img-feat %}
+        {% if page.img-og %}
           <figure>
             <img
-              src="{{ site.baseurl }}/assets/img/posts/{{ page.img-feat }}"
+              src="{{ site.baseurl }}/assets/img/posts/{{ page.img-og }}"
               alt="{{ page.img-alt }}"
-              class="mb-3 shadow">
+              class="mb-2 border">
             {% if page.img-caption %}
               <figcaption>
                 <p class="small text-body-secondary">

@@ -53,7 +53,7 @@
     --size-7: 4.675rem;
     --size-8: 8rem;
     --size-9: 15rem;
-    --bs-body-font-size: 1.3rem;
+    --bs-body-font-size: 1.2rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.6;
     --bs-body-color: #212121;
@@ -212,25 +212,6 @@ a.navbar-brand, .navbar-brand {
 .jumbotron-home {
     height: 70vh;
 }
-
-*/ .post {
-    margin-bottom: var(--size-5);
-    margin-top: var(--size-5);
-}
-
-.post p, .post ul, .post h2 {
-    margin-bottom: var(--size-5);
-}
-
-.post h2 {
-    margin-top: var(--size-6);
-}
-
-.post p, .post ul {
-    margin-bottom: 1.5rem;
-}
-
-.post li {}
 
 blockquote p {
     margin-bottom: var(--size-5);

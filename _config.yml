@@ -44,10 +44,10 @@ defaults:
       img-path: "pages"
   - scope:
       path: ""
-      type: "posts"
+      type: "notes"
     values:
-      label: "Posts"
-      layout: "post"
+      label: "Notes"
+      layout: "note"
       img-path: "posts"
       folder: "posts"
   - scope:
@@ -65,7 +65,7 @@ collections:
     permalink: /:title
   posts:
     output: true
-    permalink: /posts/:title
+    permalink: /notes/:title
   work:
     output: true
     permalink: /work/:title
