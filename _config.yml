@@ -50,6 +50,7 @@ defaults:
       layout: "note"
       img-path: "posts"
       folder: "posts"
+      parent: "notes"
   - scope:
       path: "_work"
       type: "work"

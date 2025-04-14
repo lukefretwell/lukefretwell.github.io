@@ -5,8 +5,8 @@ description:
 author: Luke Fretwell
 date: 2025-04-14 -0700
 img-feat: heart-feat.png
-img-og: heart-og.png
-img-twitter: post-twitter.png
+img-og: posts/heart-og.png
+img-twitter: posts/heart-og.png
 img-alt: "Heart icon"
 img-caption: Heart icon by Font Awesome
 img-link: https://fontawesome.com
@@ -291,7 +291,7 @@ Gratitude: Paul Taylor, Keeley Quinlan, Rebecca Heilweil, Troy Schneider, Dennis
 
 Gratitude to these folks (not mentioned above) for friendship, camaraderie and service to the people:
 
-Ryan Wold, Mary Lazzeri, Hillary Hartley, Steve Spiker, Joy Bonaguro, Lenae Storey, Jake Rozran, Carla Briceno, Greg Elin, Beth Archibald, Mai-ling Garcia, Mark Headd, Camille Tuutti, Ido Ivry, Adriel Hampton, Lawrence Grodeska, Brian Purchia, Alex Howard
+Ryan Wold, Mary Lazzeri, Hillary Hartley, Steve Spiker, Joy Bonaguro, Lenae Storey, Jake Rozran, Carlos Moreno, Carla Briceno, Greg Elin, Beth Archibald, Mai-ling Garcia, Mark Headd, Camille Tuutti, Ido Ivry, Adriel Hampton, Lawrence Grodeska, Brian Purchia, Alex Howard
 
 ### Open civic organizations
 
