@@ -311,12 +311,6 @@ From the overview:
 
 I’ve never worked for government, but I’m proud of the work I’ve done in service to ‘the people’. It hasn’t been the traditional path or the one the traditional public sector industry celebrates, but I know my north star and that the edge will always be my creative zone.
 
-## Looking ahead
-
-[Contact me](https://lukefretwell.com/contact) if you’d like to work with me or want to meet and discuss ideas (see also: [services](https://lukefretwell.com/contact)).
-
-I’m open to all the possibilities.
-
 ## JFDI
 
 Years ago at a Code for America happy hour, there was a poster with ‘JDFI’ printed in sans-serif lettering.
@@ -334,3 +328,7 @@ Hack around. Find out.
 Share your art.
 
 JFDI.
+
+## Post script
+
+[Contact me](https://lukefretwell.com/contact) if you’d like to work with me or want to meet and discuss ideas (see also: [services](https://lukefretwell.com/contact)). I’m open to all the possibilities.
