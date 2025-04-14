@@ -102,6 +102,16 @@ a:visited {
     background-color: var(--color-2) !important;
 }
 
+/* Post */
+
+.post-note h2 {
+    padding-top: 2rem;
+}
+
+.post-note h3 {
+    padding-top: 1.5rem;
+}
+
 /* Buttons */
 
 .btn-primary, a.btn-primary, a.btn-primary:visited, a.btn-primary:active, .btn-primary:active {
@@ -187,7 +197,7 @@ body, .text-muted {
     font-family: var(--font-2);
 }
 
-.text-secondary {
+.text-secondary, .text-body-secondary {
     color: var(--color-1) !important;
     font-family: var(--font-3);
 }

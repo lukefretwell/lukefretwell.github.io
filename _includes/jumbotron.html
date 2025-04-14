@@ -16,32 +16,30 @@
     </div>
   </div>
 {% elsif page.layout == "note" %}
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 pt-5">
-        {% if page.folder %}
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item small">
-                <a href="{{ site.baseurl }}/{{ page.folder }}" class="nav-link">{{ page.label }}</a>
+      <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+        <!--
+          {% if page.folder %}  <nav aria-label="breadcrumb">    <ol class="breadcrumb">      <li class="breadcrumb-item small">        <a href="{{ site.baseurl }}/{{ page.folder }}" class="nav-link">{{ page.label }}</a>
               </li>
             </ol>
           </nav>
         {% endif %}
-        <h1 class="display-6 mb-3">{{ page.title }}</h1>
-        {% if page.description %}
-          <p class="lead py-3">{{ page.description }}</p>
+        -->
+        {% if page.title %}
+          <h1 class="display-5 mb-4">{{ page.title }}</h1>
         {% endif %}
-        {% if page.author %}
-          <p class="pb-2 text-secondary small">
-            By {{ page.author }} &middot; {{ page.date | date: "%B %-d, %Y" }}
-          </p>
-        {% endif %}
-        {% if page.img-og %}
+      </div>
+      <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+    </div>
+    <div class="row border-bottom">
+      <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+        {% if page.img-feat %}
           <figure>
             <img
-              src="{{ site.baseurl }}/assets/img/posts/{{ page.img-og }}"
+              src="{{ site.baseurl }}/assets/img/posts/{{ page.img-feat }}"
               alt="{{ page.img-alt }}"
               class="mb-2 border">
             {% if page.img-caption %}
@@ -62,7 +60,13 @@
           </figure>
         {% endif %}
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+      <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+        {% if page.description %}
+          <p class="lead text-body-secondary mb-4">{{ page.description }}</p>
+        {% endif %}
+        {% include byline.html %}
+      </div>
+      <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1"></div>
     </div>
   </div>
 {% else %}

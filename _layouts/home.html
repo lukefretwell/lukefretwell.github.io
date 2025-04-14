@@ -66,27 +66,7 @@ layout: home
           {% if page.button-posts %}
             <h2 class="mb-3">{{ page.button-posts }}</h2>
           {% endif %}
-          {% if post.img-og %}
-            <figure>
-              <a href="{{ site.baseurl }}{{ post.url }}">
-                <img
-                  src="{{ site.baseurl }}/assets/img/posts/{{ page.folder }}/{{ post.img-og }}"
-                  alt="{{ page.img-alt }}"
-                  class="mb-3 border">
-              </a>
-            </figure>
-          {% endif %}
-          <h3>
-            <a href="{{ site.baseurl }}{{ post.url }}" class="primary">
-              {{ post.title }}
-            </a>
-          </h3>
-          {% if post.description %}
-            <p>{{ post.description }}</p>
-          {% endif %}
-          <p class="text-secondary small">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </p>
+          {% include posts.html %}
           {% if page.button-posts %}
             <a
               class="btn btn-primary mt-3 shadow border"
