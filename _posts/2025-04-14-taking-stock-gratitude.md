@@ -40,17 +40,11 @@ I believe:
 * Together, people (and their art) and technology can change the world.
 
 
-## I’m extremely lucky
-
-I’m embarrassingly lucky and extremely grateful.
+## I’m lucky
 
 For some reason, I’ve had the good fortune of working with amazing people on amazing projects. Some have gone nowhere, while others have far surpassed my expectations of their potential (usually after I’d moved on). I'm proud of my work and honored to have done it with people I respect and admire.
 
-
-## Looking ahead
-
-[Contact me](https://lukefretwell.com/contact) if you’d like to work with me or want to meet and discuss ideas. I’m open to all the possibilities.
-
+I’m embarrassingly lucky and extremely grateful.
 
 ## Taking stock
 
@@ -317,6 +311,11 @@ From the overview:
 
 I’ve never worked for government, but I’m proud of the work I’ve done in service to ‘the people’. It hasn’t been the traditional path or the one the traditional public sector industry celebrates, but I know my north star and that the edge will always be my creative zone.
 
+## Looking ahead
+
+[Contact me](https://lukefretwell.com/contact) if you’d like to work with me or want to meet and discuss ideas (see also: [services](https://lukefretwell.com/contact)).
+
+I’m open to all the possibilities.
 
 ## JFDI
 
@@ -335,5 +334,3 @@ Hack around. Find out.
 Share your art.
 
 JFDI.
-
-(P.S. [Contact me](https://lukefretwell.com/contact) if you’d like to work together (see also: [services](https://lukefretwell.com/services)).)
