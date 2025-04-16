@@ -16,7 +16,6 @@ categories:
 ---
 
 
-
 Even before the chaos of the moment, I’ve been doing some personal and professional introspection and retrospection over the past few months.
 
 This has given me space to think about my work, reconnect with people that matter to me, establish new relationships, find the threads, and intentionally explore what and who inspires me.
@@ -94,7 +93,7 @@ Gratitude: Dustin Haisler
 
 The first [CityCamp](https://lukefretwell.com/work/citycamp) was organized by Code for America Brigades founder Kevin Curry and Jen Pahlka in January 2010 in Chicago. It was part barcamp, part hackathon, and was another one of those special moments.
 
-Afterwards, others began asking about holding a CityCamp in their city. Kevin Curry (founder of Code for America Brigades) and I worked together (over Skype, beers and a three-hour time difference) and developed a strategy that would [open source the brand](https://opensource.com/government/11/5/how-citycamp-became-open-source-brand) so other cities could easily replicate the format locally. Ultimately, cities worldwide held CityCamps. For a few years, it was a source of connection between civic hackers and local government, but also for civic technologists globally.
+Afterwards, others began asking about holding a CityCamp in their city. Kevin Curry and I worked together (over Skype, beers and a three-hour time difference) and developed a strategy that would [open source the brand](https://opensource.com/government/11/5/how-citycamp-became-open-source-brand) so other cities could easily replicate the format locally. Ultimately, cities worldwide held CityCamps. For a few years, it was a source of connection between civic hackers and local government, but also for civic technologists globally.
 
 Save the date, because, with the help of the Alliance for Civic Technologists and others, CityCamp is making a comeback.
 
@@ -269,7 +268,7 @@ It has since evolved into [ScanGov](https://scangov.com) and [Project ScanGov](h
 
 With ScanGov, I’ve learned deeper about how you can impact bureaucratic change from the outside. I'm proud of the way Elias and I worked together to build it, and I'm grateful for the back channel feedback from senior government leaders and public support from the broader civic technology community.
 
-Recently, Aaron Hans joined as a maintainer to expand its scope and impact, but also prototype a commercial offering. The work we’re doing with ScanGov can truly help empower great government digital services at scale, and I’m extremely excited about its potential.publi
+Recently, Aaron Hans joined as a maintainer to expand its scope and impact, but also prototype a commercial offering. The work we’re doing with ScanGov can truly help empower great government digital services at scale, and I’m extremely excited about its potential.
 
 Gratitude: Elias Fretwell, Aaron Hans
 
@@ -285,7 +284,7 @@ Gratitude: Paul Taylor, Keeley Quinlan, Rebecca Heilweil, Troy Schneider, Dennis
 
 Gratitude to these folks (not mentioned above) for friendship, camaraderie and service to the people:
 
-Ryan Wold, Mary Lazzeri, Hillary Hartley, Steve Spiker, Joy Bonaguro, Lenae Storey, Jake Rozran, Carlos Moreno, Carla Briceno, Greg Elin, Beth Archibald, Mai-ling Garcia, Mark Headd, Camille Tuutti, Ido Ivry, Adriel Hampton, Lawrence Grodeska, Brian Purchia, Alex Howard
+Ryan Wold, Mary Lazzeri, Hillary Hartley, Steve Spiker, Joy Bonaguro, Lenae Storey, Jake Rozran, Carlos Moreno, Carla Briceno, Greg Elin, Beth Archibald, Mai-Ling Garcia, Mark Headd, Camille Tuutti, Ido Ivry, Adriel Hampton, Lawrence Grodeska, Brian Purchia, Alex Howard
 
 ### Open civic organizations
 
