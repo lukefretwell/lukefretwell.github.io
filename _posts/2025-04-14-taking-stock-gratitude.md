@@ -4,6 +4,7 @@ title:  "Taking stock and gratitude"
 description: 
 author: Luke Fretwell
 date: 2025-04-14 -0700
+modified: 2025-04-18 -0900
 img-feat: heart-feat.png
 img-og: posts/heart-og.png
 img-twitter: posts/heart-og.png
@@ -14,7 +15,6 @@ categories:
   - 
   - 
 ---
-
 
 Even before the chaos of the moment, I’ve been doing some personal and professional introspection and retrospection over the past few months.
 
