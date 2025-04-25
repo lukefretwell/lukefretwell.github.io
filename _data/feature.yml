@@ -1,0 +1,12 @@
+docs_list_title: feature
+docs:
+
+  - title: Office hours
+    img-og: seedling-og.png
+    img-alt: Seedling icon
+    url: office-hours
+
+  - title: Services
+    img-og: services-og.png
+    img-alt: Seedling icon
+    url: services

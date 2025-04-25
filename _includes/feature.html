@@ -1,0 +1,38 @@
+<div class="card-group">
+  {% for item in site.data.feature.docs %}
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex align-items-stretch">
+      <div class="card border shadow m-2 my-2">
+        <div class="card-body">
+          {% if item.img-og %}
+            <figure>
+              <img
+                src="{{ site.baseurl }}/assets/img/pages/{{ item.img-og }}"
+                alt="{{ item.img-alt }}"
+                class="mb-2 border">
+              {% if page.img-caption %}
+                <figcaption>
+                  <p class="small text-body-secondary">
+                    <small>
+                      {% if item.img-link %}
+                        <a href="{{ site.baseurl }}{{ page.img-link }}" class="nav-link text-body-secondary">
+                      {% endif %}
+                      {{ page.img-caption }}
+                      {% if page.img-link %}
+                        </a>
+                      {% endif %}
+                    </small>
+                  </p>
+                </figcaption>
+              {% endif %}
+            </figure>
+          {% endif %}
+          <h4 class="m-0 p-0">
+            <a href="{{ site.baseurl }}{{ item.url }}" class="stretched-link">
+              {{ item.title }}
+            </a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
