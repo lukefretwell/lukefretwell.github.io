@@ -77,10 +77,10 @@
 <meta name="theme-color" content="#ffffff">
   
     <!-- Created date -->
-    <meta property="article:published_time" content="2025-04-25 07:21:16 -0700" />
-    <meta name="dc.date" content="2025-04-25 07:21:16 -0700">
-    <meta name="dc.date.created" content="2025-04-25 07:21:16 -0700">  
-    <meta name="dcterms.created" content="2025-04-25 07:21:16 -0700">
+    <meta property="article:published_time" content="2025-06-16 22:44:11 -0700" />
+    <meta name="dc.date" content="2025-06-16 22:44:11 -0700">
+    <meta name="dc.date.created" content="2025-06-16 22:44:11 -0700">  
+    <meta name="dcterms.created" content="2025-06-16 22:44:11 -0700">
   
   
   
@@ -91,10 +91,24 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="GovFresh">
   <meta name="twitter:description" content="Design. Technology. Democracy.">
-
+    <!-- Open Graph -->
+  
+  <meta property="og:site_name" content="Luke Fretwell" />
+  
+    
+    <meta property="og:description" content="Design. Technology. Democracy." />
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://localhost:4000/work/govfresh" />
+  
+  <meta property="og:title" content="GovFresh - Luke Fretwell" />
+  
   
     <meta property="og:image" content="http://localhost:4000/assets/img/avatar-og.png">
   
+  
+  
+      <meta property="og:image:alt" content="GovFresh image">
   
   
   <!-- CSS -->
@@ -112,7 +126,6 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow">
   <a class="navbar-brand" href="/">Luke Fretwell</a>
@@ -302,67 +315,100 @@
     </div>
   </div>
 </footer>
-<!-- Include jQuery library -->
-<script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-
-<!-- Include Popper.js library -->
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"></script>
-
-<!-- Include Bootstrap library -->
-<script
-  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"></script>
-
-<!-- Custom Script -->
+<!-- Dark mode and back-to-top functionality -->
 <script>
-    // Dark mode toggle
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches && localStorage.getItem('color-theme') === 'dark') {
-        document.querySelector('html').classList.add('dark');
-        document.querySelector('div.dark-toggle').innerHTML = '<i class="fa-solid fa-sun"></i>';
-        localStorage.setItem('color-theme', 'dark');
+  // Dark mode functionality
+  let colorTheme = 'light'; // Default theme
+
+  // Initialize dark mode based on system preference
+  function initializeDarkMode() {
+    const htmlElement = document.querySelector('html');
+    const darkToggle = document.querySelector('div.dark-toggle');
+    
+    // Only initialize if dark toggle exists on this page
+    if (!darkToggle) {
+        return; // Silently skip if elements don't exist
     }
-
-    document.querySelector('div.dark-toggle').onclick = function () {
-        const darkToggle = document.querySelector('div.dark-toggle');
-        darkToggle.innerHTML = (darkToggle.innerHTML.includes('sun')) ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
-        document.querySelector('html').classList.toggle('dark');
-        localStorage.setItem('color-theme', document.querySelector('html').classList.contains('dark') ? 'dark' : 'light');
+    
+    // Check system preference
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    
+    if (prefersDark) {
+        colorTheme = 'dark';
+        htmlElement.classList.add('dark');
+        darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
     }
+  }
 
-    document.querySelector('html').classList.add(localStorage.getItem('color-theme'));
-    document.querySelector('div.dark-toggle').innerHTML = (localStorage.getItem('color-theme') === 'light') ? '<i class="fa-solid fa-moon"></i>' : '<i class="fa-solid fa-sun"></i>';
-</script>
-
-<!-- Back to top button -->
-<script>
-    window.onscroll = function () {
-        scrollFunction();
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("backToTopBtn").style.display = "block";
+  // Dark mode toggle functionality
+  function setupDarkModeToggle() {
+    const darkToggle = document.querySelector('div.dark-toggle');
+    
+    // Only setup if toggle exists on this page
+    if (!darkToggle) {
+        return; // Silently skip if element doesn't exist
+    }
+    
+    darkToggle.addEventListener('click', function() {
+        const htmlElement = document.querySelector('html');
+        
+        if (!htmlElement) return;
+        
+        // Toggle dark mode
+        htmlElement.classList.toggle('dark');
+        
+        // Update button icon and theme
+        if (htmlElement.classList.contains('dark')) {
+            darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            colorTheme = 'dark';
         } else {
-            document.getElementById("backToTopBtn").style.display = "none";
+            darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            colorTheme = 'light';
         }
-    }
+    });
+  }
 
-    function scrollToTop() {
-        // Smooth scroll to top
-        const scrollToTop = window.setInterval(function () {
-            const currentPosition = window.pageYOffset;
-            if (currentPosition > 0) {
-                window.scrollTo(0, currentPosition - 50); // Adjust the scroll speed here (50 is the scroll amount per interval)
-            } else {
-                window.clearInterval(scrollToTop);
-            }
-        }, 2); // Adjust the interval time (16ms for 60fps smooth animation)
+  // Back to top button functionality
+  function scrollFunction() {
+    const backToTopBtn = document.getElementById("backToTopBtn");
+    
+    if (!backToTopBtn) {
+        return; // Silently fail if button doesn't exist
     }
+    
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+  }
+
+  // Smooth scroll to top function
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+  }
+
+  // Setup scroll event listener
+  function setupScrollListener() {
+    window.addEventListener('scroll', scrollFunction);
+  }
+
+  // Initialize all functionality when DOM is ready
+  function initializeScripts() {
+    initializeDarkMode();
+    setupDarkModeToggle();
+    setupScrollListener();
+  }
+
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeScripts);
+  } else {
+    initializeScripts();
+  }
 </script></body></html>

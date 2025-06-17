@@ -23,7 +23,7 @@ plugins:
   - jekyll-paginate
   - jekyll-assets
   - jekyll-redirect-from
-
+  
 # Markdown settings
 markdown: kramdown
 kramdown:

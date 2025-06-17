@@ -11,18 +11,27 @@
 }
 
 @font-face {
-    font-family: "Roboto Mono Regular";
-    src: url("/assets/fonts/roboto-mono/RobotoMono-Regular.ttf") format("ttf");
+    font-family: "Roboto Mono";
+    src: url("/assets/fonts/roboto-mono/RobotoMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Roboto Mono Semibold";
-    src: url("/assets/fonts/roboto-mono/RobotoMono-SemiBold.ttf") format("ttf");
+    font-family: "Roboto Mono";
+    src: url("/assets/fonts/roboto-mono/RobotoMono-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: "Roboto Mono Bold";
-    src: url("/assets/fonts/roboto-mono/RobotoMono-Bold.ttf") format("ttf");
+    font-family: "Roboto Mono";
+    src: url("/assets/fonts/roboto-mono/RobotoMono-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -41,9 +50,9 @@
     --color-6: #ede3ff;
     --color-7: #cfc4fd;
     --color-8: #3d2c9d;
-    --font-1: 'Public Sans Bold', sans-serif;
-    --font-2: 'Public Sans Regular', sans-serif;
-    --font-3: "Roboto Mono Regular", monospace;
+    --font-1: "Public Sans Bold", sans-serif;
+    --font-2: "Public Sans Regular", sans-serif;
+    --font-3: "Roboto Mono", monospace;
     --size-1: 0;
     --size-2: 0.0625rem;
     --size-3: .5rem;
@@ -62,7 +71,7 @@
     --bs-border-radius: .65rem;
     --bs-font-serif: "Pt Serif Regular", Times, Baskerville, "Times New Roman", "Baskerville Serif";
     --bs-font-sans-serif: "Public Sans Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --bs-font-monospace: "Roboto Mono Regular", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-font-monospace: "Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* Links */
