@@ -13,7 +13,7 @@ linkedin: https://www.linkedin.com/in/lukefretwell
 #bluesky: https://lukefretwell.bsky.social
 instagram: 
 github: https://github.com/lukefretwell
-feed: https://lukefretwell.com/feed.xml
+rss: https://lukefretwell.com/feed.xml
 
 # Plugins
 plugins:
