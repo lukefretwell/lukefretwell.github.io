@@ -23,7 +23,7 @@ jobs:
         # fetch-depth: '0'
 
       - name: 💎 setup ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.33.2
         with:
           ruby-version: 2.7 # can change this to whatever version you prefer
 
