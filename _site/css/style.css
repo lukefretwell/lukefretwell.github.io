@@ -260,7 +260,7 @@ blockquote p {
     width: 100%;
 }
 
-footer i {
+footer .connect-footer i {
     margin-top: var(--size-6);
     margin-left: var(--size-3);
     margin-right: var(--size-3);

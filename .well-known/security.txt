@@ -1,4 +1,0 @@
-Contact: https://lukefretwell.com/contact
-Expires: 2026-01-01T20:00:00.000Z
-Preferred-Languages: en
-Policy: https://lukefretwell.com/contact
