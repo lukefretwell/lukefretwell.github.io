@@ -55,26 +55,12 @@ Subject matter expert in government technology with expertise in culture and cha
 
 *August 2021 – Present*
 
-
-
 * Found and lead author of a collaborative book that cultivates public sector digital culture.
 * Community contributions from 25+ U.S. public, private, and nonprofit leaders.
-
-
-### Co-founder/Maintainer, [Civic Hacking Agency](https://civichackingagency.org)
-
-*February 2023 – Present*
-
-
-
-* Father-son coding collaborative hacking for good.
-
 
 ### Strategist, CivicActions
 
 *January 2016 – December 2021*
-
-
 
 * Positioned digital services company to federal market via executive networks and media placements.
 * Developed and launched Agile Government Leadership (now Technologists for the Public Good) to connect and educate the government community on agile digital service delivery.

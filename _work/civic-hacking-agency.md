@@ -1,7 +1,7 @@
 ---
 title: Civic Hacking Agency
-description: A father and son hacking for good.
-website: https://civichackingagency.org
+description: A father and son hacking for good (deprecated).
+website: 
 categories:
   - Civic Hacking Agency
 press:
@@ -31,4 +31,4 @@ press:
     source: Governing
 ---
 
-During the COVID-19 pandemic, my son Elias and I began coding together as part of what we call the [Civic Hacking Agency](https://civichackingagency.org). Pojects include a [congressional directory](https://civichackingagency.org/projects/congress) using Congress.gov API, a [survey marker finder](https://usa.govfresh.com/geomarks/) using National Geodetic Survey data, and [ScanGov](/work/scangov). More at [USA.govfresh.com](https://usa.govfresh.com).
+During the COVID-19 pandemic, my son Elias and I began coding together as part of what we called the Civic Hacking Agency. Pojects included a congressional directory using Congress.gov API, a [survey marker finder](https://usa.govfresh.com/geomarks/) using National Geodetic Survey data, and [ScanGov](/work/scangov). More at [USA.govfresh.com](https://usa.govfresh.com).
