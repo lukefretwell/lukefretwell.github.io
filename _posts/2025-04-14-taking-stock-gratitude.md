@@ -135,7 +135,7 @@ Gratitude: Aaron Pava, Henry Poole, Elizabeth Raley, Bill Ogilvie
 
 ### ProudCity
 
-When we started [ProudCity](https://lukefretwell.com/proudcity), we wanted to bring continuously improving, cost-effective, open software web solutions to local governments. While small communities desperately needed it then, they need this more than ever today.
+When we started [ProudCity](https://lukefretwell.com/work/proudcity), we wanted to bring continuously improving, cost-effective, open software web solutions to local governments. While small communities desperately needed it then, they need this more than ever today.
 
 Today, ProudCity serves government organizations across the United States and is consistently honored by *Government Technology* as a GovTech 100 company. I’m proud of what we’ve built and how we’ve built it. I’m biased, but it’s the best government technology company in the world, and I’m excited to see how it grows beyond me.
 
@@ -146,7 +146,7 @@ Gratitude to: Kevin Herman, Jeff Lyon, Alex Schmoe, Curtis McHale
 
 ### CivicDMV
 
-[CivicDMV](https://lukefretwell.com/civicdmv) was a relatively short project to re-imagine how the Department of Motor Vehicles could do digital. Rachel Kroft and I worked together with a small group of other folks to prototype and socialize how DMV could be different. This work inspired the California DMV to move forward on digital transformation efforts.
+[CivicDMV](https://lukefretwell.com/work/civicdmv) was a relatively short project to re-imagine how the Department of Motor Vehicles could do digital. Rachel Kroft and I worked together with a small group of other folks to prototype and socialize how DMV could be different. This work inspired the California DMV to move forward on digital transformation efforts.
 
 With CivicDMV, I learned that even a strategic small nudge from the outside can spark big change on the inside.
 
@@ -242,10 +242,9 @@ Gratitude to: Rebecca Woodbury, Morgan Griffin, Marlena Medford and Kirsten Wyat
 
 ### Civic Hacking Agency
 
-My son Elias and I began coding together during COVID. Many of the projects we first built now reside on [USA.GovFresh](http://USA.GovFresh.com), but we created the [Civic Hacking Agency](https://civichackingagency.org) moniker to work under. There’s not much there, but it was the genesis of a project (ScanGov) that has evolved beyond even my optimism.
+My son Elias and I began coding together during COVID. Many of the projects we first built now reside on [USA.GovFresh](http://USA.GovFresh.com), but we created the Civic Hacking Agency moniker to work under. There’s not much there, but it was the genesis of a project (ScanGov) that has evolved beyond even my optimism.
 
 Inherently, I’ve known this, but CHA truly presenced me to HAFO. Hack around, find out.
-
 
 ### Humans of Public Service
 
@@ -262,7 +261,7 @@ Gratitude: Brian Whittaker
 
 In 2024, Elias and I built a website that graded state and federal websites on key web guidelines and protocol. The goal was to help government agencies understand key web standards and how they fared.
 
-It’s been inspiring to watch him engage with government folks on GitHub (most of whom probably don’t realize they’re talking to a teenager), helping to improve their websites. We’ve talked with government officials and [shared our story with industry press](https://docs.scangov.org/press).
+It’s been inspiring to watch him engage with government folks on GitHub (most of whom probably don’t realize they’re talking to a teenager), helping to improve their websites. We’ve talked with government officials and [shared our story with industry press](https://scangov.com/press).
 
 It has since evolved into [ScanGov](https://scangov.com) and [Project ScanGov](https://scangov.org).
 
