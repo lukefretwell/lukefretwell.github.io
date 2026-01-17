@@ -1,6 +1,11 @@
 docs_list_title: press
 docs:
 
+- title: "AI agents are swarming. Does your website need an llms.txt file?"
+  url: https://statescoop.com/llmstxt-government-websites-ai/
+  source: StateScoop
+  categories:
+    
 - title: "Guerrilla Government: Marin County Takes on Bureaucracy With Accelerator"
   url: https://insider.govtech.com/california/news/guerrilla-government-marin-county-takes-on-bureaucracy-with-accelerator
   source: Industry Insider
