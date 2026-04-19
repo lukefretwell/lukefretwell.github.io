@@ -1,8 +1,9 @@
-{% if page.img-og %}
+{% if page.img %}
   <figure>
     <img
-      src="{{ site.baseurl }}/assets/img/{{ page.img-path }}/{{ page.img-og }}"
-      alt="{{ page.img-alt }}"
+      src="{{ site.baseurl }}/assets/img/{{ page.img-path | default: site.img-path }}/{{ page.img }}"
+      alt="{{ page.img-alt | default: site.title }}"
+      loading="lazy"
       class="
         mb-2
         border

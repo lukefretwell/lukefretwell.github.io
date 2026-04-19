@@ -7,17 +7,15 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.4.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
-  gem "jekyll-sitemap"
-  gem "jekyll-seo-tag"
-  gem "jekyll-paginate"
-  gem "jekyll-assets"
-  gem "jekyll-redirect-from"
-  gem 'logger'
+  gem "jekyll-feed", "~> 0.17"
+  gem "jekyll-sitemap", "~> 1.4"
+  gem "jekyll-seo-tag", "~> 2.8"
+  gem "jekyll-redirect-from", "~> 0.16"
+  gem "jekyll-paginate", "~> 1.1"
   gem 'csv'
   gem 'ostruct'
   gem 'base64'

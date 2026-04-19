@@ -5,6 +5,7 @@
 <!-- Basic HTML Meta Tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://stackpath.bootstrapcdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com;">
 <title>ProudCity - Luke Fretwell</title>
 <meta name="description" content="Platform for local government digital services.">
 <meta name="keywords" content=", ">
@@ -77,9 +78,9 @@
 
 <!-- Dublin Core Metadata -->
 
-<meta name="dc.date" content="2025-06-19T17:15:17-07:00">
-<meta name="dc.date.created" content="2025-06-19T17:15:17-07:00">
-<meta name="dcterms.created" content="2025-06-19T17:15:17-07:00">
+<meta name="dc.date" content="2026-04-19T08:19:12-07:00">
+<meta name="dc.date.created" content="2026-04-19T08:19:12-07:00">
+<meta name="dcterms.created" content="2026-04-19T08:19:12-07:00">
 
 
 
@@ -107,15 +108,6 @@
 
 <!-- Article-specific Open Graph Tags (for blog posts) -->
 
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary">
-
-
-<meta name="twitter:title" content="ProudCity - Luke Fretwell">
-<meta name="twitter:description" content="Platform for local government digital services.">
-<meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-og.png">
-<meta name="twitter:image:alt" content="ProudCity image">
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -164,74 +156,48 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow" aria-label="Primary navigation">
   <a class="navbar-brand" href="/">Luke Fretwell</a>
   <button
     class="navbar-toggler"
     type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
     aria-controls="navbarNav"
     aria-expanded="false"
     aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       
         
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/about">About</a>
-            </small>
+          <li class="nav-item">
+            <a class="nav-link text-small " href="/about" >About</a>
           </li>
         
       
         
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/work">Work</a>
-            </small>
+          <li class="nav-item">
+            <a class="nav-link text-small " href="/services" >Services</a>
           </li>
         
       
         
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/services">Services</a>
-            </small>
+          <li class="nav-item">
+            <a class="nav-link text-small " href="/work" >Work</a>
           </li>
         
       
         
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/press">Press</a>
-            </small>
+          <li class="nav-item">
+            <a class="nav-link text-small " href="/press" >Press</a>
           </li>
         
       
         
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/what-they-say">What they say</a>
-            </small>
-          </li>
-        
-      
-        
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/notes">Notes</a>
-            </small>
-          </li>
-        
-      
-        
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link " href="/contact">Contact</a>
-            </small>
+          <li class="nav-item">
+            <a class="nav-link text-small " href="/contact" >Contact</a>
           </li>
         
       
@@ -243,13 +209,13 @@
   <div class="pb-3 pt-5">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
           
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                  <a href="/work" class="link-dark">Work</a>
+                  <a href="/work">Work</a>
                 </li>
               </ol>
             </nav>
@@ -257,37 +223,40 @@
           <h1 class="display-5 mb-3">ProudCity</h1>
           <p class="lead">Platform for local government digital services.</p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+        <div class="col-lg-1"></div>
       </div>
       <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
           
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+        <div class="col-lg-1"></div>
       </div>
     </div>
   </div>
 
+  
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-        <div class="post">
-          <p>Co-founder and CEO of <a href="https://proudcity.com">ProudCity</a>, a platform for local government digital services, including websites, online meetings, forms and payments.</p>
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      
+    <article class="post">
+      <p>Co-founder and CEO of <a href="https://proudcity.com">ProudCity</a>, a platform for local government digital services, including websites, online meetings, forms and payments.</p>
 
+      
+        <a
+          href="https://proudcity.com"
+          class="btn btn-primary my-3 shadow border"
+          role="button">ProudCity website</a>
+      
+    </article>
+    
+      <section aria-labelledby="press-heading">
+        <h2 id="press-heading" class="mt-5 pt-5 border-top">Press</h2>
+        <p>ProudCity in the news.</p>
+        <div class="card-group mt-3 mb-4">
           
-            <a
-              href="https://proudcity.com"
-              class="btn btn-primary my-3 shadow border"
-              role="button">ProudCity website</a>
-          
-        </div>
-        
-          <h2 class="mt-5 pt-5 border-top">Press</h2>
-          <p>ProudCity in the news.</p>
-          <div class="card-group mt-3 mb-4">
-            
   
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
       <div class="card border shadow m-2 my-2">
@@ -498,12 +467,15 @@
     </div>
   
 
-          </div>
-        
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+        </div>
+      </section>
+    
+  
     </div>
+    <div class="col-lg-1"></div>
   </div>
+</div>
+
 </main>
 <footer>
   <a
@@ -522,57 +494,25 @@
     feedbackButton.style.opacity = '0';
     });
   </script>
-  <div class="border-top mt-5 pt-3 text-end">
+  <div class="border-top mt-5 pt-3">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-        <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-          <div class="connect-footer mb-2">
-  
-    <a href="mailto:luke@lukefretwell.com" aria-label="Email">
-      <i class="fa-regular fa-envelope fa-lg" aria-label="Email"></i>
-    </a>
-  
-  
-    <a href="https://lukefretwell.com/calendar" aria-label="Calendar">
-      <i class="fa-regular fa-calendar fa-lg" aria-label="Calendar"></i>
-    </a>
-  
-  
-  
-  
-    <a href="https://www.linkedin.com/in/lukefretwell" aria-label="LinkedIn">
-      <i class="fab fa-linkedin-in fa-lg" aria-label="LinkedIn"></i>
-    </a>
-  
-  
-    <a href="https://github.com/lukefretwell" aria-label="GitHub">
-      <i class="fab fa-github fa-lg" aria-label="GitHub"></i>
-    </a>
-  
-  
-  
-    <a href="https://lukefretwell.com/feed.xml" aria-label="RSS">
-      <i class="fas fa-rss fa-lg" aria-label="RSS"></i>
-    </a>
-  
-</div>
-          <p class="small">
-            <small>
-              <a href="/">Luke Fretwell</a>
-              &middot;
-              <a href="https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report">
-                <i class="fa-solid fa-star" aria-hidden="Star"></i>
-                ScanGov Scorecard</a>
-            </small>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="small mb-0">
+            <a href="/">Luke Fretwell</a>
+            &middot;
+            <a href="https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              ScanGov Scorecard
+            </a>
           </p>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
       </div>
     </div>
   </div>
 </footer>
 <!-- Dark mode and back-to-top functionality -->
+<script src="/css/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
   // Dark mode functionality
   let colorTheme = 'light'; // Default theme
@@ -650,6 +590,25 @@
     });
   }
 
+  // Fallback toggle for Bootstrap navbar collapse
+  function setupNavbarToggleFallback() {
+    const toggle = document.querySelector('.navbar-toggler');
+    const collapseTarget = document.querySelector('#navbarNav');
+
+    if (!toggle || !collapseTarget) {
+      return;
+    }
+
+    if (typeof bootstrap !== 'undefined') {
+      return;
+    }
+
+    toggle.addEventListener('click', function () {
+      const isExpanded = collapseTarget.classList.toggle('show');
+      toggle.setAttribute('aria-expanded', String(isExpanded));
+    });
+  }
+
   // Setup scroll event listener
   function setupScrollListener() {
     window.addEventListener('scroll', scrollFunction);
@@ -659,6 +618,7 @@
   function initializeScripts() {
     initializeDarkMode();
     setupDarkModeToggle();
+    setupNavbarToggleFallback();
     setupScrollListener();
   }
 

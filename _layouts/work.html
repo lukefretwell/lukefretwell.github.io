@@ -5,29 +5,26 @@ layout: work
 {% include nav.html %}
 <main>
   {% include jumbotron.html %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-        <div class="post">
-          {{ content | markdownify }}
-          {% if page.website %}
-            <a
-              href="{{ page.website }}"
-              class="btn btn-primary my-3 shadow border"
-              role="button">{{ page.title }} website</a>
-          {% endif %}
+  {% capture body %}
+    <article class="post">
+      {{ content | markdownify }}
+      {% if page.website %}
+        <a
+          href="{{ page.website }}"
+          class="btn btn-primary my-3 shadow border"
+          role="button">{{ page.title }} website</a>
+      {% endif %}
+    </article>
+    {% if page.press %}
+      <section aria-labelledby="press-heading">
+        <h2 id="press-heading" class="mt-5 pt-5 border-top">Press</h2>
+        <p>{{ page.title }} in the news.</p>
+        <div class="card-group mt-3 mb-4">
+          {% include press-work.html %}
         </div>
-        {% if page.press %}
-          <h2 class="mt-5 pt-5 border-top">Press</h2>
-          <p>{{ page.title }} in the news.</p>
-          <div class="card-group mt-3 mb-4">
-            {% include press-work.html %}
-          </div>
-        {% endif %}
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-    </div>
-  </div>
+      </section>
+    {% endif %}
+  {% endcapture %}
+  {% include content-wrapper.html body=body %}
 </main>
 {% include footer.html %}

@@ -5,6 +5,7 @@
 <!-- Basic HTML Meta Tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://stackpath.bootstrapcdn.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' data: https://fonts.gstatic.com;">
 <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | escape }}{% endif %}">
 <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}{% if page.categories %}{% if page.tags %}, {% endif %}{{ page.categories | join: ', ' }}{% endif %}">
@@ -85,21 +86,6 @@
 {% endfor %}
 {% endif %}
 {% endif %}
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="{% if page.img-og %}summary_large_image{% else %}summary{% endif %}">
-{% if site.twitter %}
-<meta name="twitter:site" content="@{{ site.twitter }}">
-{% endif %}
-{% if page.twitter %}
-<meta name="twitter:creator" content="@{{ page.twitter }}">
-{% elsif site.twitter %}
-<meta name="twitter:creator" content="@{{ site.twitter }}">
-{% endif %}
-<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{ page.description | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | escape }}{% endif %}">
-<meta name="twitter:image" content="{{ og_image_path }}">
-<meta name="twitter:image:alt" content="{% if page.layout == 'post' and page.img-alt %}{{ page.img-alt }}{% elsif page.img-alt %}{{ page.img-alt }}{% elsif page.title %}{{ page.title }} image{% else %}{{ site.title }} image{% endif %}">
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">

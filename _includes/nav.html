@@ -1,23 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom shadow" aria-label="Primary navigation">
   <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
   <button
     class="navbar-toggler"
     type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
     aria-controls="navbarNav"
     aria-expanded="false"
     aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       {% for item in site.data.nav.docs %}
         {% if item.url %}
-          <li class="nav-item small">
-            <small>
-              <a class="nav-link {% if item.url == page.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
-            </small>
+          <li class="nav-item">
+            <a class="nav-link text-small {% if item.url == page.url %}active{% endif %}" href="{{ site.baseurl }}{{ item.url }}" {% if item.url == page.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
           </li>
         {% endif %}
       {% endfor %}

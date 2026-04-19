@@ -5,28 +5,19 @@ layout: cv
 {% include nav.html %}
 <main>
   {% include jumbotron.html %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-        <div class="mb-5">
-          {% if page.download-link %}
-            <a
-              class="btn btn-primary btn-lg mt-3 shadow border"
-              href="{{ page.download-link }}"
-              role="button">{{ page.download-text }}</a>
-          {% endif %}
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
+  {% capture body %}
+    <div class="mb-5">
+      {% if page.download-link %}
+        <a
+          class="btn btn-primary btn-lg mt-3 shadow border"
+          href="{{ page.download-link }}"
+          role="button">{{ page.download-text }}</a>
+      {% endif %}
     </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-      <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-        {{ content }}
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-1 col-xl-1"></div>
-    </div>
-  </div>
+    <section>
+      {{ content }}
+    </section>
+  {% endcapture %}
+  {% include content-wrapper.html body=body %}
 </main>
 {% include footer.html %}

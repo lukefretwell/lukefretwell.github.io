@@ -6,7 +6,6 @@ img: luke-fretwell.jpg
 img-alt: Luke Fretwell
 img-download: luke-fretwell-high-res.jpg
 img-og: about-og.png
-img-alt: ""
 ---
 
 Luke Fretwell is an entrepreneur, writer and civic hacker.

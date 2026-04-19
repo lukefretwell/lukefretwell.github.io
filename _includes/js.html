@@ -1,4 +1,5 @@
 <!-- Dark mode and back-to-top functionality -->
+<script src="{{ site.baseurl }}/css/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
   // Dark mode functionality
   let colorTheme = 'light'; // Default theme
@@ -76,6 +77,25 @@
     });
   }
 
+  // Fallback toggle for Bootstrap navbar collapse
+  function setupNavbarToggleFallback() {
+    const toggle = document.querySelector('.navbar-toggler');
+    const collapseTarget = document.querySelector('#navbarNav');
+
+    if (!toggle || !collapseTarget) {
+      return;
+    }
+
+    if (typeof bootstrap !== 'undefined') {
+      return;
+    }
+
+    toggle.addEventListener('click', function () {
+      const isExpanded = collapseTarget.classList.toggle('show');
+      toggle.setAttribute('aria-expanded', String(isExpanded));
+    });
+  }
+
   // Setup scroll event listener
   function setupScrollListener() {
     window.addEventListener('scroll', scrollFunction);
@@ -85,6 +105,7 @@
   function initializeScripts() {
     initializeDarkMode();
     setupDarkModeToggle();
+    setupNavbarToggleFallback();
     setupScrollListener();
   }
 

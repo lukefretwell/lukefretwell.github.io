@@ -4,6 +4,8 @@ description: "Entrepreneur, writer, civic hacker"
 avatar: avatar.png
 url: https://lukefretwell.com
 
+incremental: true
+
 # Social
 email: mailto:luke@lukefretwell.com
 calendar: https://lukefretwell.com/calendar
@@ -20,9 +22,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-assets
   - jekyll-redirect-from
+  - jekyll-paginate
+
+# Pagination
+paginate: 5
+paginate_path: "/notes/page/:num/"
   
 # Markdown settings
 markdown: kramdown
