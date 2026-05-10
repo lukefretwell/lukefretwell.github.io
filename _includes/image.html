@@ -2,18 +2,15 @@
   <figure>
     <img
       src="{{ site.baseurl }}/assets/img/{{ page.img-path | default: site.img-path }}/{{ page.img }}"
-      alt="{{ page.img-alt | default: site.title }}"
+      alt="{{ page.img-alt | default: "" }}"
       loading="lazy"
-      class="
-        mb-2
-        border
-        ">
+      class="border">
     {% if page.img-caption %}
       <figcaption>
-        <p class="small text-secondary mb-4">
+        <p>
           <small>
             {% if page.img-link %}
-              <a href="{{ site.baseurl }}{{ page.img-link }}" class="nav-link text-body-secondary link-body-emphasis link-offset-3">
+              <a href="{{ site.baseurl }}{{ page.img-link }}">
             {% endif %}
             {{ page.img-caption }}
             {% if page.img-link %}

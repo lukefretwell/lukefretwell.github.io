@@ -1,77 +1,59 @@
-<ul class="list-inline mt-5 text-body-secondary">
-  <li class="small list-inline-item">
-    <small>
-      Share:
-    </small>
-  </li>
-  <li class="small list-inline-item">
+<ul class="share-links">
+  <li><small>Share:</small></li>
+  <li>
     <a
-      class="link-body-emphasis"
       href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}"
       target="_blank"
       rel="noopener noreferrer">
-      <i class="fa-brands fa-linkedin me-1" aria-hidden="true"></i>
-      <span class="visually-hidden">LinkedIn</span>
+      <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+      <span class="visually-hidden">LinkedIn (opens in new tab)</span>
     </a>
   </li>
-  <!-- Bluesky Share Link -->
-  <li class="small list-inline-item">
+  <li>
     <a
-      class="link-body-emphasis"
       href="https://bsky.app/share?url={{ site.url }}{{ page.url }}"
       target="_blank"
       rel="noopener noreferrer">
-      <i class="fa-brands fa-bluesky me-1" aria-hidden="true"></i>
-      <span class="visually-hidden">Bluesky</span>
+      <i class="fa-brands fa-bluesky" aria-hidden="true"></i>
+      <span class="visually-hidden">Bluesky (opens in new tab)</span>
     </a>
   </li>
-  <!-- Mastodon Share Link -->
-  <li class="small list-inline-item">
+  <li>
     <a
-      class="link-body-emphasis"
       href="https://mastodon.social/share?url={{ site.url }}{{ page.url }}"
       target="_blank"
       rel="noopener noreferrer">
-      <i class="fa-brands fa-mastodon me-1" aria-hidden="true"></i>
-      <span class="visually-hidden">Mastodon</span>
+      <i class="fa-brands fa-mastodon" aria-hidden="true"></i>
+      <span class="visually-hidden">Mastodon (opens in new tab)</span>
     </a>
   </li>
-  <li class="small list-inline-item">
+  <li>
     <a
-      class="link-body-emphasis"
       href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}"
       target="_blank"
       rel="noopener noreferrer">
-      <i class="fa-brands fa-x-twitter me-1" aria-hidden="true"></i>
-      <span class="visually-hidden">X</span>
+      <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+      <span class="visually-hidden">X (opens in new tab)</span>
     </a>
   </li>
-  <li class="small list-inline-item">
+  <li>
     <a
-      class="link-body-emphasis"
       href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}"
       target="_blank"
       rel="noopener noreferrer">
-      <i class="fa-brands fa-facebook me-1" aria-hidden="true"></i>
-      <span class="visually-hidden">Facebook</span>
+      <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+      <span class="visually-hidden">Facebook (opens in new tab)</span>
     </a>
   </li>
-  <li class="small list-inline-item">
-    <a
-      class="link-body-emphasis"
-      href="mailto:?subject=Check this out&body={{ site.url }}{{ page.url }}"
-      target="_blank"
-      rel="noopener noreferrer">
-      <i class="fa-solid fa-envelope me-1" aria-hidden="true"></i>
+  <li>
+    <a href="mailto:?subject=Check this out&body={{ site.url }}{{ page.url }}">
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
       <span class="visually-hidden">Email</span>
     </a>
   </li>
-  <li class="small list-inline-item">
-    <button
-      class="dropdown-item"
-      type="button"
-      onclick="copyLink()">
-      <i class="fa-solid fa-link me-1" aria-hidden="true"></i>
+  <li>
+    <button type="button" onclick="copyLink()" class="share-copy-btn">
+      <i class="fa-solid fa-link" aria-hidden="true"></i>
       <span class="visually-hidden">Copy link</span>
     </button>
   </li>

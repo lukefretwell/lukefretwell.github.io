@@ -1,10 +1,13 @@
 ---
-layout: wrapper
+layout: compress
 ---
 {% include header.html %}
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
-<main>
+<main id="main-content">
   {% include jumbotron.html %}
-  {% include content-wrapper.html body=content %}
+  <div class="content-wide content-main">
+    <div>{{ content }}</div>
+  </div>
 </main>
 {% include footer.html %}

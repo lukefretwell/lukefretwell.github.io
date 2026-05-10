@@ -1,23 +1,18 @@
-<div class="card-group">
+<div class="card-grid">
   {% if page.title == "Luke Fretwell" %}
     {% assign works = site.work | where: "featured", true %}
   {% else %}
     {% assign works = site.work %}
   {% endif %}
+  {% assign heading = include.heading | default: "h2" %}
   {% for page in works limit: include.limit %}
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
-      <div class="card border shadow m-2 my-2">
-        <div class="card-body">
-          <h2 class="h4">
-            <a href="{{ site.baseurl }}{{ page.url }}" class="stretched-link">
-              {{ page.title }}
-            </a>
-          </h2>
-          <p class="card-text">
-            <small>{{ page.description }}</small>
-          </p>
-        </div>
-      </div>
-    </div>
+    <wa-card>
+      <{{ heading }}>
+        <a href="{{ site.baseurl }}{{ page.url }}" class="card-link">
+          {{ page.title }}
+        </a>
+      </{{ heading }}>
+      <p class="card-meta">{{ page.description }}</p>
+    </wa-card>
   {% endfor %}
 </div>

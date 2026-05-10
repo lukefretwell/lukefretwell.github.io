@@ -1,87 +1,47 @@
 ---
-layout: home
+layout: compress
 ---
 
 {% include header.html %}
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
-<main>
+<main id="main-content">
   {% include jumbotron.html %}
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-10 border-top pt-5">
-        {% if page.button-services %}
-          <h2 class="mb-3">{{ page.button-services }}</h2>
-        {% endif %}
-        {% if page.text-services %}
-          <p class="lead">{{ page.text-services }}</p>
-        {% endif %}
-        {% if page.button-services %}
-          <a
-            class="btn btn-primary mt-3 shadow border"
-            href="{{ page.button-link-services }}"
-            role="button">{{ page.button-services }}</a>
-        {% endif %}
-      </div>
-      <div class="col-lg-1"></div>
-    </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-10 border-top pt-5">
-        {% if page.button-works %}
-          <h2 class="mb-3">{{ page.button-works }}</h2>
-        {% endif %}
-        {% include works.html %}
-        {% if page.button-works %}
-          <a
-            class="btn btn-primary mt-3 shadow border"
-            href="{{ page.button-link-works }}"
-            role="button">{{ page.button-works }}</a>
-        {% endif %}
-      </div>
-      <div class="col-lg-1"></div>
-    </div>
-  </div>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-10 border-top pt-5">
-        {% if page.button-press %}
-          <h2 class="mb-3">{{ page.button-press }}</h2>
-        {% endif %}
-        {% include press.html limit=4 %}
-        {% if page.button-press %}
-          <a
-            class="btn btn-primary mt-3 shadow border"
-            href="{{ page.button-link-press }}"
-            role="button">{{ page.button-press }}</a>
-        {% endif %}
-      </div>
-      <div class="col-lg-1"></div>
-    </div>
-  </div>
-<!--
-  <div class="container mt-5">  <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10 border-top pt-5">
-      {% if page.button-connect %}
-        <h2 class="mb-3">{{ page.button-connect }}</h2>
-      {% endif %}
-      {% include connect.html limit=4 %}
-      {% if page.button-connect %}
-        <a
-          class="btn btn-primary border shadow"
-          href="{{ page.button-link-connect }}"
-          role="button">{{ page.button-connect }}</a>
+  <div class="content-wide home-section">
+    <div>
+      {% if page.button-services %}
+        <div class="home-section-inner">
+          <h2>{{ page.button-services }}</h2>
+          {% if page.text-services %}
+            <p class="wa-body-l">{{ page.text-services }}</p>
+          {% endif %}
+          <wa-button href="{{ page.button-link-services }}" size="s">{{ page.button-services }}</wa-button>
+        </div>
       {% endif %}
     </div>
-    <div class="col-lg-1"></div>
   </div>
-</div>
--->
+  <div class="content-wide home-section">
+    <div>
+      {% if page.button-works %}
+        <div class="home-section-inner">
+          <h2>{{ page.button-works }}</h2>
+          {% include works.html heading="h3" %}
+          <wa-button href="{{ page.button-link-works }}" size="s">{{ page.button-works }}</wa-button>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="content-wide home-section">
+    <div>
+      {% if page.button-press %}
+        <div class="home-section-inner">
+          <h2>{{ page.button-press }}</h2>
+          {% include press.html limit=4 heading="h3" %}
+          <wa-button href="{{ page.button-link-press }}" size="s">{{ page.button-press }}</wa-button>
+        </div>
+      {% endif %}
+    </div>
+  </div>
 </main>
-
 
 {% include footer.html %}

@@ -1,104 +1,73 @@
 {% if page.layout == "home" %}
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-10 mt-2 pt-5 pb-3">
-        <h1 class="display-5 mb-3">{{ page.title }}</h1>
-        <p class="lead fs-4 py-3">{{ page.description }}</p>
-        {% if page.button %}
-          <a
-            class="btn btn-primary btn-lg border shadow"
-            href="{{ site.baseurl }}{{ page.button-link }}"
-            role="button">{{ page.button }}</a>
-        {% endif %}
-      </div>
-      <div class="col-lg-1"></div>
+  <div class="content-wide home-intro">
+    <div>
+      <h1 class="visually-hidden">{{ page.title }}</h1>
+      <p class="home-tagline">{{ page.description }}</p>
+      {% if page.button %}
+        <wa-button href="{{ site.baseurl }}{{ page.button-link }}" size="m">{{ page.button }}</wa-button>
+      {% endif %}
     </div>
   </div>
 {% elsif page.layout == "note" %}
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <!--
-          {% if page.folder %}  <nav aria-label="breadcrumb">    <ol class="breadcrumb">      <li class="breadcrumb-item small">        <a href="{{ site.baseurl }}/{{ page.folder }}" class="nav-link">{{ page.label }}</a>      </li>    </ol>  </nav>
-        {% endif %}
-        -->
+  <div class="jumbotron-note">
+    <div class="content-wide">
+      <div>
         {% if page.title %}
-          <h1 class="display-5 mb-4">{{ page.title }}</h1>
+          <h1>{{ page.title }}</h1>
         {% endif %}
       </div>
-      <div class="col-md-1"></div>
     </div>
-    <div class="row border-bottom">
-      <div class="col-md-1"></div>
-      <div class="col-md-3">
-        {% if page.img-feat %}
-          <figure>
-            <img
-              src="{{ site.baseurl }}/assets/img/posts/{{ page.img-feat }}"
-              alt="{{ page.img-alt }}"
-              class="mb-2 border">
-            {% if page.img-caption %}
-              <figcaption>
-                <p class="small text-body-secondary">
-                  <small>
-                    {% if page.img-link %}
-                      <a href="{{ site.baseurl }}{{ page.img-link }}" class="nav-link text-body-secondary">
-                    {% endif %}
-                    {{ page.img-caption }}
-                    {% if page.img-link %}
-                      </a>
-                    {% endif %}
-                  </small>
-                </p>
-              </figcaption>
-            {% endif %}
-          </figure>
-        {% endif %}
+    <div class="content-wide jumbotron-note-meta">
+      <div class="jumbotron-note-content">
+        <div>
+          {% if page.img-feat %}
+            <figure>
+              <img
+                src="{{ site.baseurl }}/assets/img/posts/{{ page.img-feat }}"
+                alt="{{ page.img-alt }}"
+                class="border">
+              {% if page.img-caption %}
+                <figcaption>
+                  <p>
+                    <small>
+                      {% if page.img-link %}
+                        <a href="{{ site.baseurl }}{{ page.img-link }}">
+                      {% endif %}
+                      {{ page.img-caption }}
+                      {% if page.img-link %}
+                        </a>
+                      {% endif %}
+                    </small>
+                  </p>
+                </figcaption>
+              {% endif %}
+            </figure>
+          {% endif %}
+        </div>
+        <div>
+          {% if page.description %}
+            <p class="wa-body-l description">{{ page.description }}</p>
+          {% endif %}
+          {% include byline.html %}
+        </div>
       </div>
-      <div class="col-md-7">
-        {% if page.description %}
-          <p class="lead text-body-secondary mb-4">{{ page.description }}</p>
-        {% endif %}
-        {% include byline.html %}
-      </div>
-      <div class="col-md-1"></div>
     </div>
   </div>
 {% else %}
-  <div class="pb-3 pt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
-          {% if page.folder %}
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="{{ site.baseurl }}/{{ page.folder }}">{{ page.label }}</a>
-                </li>
-              </ol>
-            </nav>
-          {% endif %}
-          <h1 class="display-5 mb-3">{{ page.title }}</h1>
-          <p class="lead">{{ page.description }}</p>
-        </div>
-        <div class="col-lg-1"></div>
-      </div>
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
-          {% if page.button %}
-            <a
-              class="btn btn-primary btn-lg border shadow"
-              href="{{ site.baseurl }}{{ page.button-link }}"
-              role="button">{{
-page.button }}</a>
-          {% endif %}
-        </div>
-        <div class="col-lg-1"></div>
-      </div>
+  <div class="content-wide jumbotron-default">
+    <div>
+      {% if page.folder %}
+        <nav aria-label="breadcrumb" class="jumbotron-breadcrumb">
+          <wa-breadcrumb>
+            <wa-breadcrumb-item href="{{ site.baseurl }}/{{ page.folder }}">{{ page.label }}</wa-breadcrumb-item>
+          </wa-breadcrumb>
+        </nav>
+      {% endif %}
+      <h1>{{ page.title }}</h1>
+      <p class="wa-body-l">{{ page.description }}</p>
+      {% if page.button %}
+        <wa-button href="{{ site.baseurl }}{{ page.button-link }}" size="s">{{ page.button }}</wa-button>
+      {% endif %}
     </div>
   </div>
 {% endif %}

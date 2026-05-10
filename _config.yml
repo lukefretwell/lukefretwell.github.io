@@ -1,5 +1,6 @@
 # General
 title: Luke Fretwell
+author: Luke Fretwell
 description: "Entrepreneur, writer, civic hacker"
 avatar: avatar.png
 url: https://lukefretwell.com
@@ -8,7 +9,7 @@ incremental: true
 
 # Social
 email: mailto:luke@lukefretwell.com
-calendar: https://lukefretwell.com/calendar
+calendar: https://lukefretwell.com/meet
 twitter: 
 linkedin: https://www.linkedin.com/in/lukefretwell
 #mastodon: https://mastodon.social/@lukefretwell
@@ -20,7 +21,6 @@ rss: https://lukefretwell.com/feed.xml
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-paginate
@@ -75,6 +75,18 @@ collections:
   work:
     output: true
     permalink: /work/:title
+
+# HTML compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: [development]
+
+# Include
+include:
+  - .well-known
 
 # Exclude
 exclude:

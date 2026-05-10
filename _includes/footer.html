@@ -1,35 +1,41 @@
 <footer>
-  <a
-    href="{{ site.baseurl}}/contact"
+  <wa-button
+    href="{{ site.baseurl}}/connect"
     id="subscribe-button"
-    aria-label="Contact"
-    class="subscribe btn btn-primary border shadow">
-    Contact
-  </a>
+    aria-label="Connect"
+    tabindex="-1"
+    size="s"
+    class="subscribe">
+    Connect
+  </wa-button>
   <script>
     const feedbackButton = document.getElementById("subscribe-button");
-    window.addEventListener('scroll', () => {
-      if (document.documentElement.scrollTop > window.innerHeight * .4) 
-    feedbackButton.style.opacity = '1';
-      else
-    feedbackButton.style.opacity = '0';
-    });
+    let footerVisible = false;
+
+    function updateButton() {
+      const visible = document.documentElement.scrollTop > window.innerHeight * 0.4 && !footerVisible;
+      feedbackButton.style.opacity = visible ? '1' : '0';
+      feedbackButton.setAttribute('tabindex', visible ? '0' : '-1');
+    }
+
+    new IntersectionObserver(([entry]) => {
+      footerVisible = entry.isIntersecting;
+      updateButton();
+    }).observe(document.querySelector('footer'));
+
+    window.addEventListener('scroll', updateButton);
   </script>
-  <div class="border-top mt-5 pt-3">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <p class="small mb-0">
-            <a href="{{ site.baseurl}}/">{{ site.title }}</a>
-            &middot;
-            <a href="https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report">
-              <i class="fa-solid fa-star" aria-hidden="true"></i>
-              ScanGov Scorecard
-            </a>
-          </p>
-        </div>
-      </div>
+  <div class="content-wide footer-bar">
+    <div>
+      <p>
+        <a href="{{ site.baseurl}}/">{{ site.title }}</a>
+        &middot;
+        <a href="https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          ScanGov Scorecard
+        </a>
+      </p>
     </div>
   </div>
 </footer>
-{% include js.html %}</body></html>
+{% include js.html %}

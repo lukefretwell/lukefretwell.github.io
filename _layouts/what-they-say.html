@@ -1,30 +1,24 @@
 ---
-layout: what-they-say
+layout: compress
 ---
 
 {% include header.html %}
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
-<main>
+<main id="main-content">
   {% include jumbotron.html %}
-  <div class="container mt-4">
-    <div class="row post">
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
-      <div class="col-12 col-sm-12 col-md-8 col-lg-10 col-xl-10">
-        {% for item in site.data.quotes.docs %}
-          <div class="card-quote border-bottom my-2 py-4">
-            <div class="card-body px-2">
-              <p class="mb-2">
-                &ldquo;{{ item.quote }}&rdquo;
-              </p>
-              <footer class="small text-secondary">
-                <small>
-                  {{ item.name }}<br>{{ item.role }}</small>
-              </footer>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
+  <div class="content-wide content-main">
+    <div class="post">
+      {% for item in site.data.quotes.docs %}
+        <figure class="card-quote">
+          <blockquote>
+            <p>{{ item.quote }}</p>
+          </blockquote>
+          <figcaption>
+            <small>{{ item.name }}<br>{{ item.role }}</small>
+          </figcaption>
+        </figure>
+      {% endfor %}
     </div>
   </div>
 </main>
