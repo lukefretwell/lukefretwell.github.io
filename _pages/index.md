@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Luke Fretwell
-description: Entrepreneur, writer, civic hacker
+description: Designer, builder
 button: About
 button-link: about
 button-services: Services

@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About
-description: "Entrepreneur, writer, civic hacker"
+description: "Designer, builder"
 img: luke-fretwell.jpg
 img-alt: Luke Fretwell
 img-download: luke-fretwell-high-res.jpg
