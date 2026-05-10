@@ -1,14 +1,10 @@
 ---
 layout: default
 ---
-<section aria-labelledby="services-heading">
+<section aria-label="Services">
   {% include card-grid.html items=site.data.services.docs type="service" %}
-  <div class="border-top mt-4 pt-4">
-    <div class="row">
-      <div class="col-12">
-        <h2 id="themes-heading">Themes</h2>
-      </div>
-    </div>
-    {% include card-grid.html items=site.data.themes.docs type="theme" card_extra="mx-0 p-2" %}
+  <div class="themes-section">
+    <h2 id="themes-heading">Themes</h2>
+    {% include card-grid.html items=site.data.themes.docs type="theme" %}
   </div>
 </section>

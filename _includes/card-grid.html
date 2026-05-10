@@ -1,32 +1,26 @@
-<div class="row {{ include.row_class | default: 'gx-4 gy-4 align-items-stretch' }}">
+<div class="{{ include.grid_class | default: 'card-grid' }}">
   {% for item in include.items %}
-    <div class="{{ include.column_classes | default: 'col-12 col-md-6 d-flex' }}">
-      <div class="card h-100 shadow border {{ include.card_extra | default: '' }}">
-        <div class="card-body">
-          {% if include.type == "service" %}
-            <i class="fa-solid {{ item.icon }} fa-xl"></i>
-            <h2 class="h3 mt-2">{{ item.title }}</h2>
-            <p class="card-text"><small>{{ item.description }}</small></p>
-            <ul class="text-secondary small mb-0">
-              {% for tag in item.tags %}
-                <li class="small">{{ tag }}</li>
-              {% endfor %}
-            </ul>
-          {% elsif include.type == "theme" %}
-            <p class="text-secondary small m-0 p-0">
-              <small>
-                <i class="fa-solid {{ item.icon }}"></i>
-                {{ item.title }}
-              </small>
-            </p>
-          {% else %}
-            <h2 class="h3 mt-2">{{ item.title }}</h2>
-            {% if item.description %}
-              <p class="card-text"><small>{{ item.description }}</small></p>
-            {% endif %}
-          {% endif %}
-        </div>
-      </div>
-    </div>
+    <wa-card>
+      {% if include.type == "service" %}
+        <i class="fa-solid {{ item.icon }} fa-xl" aria-hidden="true"></i>
+        <h2>{{ item.title }}</h2>
+        <p class="card-meta">{{ item.description }}</p>
+        <ul>
+          {% for tag in item.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      {% elsif include.type == "theme" %}
+        <p class="card-meta">
+          <i class="fa-solid {{ item.icon }}" aria-hidden="true"></i>
+          {{ item.title }}
+        </p>
+      {% else %}
+        <h2>{{ item.title }}</h2>
+        {% if item.description %}
+          <p class="card-meta">{{ item.description }}</p>
+        {% endif %}
+      {% endif %}
+    </wa-card>
   {% endfor %}
 </div>

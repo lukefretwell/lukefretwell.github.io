@@ -1,39 +1,36 @@
 ---
-layout: about
+layout: compress
 ---
 {% include header.html %}
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
-<main>
+<main id="main-content">
   {% include jumbotron.html %}
   {% capture body %}
     {% if page.img %}
-      <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-10">
-          <div class="mb-5">
-            <img
-              src="{{ baseurl }}/assets/img/{{ page.img }}"
-              alt="{{ page.img-alt }}"
-              class="border">
-            {% if page.img-download %}
-              <div class="mt-3">
-                <small>
-                  <a href="{{ baseurl }}/assets/img/{{ page.img-download }}" class="text-secondary">
-                    <i class="fa-solid fa-download"></i>
-                    Download high-resolution image
-                  </a>
-                </small>
-              </div>
-            {% endif %}
+      <div class="about-image">
+        <img
+          src="{{ baseurl }}/assets/img/{{ page.img }}"
+          alt="{{ page.img-alt }}"
+          class="border">
+        {% if page.img-download %}
+          <div>
+            <small>
+              <a href="{{ baseurl }}/assets/img/{{ page.img-download }}">
+                <i class="fa-solid fa-download" aria-hidden="true"></i>
+                Download high-resolution image
+              </a>
+            </small>
           </div>
-        </div>
-        <div class="col-lg-1"></div>
+        {% endif %}
       </div>
     {% endif %}
     <div class="post">
       {{ content }}
     </div>
   {% endcapture %}
-  {% include content-wrapper.html body=body %}
+  <div class="content-wide content-main">
+    <div>{{ body }}</div>
+  </div>
 </main>
 {% include footer.html %}

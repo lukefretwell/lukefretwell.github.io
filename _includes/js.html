@@ -1,118 +1,54 @@
-<!-- Dark mode and back-to-top functionality -->
-<script src="{{ site.baseurl }}/css/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="{{ site.baseurl }}/assets/webawesome/webawesome.loader.js"></script>
 <script>
-  // Dark mode functionality
-  let colorTheme = 'light'; // Default theme
-
-  // Initialize dark mode based on system preference
-  function initializeDarkMode() {
-    const htmlElement = document.querySelector('html');
-    const darkToggle = document.querySelector('div.dark-toggle');
-    
-    // Only initialize if dark toggle exists on this page
-    if (!darkToggle) {
-        return; // Silently skip if elements don't exist
-    }
-    
-    // Check system preference
-    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
-    if (prefersDark) {
-        colorTheme = 'dark';
-        htmlElement.classList.add('dark');
-        darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    } else {
-        darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
-    }
-  }
-
-  // Dark mode toggle functionality
-  function setupDarkModeToggle() {
-    const darkToggle = document.querySelector('div.dark-toggle');
-    
-    // Only setup if toggle exists on this page
-    if (!darkToggle) {
-        return; // Silently skip if element doesn't exist
-    }
-    
-    darkToggle.addEventListener('click', function() {
-        const htmlElement = document.querySelector('html');
-        
-        if (!htmlElement) return;
-        
-        // Toggle dark mode
-        htmlElement.classList.toggle('dark');
-        
-        // Update button icon and theme
-        if (htmlElement.classList.contains('dark')) {
-            darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-            colorTheme = 'dark';
-        } else {
-            darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
-            colorTheme = 'light';
-        }
+  (function () {
+    var basePath = '{{ site.baseurl }}/assets/webawesome/';
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.WebAwesome && window.WebAwesome.setBasePath) {
+        window.WebAwesome.setBasePath(basePath);
+      }
     });
-  }
-
-  // Back to top button functionality
-  function scrollFunction() {
-    const backToTopBtn = document.getElementById("backToTopBtn");
-    
-    if (!backToTopBtn) {
-        return; // Silently fail if button doesn't exist
-    }
-    
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
-    }
-  }
-
-  // Smooth scroll to top function
-  function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-  }
-
-  // Fallback toggle for Bootstrap navbar collapse
-  function setupNavbarToggleFallback() {
-    const toggle = document.querySelector('.navbar-toggler');
-    const collapseTarget = document.querySelector('#navbarNav');
-
-    if (!toggle || !collapseTarget) {
-      return;
-    }
-
-    if (typeof bootstrap !== 'undefined') {
-      return;
-    }
-
-    toggle.addEventListener('click', function () {
-      const isExpanded = collapseTarget.classList.toggle('show');
-      toggle.setAttribute('aria-expanded', String(isExpanded));
-    });
-  }
-
-  // Setup scroll event listener
-  function setupScrollListener() {
-    window.addEventListener('scroll', scrollFunction);
-  }
-
-  // Initialize all functionality when DOM is ready
-  function initializeScripts() {
-    initializeDarkMode();
-    setupDarkModeToggle();
-    setupNavbarToggleFallback();
-    setupScrollListener();
-  }
-
-  // Initialize when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeScripts);
-  } else {
-    initializeScripts();
-  }
+  })();
 </script>
+<script>
+  function setupDarkMode() {
+    const darkToggle = document.querySelector('div.dark-toggle');
+    if (!darkToggle) return;
+
+    const html = document.documentElement;
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    function applyDark() {
+      html.classList.add('dark', 'wa-dark');
+      darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
+    function applyLight() {
+      html.classList.remove('dark', 'wa-dark');
+      darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+
+    if (prefersDark) {
+      applyDark();
+    } else {
+      applyLight();
+    }
+
+    darkToggle.addEventListener('click', function () {
+      if (html.classList.contains('dark')) {
+        applyLight();
+      } else {
+        applyDark();
+      }
+    });
+  }
+
+  function copyLink() {
+    navigator.clipboard.writeText(window.location.href);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupDarkMode);
+  } else {
+    setupDarkMode();
+  }
+</script></body></html>

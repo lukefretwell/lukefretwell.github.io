@@ -1,24 +1,21 @@
 ---
-layout: note
+layout: compress
 ---
 {% include header.html %}
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
-<main>
+<main id="main-content">
   {% include jumbotron.html %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
-      <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 pt-5">
-        <div class="post-note">
-          {{ content | markdownify }}
-        </div>
-        {% include share.html %}
-        <p class="small border-top pt-5 mt-5 text-body-secondary">
-          <a href="{{ site.url }}">Luke Fretwell</a>
-          is an entrepreneur, writer and civic hacker.
-        </p>
+  <div class="content-wide content-main">
+    <div>
+      <div class="post-note">
+        {{ content | markdownify }}
       </div>
-      <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
+      {% include share.html %}
+      <p class="post-footer">
+        <a href="{{ site.url }}">Luke Fretwell</a>
+        is an entrepreneur, writer and civic hacker.
+      </p>
     </div>
   </div>
 </main>

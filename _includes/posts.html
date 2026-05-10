@@ -2,138 +2,77 @@
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% endif %}
-{% if include.limit %}
-  {% assign limitVar = include.limit | plus: 0 %}
-{% endif %}
-{% if limitVar %}
-<div class="row gx-4 gy-4">
-  {% for post in posts limit: limitVar %}
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
-        <article class="card border shadow m-2 my-2 w-100">
-          <div class="card-body d-flex flex-column">
-            {% if post.img-og %}
-              <figure>
-                <img
-                  src="{{ site.baseurl }}/assets/img/{{ post.img-og }}"
-                  alt="{{ post.img-alt }}"
-                  loading="lazy"
-                  class="mb-3 border">
-                {% if post.img-caption %}
-                  <figcaption>
-                    <p class="small text-body-secondary">
-                      <small>
-                        {% if post.img-link %}
-                          <a href="{{ post.img-link }}" class="nav-link text-body-secondary">
-                        {% endif %}
-                        {{ post.img-caption }}
-                        {% if post.img-link %}
-                          </a>
-                        {% endif %}
-                      </small>
-                    </p>
-                  </figcaption>
-                {% endif %}
-              </figure>
-            {% endif %}
-            {% if page.layout == "home" %}
-              <h3>
-            {% else %}
-              <h2>
-            {% endif %}
-                <a href="{{ site.baseurl }}{{ post.url }}" class="stretched-link">
-                  {{ post.title }}
-                </a>
-            {% if page.layout == "home" %}
-              </h3>
-            {% else %}
-              </h2>
-            {% endif %}
-            {% if post.description %}
-              <p class="card-text">{{ post.description }}</p>
-            {% endif %}
-            <p class="text-secondary small mt-auto">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </p>
-          </div>
-        </article>
-      </div>
+<div class="card-grid">
+  {% for post in posts limit: include.limit %}
+    <wa-card>
+      {% if post.img-og %}
+        <figure>
+          <img
+            src="{{ site.baseurl }}/assets/img/{{ post.img-og }}"
+            alt="{{ post.img-alt }}"
+            loading="lazy"
+            class="border">
+          {% if post.img-caption %}
+            <figcaption>
+              <p>
+                <small>
+                  {% if post.img-link %}
+                    <a href="{{ post.img-link }}">
+                  {% endif %}
+                  {{ post.img-caption }}
+                  {% if post.img-link %}
+                    </a>
+                  {% endif %}
+                </small>
+              </p>
+            </figcaption>
+          {% endif %}
+        </figure>
+      {% endif %}
+      {% if page.layout == "home" %}
+        <h3>
+      {% else %}
+        <h2>
+      {% endif %}
+          <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">
+            {{ post.title }}
+          </a>
+      {% if page.layout == "home" %}
+        </h3>
+      {% else %}
+        </h2>
+      {% endif %}
+      {% if post.description %}
+        <p class="card-meta">{{ post.description }}</p>
+      {% endif %}
+      <p class="post-date card-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </p>
+    </wa-card>
   {% endfor %}
 </div>
-{% else %}
-<div class="row gx-4 gy-4">
-  {% for post in posts %}
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
-        <article class="card border shadow m-2 my-2 w-100">
-          <div class="card-body d-flex flex-column">
-            {% if post.img-og %}
-              <figure>
-                <img
-                  src="{{ site.baseurl }}/assets/img/{{ post.img-og }}"
-                  alt="{{ post.img-alt }}"
-                  loading="lazy"
-                  class="mb-3 border">
-                {% if post.img-caption %}
-                  <figcaption>
-                    <p class="small text-body-secondary">
-                      <small>
-                        {% if post.img-link %}
-                          <a href="{{ post.img-link }}" class="nav-link text-body-secondary">
-                        {% endif %}
-                        {{ post.img-caption }}
-                        {% if post.img-link %}
-                          </a>
-                        {% endif %}
-                      </small>
-                    </p>
-                  </figcaption>
-                {% endif %}
-              </figure>
-            {% endif %}
-            {% if page.layout == "home" %}
-              <h3>
-            {% else %}
-              <h2>
-            {% endif %}
-                <a href="{{ site.baseurl }}{{ post.url }}" class="stretched-link">
-                  {{ post.title }}
-                </a>
-            {% if page.layout == "home" %}
-              </h3>
-            {% else %}
-              </h2>
-            {% endif %}
-            {% if post.description %}
-              <p class="card-text">{{ post.description }}</p>
-            {% endif %}
-            <p class="text-secondary small mt-auto">
-              {{ post.date | date: "%B %-d, %Y" }}
-            </p>
-          </div>
-        </article>
-      </div>
-  {% endfor %}
-</div>
+{% unless limitVar %}
 {% if paginator.total_pages > 1 %}
-<nav aria-label="Page navigation">
-  <ul class="pagination justify-content-center">
+<nav aria-label="Page navigation" class="posts-pagination">
+  <ul>
     {% if paginator.previous_page %}
-      <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path }}">Previous</a></li>
+      <li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
     {% else %}
-      <li class="page-item disabled"><span class="page-link">Previous</span></li>
+      <li><span aria-disabled="true">Previous</span></li>
     {% endif %}
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <li class="page-item active"><span class="page-link">{{ page }}</span></li>
+        <li><span aria-current="page"><strong>{{ page }}</strong></span></li>
       {% else %}
-        <li class="page-item"><a class="page-link" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+        <li><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-      <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path }}">Next</a></li>
+      <li><a href="{{ paginator.next_page_path }}">Next</a></li>
     {% else %}
-      <li class="page-item disabled"><span class="page-link">Next</span></li>
+      <li><span aria-disabled="true">Next</span></li>
     {% endif %}
   </ul>
 </nav>
 {% endif %}
-{% endif %}
+{% endunless %}

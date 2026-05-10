@@ -1,26 +1,22 @@
 ---
-layout: default
+layout: compress
 ---
 {% include header.html %}
-<a href="#main-content" class="visually-hidden focusable">Skip to main content</a>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
 <main id="main-content">
   {% include jumbotron.html %}
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1"></div>
-      <div class="col-sm-12 {% if page.layout == "services" %}col-md-10 col-lg-10 col-xl-10{% else %}col-md-8 col-lg-8 col-xl-8{% endif %}">
-        {% include image.html %}
-        {% if page.author %}
-          <p>
-            By {{ page.author }} &middot; {{ page.date | date: "%B, %-d %Y" }}
-          </p>
-        {% endif %}
-        <article class="post-note">
-          {{ content }}
-        </article>
-      </div>
-      <div class="col-sm-12 col-md-2 col-lg-1 col-xl-1"></div>
+  <div class="content-wide content-main">
+    <div>
+      {% include image.html %}
+      {% if page.author %}
+        <p>
+          By {{ page.author }} &middot; <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B, %-d %Y" }}</time>
+        </p>
+      {% endif %}
+      <article class="post-note">
+        {{ content }}
+      </article>
     </div>
   </div>
 </main>

@@ -46,4 +46,4 @@ press:
     source: Route Fifty
 ---
 
-Co-founder and CEO of [ProudCity](https://proudcity.com), a platform for local government digital services, including websites, online meetings, forms and payments.
+Co-founder and former CEO of [ProudCity](https://proudcity.com), a platform for local government digital services, including websites, online meetings, forms and payments.

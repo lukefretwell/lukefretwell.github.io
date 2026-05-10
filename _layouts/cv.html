@@ -1,23 +1,23 @@
 ---
-layout: cv
+layout: compress
 ---
 {% include header.html %}
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
-<main>
+<main id="main-content">
   {% include jumbotron.html %}
   {% capture body %}
-    <div class="mb-5">
+    <div class="cv-download">
       {% if page.download-link %}
-        <a
-          class="btn btn-primary btn-lg mt-3 shadow border"
-          href="{{ page.download-link }}"
-          role="button">{{ page.download-text }}</a>
+        <wa-button href="{{ page.download-link }}" size="s">{{ page.download-text }}</wa-button>
       {% endif %}
     </div>
     <section>
       {{ content }}
     </section>
   {% endcapture %}
-  {% include content-wrapper.html body=body %}
+  <div class="content-wide content-main">
+    <div>{{ body }}</div>
+  </div>
 </main>
 {% include footer.html %}

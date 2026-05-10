@@ -1,24 +1,18 @@
-<div class="card-group">
-  {% if include.limit %}
-    {% assign limitVar = include.limit | plus: 0 %}
-  {% endif %}
-  {% for item in site.data.press.docs limit: limitVar %}
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
-      <div class="card border shadow m-2 my-2">
-        <div class="card-body">
-          <h2 class="h4">
-            <a
-              href="{{ item.url }}"
-              class="stretched-link"
-              target="_blank">
-              {{ item.title }}
-            </a>
-          </h2>
-          <p class="card-text small">
-            <small>{{ item.source }}</small>
-          </p>
-        </div>
-      </div>
-    </div>
+<div class="card-grid press-cards">
+  {% assign heading = include.heading | default: "h3" %}
+  {% for item in site.data.press.docs limit: include.limit %}
+    <wa-card>
+      <{{ heading }}>
+        <a
+          href="{{ item.url }}"
+          class="card-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="{{ item.title }} (opens in new tab)">
+          {{ item.title }} <i class="fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></i>
+        </a>
+      </{{ heading }}>
+      <p class="card-meta">{{ item.source }}</p>
+    </wa-card>
   {% endfor %}
 </div>

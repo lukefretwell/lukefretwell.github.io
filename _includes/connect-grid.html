@@ -1,0 +1,60 @@
+<div class="feature-grid connect-grid">
+  {% if site.email %}
+    <wa-card>
+      <p>
+        <a href="{{ site.email }}" class="card-link" aria-label="Contact via Email">
+          <i class="fa-regular fa-envelope fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>Email</p>
+    </wa-card>
+  {% endif %}
+  {% if site.mastodon %}
+    <wa-card>
+      <p>
+        <a href="{{ site.mastodon }}" class="card-link" aria-label="Follow on Mastodon">
+          <i class="fa-brands fa-mastodon fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>Mastodon</p>
+    </wa-card>
+  {% endif %}
+  {% if site.bluesky %}
+    <wa-card>
+      <p>
+        <a href="{{ site.bluesky }}" class="card-link" aria-label="Follow on Bluesky">
+          <i class="fa-brands fa-bluesky fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>Bluesky</p>
+    </wa-card>
+  {% endif %}
+  {% if site.linkedin %}
+    <wa-card>
+      <p>
+        <a href="{{ site.linkedin }}" class="card-link" aria-label="Connect on LinkedIn">
+          <i class="fab fa-linkedin-in fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>LinkedIn</p>
+    </wa-card>
+  {% endif %}
+  <wa-card>
+    <p>
+      <a href="{{ site.baseurl }}/meet" class="card-link" aria-label="Schedule a meeting">
+        <i class="fa-regular fa-calendar fa-2x" aria-hidden="true"></i>
+      </a>
+    </p>
+    <p>Meet</p>
+  </wa-card>
+  {% if site.instagram %}
+    <wa-card>
+      <p>
+        <a href="{{ site.instagram }}" class="card-link" aria-label="Follow on Instagram">
+          <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+      </p>
+      <p>Instagram</p>
+    </wa-card>
+  {% endif %}
+</div>
