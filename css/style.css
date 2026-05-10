@@ -87,7 +87,10 @@
     .home-section-inner wa-button,
     .cv-download wa-button,
     .post wa-button { margin-left: 1rem; }
-    .subscribe { right: 1rem; bottom: 1rem; }
+    .home-intro wa-button { margin-top: 0.5rem; }
+    .jumbotron-default wa-button { margin-top: 0.25rem; }
+    .home-section-inner wa-button { margin-top: 0.625rem; }
+    .subscribe { right: 1rem; bottom: 0.5rem; }
 }
 
 
