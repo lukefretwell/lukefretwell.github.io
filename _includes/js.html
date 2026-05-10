@@ -20,14 +20,17 @@
     function applyDark() {
       html.classList.add('dark', 'wa-dark');
       darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+      localStorage.setItem('theme', 'dark');
     }
 
     function applyLight() {
       html.classList.remove('dark', 'wa-dark');
       darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+      localStorage.setItem('theme', 'light');
     }
 
-    if (prefersDark) {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || (!saved && prefersDark)) {
       applyDark();
     } else {
       applyLight();
