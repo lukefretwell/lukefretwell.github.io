@@ -108,10 +108,23 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.rss }}">
 {% endif %}
 
+<!-- Preload critical WA CSS (avoids serial @import fetches) -->
+<link rel="preload" href="{{ site.baseurl }}/assets/webawesome/styles/native.css" as="style">
+<link rel="preload" href="{{ site.baseurl }}/assets/webawesome/styles/themes/default.css" as="style">
+
 <!-- Preload critical fonts -->
 <link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Bold.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
 <link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Regular.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
 <link rel="preload" href="{{ site.baseurl }}/assets/fonts/roboto-mono/RobotoMono-Regular.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
+
+<!-- Dark mode: apply saved theme before render to prevent flash -->
+<script>
+  (function() {
+    var t = localStorage.getItem('theme');
+    var dark = t === 'dark' || (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (dark) document.documentElement.classList.add('dark', 'wa-dark');
+  })();
+</script>
 
 <!-- CSS -->
 {% include style.html %}
