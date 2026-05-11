@@ -210,18 +210,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .site-nav-links a:hover,
 .site-nav-links a[aria-current="page"] { color: var(--site-link); }
 
-.dark-toggle {
-    cursor: pointer;
-    padding: 0.4rem 0.6rem;
-    color: var(--site-fg);
-    min-height: 2.75rem;
-    min-width: 2.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dark-toggle:hover { color: var(--site-link); }
 
 /* Mobile nav */
 
