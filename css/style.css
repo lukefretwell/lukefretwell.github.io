@@ -86,7 +86,7 @@
     .jumbotron-default wa-button,
     .home-section-inner wa-button,
     .cv-download wa-button,
-    .post wa-button { margin-left: 1rem; }
+    .post wa-button { margin-left: 0; }
     .home-intro wa-button { margin-top: 0; }
     .jumbotron-default wa-button { margin-top: 0; }
     .home-section-inner wa-button { margin-top: 0; }
@@ -619,8 +619,8 @@ footer p { margin: 0; padding: 1rem 0; font-size: 0.8rem; font-family: var(--sit
 .subscribe {
     opacity: 0;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
     z-index: 1000;
 }
 
