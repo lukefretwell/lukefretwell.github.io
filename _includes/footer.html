@@ -27,9 +27,14 @@
   </script>
   <div class="content-wide footer-bar">
     <div>
+      <ul class="footer-nav">
+        {% for item in site.data.nav.docs %}
+          {% if item.url %}
+            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
       <p>
-        <a href="{{ site.baseurl}}/">{{ site.title }}</a>
-        &middot;
         <a href="https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report">
           ScanGov Scorecard <i class="fa-solid fa-star" aria-hidden="true"></i>
         </a>
