@@ -10,48 +10,7 @@
   })();
 </script>
 <script>
-  function setupDarkMode() {
-    const darkToggle = document.querySelector('div.dark-toggle');
-    if (!darkToggle) return;
-
-    const html = document.documentElement;
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    function applyDark() {
-      html.classList.add('dark', 'wa-dark');
-      darkToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
-      localStorage.setItem('theme', 'dark');
-    }
-
-    function applyLight() {
-      html.classList.remove('dark', 'wa-dark');
-      darkToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
-      localStorage.setItem('theme', 'light');
-    }
-
-    const saved = localStorage.getItem('theme');
-    if (saved === 'dark' || (!saved && prefersDark)) {
-      applyDark();
-    } else {
-      applyLight();
-    }
-
-    darkToggle.addEventListener('click', function () {
-      if (html.classList.contains('dark')) {
-        applyLight();
-      } else {
-        applyDark();
-      }
-    });
-  }
-
   function copyLink() {
     navigator.clipboard.writeText(window.location.href);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupDarkMode);
-  } else {
-    setupDarkMode();
   }
 </script></body></html>
