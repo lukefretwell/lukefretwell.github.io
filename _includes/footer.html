@@ -1,4 +1,5 @@
 <footer>
+  {% unless page.url == '/connect' %}
   <wa-button
     href="{{ site.baseurl}}/connect"
     id="subscribe-button"
@@ -11,20 +12,26 @@
   <script>
     const feedbackButton = document.getElementById("subscribe-button");
     let footerVisible = false;
+    let pageIsShort = false;
 
     function updateButton() {
-      const visible = document.documentElement.scrollTop > window.innerHeight * 0.4 && !footerVisible;
+      const visible = document.documentElement.scrollTop > window.innerHeight * 0.4 && !footerVisible && !pageIsShort;
       feedbackButton.style.opacity = visible ? '1' : '0';
       feedbackButton.setAttribute('tabindex', visible ? '0' : '-1');
     }
 
-    new IntersectionObserver(([entry]) => {
+    const footerObserver = new IntersectionObserver(([entry]) => {
       footerVisible = entry.isIntersecting;
+      if (footerVisible && document.documentElement.scrollTop === 0) {
+        pageIsShort = true;
+      }
       updateButton();
-    }).observe(document.querySelector('footer'));
+    });
 
+    footerObserver.observe(document.querySelector('footer'));
     window.addEventListener('scroll', updateButton);
   </script>
+  {% endunless %}
   <div class="content-wide footer-bar">
     <div>
       <ul class="footer-nav">
