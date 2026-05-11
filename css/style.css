@@ -91,6 +91,7 @@
     .jumbotron-default wa-button { margin-top: 0; }
     .home-section-inner wa-button { margin-top: 0; }
     .subscribe { right: 0.75rem; bottom: 0; }
+    .footer-nav { flex-direction: column; gap: 0.25rem; }
 }
 
 
@@ -442,9 +443,25 @@ small { font-size: 0.85rem; }
     border-top: 0.0625rem solid var(--site-border);
     margin-top: 2rem;
     padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
-.footer-bar p { margin: 0; }
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+    font-size: 0.8rem;
+    font-family: var(--site-font-accent);
+}
+
+.footer-nav li { padding: 0; margin: 0; }
+
+.footer-bar > div > * { margin-top: 0.75rem; }
+.footer-bar > div > *:first-child { margin-top: 0; }
+.footer-bar p { padding: 0; }
 
 /* Card quote (what-they-say) */
 
