@@ -701,3 +701,11 @@ html.dark .svg-inline--fa, html.wa-dark .svg-inline--fa {
     color: var(--site-fg) !important;
     fill: currentColor !important;
 }
+
+html.dark wa-button .fa, html.wa-dark wa-button .fa,
+html.dark wa-button .fa-solid, html.wa-dark wa-button .fa-solid,
+html.dark wa-button .fa-regular, html.wa-dark wa-button .fa-regular,
+html.dark wa-button .fa-brands, html.wa-dark wa-button .fa-brands,
+html.dark wa-button .svg-inline--fa, html.wa-dark wa-button .svg-inline--fa {
+    color: inherit !important;
+}
