@@ -1,9 +1,9 @@
 ---
 title: Code California
-description: State of California open source and culture resource.
+description: State resource for open source and culture.
 website: 
 categories:
   - 
 ---
 
-With the State of California Government Operations Agency, I developed Code California, a resource to help state employees adopt open source software and culture.
+With the State of California Government Operations Agency, I built Code California. It helps state workers learn and adopt open source tools and culture.

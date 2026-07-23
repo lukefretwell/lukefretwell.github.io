@@ -1,6 +1,6 @@
 ---
 title: OpenACR
-description: Digital native accessibility conformance report.
+description: Machine-readable accessibility report.
 website: https://acreditor.section508.gov/
 featured: 
 categories:
@@ -14,4 +14,4 @@ press:
     source: GovFresh
 ---
 
-I worked with CivicActions to establish an internal [accessibility open community of practice](https://accessibility.civicactions.com/). From that work, I wrote [an opinion piece on the need for accessibility compliance as code](https://www.route-fifty.com/digital-government/2021/02/the-need-for-accessibility-compliance-as-code/315514/). The community of practice work coupled with the editorial led to conversations with General Services Administration and eventual contract to build what is now [OpenACR](https://acreditor.section508.gov/), a machine-readable accessibility conformance report.
+I worked with CivicActions. Together we built a [community of practice on accessibility](https://accessibility.civicactions.com/). That work led me to write [an opinion piece on accessibility as code](https://www.route-fifty.com/digital-government/2021/02/the-need-for-accessibility-compliance-as-code/315514/). It led to talks with the General Services Administration. Those talks led to a contract. I built [OpenACR](https://acreditor.section508.gov/), a machine-readable accessibility report.

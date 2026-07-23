@@ -11,7 +11,7 @@ img-alt: "File with lines icon by Font Awesome"
 
 ## Overview
 
-Subject matter expert in government technology with expertise in culture and change management, product strategy, design, development, communications, and marketing. Specialize in web standards, accessibility, security, open source, data, culture, and content strategy.
+Expert in government technology. Skilled in culture change, product strategy, design, development, communications and marketing. Focus areas: web standards, accessibility, security, open source, data and content strategy.
 
 
 ## Experience
@@ -33,8 +33,8 @@ Subject matter expert in government technology with expertise in culture and cha
 
 
 
-* Built a digital experience monitor that tracks key indicators on U.S. government websites.
-* Work with state and federal governments to remediate shortcomings.
+* Built a tool that tracks key measures on U.S. government websites.
+* Work with state and federal governments to fix problems it finds.
 * Featured in industry publications FedScoop, StateScoop, and Government Technology.
 
 
@@ -44,7 +44,7 @@ Subject matter expert in government technology with expertise in culture and cha
 
 
 
-* Founded software-as-a-service to make it easier and more cost-effective for local governments to buy, build, and maintain digital solutions (websites, meetings, online forms, payments).
+* Founded a cloud platform for local governments. It helps them buy, build and run digital tools. Examples: websites, meetings, forms and payments.
 * Led sales, marketing and product strategy.
 * Serve 100+ U.S. municipalities (cities, counties, agencies).
 * Achieved a 99% customer retention rate.
@@ -55,16 +55,16 @@ Subject matter expert in government technology with expertise in culture and cha
 
 *August 2021 – Present*
 
-* Found and lead author of a collaborative book that cultivates public sector digital culture.
+* Founder and lead author of a book written with many people. It grows public sector digital culture.
 * Community contributions from 25+ U.S. public, private, and nonprofit leaders.
 
 ### Strategist, CivicActions
 
 *January 2016 – December 2021*
 
-* Positioned digital services company to federal market via executive networks and media placements.
-* Developed and launched Agile Government Leadership (now Technologists for the Public Good) to connect and educate the government community on agile digital service delivery.
-* Established an internal community of practice for web accessibility.
+* Helped position a digital services firm for the federal market. Used executive networks and media placements.
+* Launched Agile Government Leadership, now Technologists for the Public Good. It connects and educates government. Its focus is agile digital services.
+* Built an internal community of practice for web accessibility.
 
 
 ### Product Designer, [Alpha.CA.gov](Alpha.CA.gov)
@@ -74,9 +74,9 @@ Subject matter expert in government technology with expertise in culture and cha
 
 
 * Incubator team for what is now the California Office of Data and Innovation.
-* Led product design for short-term State of California experiment to re-imagine CA.gov.
+* Led product design for a short state experiment to redesign CA.gov.
 * Mentored team on open culture (working publicly, using appropriate tools).
-* Helped craft and deliver project narrative to press.
+* Helped write and deliver the project story to press.
 
 
 ### Maintainer, [GovPress](https://wordpress.org/themes/govpress/)
@@ -105,10 +105,10 @@ Subject matter expert in government technology with expertise in culture and cha
 #### 
     FedScoop/StateScoop
 
-* Led the creation of editorial and digital operations.
-* Wrote and conducted video/podcast interviews with federal/state government IT leaders.
+* Led editorial and digital operations.
+* Wrote and hosted video and podcast interviews with government IT leaders.
 * Co-hosted FedOSS podcast focused on open source in the federal government.
-* Executed SEO strategy resulting in page one results for targeted keywords.
+* Ran an SEO strategy. It got page-one results for key search terms.
 
 
 ### Founder, HowYouEco
@@ -147,7 +147,7 @@ Subject matter expert in government technology with expertise in culture and cha
 
 
 
-* Part of the core team that turned a near-shuttered dot-com startup into a viable business.
+* Part of the core team. We turned a near-shuttered dot-com startup into a real business.
 * Led strategy and development of in-house CRM and sales management tools.
 * Coordinated corporate partnership with eBay.
 
@@ -177,7 +177,7 @@ Subject matter expert in government technology with expertise in culture and cha
 
 
 
-* Led second-generation redesign and content migration of a national trade association website.
+* Led a second website redesign and content move for a national trade group.
 * Managed day-to-day site updates, content design, and production schedule.
 
 

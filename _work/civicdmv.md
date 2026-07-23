@@ -20,4 +20,4 @@ press:
     source: TechWire
 ---
 
- In 2019, I started [CivicDMV](https://civicdmv.org), an ad hoc, community-based civic hacking effort to inspire new ways of thinking for Departments of Motor Vehicles. This work help kickstart the State of California DMV's digital transformation efforts.
+In 2019, I started [CivicDMV](https://civicdmv.org). It was a community project. It aimed to spark new ideas for state DMVs. This work helped kickstart California's DMV digital overhaul.

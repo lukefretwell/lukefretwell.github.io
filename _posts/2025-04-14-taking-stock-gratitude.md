@@ -326,7 +326,3 @@ Hack around. Find out.
 Share your art.
 
 JFDI.
-
-## Post script
-
-[Contact me](https://lukefretwell.com/contact) if you’d like to work together or want to meet and discuss ideas (see also: [services](https://lukefretwell.com/contact)). I’m open to all the possibilities.
