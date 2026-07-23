@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "wa:copy": "cp -r node_modules/@awesome.me/webawesome/dist-cdn/ assets/webawesome/ && npm run wa:bundle",
+    "wa:copy": "rsync -a --delete node_modules/@awesome.me/webawesome/dist-cdn/ assets/webawesome/ && rm -rf assets/webawesome/skills assets/webawesome/react assets/webawesome/types assets/webawesome/translations assets/webawesome/internal assets/webawesome/events && npm run wa:bundle",
     "wa:bundle": "node scripts/bundle-wa-css.js",
     "fonts:copy": "cp node_modules/@fontsource/roboto-mono/files/roboto-mono-latin-400-normal.woff2 assets/fonts/roboto-mono/RobotoMono-Regular.woff2 && cp node_modules/@fontsource/roboto-mono/files/roboto-mono-latin-500-normal.woff2 assets/fonts/roboto-mono/RobotoMono-Medium.woff2",
     "build": "JEKYLL_ENV=production bundle exec jekyll build && npx purgecss --config purgecss.config.js --output _site/css"
