@@ -7,4 +7,4 @@ categories:
   - Proudly Serving
 ---
 
-I started and co-maintain [Proudly Serving](https://proudlyservingbook.com), a collectively written playbook that helps governments build people-centered digital public services. The book includes insights from 25+ contributors across government, nonprofit and industry leaders.
+I started and co-lead [Proudly Serving](https://proudlyservingbook.com). It's a playbook, written together by many people, that helps governments build better digital services for people. The book includes ideas from 25+ leaders across government, nonprofit and industry.

@@ -5,7 +5,7 @@
 <!-- Basic HTML Meta Tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' data:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{% if page.layout == 'home' %}{{ page.title | escape }}{% elsif page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | escape }}{% endif %}">
@@ -108,15 +108,6 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.rss }}">
 {% endif %}
 
-<!-- Preload critical WA CSS (avoids serial @import fetches) -->
-<link rel="preload" href="{{ site.baseurl }}/assets/webawesome/styles/native.css" as="style">
-<link rel="preload" href="{{ site.baseurl }}/assets/webawesome/styles/themes/default.css" as="style">
-
-<!-- Preload critical fonts -->
-<link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Bold.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-<link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Regular.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-<link rel="preload" href="{{ site.baseurl }}/assets/fonts/roboto-mono/RobotoMono-Regular.woff2" as="font" type="font/woff2" crossorigin fetchpriority="high">
-
 <!-- Dark mode: follow system preference -->
 <script>
   (function() {
@@ -128,6 +119,11 @@
 
 <!-- CSS -->
 {% include style.html %}
+
+<!-- Preload critical fonts -->
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/roboto-mono/RobotoMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Fonts -->
 {% include fonts.html %}

@@ -11,7 +11,12 @@ layout: compress
       <div class="about-image">
         <img
           src="{{ baseurl }}/assets/img/{{ page.img }}"
+          srcset="{{ baseurl }}/assets/img/luke-fretwell-640.jpg 640w, {{ baseurl }}/assets/img/{{ page.img }} 1200w"
+          sizes="(max-width: 768px) 100vw, 960px"
           alt="{{ page.img-alt }}"
+          width="1200"
+          height="800"
+          fetchpriority="high"
           class="border">
         {% if page.img-download %}
           <div>

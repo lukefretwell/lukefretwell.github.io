@@ -12,21 +12,6 @@
             alt="{{ post.img-alt }}"
             loading="lazy"
             class="border">
-          {% if post.img-caption %}
-            <figcaption>
-              <p>
-                <small>
-                  {% if post.img-link %}
-                    <a href="{{ post.img-link }}">
-                  {% endif %}
-                  {{ post.img-caption }}
-                  {% if post.img-link %}
-                    </a>
-                  {% endif %}
-                </small>
-              </p>
-            </figcaption>
-          {% endif %}
         </figure>
       {% endif %}
       {% if page.layout == "home" %}

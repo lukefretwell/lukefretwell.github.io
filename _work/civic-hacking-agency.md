@@ -31,4 +31,4 @@ press:
     source: Governing
 ---
 
-During the COVID-19 pandemic, my son Elias and I began coding together as part of what we called the Civic Hacking Agency. Pojects included a congressional directory using Congress.gov API, a [survey marker finder](https://usa.govfresh.com/geomarks/) using National Geodetic Survey data, and [ScanGov](/work/scangov). More at [USA.govfresh.com](https://usa.govfresh.com).
+During the COVID-19 pandemic, my son Elias and I began coding together. We called it the Civic Hacking Agency. Our projects include a congressional directory built with the Congress.gov API and a [survey marker finder](https://usa.govfresh.com/geomarks/) built with National Geodetic Survey data. We also built [ScanGov](/work/scangov). See more at [USA.govfresh.com](https://usa.govfresh.com).

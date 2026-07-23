@@ -1,6 +1,6 @@
 ---
 title: California Alpha
-description: Re-imagining CA.gov and California government digital services.
+description: Redesigning CA.gov and state digital services.
 website: https://alpha.ca.gov 
 featured: true
 categories:
@@ -14,4 +14,4 @@ press:
     source: Government Technology
 ---
 
-From December 2019 to March 2020, I served as product designer on the [California Alpha](https://alpha.ca.gov/) project, a three-month, 14-person team experiment by the State of California to re-imagine CA.gov using open culture principles and agile development practices. I supported product design, helped craft and deliver the project narrative, and mentored the team on accessibility and working in the open. Immediately after the project ended, this work and key team members were instrumental in leading the state's COVID-19 digital response efforts.
+From December 2019 to March 2020, I was a product designer on [California Alpha](https://alpha.ca.gov/). This was a three-month project for the State of California. A 14-person team redesigned CA.gov in the open. I helped with design. I helped write the project story. I coached the team on accessibility. Soon after, this team helped lead the state's COVID-19 digital response.

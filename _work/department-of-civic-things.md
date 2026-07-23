@@ -7,4 +7,4 @@ categories:
   - 
 ---
 
-When Rebecca Woodbury was launching a new venture to support governments with web and content services, I worked with her to brand it as [Department of Civic Things](https://deptofcivicthings.com), including naming, visual identity and positioning.
+Rebecca Woodbury was launching a new company to help governments with websites and content. I worked with her on the brand: naming, visual identity and positioning. We named it [Department of Civic Things](https://deptofcivicthings.com).

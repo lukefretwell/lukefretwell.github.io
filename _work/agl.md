@@ -1,6 +1,6 @@
 ---
 title: Agile Government Leadership
-description: Government digital transformation community.
+description: Community for government digital change.
 featured: true
 categories:
   - Agile Government Leadership
@@ -10,4 +10,4 @@ press:
     source: NextGov/FCW
 ---
 
-In 2014, I started Agile Government Leadership as an open community of practice to bring together government and industry leaders to support, learn and collaborate around issues such as agile project management, open source and human-centered design. In 2018, AGL formed as an official nonprofit organization and re-branded as [Technologists for the Public Good](https://www.publicgood.tech/) in 2021.
+In 2014, I started Agile Government Leadership. It was an open community for government and industry leaders. Together, we learned and worked on agile project management, open source and human-centered design. In 2018, AGL became an official nonprofit. In 2021, it was renamed [Technologists for the Public Good](https://www.publicgood.tech/).
