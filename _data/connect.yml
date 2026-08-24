@@ -1,0 +1,63 @@
+# Icon sizes and social-media icon classes, read by social.html's "small"
+# (bio) branch and by its default (connect page) branch's docs: loop
+# below. Keep the icon-class block in sync with the same block in
+# govfresh.github.io's _data/connect.yml.
+
+sm: "fa-sm"
+md: "fa-lg"
+lg: "fa-3x"
+xl: "fa-4x"
+
+website: &website "fas fa-window-maximize"
+email: &email "fas fa-envelope"
+calendar: &calendar "fa-solid fa-calendar"
+subscribe: &subscribe "fa-solid fa-envelope-open-text"
+bluesky: &bluesky "fab fa-bluesky"
+patreon: &patreon "fab fa-patreon"
+linkedin: &linkedin "fab fa-linkedin-in"
+github: &github "fab fa-github"
+medium: &medium "fab fa-medium"
+youtube: &youtube "fab fa-youtube"
+vimeo: &vimeo "fab fa-vimeo"
+instagram: &instagram "fa-brands fa-instagram"
+flickr: &flickr "fab fa-flickr"
+figma: &figma "fab fa-figma"
+tumblr: &tumblr "fab fa-tumblr"
+library: &library "fas fa-book-reader"
+bookshop: &bookshop "fas fa-book"
+goodreads: &goodreads "fab fa-goodreads"
+amazon: &amazon "fab fa-amazon"
+apple: &apple "fab fa-apple"
+spotify: &spotify "fab fa-spotify"
+rss: &rss "fas fa-rss"
+discord: &discord "fab fa-discord"
+mastodon: &mastodon "fa-brands fa-mastodon"
+
+# Site social media links — read by connect-grid.html
+
+docs_list_title: connect
+docs:
+
+  - name: Email
+    url: mailto:luke@lukefretwell.com
+    icon: *email
+
+  - name: Meet
+    url: https://lukefretwell.com/meet
+    icon: *calendar
+
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/lukefretwell
+    icon: *linkedin
+
+#  - name: Mastodon
+#    url:
+#    icon: *mastodon
+
+#  - name: Bluesky
+#    url:
+#    icon: *bluesky
+
+#  - name: Instagram
+#    url:
+#    icon: *instagram

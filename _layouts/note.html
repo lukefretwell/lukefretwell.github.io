@@ -2,20 +2,30 @@
 layout: compress
 ---
 {% include header.html %}
-<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
+{% assign notes_href = site.baseurl | append: "/notes/" %}
+{% include breadcrumb.html href=notes_href label="Notes" %}
 <main id="main-content">
-  {% include jumbotron.html %}
-  <div class="content-wide content-main">
-    <div>
-      <div class="post-note">
-        {{ content | markdownify }}
+  <article>
+    {% include read-time-bar.html %}
+    {% include jumbotron.html %}
+    {% capture body %}
+      {% include image.html loading="eager" fetchpriority="high" %}
+      {% include author.html %}
+      {% include date.html %}
+      {% include updated.html %}
+      {% include read-time.html %}
+      <hr class="mb-4 mt-3">
+      <div class="post mb-5">
+        {% include anchor_headings.html html=content anchorBody="<i class='fa-solid fa-link'></i>" %}
       </div>
-      <p class="post-footer">
-        <a href="{{ site.url }}">Luke Fretwell</a>
-        is an entrepreneur, writer and civic hacker.
-      </p>
-    </div>
-  </div>
+      {% include share.html %}
+      {% include bio.html %}
+      {% include topics.html %}
+    {% endcapture %}
+    {% include toc-layout.html html=body toc_html=content %}
+  </article>
 </main>
+{% include more-notes.html %}
+{% include analytics.html %}
 {% include footer.html %}

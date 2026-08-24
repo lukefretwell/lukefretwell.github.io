@@ -1,0 +1,33 @@
+{
+  "logo": {
+    "height": "short"
+  },
+  "feedback": {
+    "text": "Help make this site better:",
+    "link": "/feedback",
+    "link_text": "Send your feedback",
+    "icon": "fa-solid fa-message"
+  },
+  "scangov": {
+    "link": "https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report"
+  },
+  "cta_banner": {
+    "button_text": "Connect",
+    "button_link": "/connect"
+  },
+  "services_cta": {
+    "button_text": "Contact",
+    "button_link": "/connect"
+  },
+  "theme": {
+    "light": "#ffffff",
+    "dark": "#1a1a1a"
+  },
+  "social": {
+    "email": "mailto:luke@lukefretwell.com",
+    "calendar": "https://lukefretwell.com/meet",
+    "linkedin": "https://www.linkedin.com/in/lukefretwell",
+    "github": "https://github.com/lukefretwell",
+    "rss": "/feed.xml"
+  }
+}

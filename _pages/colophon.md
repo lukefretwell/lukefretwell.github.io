@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Colophon
 description: Giving thanks.
 ---
@@ -7,4 +7,4 @@ description: Giving thanks.
 * CMS: [Jekyll](https://jekyllrb.com/)
 * Hosting: [GitHub](https://github.com)
 * Icons: [Font Awesome](https://fontawesome.com/)
-* Design system: [Web Awesome](https://webawesome.com/)
+* Design system: [Bootstrap](https://getbootstrap.com/)

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Office hours
 description: Serendipitous chat time.
 img-og: seedling-og.png

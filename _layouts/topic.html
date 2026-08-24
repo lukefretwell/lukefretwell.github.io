@@ -1,0 +1,33 @@
+---
+layout: topic
+---
+{% include header.html %}
+{% include nav.html %}
+{% assign notes_href = site.baseurl | append: "/notes/" %}
+{% include breadcrumb.html href=notes_href label="Notes" %}
+<main id="main-content">
+  {% include jumbotron.html %}
+  <div class="container py-4">
+    {% assign items = site.posts | where_exp: "post", "post.categories contains page.slug" %}
+    {% if items.size > 0 %}
+      <div class="row row-cols-1 row-cols-sm-2 card-group">
+        {% for post in items %}
+          <div class="col">
+            <div class="card h-100"><div class="card-body">
+              <h2 class="h4">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">{{ post.title }}</a>
+              </h2>
+              {% if post.description %}
+                <p class="card-description">{{ post.description }}</p>
+              {% endif %}
+            </div></div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No notes tagged with this topic yet.</p>
+    {% endif %}
+  </div>
+</main>
+{% include analytics.html %}
+{% include footer.html %}

@@ -2,22 +2,20 @@
 layout: compress
 ---
 {% include header.html %}
-<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
 <main id="main-content">
   {% include jumbotron.html %}
   {% capture body %}
     <div class="cv-download">
       {% if page.download-link %}
-        <wa-button href="{{ page.download-link }}" size="s">{{ page.download-text }}</wa-button>
+        <a href="{{ page.download-link }}" class="btn btn-sm">{{ page.download-text }}</a>
       {% endif %}
     </div>
     <section>
       {{ content }}
     </section>
   {% endcapture %}
-  <div class="content-wide content-main">
-    <div>{{ body }}</div>
-  </div>
+  {% include toc-layout.html html=body toc_html=content %}
 </main>
+{% include analytics.html %}
 {% include footer.html %}

@@ -2,44 +2,55 @@
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% endif %}
-<div class="card-grid">
+{% if page.layout == "home" %}
+  {% assign grid_cols = "row-cols-1 row-cols-sm-2" %}
+{% else %}
+  {% assign grid_cols = "row-cols-1 row-cols-md-2 row-cols-lg-3" %}
+{% endif %}
+<div class="row {{ grid_cols }} card-group">
   {% for post in posts limit: include.limit %}
-    <wa-card>
-      {% if post.img-og %}
-        <figure>
-          <img
-            src="{{ site.baseurl }}/assets/img/{{ post.img-og }}"
-            alt="{{ post.img-alt }}"
-            loading="lazy"
-            class="border">
-        </figure>
-      {% endif %}
-      {% if page.layout == "home" %}
-        <h3>
-      {% else %}
-        <h2>
-      {% endif %}
-          <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">
-            {{ post.title }}
-          </a>
-      {% if page.layout == "home" %}
-        </h3>
-      {% else %}
-        </h2>
-      {% endif %}
-      {% if post.description %}
-        <p class="card-meta">{{ post.description }}</p>
-      {% endif %}
-      <p class="post-date card-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-      </p>
-    </wa-card>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          {% if post.img-og %}
+            <figure>
+              <img
+                src="{{ site.baseurl }}/assets/img/{{ post.img-og }}"
+                alt="{{ post.img-alt }}"
+                loading="lazy"
+                class="border">
+            </figure>
+          {% endif %}
+          {% if page.layout == "home" %}
+            <h3 class="h4">
+          {% else %}
+            <h2 class="h4">
+          {% endif %}
+              <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">
+                {{ post.title }}
+              </a>
+          {% if page.layout == "home" %}
+            </h3>
+          {% else %}
+            </h2>
+          {% endif %}
+          {% if post.description %}
+            <p class="card-description">{{ post.description }}</p>
+          {% endif %}
+        </div>
+        <div class="card-footer">
+          <p class="post-date card-byline">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          </p>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </div>
 {% unless limitVar %}
 {% if paginator.total_pages > 1 %}
 <nav aria-label="Page navigation" class="posts-pagination">
-  <ul>
+  <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-2 m-0">
     {% if paginator.previous_page %}
       <li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
     {% else %}

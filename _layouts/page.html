@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+{% include header.html %}
+{% include nav.html %}
+<main id="main-content">
+  {% include jumbotron.html %}
+  {% capture body %}
+    {% include image.html %}
+    {% if page.author %}
+      <p>
+        By {{ page.author }} &middot; <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B, %-d %Y" }}</time>
+      </p>
+    {% endif %}
+    <article class="post">
+      {{ content }}
+    </article>
+  {% endcapture %}
+  {% include toc-layout.html html=body toc_html=content %}
+</main>
+{% include analytics.html %}
+{% include footer.html %}

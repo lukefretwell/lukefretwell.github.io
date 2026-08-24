@@ -1,18 +1,25 @@
-<div class="card-grid">
-  {% if page.title == "Luke Fretwell" %}
+{% if page.layout == "home" %}
+  {% assign grid_cols = "row-cols-1 row-cols-sm-2" %}
+{% else %}
+  {% assign grid_cols = "row-cols-1 row-cols-md-2 row-cols-lg-3" %}
+{% endif %}
+<div class="row {{ grid_cols }} card-group">
+  {% if page.layout == "home" %}
     {% assign works = site.work | where: "featured", true %}
   {% else %}
     {% assign works = site.work %}
   {% endif %}
   {% assign heading = include.heading | default: "h2" %}
   {% for page in works limit: include.limit %}
-    <wa-card>
-      <{{ heading }}>
-        <a href="{{ site.baseurl }}{{ page.url }}" class="card-link">
-          {{ page.title }}
-        </a>
-      </{{ heading }}>
-      <p class="card-meta">{{ page.description }}</p>
-    </wa-card>
+    <div class="col">
+      <div class="card h-100"><div class="card-body">
+        <{{ heading }} class="h4">
+          <a href="{{ site.baseurl }}{{ page.url }}" class="card-link">
+            {{ page.title }}
+          </a>
+        </{{ heading }}>
+        <p class="card-description">{{ page.description }}</p>
+      </div></div>
+    </div>
   {% endfor %}
 </div>

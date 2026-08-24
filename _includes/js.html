@@ -1,16 +1,6 @@
-<script type="module" src="{{ site.baseurl }}/assets/webawesome/webawesome.loader.js" fetchpriority="low"></script>
-<script>
-  (function () {
-    var basePath = '{{ site.baseurl }}/assets/webawesome/';
-    document.addEventListener('DOMContentLoaded', function () {
-      if (window.WebAwesome && window.WebAwesome.setBasePath) {
-        window.WebAwesome.setBasePath(basePath);
-      }
-    });
-  })();
-</script>
+<script src="{{ site.baseurl }}/assets/lf-ui/bootstrap.bundle.min.js" defer></script>
 <script>
   function copyLink() {
     navigator.clipboard.writeText(window.location.href);
   }
-</script></body></html>
+</script>

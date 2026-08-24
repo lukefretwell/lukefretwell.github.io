@@ -32,4 +32,4 @@ press:
     source: Data Is Plural
 ---
 
-My son Elias and I built and maintain [ScanGov](https://scangov.org). It's a tool that checks the health of government websites. It checks speed, accessibility and security. It also checks search visibility, social media, domain setup and AI-friendliness.
+My son Elias and I built and maintain ScanGov. It's a tool that checks the health of government websites. It checks speed, accessibility and security. It also checks search visibility, social media, domain setup and AI-friendliness.

@@ -1,160 +1,53 @@
-/* Fonts */
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url("/assets/fonts/mona-sans/MonaSans-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Mona Sans";
-    src: url("/assets/fonts/mona-sans/MonaSans-Bold.woff2") format("woff2");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Roboto Mono";
-    src: url("/assets/fonts/roboto-mono/RobotoMono-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Roboto Mono";
-    src: url("/assets/fonts/roboto-mono/RobotoMono-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-/* Root — site custom props (WA Awesome theme handles its own tokens) */
+/* Root — site custom props. Fonts, --bs-border-color, --bs-box-shadow(-lg),
+   --bs-body-line-height, root font-size (desktop/mobile), and
+   --site-transition/--site-transform-* now come from lf-ui's lf-theme.css
+   (vendored at assets/lf-ui/lf-theme.css). */
 
 :root {
-    --wa-font-sans: "Mona Sans", system-ui, -apple-system, sans-serif;
-    --site-font-accent: "Roboto Mono", ui-monospace, monospace;
-
-    --site-bg: #ffffff;
-    --site-fg: #212121;
-    --site-link: #0050d8;
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #212121;
     --site-link-visited: #5942d2;
-    --site-border: #e6e6e6;
-    --site-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.06), 0 0.125rem 0.5rem rgba(0,0,0,0.04);
-    --site-shadow-lg: 0 0.25rem 0.75rem rgba(0,0,0,0.08), 0 0.125rem 0.25rem rgba(0,0,0,0.04);
-    --site-transition: 0.15s ease;
-    --site-transition-btn: 0.3s ease;
-    --site-transform-hover: translateY(0.0625rem);
-    --site-transform-active: translateY(0.125rem);
-
-    font-size: 1.2rem;
-    line-height: 1.6;
 }
 
-/* Layout */
+/* Layout — page-width centering now comes from real Bootstrap's .container
+   (+ .col-lg-8.mx-auto for the narrower reading column — real Bootstrap
+   grid, not a custom max-width class). .content-wide/.content-main/
+   .content-narrow are gone. */
 
-/* 10/12-column centered content with side gutters */
-.content-wide {
-    display: grid;
-    grid-template-columns: 1fr min(83.33%, 960px) 1fr;
-}
-.content-wide > * { grid-column: 2; }
-
-/* 2-column responsive card grid */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
-    gap: 1rem;
-}
-
-/* 3-column responsive feature grid */
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-    gap: 1.5rem;
-}
-
-/* 2-column book cover + description */
+/* 2-column book cover + description — column widths/wrap/gap/alignment
+   come from Bootstrap's own .row.gap-4.align-items-start + .col-auto
+   (cover) + .col (description) on the markup; this only adds the
+   component's own bottom margin. */
 .home-book {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1.5rem;
-    align-items: start;
     margin-bottom: 1.25rem;
 }
 
 .home-book h3 { margin-top: 0; }
 
+.home-book img {
+    border-radius: var(--bs-border-radius);
+}
+
 @media (max-width: 768px) {
-    :root { font-size: 1rem; }
-    .content-wide { grid-template-columns: 1fr; }
-    .content-wide > * { grid-column: 1; }
-    wa-button::part(base) { font-size: 0.85rem; min-height: 2.25rem; padding: 0.25rem 0.75rem; }
-    .home-intro wa-button,
-    .jumbotron-default wa-button,
-    .home-section-inner wa-button,
-    .cv-download wa-button,
-    .post wa-button { margin-left: 0; }
-    .home-intro wa-button { margin-top: 0; }
-    .jumbotron-default wa-button { margin-top: 0; }
-    .home-section-inner wa-button { margin-top: 0; }
-    .subscribe { right: 0.75rem; bottom: 0; }
-    .footer-nav { flex-direction: column; gap: 0.25rem; }
-    .home-book { grid-template-columns: 1fr; }
+    .home-intro .btn,
+    .cv-download .btn,
+    .post .btn { margin-left: 0; }
+    .home-intro .btn { margin-top: 0; }
+    blockquote { margin-left: 0.5rem; padding-left: 0.75rem; }
 }
 
 
-/* Visually hidden / skip link */
+/* .lf-grid comes from lf-ui's lf-components.css (.lf-cluster/.lf-flank/
+   .lf-stack were all converted to real Bootstrap utilities/grid). */
 
-.visually-hidden:not(:focus):not(:focus-within) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-}
-
-.visually-hidden-focusable {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-}
-
-.visually-hidden-focusable:focus,
-.visually-hidden-focusable:active {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    white-space: normal;
-    padding: 0.5rem;
-    background: var(--site-bg);
-    border: 0.125rem solid var(--site-link);
-    z-index: 1000;
-}
-
-/* Base */
-
-body {
-    margin: 0;
-    font-family: "Mona Sans", system-ui, -apple-system, sans-serif;
-    background-color: var(--site-bg);
-    color: var(--site-fg);
-}
+/* .visually-hidden/.visually-hidden-focusable are real Bootstrap utilities.
+   Base — body{}/focus-visible now come from lf-ui's lf-theme.css. */
 
 /* Links */
 
 main a, main a:visited {
     text-decoration: underline;
-    color: var(--site-link);
+    color: var(--bs-link-color);
 }
 
 main a:visited {
@@ -169,176 +62,34 @@ a {
     transition: color var(--site-transition), opacity var(--site-transition);
 }
 
-/* Focus indicators */
+/* Nav — .navbar/.navbar-brand/.navbar-nav/.nav-link/.navbar-toggler/
+   .navbar-collapse (mobile)/#logo all come from lf-ui's lf-components.css
+   (vendored at assets/lf-ui/lf-components.css). Logo color/dark-mode comes
+   from the inline <svg>'s fill: currentColor — no separate filter rule
+   needed. */
 
-a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
-    outline: 0.125rem solid var(--site-link);
-    outline-offset: 0.125rem;
-}
+/* Headings — h1-h6 font-family/weight/letter-spacing/color and sizes all
+   come from Bootstrap's own native scale now (via lf-ui's lf-theme.css/
+   lf-components.css) — the old --site-font-size-* per-level overrides are
+   gone, matching govfresh, which never had them. */
 
-/* Nav */
-
-.site-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    background: var(--site-bg);
-    border-bottom: 0.0625rem solid var(--site-border);
-    box-shadow: var(--site-shadow);
-    font-family: var(--site-font-accent);
-    font-size: 0.95rem;
-}
-
-.site-brand {
-    font-family: var(--wa-font-sans);
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: -0.02em;
-    color: var(--site-fg);
-    text-decoration: none;
-    padding: 0.5rem 0;
-}
-
-.site-brand:hover { color: var(--site-link); }
-
-.site-nav-links {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.site-nav-links a {
-    color: var(--site-fg);
-    text-decoration: none;
-    padding: 0.4rem 0.6rem;
-    border-radius: var(--wa-border-radius-small);
-    transition: color var(--site-transition);
-    font-size: 0.9rem;
-}
-
-.site-nav-links a:hover,
-.site-nav-links a[aria-current="page"] { color: var(--site-link); }
-
-
-/* Mobile nav */
-
-.site-nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.4rem;
-    color: var(--site-fg);
-    font-size: 1.2rem;
-    min-height: 2.75rem;
-    min-width: 2.75rem;
-}
-
-@media (max-width: 768px) {
-    .site-nav-toggle { display: flex; align-items: center; justify-content: center; }
-    .site-nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--site-bg); border-bottom: 0.0625rem solid var(--site-border); padding: 0.5rem 1rem; z-index: 999; }
-    .site-nav-links.open { display: flex; }
-    .site-nav { flex-wrap: wrap; position: relative; }
-    .site-nav-right { display: flex; align-items: center; }
-}
-
-/* Headings — let WA Awesome theme define the size scale */
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--wa-font-sans);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--site-fg);
-}
-
-h1 { font-size: var(--wa-font-size-2xl); }
-h2 { font-size: var(--wa-font-size-xl); }
-h3 { font-size: var(--wa-font-size-l); }
-h4 { font-size: var(--wa-font-size-m); }
-h5 { font-size: var(--wa-font-size-s); }
-h6 { font-size: var(--wa-font-size-xs); }
-
-/* WA lead equivalent — override font to Roboto */
-
-.wa-body-l {
-    font-family: var(--site-font-accent);
-}
-
-small { font-size: 0.85rem; }
-.card-meta { font-size: 0.85rem; }
-
-/* Home intro */
+/* Home intro — top padding comes from the shared .hero-lg class on the
+   outer container now, not duplicated here. */
 
 .home-intro {
-    padding: 2rem 0 1rem;
+    padding-bottom: 1rem;
 }
 
-.home-intro wa-button {
+.home-intro .btn {
     margin-top: 1rem;
 }
 
 .home-tagline {
-    font-family: var(--wa-font-sans);
-    font-size: var(--wa-font-size-3xl);
-    font-weight: 700;
+    font-family: "Mona Sans Bold", var(--bs-font-sans-serif);
+    font-size: 2.5625rem;
     letter-spacing: -0.02em;
     line-height: 1.1;
     margin: 0 0 1rem;
-}
-
-/* Jumbotron — note */
-
-.jumbotron-note {
-    margin-top: 1.5rem;
-}
-
-.jumbotron-note h1 {
-    margin-bottom: 1rem;
-}
-
-.jumbotron-note-meta {
-    padding-bottom: 1rem;
-    border-bottom: 0.0625rem solid var(--site-border);
-}
-
-.jumbotron-note-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.jumbotron-note-content figcaption {
-    font-family: var(--site-font-accent);
-}
-
-.jumbotron-note-content figure {
-    margin-bottom: -0.5rem;
-}
-
-.jumbotron-breadcrumb {
-    margin-bottom: 0.75rem;
-}
-
-.jumbotron-note-meta .description {
-    margin-bottom: 1.5rem;
-}
-
-/* Jumbotron — default pages */
-
-.jumbotron-default {
-    padding: 1.5rem 0 0.5rem;
-}
-
-.jumbotron-default h1 {
-    margin-bottom: 1rem;
-}
-
-.jumbotron-default wa-button {
-    margin-top: 0.5rem;
 }
 
 /* Content area */
@@ -347,34 +98,30 @@ small { font-size: 0.85rem; }
     margin-top: 1.5rem;
 }
 
-/* Home page sections */
+/* Home page sections — one wrapper, not two: margin-top (space above),
+   border-top + padding-top (the divider), and margin-bottom (space below)
+   all land on the same box in that order regardless of whether it's one
+   element or an outer/inner pair, so the former two-div nesting was
+   adding a wrapper with no visual effect of its own. */
 
 .home-section {
     margin-top: 1rem;
-}
-
-.home-section-inner {
-    border-top: 0.0625rem solid var(--site-border);
+    border-top: 0.0625rem solid var(--bs-border-color);
     padding-top: 1.25rem;
     margin-bottom: 1rem;
 }
 
-.home-section:last-child .home-section-inner {
+.home-section:last-child {
     margin-bottom: 0;
 }
 
-.home-section-inner h2 {
+.home-section h2 {
     margin-bottom: 0.75rem;
-}
-
-.home-section-inner wa-button {
-    margin-top: 1.25rem;
 }
 
 /* Post */
 
-.post a[href^="http"]:not(.card-link)::after,
-.post-note a[href^="http"]:not(.card-link)::after {
+.post a[href^="http"]:not(.card-link):not(.btn)::after {
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     content: "\f35d";
@@ -383,16 +130,20 @@ small { font-size: 0.85rem; }
     margin-left: 0.35em;
 }
 
-.post-note h2 { padding-top: 1.25rem; }
-.post-note h3 { padding-top: 1rem; }
+.post h2 { padding-top: 1rem; padding-bottom: 0.5rem; }
+.post h3, .post h4 { padding-top: 1rem; padding-bottom: 1rem; }
 
-/* Post footer note */
-
-.post-footer {
-    border-top: 0.0625rem solid var(--site-border);
-    padding-top: 0.75rem;
-    margin-top: 1.5rem;
+.post h2, .post h3, .post h4 {
+    scroll-margin-top: 1.5rem;
 }
+
+/* .toc-layout/.toc-sidebar come from lf-ui's lf-components.css. */
+
+/* .toc-list/.toc-heading/.toc-link/.post h2,h3,h4 scroll-margin-top all
+   come from lf-ui's lf-components.css. */
+
+/* Author bio callout — .bio-callout/.bio-avatar/.icon-link come from lf-ui's
+   lf-components.css. */
 
 /* About page */
 
@@ -403,41 +154,7 @@ small { font-size: 0.85rem; }
 
 .cv-download { margin-bottom: 1rem; }
 
-/* Share links */
-
-.share-copy-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    color: var(--site-fg);
-    font-family: inherit;
-    font-size: inherit;
-}
-
-.share-links {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    font-family: var(--site-font-accent);
-    font-size: 0.85rem;
-    color: var(--site-fg);
-}
-
-/* Byline */
-
-.byline {
-    font-family: var(--site-font-accent);
-}
-
-.byline p { margin: 0.25rem 0; }
-
-/* Post date (auto-pushed to bottom in flex card) */
-
-.post-date { margin-top: auto; }
+/* .share/.share a/.share-copy-btn come from lf-ui's lf-components.css. */
 
 /* Posts pagination */
 
@@ -446,70 +163,26 @@ small { font-size: 0.85rem; }
     text-align: center;
 }
 
+/* list-style/padding/margin/display/gap/justify-content/flex-wrap come
+   from Bootstrap's own .list-unstyled.d-flex.flex-wrap.justify-content-
+   center.gap-2.m-0 on the markup (gap-2 = 0.5rem, exact match) — this
+   only adds the font treatment. */
 .posts-pagination ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: var(--site-font-accent);
+    font-family: var(--bs-font-monospace);
 }
 
-/* Connect page */
-
-.connect-grid { text-align: center; }
-
-/* Footer bar */
-
-.footer-bar {
-    border-top: 0.0625rem solid var(--site-border);
-    margin-top: 2rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-}
-
-.footer-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 1rem;
-    font-size: 0.8rem;
-    font-family: var(--site-font-accent);
-}
-
-.footer-nav li { padding: 0; margin: 0; }
-
-.footer-nav a {
-    display: inline-block;
-    padding: 0.4rem 0.2rem;
-}
-
-@media (min-width: 769px) {
-    .footer-bar > div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .footer-bar > div > * { margin-top: 0; }
-}
-
-.footer-bar > div > * { margin-top: 0.75rem; }
-.footer-bar > div > *:first-child { margin-top: 0; }
-.footer-bar p { padding: 0; }
+/* Footer, footer-bar, footer-nav come from lf-ui's lf-components.css. */
 
 /* Card quote (what-they-say) */
 
 .card-quote {
-    border-bottom: 0.0625rem solid var(--site-border);
+    border-bottom: 0.0625rem solid var(--bs-border-color);
     margin-bottom: 0.5rem;
     padding: 0.75rem 0;
 }
 
 .card-quote blockquote {
+    border-left: none;
     padding: 0 0.5rem;
     margin: 0;
 }
@@ -523,53 +196,17 @@ small { font-size: 0.85rem; }
 .press-section > h2 {
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 0.0625rem solid var(--site-border);
+    border-top: 0.0625rem solid var(--bs-border-color);
 }
 
-.press-section .card-grid {
+.press-section .press-cards {
     margin-top: 0.75rem;
     margin-bottom: 1rem;
 }
 
-/* Services — themes sub-section */
 
-.themes-section {
-    border-top: 0.0625rem solid var(--site-border);
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-}
-
-/* Buttons — let WA Awesome theme handle appearance */
-
-wa-button::part(base) {
-    font-family: var(--site-font-accent);
-    font-weight: 500;
-    transition: transform var(--site-transition), box-shadow var(--site-transition);
-    min-height: 2.75rem;
-}
-
-wa-button::part(base):hover {
-    transform: var(--site-transform-hover);
-    box-shadow: var(--site-shadow-lg);
-}
-
-wa-button::part(base):active {
-    transform: var(--site-transform-active);
-}
-
-/* Cards — position: relative needed for stretched card-link */
-
-wa-card {
-    position: relative;
-    width: 100%;
-    display: block;
-    transition: transform var(--site-transition), box-shadow var(--site-transition);
-}
-
-wa-card:hover {
-    transform: var(--site-transform-hover);
-    box-shadow: var(--site-shadow-lg);
-}
+/* Buttons and cards — base .btn/.btn:hover/.btn:active and .card/.card:hover
+   come from lf-ui's lf-components.css (assets/lf-ui/lf-components.css). */
 
 /* External link icon */
 .card-link .fa-arrow-up-right-from-square {
@@ -579,99 +216,72 @@ wa-card:hover {
 }
 
 /* Stretched card link — covers entire card */
-wa-card a.card-link {
-    color: var(--site-fg);
+.card a.card-link {
+    color: var(--bs-body-color);
     text-decoration: none;
 }
 
-wa-card a.card-link::after {
+.card a.card-link::after {
     content: "";
     position: absolute;
     inset: 0;
     z-index: 1;
 }
 
-wa-card a.card-link:focus-visible {
+.card a.card-link:focus-visible {
     outline: none;
 }
 
-wa-card:has(a.card-link:focus-visible) {
-    outline: 0.125rem solid var(--site-link);
+.card:has(a.card-link:focus-visible) {
+    outline: 0.125rem solid var(--bs-link-color);
     outline-offset: 0.125rem;
 }
 
-wa-card a.card-link:visited { color: var(--site-fg); }
-wa-card a.card-link:hover { color: var(--site-fg); }
+.card a.card-link:visited { color: var(--bs-body-color); }
+/* :hover (link color, no underline) comes from lf-ui's lf-components.css now. */
 
-wa-card p { font-family: var(--site-font-accent); }
-wa-card h2, wa-card h3, wa-card h4 { margin-bottom: 0.25rem; }
-wa-card h2 { font-size: var(--wa-font-size-l); }
+.card h2, .card h3, .card h4 { margin-bottom: 0.25rem; }
 
-.press-cards wa-card h2,
-.press-cards wa-card h3 { font-size: var(--wa-font-size-m); }
+/* Breadcrumb — comes from lf-ui's lf-components.css. */
 
-/* Breadcrumb — match nav link colors */
-
-wa-breadcrumb-item::part(label) {
-    color: var(--site-fg);
-    text-decoration: none;
-    font-family: var(--site-font-accent);
-    font-weight: 400;
-    font-size: 0.9rem;
-}
-
-wa-breadcrumb-item::part(label):hover {
-    color: var(--site-link);
-}
-
-/* Suppress link color inside nav, footer, connect */
-.site-nav a, .site-nav a:visited,
-footer a, footer a:visited,
+/* Suppress link color inside connect — nav is handled by
+   lf-ui's lf-components.css (.nav-link/.navbar-brand); footer link
+   coloring comes from there too now (.footer-nav li a/.footer-bar p a) —
+   this used to also blanket-cover every link in <footer>, including the
+   feedback CTA link, which govfresh never did (its feedback link just
+   uses the plain default link color), producing a real visible mismatch. */
 .connect a, .connect a:visited {
-    color: var(--site-fg);
+    color: var(--bs-body-color);
     text-decoration: none;
 }
 
-.site-nav a:hover, footer a:hover, .connect a:hover {
-    color: var(--site-link);
+.connect a:hover {
+    color: var(--bs-link-color);
 }
 
 /* Selection */
 ::selection { background-color: #ede3ff; }
 
-/* Images */
-.drop-shadow { filter: drop-shadow(-0.3125rem 0.3125rem 0 var(--site-fg)); }
-img { height: auto; width: 100%; }
-img.xs { max-width: 2rem; }
-img.sm { max-width: 4.675rem; }
-img.md { max-width: 8rem; }
-img.lg { max-width: 15rem; }
-img.line { margin-bottom: 1.3rem; border: 0.0625rem solid var(--site-border); }
+/* Images — .drop-shadow, base img{}, and the img.xxxs–.xxl scale come
+   from lf-ui's lf-components.css. */
+img.line { margin-bottom: 1.3rem; border: 0.0625rem solid var(--bs-border-color); }
 
 /* Figcaption */
 figcaption p { margin: 0.25rem 0; }
 
 /* Blockquote */
-blockquote p { margin-bottom: 1rem; margin-top: 1rem; }
-
-/* Footer */
-footer { margin-top: 1rem; }
-footer p { margin: 0; padding: 1rem 0; font-size: 0.8rem; font-family: var(--site-font-accent); }
-
-/* Subscribe / floating contact button */
-.subscribe {
-    opacity: 0;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 1000;
+blockquote {
+    border-left: 0.5rem solid var(--bs-secondary-color);
+    margin-left: 1.5625rem;
+    padding: 0 1.5625rem;
+    margin-bottom: 1.5625rem;
+    margin-top: 2rem;
 }
 
-/* Explicit contrast — don't rely solely on the component's own
-   variant/appearance token resolution for this always-visible control. */
-.subscribe::part(base) {
-    background-color: var(--site-fg);
-    color: var(--site-bg);
+blockquote p, blockquote ul {
+    font-family: var(--bs-font-monospace);
+    padding-bottom: 0;
+    padding-top: 0.25rem;
 }
 
 /* Reduced motion */
@@ -680,7 +290,7 @@ footer p { margin: 0; padding: 1rem 0; font-size: 0.8rem; font-family: var(--sit
         transition: none !important;
         animation: none !important;
     }
-    wa-card:hover, wa-button::part(base):hover, wa-button::part(base):active {
+    .card:hover, .btn:hover, .btn:active {
         transform: none;
     }
 }
@@ -689,59 +299,52 @@ footer p { margin: 0; padding: 1rem 0; font-size: 0.8rem; font-family: var(--sit
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --site-bg: #1a1a1a;
-        --site-fg: #ffffff;
-        --site-link: #4a90e2;
+        --bs-body-bg: #1a1a1a;
+        --bs-body-color: #ffffff;
+        --bs-primary: #4a90e2;
+        --bs-primary-rgb: 74, 144, 226;
+        --bs-link-color: #4a90e2;
+        --bs-link-hover-color: #4a90e2;
         --site-link-visited: #a093f7;
-        --site-border: #444444;
-        --wa-color-surface-raised: #1a1a1a;
-        --wa-color-surface-default: #1a1a1a;
+        --bs-border-color: #444444;
     }
 }
 
-html.dark,
-html.wa-dark {
-    --site-bg: #1a1a1a;
-    --site-fg: #ffffff;
-    --site-link: #4a90e2;
+html.dark {
+    --bs-body-bg: #1a1a1a;
+    --bs-body-color: #ffffff;
     --site-link-visited: #a093f7;
-    --site-border: #444444;
-    --wa-color-surface-raised: #1a1a1a;
-    --wa-color-surface-default: #1a1a1a;
 }
 
-html.dark body,
-html.wa-dark body {
-    background-color: var(--site-bg);
-    color: var(--site-fg);
+html.dark body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
 }
 
-html.dark img.line,
-html.wa-dark img.line {
-    border-color: var(--site-border);
+html.dark img.line {
+    border-color: var(--bs-border-color);
 }
 
-html.dark ::selection,
-html.wa-dark ::selection {
+html.dark ::selection {
     background-color: #2a2a2a;
 }
 
-html.dark .fa, html.wa-dark .fa,
-html.dark .fa-solid, html.wa-dark .fa-solid,
-html.dark .fa-regular, html.wa-dark .fa-regular,
-html.dark .fa-light, html.wa-dark .fa-light,
-html.dark .fa-duotone, html.wa-dark .fa-duotone,
-html.dark .fab, html.wa-dark .fab,
-html.dark .fa-brands, html.wa-dark .fa-brands,
-html.dark .svg-inline--fa, html.wa-dark .svg-inline--fa {
-    color: var(--site-fg) !important;
+html.dark .fa,
+html.dark .fa-solid,
+html.dark .fa-regular,
+html.dark .fa-light,
+html.dark .fa-duotone,
+html.dark .fab,
+html.dark .fa-brands,
+html.dark .svg-inline--fa {
+    color: var(--bs-body-color) !important;
     fill: currentColor !important;
 }
 
-html.dark wa-button .fa, html.wa-dark wa-button .fa,
-html.dark wa-button .fa-solid, html.wa-dark wa-button .fa-solid,
-html.dark wa-button .fa-regular, html.wa-dark wa-button .fa-regular,
-html.dark wa-button .fa-brands, html.wa-dark wa-button .fa-brands,
-html.dark wa-button .svg-inline--fa, html.wa-dark wa-button .svg-inline--fa {
+html.dark .btn .fa,
+html.dark .btn .fa-solid,
+html.dark .btn .fa-regular,
+html.dark .btn .fa-brands,
+html.dark .btn .svg-inline--fa {
     color: inherit !important;
 }

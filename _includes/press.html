@@ -1,18 +1,29 @@
-<div class="card-grid press-cards">
+{% if page.layout == "home" %}
+  {% assign grid_cols = "row-cols-1 row-cols-sm-2" %}
+{% else %}
+  {% assign grid_cols = "row-cols-1 row-cols-md-2 row-cols-lg-3" %}
+{% endif %}
+<div class="row {{ grid_cols }} card-group press-cards">
   {% assign heading = include.heading | default: "h3" %}
   {% for item in site.data.press.docs limit: include.limit %}
-    <wa-card>
-      <{{ heading }}>
-        <a
-          href="{{ item.url }}"
-          class="card-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="{{ item.title }} (opens in new tab)">
-          {{ item.title }} <i class="fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></i>
-        </a>
-      </{{ heading }}>
-      <p class="card-meta">{{ item.source }}</p>
-    </wa-card>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <{{ heading }} class="h4">
+            <a
+              href="{{ item.url }}"
+              class="card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="{{ item.title }} (opens in new tab)">
+              {{ item.title }} <i class="fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></i>
+            </a>
+          </{{ heading }}>
+        </div>
+        <div class="card-footer">
+          <p class="card-byline">{{ item.source }}</p>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </div>

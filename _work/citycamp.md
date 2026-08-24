@@ -14,4 +14,4 @@ press:
     source: Opensource.com
 ---
 
-The first [CityCamp](https://citycamp.com) was held January 23-24, 2010, in Chicago. Kevin Curry and Jen Pahlka organized this unconference on cities and civic tech. Afterward, Kevin and I turned it into an open brand. Anyone could host their own event. Since then, people have run CityCamp events around the world. In 2026, the Alliance of Civic Technologists took over the CityCamp brand and website.
+The first CityCamp was held January 23-24, 2010, in Chicago. Kevin Curry and Jen Pahlka organized this unconference on cities and civic tech. Afterward, Kevin and I turned it into an open brand. Anyone could host their own event. Since then, people have run CityCamp events around the world. In 2026, the Alliance of Civic Technologists took over the CityCamp brand and website.
