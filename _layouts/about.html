@@ -2,7 +2,6 @@
 layout: compress
 ---
 {% include header.html %}
-<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
 <main id="main-content">
   {% include jumbotron.html %}
@@ -11,7 +10,7 @@ layout: compress
       <div class="about-image">
         <img
           src="{{ baseurl }}/assets/img/{{ page.img }}"
-          srcset="{{ baseurl }}/assets/img/luke-fretwell-640.jpg 640w, {{ baseurl }}/assets/img/{{ page.img }} 1200w"
+          srcset="{{ baseurl }}/assets/img/brand/luke-fretwell-640.jpg 640w, {{ baseurl }}/assets/img/{{ page.img }} 1200w"
           sizes="(max-width: 768px) 100vw, 960px"
           alt="{{ page.img-alt }}"
           width="1200"
@@ -19,13 +18,11 @@ layout: compress
           fetchpriority="high"
           class="border">
         {% if page.img-download %}
-          <div>
-            <small>
-              <a href="{{ baseurl }}/assets/img/{{ page.img-download }}">
-                <i class="fa-solid fa-download" aria-hidden="true"></i>
-                Download high-resolution image
-              </a>
-            </small>
+          <div class="download-cta">
+            <a href="{{ baseurl }}/assets/img/{{ page.img-download }}">
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              Download high-resolution image
+            </a>
           </div>
         {% endif %}
       </div>
@@ -34,8 +31,7 @@ layout: compress
       {{ content }}
     </div>
   {% endcapture %}
-  <div class="content-wide content-main">
-    <div>{{ body }}</div>
-  </div>
+  {% include toc-layout.html html=body %}
 </main>
+{% include analytics.html %}
 {% include footer.html %}

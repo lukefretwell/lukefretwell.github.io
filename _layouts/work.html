@@ -2,29 +2,29 @@
 layout: compress
 ---
 {% include header.html %}
-<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
+{% assign work_href = site.baseurl | append: "/work/" %}
+{% include breadcrumb.html href=work_href label="Work" %}
 <main id="main-content">
   {% include jumbotron.html %}
   {% capture body %}
     <article class="post">
       {{ content | markdownify }}
       {% if page.website %}
-        <wa-button href="{{ page.website }}" target="_blank" rel="noopener noreferrer" size="s">{{ page.title }} website <i class="fa-solid fa-arrow-up-right-from-square fa-xs" slot="end" aria-hidden="true"></i></wa-button>
+        <a href="{{ page.website }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm">{{ page.title }} website <i class="fa-solid fa-arrow-up-right-from-square fa-xs" aria-hidden="true"></i></a>
       {% endif %}
     </article>
     {% if page.press %}
       <section class="press-section" aria-labelledby="press-heading">
         <h2 id="press-heading">Press</h2>
-        <p>{{ page.title }} in the news.</p>
-        <div class="card-grid press-cards">
+        <p class="lead-2">{{ page.title }} in the news.</p>
+        <div class="row row-cols-1 row-cols-sm-2 card-group press-cards">
           {% include press-work.html %}
         </div>
       </section>
     {% endif %}
   {% endcapture %}
-  <div class="content-wide content-main">
-    <div>{{ body }}</div>
-  </div>
+  {% include toc-layout.html html=body %}
 </main>
+{% include analytics.html %}
 {% include footer.html %}

@@ -1,23 +1,13 @@
 <!doctype html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | default: 'en' }}{% endif %}" class="wa-theme-awesome">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang | default: 'en' }}{% endif %}">
 
 <head>
-<!-- Basic HTML Meta Tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' data:; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+{% include head-meta.html %}
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>{% if page.layout == 'home' %}{{ page.title | escape }}{% elsif page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | escape }}{% endif %}">
 <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}{% if page.categories %}{% if page.tags %}, {% endif %}{{ page.categories | join: ', ' }}{% endif %}">
 <meta name="author" content="{{ site.author }}">
-
-<!-- Canonical URL -->
-<link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-<!-- Favicon -->
-{% include favicon.html %}
-
 
 <!-- Open Graph Meta Tags -->
 <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
@@ -35,7 +25,7 @@
     {% assign og_image_path = site.url | append: '/assets/img/' | append: page.img-og %}
   {% endif %}
 {% else %}
-  {% assign og_image_path = site.url | append: '/assets/img/avatar-og.png' %}
+  {% assign og_image_path = site.url | append: '/assets/img/brand/og.png' %}
 {% endif %}
 <meta property="og:image" content="{{ og_image_path }}">
 <meta property="og:image:secure_url" content="{{ og_image_path }}">
@@ -82,7 +72,8 @@
   "publisher": {
     "@type": "Person",
     "name": "{{ site.title }}",
-    "url": "{{ site.url }}"
+    "url": "{{ site.url }}",
+    "sameAs": [{% if site.data.site.social.linkedin %}"{{ site.data.site.social.linkedin }}"{% endif %}{% if site.data.site.social.github %}{% if site.data.site.social.linkedin %},{% endif %}"{{ site.data.site.social.github }}"{% endif %}]
   },
   "image": "{{ og_image_path }}",
   "mainEntityOfPage": {
@@ -92,33 +83,20 @@
 }
 </script>
 
-<!-- Additional SEO Meta Tags -->
-<meta name="robots" content="{% if page.noindex %}noindex, nofollow{% else %}index, follow{% endif %}">
-{% if page.prev_url or page.next_url %}
-{% if page.prev_url %}
-<link rel="prev" href="{{ site.url }}{{ page.prev_url }}">
-{% endif %}
-{% if page.next_url %}
-<link rel="next" href="{{ site.url }}{{ page.next_url }}">
-{% endif %}
-{% endif %}
-
 <!-- RSS Feed -->
-{% if site.rss %}
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.rss }}">
+{% if site.data.site.social.rss %}
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.data.site.social.rss }}">
 {% endif %}
 
 <!-- Dark mode: follow system preference -->
 <script>
   (function() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark', 'wa-dark');
+      document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
     }
   })();
 </script>
-
-<!-- CSS -->
-{% include style.html %}
 
 <!-- Preload critical fonts -->
 <link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
@@ -136,3 +114,4 @@
 </head>
 
 <body>
+<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>

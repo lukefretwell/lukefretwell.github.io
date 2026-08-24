@@ -4,19 +4,7 @@ author: Luke Fretwell
 description: "Designer, builder"
 avatar: avatar.png
 url: https://lukefretwell.com
-
-incremental: true
-
-# Social
-email: mailto:luke@lukefretwell.com
-calendar: https://lukefretwell.com/meet
-twitter: 
-linkedin: https://www.linkedin.com/in/lukefretwell
-#mastodon: https://mastodon.social/@lukefretwell
-#bluesky: https://lukefretwell.bsky.social
-instagram: 
-github: https://github.com/lukefretwell
-rss: https://lukefretwell.com/feed.xml
+logo: brand-mark.html
 
 # Plugins
 plugins:
@@ -42,10 +30,10 @@ timezone: America/Los_Angeles
 # Defaults
 defaults:
   - scope:
-      path: ""
+      path: "_pages"
       type: "pages"
     values:
-      layout: "default"
+      layout: "page"
       img-path: "pages"
   - scope:
       path: ""
@@ -63,6 +51,22 @@ defaults:
       label: "Work"
       layout: "work"
       folder: "work"
+  - scope:
+      path: "_topics"
+      type: "topics"
+    values:
+      layout: "topic"
+      parent: "topics"
+  - scope:
+      path: "_people"
+      type: "people"
+    values:
+      folder: "People"
+      img-path: "people"
+      parent: "people"
+      layout: "people"
+      schematype: "ProfilePage"
+      og-type: "profile"
 
 # Collections
 collections:
@@ -75,6 +79,12 @@ collections:
   work:
     output: true
     permalink: /work/:title
+  topics:
+    output: true
+    permalink: /topics/:title
+  people:
+    output: true
+    permalink: /people/:title
 
 # HTML compression
 compress_html:

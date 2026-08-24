@@ -1,0 +1,38 @@
+{% assign related = site.posts | where_exp: "post", "post.url != page.url" | limit: 3 %}
+{% if related.size > 0 %}
+  <div class="container border-top pt-5 pb-5">
+    <h2 class="mb-3">More notes</h2>
+    <div class="row row-cols-1 row-cols-sm-2 card-group">
+      {% for post in related %}
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              {% if post.img-og %}
+                <figure>
+                  <img
+                    src="{{ site.baseurl }}/assets/img/{{ post.img-og }}"
+                    alt="{{ post.img-alt }}"
+                    loading="lazy"
+                    class="border">
+                </figure>
+              {% endif %}
+              <h3 class="h4">
+                <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">
+                  {{ post.title }}
+                </a>
+              </h3>
+              {% if post.description %}
+                <p class="card-description">{{ post.description }}</p>
+              {% endif %}
+            </div>
+            <div class="card-footer">
+              <p class="post-date card-byline">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+              </p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

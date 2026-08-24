@@ -1,52 +1,27 @@
 <footer>
-  {% unless page.url == '/connect' %}
-  <wa-button
-    href="{{ site.baseurl}}/connect"
-    id="subscribe-button"
-    aria-label="Connect"
-    tabindex="-1"
-    size="s"
-    class="subscribe">
-    Connect
-  </wa-button>
-  <script>
-    const feedbackButton = document.getElementById("subscribe-button");
-    let footerVisible = false;
-    let pageIsShort = false;
-
-    function updateButton() {
-      const visible = document.documentElement.scrollTop > window.innerHeight * 0.4 && !footerVisible && !pageIsShort;
-      feedbackButton.style.opacity = visible ? '1' : '0';
-      feedbackButton.setAttribute('tabindex', visible ? '0' : '-1');
-    }
-
-    const footerObserver = new IntersectionObserver(([entry]) => {
-      footerVisible = entry.isIntersecting;
-      if (footerVisible && document.documentElement.scrollTop === 0) {
-        pageIsShort = true;
-      }
-      updateButton();
-    });
-
-    footerObserver.observe(document.querySelector('footer'));
-    window.addEventListener('scroll', updateButton);
-  </script>
-  {% endunless %}
-  <div class="content-wide footer-bar">
-    <div>
-      <ul class="footer-nav">
-        {% for item in site.data.nav.docs %}
-          {% if item.url %}
-            <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <p>
-        <a href="https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report">
-          ScanGov Scorecard <i class="fa-solid fa-star" aria-hidden="true"></i>
-        </a>
-      </p>
+  {% assign cta = site.data.site.cta_banner %}
+  {% if cta.button_link and page.url != cta.button_link %}
+    {% assign cta_href = site.baseurl | append: cta.button_link %}
+    {% include cta-banner.html href=cta_href aria_label=cta.button_text text=cta.button_text sponsor_text=cta.sponsor_text sponsor_link=cta.sponsor_link %}
+  {% endif %}
+  {% assign feedback = site.data.site.feedback %}
+  {% if feedback.link %}
+    <div class="container mt-5">
+      <div class="mb-4 alert alert-light cta-text">
+        <i class="{{ feedback.icon }}"></i>
+        {{ feedback.text }} <a href="{{ site.baseurl }}{{ feedback.link }}">{{ feedback.link_text }}</a>
+      </div>
     </div>
+  {% endif %}
+  <hr>
+  <div class="container footer-bar">
+    {% include footer-nav.html %}
+    <p class="mb-0">
+      {% assign scangov_link = site.data.site.scangov.link %}
+      {% if site.data.site-index %}<a href="{{ site.baseurl }}/site-index/">Site index</a>{% endif %}
+      {% if site.data.site-index and scangov_link %}&nbsp;&middot;&nbsp;{% endif %}
+      {% if scangov_link %}<a href="{{ scangov_link }}">ScanGov Scorecard <i class="fa-solid fa-star" aria-hidden="true"></i></a>{% endif %}
+    </p>
   </div>
 </footer>
-{% include js.html %}
+{% include js.html %}</body></html>

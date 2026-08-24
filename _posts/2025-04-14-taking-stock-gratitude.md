@@ -1,7 +1,7 @@
 ---
 layout: note
 title:  "Taking stock and gratitude"
-description: 
+description: "Reflecting and giving thanks to my civic technology work and community."
 author: Luke Fretwell
 date: 2025-04-14 -0700
 modified: 2025-04-18 -0900

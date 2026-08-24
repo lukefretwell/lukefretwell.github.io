@@ -20,7 +20,7 @@
 {% if page.img-og %}
   {% assign og_image_path = site.url | append: '/assets/img/' | append: page.img-path | append: '/' | append: page.img-og %}
 {% else %}
-  {% assign og_image_path = site.url | append: '/assets/img/avatar-og.png' %}
+  {% assign og_image_path = site.url | append: '/assets/img/brand/og.png' %}
 {% endif %}
 <meta property="og:image" content="{{ og_image_path }}">
 <meta property="og:image:alt" content="{% if page.img-alt %}{{ page.img-alt }}{% elsif page.title %}{{ page.title }} image{% else %}{{ site.title }} image{% endif %}">

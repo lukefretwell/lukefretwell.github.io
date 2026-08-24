@@ -1,0 +1,40 @@
+{% if include.home %}
+  {% if site.topics %}
+    <div class="mt-2 mb-2 pt-2 pb-3">
+      <h2 class="mb-3">Topics</h2>
+      <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+        {% for topic in site.topics %}
+          <a href="{{ site.baseurl }}{{ topic.url }}" class="btn btn-sm">{{ topic.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% else %}
+  {% if post %}
+    {% assign categories = post.categories %}
+  {% elsif page.topics %}
+    {% assign categories = page.topics %}
+  {% else %}
+    {% assign categories = page.categories %}
+  {% endif %}
+  {% comment %} categories may contain blank entries (e.g. a stray "- " in
+  front matter) that .size alone won't catch, so build a filtered list before
+  deciding whether to render anything. {% endcomment %}
+  {% assign real_categories = "" %}
+  {% for category in categories %}
+    {% unless category == nil or category == "" %}
+      {% assign real_categories = real_categories | append: category | append: "|" %}
+    {% endunless %}
+  {% endfor %}
+  {% if real_categories != "" %}
+    <div class="mb-4 pt-3">
+      <h2 class="h4">Topics</h2>
+      <div class="d-flex flex-wrap align-items-center gap-3 mt-2">
+        {% assign real_categories_list = real_categories | split: "|" %}
+        {% for category in real_categories_list %}
+          <a href="{{ site.baseurl }}/topics/{{ category | slugify }}" class="btn btn-sm">{{ category }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+{% endif %}

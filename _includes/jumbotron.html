@@ -1,69 +1,36 @@
 {% if page.layout == "home" %}
-  <div class="content-wide home-intro">
-    <div>
-      <h1 class="visually-hidden">{{ page.title }}</h1>
-      <p class="home-tagline">{{ page.description }}</p>
-      {% if page.button %}
-        <wa-button href="{{ site.baseurl }}{{ page.button-link }}" size="m">{{ page.button }}</wa-button>
-      {% endif %}
-    </div>
+  <div class="container hero-lg home-intro">
+    <h1 class="visually-hidden">{{ page.title }}</h1>
+    <p class="home-tagline">{{ page.description }}</p>
+    {% if page.button %}
+      <a href="{{ site.baseurl }}{{ page.button-link }}" class="btn">{{ page.button }}</a>
+    {% endif %}
   </div>
 {% elsif page.layout == "note" %}
-  <div class="jumbotron-note">
-    <div class="content-wide">
-      <div>
-        {% if page.title %}
-          <h1>{{ page.title }}</h1>
-        {% endif %}
-      </div>
-    </div>
-    <div class="content-wide jumbotron-note-meta">
-      <div class="jumbotron-note-content">
-        {% if page.img-og %}
-          <figure>
-            <img
-              src="{% if page.img-path %}{{ site.baseurl }}/assets/img/{{ page.img-path }}/{{ page.img-og }}{% else %}{{ site.baseurl }}/assets/img/{{ page.img-og }}{% endif %}"
-              alt="{{ page.img-alt }}"
-              class="border">
-            {% if page.img-caption %}
-              <figcaption>
-                <p>
-                  <small>
-                    {% if page.img-link %}
-                      <a href="{{ site.baseurl }}{{ page.img-link }}">
-                    {% endif %}
-                    {{ page.img-caption }}
-                    {% if page.img-link %}
-                      </a>
-                    {% endif %}
-                  </small>
-                </p>
-              </figcaption>
-            {% endif %}
-          </figure>
-        {% endif %}
-        {% include byline.html %}
-        {% if page.description %}
-          <p class="wa-body-l description">{{ page.description }}</p>
-        {% endif %}
-      </div>
-    </div>
+  <div class="container hero-md hero-divider mb-4">
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+    {% if page.description %}
+      <p class="lead">{{ page.description }}</p>
+    {% endif %}
+  </div>
+{% elsif page.layout == "connect" or page.layout == "services" %}
+  <div class="container hero-lg">
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+    {% if page.description %}
+      <p class="lead">{{ page.description }}</p>
+    {% endif %}
   </div>
 {% else %}
-  <div class="content-wide jumbotron-default">
-    <div>
-      {% if page.folder %}
-        <nav aria-label="breadcrumb" class="jumbotron-breadcrumb">
-          <wa-breadcrumb>
-            <wa-breadcrumb-item href="{{ site.baseurl }}/{{ page.folder }}">{{ page.label }}</wa-breadcrumb-item>
-          </wa-breadcrumb>
-        </nav>
-      {% endif %}
+  <div class="container hero-xs">
+    {% if page.title %}
       <h1>{{ page.title }}</h1>
-      <p class="wa-body-l">{{ page.description }}</p>
-      {% if page.button %}
-        <wa-button href="{{ site.baseurl }}{{ page.button-link }}" size="s">{{ page.button }}</wa-button>
-      {% endif %}
-    </div>
+    {% endif %}
+    {% if page.description %}
+      <p class="lead">{{ page.description }}</p>
+    {% endif %}
   </div>
 {% endif %}

@@ -2,9 +2,9 @@
 layout: about
 title: About
 description: "Designer, builder"
-img: luke-fretwell.jpg
+img: brand/luke-fretwell.jpg
 img-alt: Luke Fretwell
-img-download: luke-fretwell-high-res.jpg
+img-download: brand/luke-fretwell-high-res.jpg
 img-og: about-og.png
 ---
 

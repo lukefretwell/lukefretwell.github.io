@@ -3,23 +3,24 @@ layout: compress
 ---
 
 {% include header.html %}
-<a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
 {% include nav.html %}
 <main id="main-content">
   {% include jumbotron.html %}
-  <div class="content-wide content-main">
+  {% capture body %}
     <div class="post">
       {% for item in site.data.quotes.docs %}
         <figure class="card-quote">
           <blockquote>
             <p>{{ item.quote }}</p>
           </blockquote>
-          <figcaption>
-            <small>{{ item.name }}<br>{{ item.role }}</small>
+          <figcaption class="quote-attribution">
+            {{ item.name }}<br>{{ item.role }}
           </figcaption>
         </figure>
       {% endfor %}
     </div>
-  </div>
+  {% endcapture %}
+  {% include toc-layout.html html=body %}
 </main>
+{% include analytics.html %}
 {% include footer.html %}

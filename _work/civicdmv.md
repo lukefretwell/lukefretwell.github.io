@@ -20,4 +20,4 @@ press:
     source: TechWire
 ---
 
-In 2019, I started [CivicDMV](https://civicdmv.org). It was a community project. It aimed to spark new ideas for state DMVs. This work helped kickstart California's DMV digital overhaul.
+In 2019, I started CivicDMV. It was a community project. It aimed to spark new ideas for state DMVs. This work helped kickstart California's DMV digital overhaul.

@@ -1,0 +1,9 @@
+sections:
+  - label: Notes
+    collection: posts
+  - label: Work
+    collection: work
+  - label: Topics
+    collection: topics
+  - label: Pages
+    collection: pages
