@@ -5,7 +5,7 @@ website: https://alpha.ca.gov
 featured: true
 categories:
   - Alpha.CA.gov
-press:
+news:
   - title: State Website Redesign Could Influence Other Departments, Processes
     link: https://insider.govtech.com/california/news/state-website-redesign-could-influence-other-departments-processes.html
     source: TechWire

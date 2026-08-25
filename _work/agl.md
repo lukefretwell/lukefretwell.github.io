@@ -4,7 +4,7 @@ description: Community for government digital change.
 featured: true
 categories:
   - Agile Government Leadership
-press:
+news:
   - title: "Is government ready for agile?"
     link: https://www.nextgov.com/acquisition/2015/02/is-government-ready-for-agile/206884/
     source: NextGov/FCW

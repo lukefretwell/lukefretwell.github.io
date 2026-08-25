@@ -5,7 +5,7 @@ website: https://scangov.org
 featured: true
 categories:
   - ScanGov
-press:
+news:
   - title: "Houston-area cities and counties want you to go to their websites. How useful are they?"
     link: https://houstonlanding.org/houston-area-cities-and-counties-want-you-to-go-to-their-websites-how-useful-are-they/
     source: Houston Landing

@@ -4,7 +4,7 @@ description: Platform for local government digital services.
 website: https://proudcity.com
 featured: true
 categories:
-press:
+news:
   - title: "ProudCity Turns to Partners to Unbundle Web Tech, Service"
     link: https://www.govtech.com/biz/proudcity-turns-to-partners-to-unbundle-web-tech-service
     source: Government Technology

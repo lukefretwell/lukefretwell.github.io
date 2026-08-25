@@ -50,7 +50,9 @@ defaults:
     values:
       label: "Work"
       layout: "work"
-      folder: "work"
+      folder: "Work"
+      parent: "work"
+      img-path: "posts"
   - scope:
       path: "_topics"
       type: "topics"

@@ -5,7 +5,7 @@ website: https://acreditor.section508.gov/
 featured: 
 categories:
   - OpenACR
-press:
+news:
   - title: The need for accessibility compliance as code
     link: https://www.route-fifty.com/digital-government/2021/02/the-need-for-accessibility-compliance-as-code/315514/
     source: Route Fifty
