@@ -52,7 +52,7 @@ defaults:
       layout: "work"
       folder: "Work"
       parent: "work"
-      img-path: "posts"
+      img-path: "work"
   - scope:
       path: "_topics"
       type: "topics"
