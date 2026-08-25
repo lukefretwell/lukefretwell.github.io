@@ -41,12 +41,16 @@
 <meta property="article:author" content="{{ site.author }}">
 {% if page.categories %}
 {% for category in page.categories %}
+{% if category %}
 <meta property="article:section" content="{{ category }}">
+{% endif %}
 {% endfor %}
 {% endif %}
 {% if page.tags %}
 {% for tag in page.tags %}
+{% if tag %}
 <meta property="article:tag" content="{{ tag }}">
+{% endif %}
 {% endfor %}
 {% endif %}
 {% endif %}
@@ -55,10 +59,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{% if page.collection == 'posts' %}BlogPosting{% else %}WebPage{% endif %}",
+  "@type": "{% if page.schematype %}{{ page.schematype }}{% elsif page.collection == 'posts' %}BlogPosting{% else %}WebPage{% endif %}",
   "headline": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
   "description": "{% if page.description %}{{ page.description | escape }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | escape }}{% endif %}",
   "url": "{{ site.url }}{{ page.url }}",
+  {% if page.schematype == 'SoftwareApplication' %}
+  "applicationCategory": "WebApplication",
+  "operatingSystem": "WordPress",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  {% if page.website %}"downloadUrl": "{{ page.website }}",{% endif %}
+  {% if page.github %}"codeRepository": "{{ page.github }}",{% endif %}
+  {% endif %}
   {% if page.collection == 'posts' %}
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   {% if page.modified %}

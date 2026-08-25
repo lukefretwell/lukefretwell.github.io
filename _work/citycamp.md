@@ -5,7 +5,7 @@ website: https://citycamp.com
 featured: true
 categories:
   - CityCamp
-press:
+news:
   - title: 4 Cities Jumpstart Civic Tech Solutions with CityCamp
     link: https://www.govtech.com/dc/articles/4-Cities-Jumpstart-Civic-Tech-Solutions-with-CityCamp.html
     source: Government Technology

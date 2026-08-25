@@ -4,7 +4,7 @@ description: A father and son hacking for good (deprecated).
 website: 
 categories:
   - Civic Hacking Agency
-press:
+news:
   - title: "Government websites are failing at the basics: How to fix them"
     link: https://podcasts.apple.com/ca/podcast/government-websites-are-failing-at-the-basics-how-to/id1547149248?i=1000656553713
     source: The Future in Context

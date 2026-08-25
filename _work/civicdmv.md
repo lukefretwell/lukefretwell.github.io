@@ -5,7 +5,7 @@ website: https://civicdmv.org
 featured: 
 categories:
   - 
-press:
+news:
   - title: "Engagement Is Unlocking DMV's Web Services"
     link: https://insider.govtech.com/california/news/commentary-engagement-is-unlocking-dmvs-web-services.html
     source: TechWire
