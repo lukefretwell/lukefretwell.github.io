@@ -6,6 +6,7 @@ img-og: govpress-og.png
 img-alt: "GovPress"
 website: https://wordpress.org/themes/govpress/
 github: https://github.com/govfresh/govpress
+featured: true
 categories:
   - GovPress
 schematype: SoftwareApplication

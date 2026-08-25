@@ -1,7 +1,7 @@
 ---
 title: Agile Government Leadership
 description: Community for government digital change.
-featured: true
+featured: 
 categories:
   - Agile Government Leadership
 news:
