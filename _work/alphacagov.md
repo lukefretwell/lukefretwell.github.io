@@ -2,7 +2,7 @@
 title: California Alpha
 description: Redesigning CA.gov and state digital services.
 website: https://alpha.ca.gov 
-featured: true
+featured: 
 categories:
   - Alpha.CA.gov
 news:

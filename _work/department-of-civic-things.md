@@ -2,7 +2,7 @@
 title: Department of Civic Things
 description: City websites and digital government services.
 website: https://deptofcivicthings.com 
-featured: true
+featured: 
 categories:
   - 
 ---
