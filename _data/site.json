@@ -12,8 +12,9 @@
     "link": "https://my.scangov.com/public/key6541-1749843847485/lukefretwell-com/report"
   },
   "cta_banner": {
-    "button_text": "Connect",
-    "button_link": "/connect"
+    "links": [
+      { "text": "Connect", "url": "/connect" }
+    ]
   },
   "services_cta": {
     "button_text": "Contact",

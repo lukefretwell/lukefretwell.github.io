@@ -4,7 +4,6 @@
     { "title": "Services", "url": "/services" },
     { "title": "Work", "url": "/work" },
     { "title": "Press", "url": "/press" },
-    { "title": "Notes", "url": "/notes" },
-    { "title": "Connect", "url": "/connect" }
+    { "title": "Notes", "url": "/notes" }
   ]
 }
