@@ -1,6 +1,9 @@
 {
   "logo": {
-    "height": "short"
+    "file": "/assets/img/brand/logo.svg",
+    "width": 2529,
+    "height": 292,
+    "size": "short"
   },
   "feedback": {
     "text": "Help make this site better:",
