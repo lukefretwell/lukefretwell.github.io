@@ -85,7 +85,7 @@ a {
 }
 
 .home-tagline {
-    font-family: "Mona Sans Bold", var(--bs-font-sans-serif);
+    font-family: "Public Sans Bold", var(--bs-font-sans-serif);
     font-size: 2.5625rem;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -121,13 +121,16 @@ a {
 
 /* Post */
 
-.post a[href^="http"]:not(.card-link):not(.btn)::after {
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    content: "\f35d";
-    font-size: 0.5em;
-    vertical-align: middle;
-    margin-left: 0.35em;
+/* External link icon now comes from lf-ui's shared
+   .post a[href^="http"]...::after rule (lf-components.css) — this used to
+   be a separate Font-Awesome-ligature version of the same feature. That
+   shared rule can't know this site's own domain, so an absolute link back
+   to lukefretwell.com in prose still matches it; cancel it here.
+   !important is needed because a plain override loses the specificity tie
+   against the shared rule's :not()-heavy selector (same class of bug as
+   govfresh's mailto-icon fix). */
+.post a[href*="lukefretwell.com"]::after {
+    content: none !important;
 }
 
 .post h2 { padding-top: 1rem; padding-bottom: 0.5rem; }
@@ -168,7 +171,7 @@ a {
    center.gap-2.m-0 on the markup (gap-2 = 0.5rem, exact match) — this
    only adds the font treatment. */
 .posts-pagination ul {
-    font-family: var(--bs-font-monospace);
+    font-family: var(--site-font-secondary);
 }
 
 /* Footer, footer-bar, footer-nav come from lf-ui's lf-components.css. */
@@ -259,8 +262,7 @@ a {
     color: var(--bs-link-color);
 }
 
-/* Selection */
-::selection { background-color: #ede3ff; }
+/* Selection — comes from lf-ui's lf-components.css. */
 
 /* Images — .drop-shadow, base img{}, and the img.xxxs–.xxl scale come
    from lf-ui's lf-components.css. */
@@ -279,7 +281,7 @@ blockquote {
 }
 
 blockquote p, blockquote ul {
-    font-family: var(--bs-font-monospace);
+    font-family: var(--site-font-secondary);
     padding-bottom: 0;
     padding-top: 0.25rem;
 }
@@ -295,56 +297,47 @@ blockquote p, blockquote ul {
     }
 }
 
-/* Dark mode — variable overrides */
+/* Dark mode — variable overrides. Keyed off [data-bs-theme=dark] (set by
+   lf-ui's shared js/theme.js), not a @media (prefers-color-scheme: dark)
+   query — a duplicate query block used to live here, setting the same
+   values (--bs-primary/--bs-link-color/--bs-link-hover-color/
+   --bs-border-color already come from lf-theme.css's own
+   [data-bs-theme=dark] block) as a leftover from before theme.js existed.
+   It was harmless only because the numbers happened to still match; a
+   future change to the shared dark palette would have silently not
+   applied here. */
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bs-body-bg: #1a1a1a;
-        --bs-body-color: #ffffff;
-        --bs-primary: #4a90e2;
-        --bs-primary-rgb: 74, 144, 226;
-        --bs-link-color: #4a90e2;
-        --bs-link-hover-color: #4a90e2;
-        --site-link-visited: #a093f7;
-        --bs-border-color: #444444;
-    }
-}
-
-html.dark {
+[data-bs-theme=dark] {
     --bs-body-bg: #1a1a1a;
     --bs-body-color: #ffffff;
     --site-link-visited: #a093f7;
 }
 
-html.dark body {
+[data-bs-theme=dark] body {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
 }
 
-html.dark img.line {
+[data-bs-theme=dark] img.line {
     border-color: var(--bs-border-color);
 }
 
-html.dark ::selection {
-    background-color: #2a2a2a;
-}
-
-html.dark .fa,
-html.dark .fa-solid,
-html.dark .fa-regular,
-html.dark .fa-light,
-html.dark .fa-duotone,
-html.dark .fab,
-html.dark .fa-brands,
-html.dark .svg-inline--fa {
+[data-bs-theme=dark] .fa,
+[data-bs-theme=dark] .fa-solid,
+[data-bs-theme=dark] .fa-regular,
+[data-bs-theme=dark] .fa-light,
+[data-bs-theme=dark] .fa-duotone,
+[data-bs-theme=dark] .fab,
+[data-bs-theme=dark] .fa-brands,
+[data-bs-theme=dark] .svg-inline--fa {
     color: var(--bs-body-color) !important;
     fill: currentColor !important;
 }
 
-html.dark .btn .fa,
-html.dark .btn .fa-solid,
-html.dark .btn .fa-regular,
-html.dark .btn .fa-brands,
-html.dark .btn .svg-inline--fa {
+[data-bs-theme=dark] .btn .fa,
+[data-bs-theme=dark] .btn .fa-solid,
+[data-bs-theme=dark] .btn .fa-regular,
+[data-bs-theme=dark] .btn .fa-brands,
+[data-bs-theme=dark] .btn .svg-inline--fa {
     color: inherit !important;
 }

@@ -103,19 +103,12 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.data.site.social.rss }}">
 {% endif %}
 
-<!-- Dark mode: follow system preference -->
-<script>
-  (function() {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-      document.documentElement.setAttribute('data-bs-theme', 'dark');
-    }
-  })();
-</script>
+<!-- Dark mode: follow system preference, live (lf-ui's js/theme.js) -->
+<script src="{{ site.baseurl }}/js/theme.js"></script>
 
 <!-- Preload critical fonts -->
-<link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{{ site.baseurl }}/assets/fonts/mona-sans/MonaSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/public-sans/PublicSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/assets/fonts/public-sans/PublicSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ site.baseurl }}/assets/fonts/roboto-mono/RobotoMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
 <!-- Fonts -->
