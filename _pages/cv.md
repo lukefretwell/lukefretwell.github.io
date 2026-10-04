@@ -94,16 +94,14 @@ Expert in government technology. Skilled in culture change and product strategy.
 *January 2010 – December 2015*
 
 
-#### 
-    NuCivic (acquired)
+#### NuCivic (acquired)
 
 
 
 * Led rebranding for open source civic solutions platform.
 * Developed product strategy for the open data platform DKAN.
 
-#### 
-    FedScoop/StateScoop
+#### FedScoop/StateScoop
 
 * Led editorial and digital operations.
 * Wrote and hosted video and podcast interviews with government tech leaders.
