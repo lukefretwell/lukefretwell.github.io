@@ -11,7 +11,7 @@ img-alt: "File with lines icon by Font Awesome"
 
 ## Overview
 
-Expert in government technology. Skilled in culture change, product strategy, design, development, communications and marketing. Focus areas: web standards, accessibility, security, open source, data and content strategy.
+Expert in government technology. Skilled in culture change and product strategy. Also design, development, communications and marketing. Focus areas: web standards, accessibility, security, open source, data and content.
 
 
 ## Experience
@@ -33,8 +33,8 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Built a tool that tracks key measures on U.S. government websites.
-* Work with state and federal governments to fix problems it finds.
+* Built a tool that tracks key measures on U.S. government sites.
+* Work with state and federal agencies to fix problems it finds.
 * Featured in industry publications FedScoop, StateScoop, and Government Technology.
 
 
@@ -55,16 +55,16 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 *August 2021 – Present*
 
-* Founder and lead author of a book written with many people. It grows public sector digital culture.
-* Community contributions from 25+ U.S. public, private, and nonprofit leaders.
+* Founder and lead author of a book written with many people. It helps grow digital culture in government.
+* More than 25 leaders from government, business and nonprofits helped write it.
 
 ### Strategist, CivicActions
 
 *January 2016 – December 2021*
 
-* Helped position a digital services firm for the federal market. Used executive networks and media placements.
-* Launched Agile Government Leadership, now Technologists for the Public Good. It connects and educates government. Its focus is agile digital services.
-* Built an internal community of practice for web accessibility.
+* Helped a digital services firm win federal work. Used my contacts and press coverage.
+* Launched Agile Government Leadership, now Technologists for the Public Good. It connects and teaches government staff. It focuses on agile digital services.
+* Built an internal group to share web accessibility practice.
 
 
 ### Product Designer, [Alpha.CA.gov](/work/alphacagov)
@@ -75,8 +75,8 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 * Incubator team for what is now the California Office of Data and Innovation.
 * Led product design for a short state experiment to redesign CA.gov.
-* Mentored team on open culture (working publicly, using appropriate tools).
-* Helped write and deliver the project story to press.
+* Taught the team open culture: work in public and use the right tools.
+* Helped tell the project story to the press.
 
 
 ### Maintainer, [GovPress](https://wordpress.org/themes/govpress/)
@@ -106,9 +106,9 @@ Expert in government technology. Skilled in culture change, product strategy, de
     FedScoop/StateScoop
 
 * Led editorial and digital operations.
-* Wrote and hosted video and podcast interviews with government IT leaders.
-* Co-hosted FedOSS podcast focused on open source in the federal government.
-* Ran an SEO strategy. It got page-one results for key search terms.
+* Wrote and hosted video and podcast interviews with government tech leaders.
+* Co-hosted the FedOSS podcast about open source in federal government.
+* Ran an SEO plan. It got page-one results for key search terms.
 
 
 ### Founder, HowYouEco
@@ -127,7 +127,7 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Led product strategy and design for a unified health and wellness platform.
+* Led product strategy and design for a health and wellness site.
 * Rebranded from ClinicaHealth to Inspire.com.
 
 
@@ -137,7 +137,7 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Led the launch of an online marketplace for secondary science and tech equipment.
+* Led the launch of an online marketplace for used science and tech gear.
 * Developed site UI, branding guidelines, and marketing strategy.
 
 
@@ -147,8 +147,8 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Part of the core team. We turned a near-shuttered dot-com startup into a real business.
-* Led strategy and development of in-house CRM and sales management tools.
+* Part of the core team. We turned a dot-com startup near shutdown into a real business.
+* Led the plan and build of in-house CRM and sales tools.
 * Coordinated corporate partnership with eBay.
 
 
@@ -158,7 +158,7 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Produced front-end specifications for an online science and tech marketplace.
+* Wrote front-end specs for an online science and tech marketplace.
 * Managed outbound email campaigns.
 
 
@@ -168,7 +168,7 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Led web strategy and development for various organizations.
+* Led web strategy and builds for many groups.
 
 
 ### Web Production Coordinator, ASAE and The Center for Association Leadership
@@ -196,7 +196,7 @@ Expert in government technology. Skilled in culture change, product strategy, de
 
 
 
-* Led George Mason University newspaper to its first national Associated Collegiate Press honors.
+* Led the George Mason University newspaper to its first national Associated Collegiate Press honors.
 * Received GMU Student Leader award for role as editor-in-chief.
 * Managed 25 staff members and a $150,000 annual budget.
 

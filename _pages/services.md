@@ -1,6 +1,6 @@
 ---
 layout: services
 title: Services
-description: "Helping people and teams with open culture and digital transformation."
+description: "I help people and teams build open culture and go digital."
 img-og: services-og.png
 ---

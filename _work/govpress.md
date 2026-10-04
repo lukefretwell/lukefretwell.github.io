@@ -27,4 +27,4 @@ news:
     date: 2014-01-25
 ---
 
-In 2014, co-created GovPress, a free WordPress theme built specifically for government sites. It had thousands of active installations (including non-government) at its peak. The project is now lightly maintained.
+In 2014, I co-created GovPress. It is a free WordPress theme for government sites. Thousands of sites used it at its peak, some outside government. It is now lightly maintained.
