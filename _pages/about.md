@@ -5,12 +5,16 @@ description: "Designer, builder"
 img: brand/luke-fretwell.jpg
 img-alt: Luke Fretwell
 img-download: brand/luke-fretwell-high-res.jpg
+img-credit: Emmett Fretwell
+img-credit-url: https://emmettfretwell.com
 img-og: about-og.png
 ---
 
 Luke Fretwell is an entrepreneur, writer and civic hacker.
 
 He founded and runs [GovFresh](https://govfresh.com/). It's a media and innovation lab. It focuses on design, technology and democracy.
+
+He co-founded [ScanGov](https://lukefretwell.com/work/scangov). It's a digital service monitor. It focuses on AI-readiness, accessibility, security and usability.
 
 He co-founded [ProudCity](https://proudcity.com/). ProudCity helps U.S. cities and counties build better digital services. Each year, _Government Technology_ names ProudCity to its GovTech 100 list. This list ranks top government technology companies.
 
@@ -22,7 +26,7 @@ He founded [Agile Government Leadership](https://lukefretwell.com/work/agl). It 
 
 Luke worked as a technology journalist. He has written for _TechCrunch_, _Government Technology_ and _FCW_. Other outlets, including _The Washington Post_, have cited his work.
 
-At heart, he's a civic hacker. He's built several open source, community projects. One is [ScanGov](https://lukefretwell.com/work/scangov), a government digital service monitor. Another is [Proudly Serving](https://lukefretwell.com/work/proudly-serving), a local government digital services handbook. He also built [GovPress](https://lukefretwell.com/work/govpress), a government WordPress theme, and [CityCamp](https://lukefretwell.com/work/citycamp), a global civic tech unconference.
+At heart, he's a civic hacker. He's built several open source, community projects. One is [Proudly Serving](https://lukefretwell.com/work/proudly-serving), a local government digital services handbook. He also built [GovPress](https://lukefretwell.com/work/govpress), a government WordPress theme, and [CityCamp](https://lukefretwell.com/work/citycamp), a global civic tech unconference.
 
 Beyond civic tech, Luke led the rebrand and product design for Inspire.com. He also worked as a designer, marketer and product manager for Technical Communities. He managed writing and press work for the American Society of Association Executives.
 

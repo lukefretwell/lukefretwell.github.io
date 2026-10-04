@@ -17,8 +17,11 @@ layout: compress
           height="800"
           fetchpriority="high"
           class="border">
+        {% if page.img-credit %}
+          <p class="img-caption mb-0">Photo by: <a href="{{ page.img-credit-url }}" class="body-link">{{ page.img-credit }}</a></p>
+        {% endif %}
         {% if page.img-download %}
-          <div class="download-cta">
+          <div class="download-cta small">
             <a href="{{ baseurl }}/assets/img/{{ page.img-download }}">
               <i class="fa-solid fa-download" aria-hidden="true"></i>
               Download high-resolution image

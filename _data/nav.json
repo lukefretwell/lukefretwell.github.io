@@ -3,6 +3,7 @@
     { "title": "About", "url": "/about" },
     { "title": "Services", "url": "/services" },
     { "title": "Work", "url": "/work" },
+    { "title": "CV", "url": "/cv" },
     { "title": "Press", "url": "/press" },
     { "title": "Notes", "url": "/notes" }
   ]
