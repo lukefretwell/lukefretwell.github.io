@@ -80,8 +80,6 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
-    jekyll-seo-tag (2.8.0)
-      jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
@@ -144,6 +142,7 @@ PLATFORMS
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
+  x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
 
@@ -155,7 +154,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.17)
   jekyll-paginate (~> 1.1)
   jekyll-redirect-from (~> 0.16)
-  jekyll-seo-tag (~> 2.8)
   jekyll-sitemap (~> 1.4)
   ostruct
   tzinfo (~> 1.2)
