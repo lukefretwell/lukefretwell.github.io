@@ -67,7 +67,7 @@ Expert in government technology. Skilled in culture change, product strategy, de
 * Built an internal community of practice for web accessibility.
 
 
-### Product Designer, [Alpha.CA.gov](Alpha.CA.gov)
+### Product Designer, [Alpha.CA.gov](/work/alphacagov)
 
 *December 2019 – March 2020*
 
