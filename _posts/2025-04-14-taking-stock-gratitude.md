@@ -175,7 +175,7 @@ Gratitude to: Elizabeth Raley, Melinda Burgess
 
 ### The Government We Need
 
-In 2019, I put a call out asking if anyone was interested in starting a civic technology podcast. Jessica MacLeod responded, and we called it The Government We Need. While we weren’t prolific (my fault), those interviews are now preserved on [GovFresh](https://podcast.govfresh.com/).
+In 2019, I put a call out asking if anyone was interested in starting a civic technology podcast. Jessica MacLeod responded, and we called it The Government We Need. While we weren’t prolific (my fault), those interviews are now preserved on [GovFresh](https://govfresh.com/podcast).
 
 Jess is thoughtful, intuitive and conversational, and I always enjoyed collaborating with her on each episode.
 
