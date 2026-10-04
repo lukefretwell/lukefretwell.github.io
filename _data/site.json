@@ -3,7 +3,8 @@
     "file": "/assets/img/brand/logo.svg",
     "width": 2529,
     "height": 316,
-    "size": "short"
+    "size": "short",
+    "mobile_file": "/assets/img/favicon/favicon.svg"
   },
   "feedback": {
     "text": "Help make this site better:",
