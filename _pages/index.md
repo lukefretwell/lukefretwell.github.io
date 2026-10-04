@@ -5,7 +5,7 @@ description: Designer, builder
 button: About
 button-link: about
 button-services: Services
-text-services: Helping people and teams with open culture and digital transformation.
+text-services: I help people and teams build open culture and go digital.
 button-link-services: services
 button-book: Book
 button-link-book: /work/proudly-serving

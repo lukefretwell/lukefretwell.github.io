@@ -6,4 +6,4 @@ categories:
   - 
 ---
 
-With the State of California Government Operations Agency, I built Code California. It helps state workers learn and adopt open source tools and culture.
+I built Code California with the State of California Government Operations Agency. It helps state workers learn about open source and how to use it.
