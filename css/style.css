@@ -3,12 +3,6 @@
    --site-transition/--site-transform-* now come from lf-ui's lf-theme.css
    (vendored at assets/lf-ui/lf-theme.css). */
 
-:root {
-    --bs-body-bg: #ffffff;
-    --bs-body-color: #212121;
-    --site-link-visited: #5942d2;
-}
-
 /* Layout — page-width centering now comes from real Bootstrap's .container
    (+ .col-lg-8.mx-auto for the narrower reading column — real Bootstrap
    grid, not a custom max-width class). .content-wide/.content-main/
@@ -44,23 +38,6 @@
    Base — body{}/focus-visible now come from lf-ui's lf-theme.css. */
 
 /* Links */
-
-main a, main a:visited {
-    text-decoration: underline;
-    color: var(--bs-link-color);
-}
-
-main a:visited {
-    color: var(--site-link-visited);
-}
-
-main a:hover {
-    text-decoration: none;
-}
-
-a {
-    transition: color var(--site-transition), opacity var(--site-transition);
-}
 
 /* Nav — .navbar/.navbar-brand/.navbar-nav/.nav-link/.navbar-toggler/
    .navbar-collapse (mobile)/#logo all come from lf-ui's lf-components.css
@@ -131,13 +108,6 @@ a {
    govfresh's mailto-icon fix). */
 .post a[href*="lukefretwell.com"]::after {
     content: none !important;
-}
-
-.post h2 { padding-top: 1rem; padding-bottom: 0.5rem; }
-.post h3, .post h4 { padding-top: 1rem; padding-bottom: 1rem; }
-
-.post h2, .post h3, .post h4 {
-    scroll-margin-top: 1.5rem;
 }
 
 /* .toc-layout/.toc-sidebar come from lf-ui's lf-components.css. */
@@ -217,33 +187,6 @@ a {
     margin-left: 0.35em;
 }
 
-/* Stretched card link — covers entire card */
-.card a.card-link {
-    color: var(--bs-body-color);
-    text-decoration: none;
-}
-
-.card a.card-link::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-}
-
-.card a.card-link:focus-visible {
-    outline: none;
-}
-
-.card:has(a.card-link:focus-visible) {
-    outline: 0.125rem solid var(--bs-link-color);
-    outline-offset: 0.125rem;
-}
-
-.card a.card-link:visited { color: var(--bs-body-color); }
-/* :hover (link color, no underline) comes from lf-ui's lf-components.css now. */
-
-.card h2, .card h3, .card h4 { margin-bottom: 0.25rem; }
-
 /* Breadcrumb — comes from lf-ui's lf-components.css. */
 
 /* Suppress link color inside connect — nav is handled by
@@ -267,76 +210,9 @@ a {
    from lf-ui's lf-components.css. */
 img.line { margin-bottom: 1.3rem; border: 0.0625rem solid var(--bs-border-color); }
 
-/* Figcaption */
-figcaption p { margin: 0.25rem 0; }
-
-/* Blockquote */
-blockquote {
-    border-left: 0.5rem solid var(--bs-secondary-color);
-    margin-left: 1.5625rem;
-    padding: 0 1.5625rem;
-    margin-bottom: 1.5625rem;
-    margin-top: 2rem;
-}
-
-blockquote p, blockquote ul {
-    font-family: var(--site-font-secondary);
-    padding-bottom: 0;
-    padding-top: 0.25rem;
-}
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        transition: none !important;
-        animation: none !important;
-    }
-    .card:hover, .btn:hover, .btn:active {
-        transform: none;
-    }
-}
-
-/* Dark mode — variable overrides. Keyed off [data-bs-theme=dark] (set by
-   lf-ui's shared js/theme.js), not a @media (prefers-color-scheme: dark)
-   query — a duplicate query block used to live here, setting the same
-   values (--bs-primary/--bs-link-color/--bs-link-hover-color/
-   --bs-border-color already come from lf-theme.css's own
-   [data-bs-theme=dark] block) as a leftover from before theme.js existed.
-   It was harmless only because the numbers happened to still match; a
-   future change to the shared dark palette would have silently not
-   applied here. */
-
-[data-bs-theme=dark] {
-    --bs-body-bg: #1a1a1a;
-    --bs-body-color: #ffffff;
-    --site-link-visited: #a093f7;
-}
-
-[data-bs-theme=dark] body {
-    background-color: var(--bs-body-bg);
-    color: var(--bs-body-color);
-}
+/* Dark mode — palette (body bg/color, visited links) and Font Awesome icon
+   color come from lf-ui's lf-theme.css / lf-components.css. */
 
 [data-bs-theme=dark] img.line {
     border-color: var(--bs-border-color);
-}
-
-[data-bs-theme=dark] .fa,
-[data-bs-theme=dark] .fa-solid,
-[data-bs-theme=dark] .fa-regular,
-[data-bs-theme=dark] .fa-light,
-[data-bs-theme=dark] .fa-duotone,
-[data-bs-theme=dark] .fab,
-[data-bs-theme=dark] .fa-brands,
-[data-bs-theme=dark] .svg-inline--fa {
-    color: var(--bs-body-color) !important;
-    fill: currentColor !important;
-}
-
-[data-bs-theme=dark] .btn .fa,
-[data-bs-theme=dark] .btn .fa-solid,
-[data-bs-theme=dark] .btn .fa-regular,
-[data-bs-theme=dark] .btn .fa-brands,
-[data-bs-theme=dark] .btn .svg-inline--fa {
-    color: inherit !important;
 }

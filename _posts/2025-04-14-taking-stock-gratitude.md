@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: post
 title:  "Taking stock and gratitude"
 description: "Reflecting and giving thanks to my civic technology work and community."
 author: Luke Fretwell
