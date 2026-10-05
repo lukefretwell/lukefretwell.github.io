@@ -39,9 +39,20 @@ defaults:
       type: "notes"
     values:
       label: "Notes"
-      layout: "note"
+      layout: "post"
       img-path: "posts"
-      folder: "posts"
+      folder: "Notes"
+      parent: "notes"
+  # Jekyll's built-in _posts collection is type "posts", not "notes"; same
+  # layout/breadcrumb values, but no img-path (posts carry the folder in
+  # img-og themselves).
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      label: "Notes"
+      layout: "post"
+      folder: "Notes"
       parent: "notes"
   - scope:
       path: "_work"
