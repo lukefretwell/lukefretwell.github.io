@@ -2,7 +2,7 @@
 title: CityCamp
 description: Global unconference on cities and civic tech.
 website: https://citycamp.com 
-featured: true
+featured: 
 categories:
   - CityCamp
 news:

@@ -5,7 +5,6 @@ description: Designer, builder
 button: About
 button-link: about
 button-services: Services
-text-services: I help people and teams build open culture and go digital.
 button-link-services: services
 button-book: Book
 button-link-book: /work/proudly-serving
@@ -15,8 +14,6 @@ text-book-title: Proudly Serving
 text-book: Public service with and for the people.
 button-press: Press
 button-link-press: press
-button-notes: Notes
-button-link-notes: notes
 button-works: Work
 button-link-works: work
 button-connect: Connect

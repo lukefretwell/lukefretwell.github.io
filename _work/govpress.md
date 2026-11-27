@@ -8,7 +8,7 @@ img-width: 1200
 img-height: 630
 website: https://wordpress.org/themes/govpress/
 github: https://github.com/govfresh/govpress
-featured: true
+featured: 
 categories:
   - GovPress
 schematype: SoftwareApplication
