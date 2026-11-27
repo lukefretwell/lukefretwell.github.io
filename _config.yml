@@ -64,6 +64,13 @@ defaults:
       parent: "work"
       img-path: "work"
   - scope:
+      path: "_services"
+      type: "services"
+    values:
+      layout: "service"
+      folder: "Services"
+      parent: "services"
+  - scope:
       path: "_topics"
       type: "topics"
     values:
@@ -91,6 +98,9 @@ collections:
   work:
     output: true
     permalink: /work/:title
+  services:
+    output: true
+    permalink: /services/:title
   topics:
     output: true
     permalink: /topics/:title

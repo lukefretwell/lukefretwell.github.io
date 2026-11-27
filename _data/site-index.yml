@@ -3,6 +3,8 @@ sections:
     collection: posts
   - label: Work
     collection: work
+  - label: Services
+    collection: services
   - label: Topics
     collection: topics
   - label: Pages

@@ -13,6 +13,8 @@ layout: compress
         {% if page.text-services %}
           <p class="lead">{{ page.text-services }}</p>
         {% endif %}
+        {% assign services = site.services | sort: "order" %}
+        {% include card-grid.html items=services type="service" size="small" heading="h3" %}
         <a href="{{ page.button-link-services }}" class="btn btn-sm">{{ page.button-services }}</a>
       </div>
     {% endif %}
